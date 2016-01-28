@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=full screenshot
+Comment=
+Exec=xfce4-screenshooter -f -d 3
+Icon=/usr/share/pixmaps/screenshot-ful.png
+Path=
+Terminal=false
+StartupNotify=false

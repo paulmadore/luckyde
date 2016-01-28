@@ -1,0 +1,71 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuItemCache
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_item_cache_get_default ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_cache_lookup ##### -->
+<para>
+
+</para>
+
+@cache: 
+@uri: 
+@desktop_id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_cache_foreach ##### -->
+<para>
+
+</para>
+
+@cache: 
+@func: 
+@user_data: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_cache_invalidate ##### -->
+<para>
+
+</para>
+
+@cache: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_cache_invalidate_file ##### -->
+<para>
+
+</para>
+
+@cache: 
+@file: 
+
+

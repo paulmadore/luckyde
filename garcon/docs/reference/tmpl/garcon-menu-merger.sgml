@@ -1,0 +1,46 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuMerger
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_merger_new ##### -->
+<para>
+
+</para>
+
+@provider: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_merger_run ##### -->
+<para>
+
+</para>
+
+@merger: 
+@merge_files: 
+@merge_dirs: 
+@cancellable: 
+@error: 
+@Returns: 
+
+

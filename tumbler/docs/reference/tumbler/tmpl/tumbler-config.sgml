@@ -1,0 +1,96 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO TUMBLER_MAJOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO TUMBLER_MINOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO TUMBLER_MICRO_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO TUMBLER_CHECK_VERSION ##### -->
+<para>
+
+</para>
+
+@major: 
+@minor: 
+@micro: 
+
+
+<!-- ##### VARIABLE tumbler_major_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE tumbler_minor_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE tumbler_micro_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION tumbler_check_version ##### -->
+<para>
+
+</para>
+
+@required_major: 
+@required_minor: 
+@required_micro: 
+@Returns: 
+
+
+<!-- ##### MACRO G_GNUC_NULL_TERMINATED ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO G_GNUC_WARN_UNUSED_RESULT ##### -->
+<para>
+
+</para>
+
+
+

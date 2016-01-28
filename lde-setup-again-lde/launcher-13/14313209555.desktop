@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Synfig Studio
+GenericName=2D vector animation studio
+Comment=Create and edit 2D animations and compositions
+Exec=synfigstudio %F
+Terminal=false
+Type=Application
+Icon=synfig_icon
+Categories=GTK;Graphics;2DGraphics;VectorGraphics;
+StartupNotify=true
+MimeType=application/x-sif;
+X-XFCE-Source=file:///usr/share/applications/synfigstudio.desktop

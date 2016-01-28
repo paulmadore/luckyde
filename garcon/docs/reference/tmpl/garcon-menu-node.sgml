@@ -1,0 +1,300 @@
+<!-- ##### SECTION Title ##### -->
+garcon-menu-node
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM GarconMenuLayoutMergeType ##### -->
+<para>
+
+</para>
+
+@GARCON_MENU_LAYOUT_MERGE_MENUS: 
+@GARCON_MENU_LAYOUT_MERGE_FILES: 
+@GARCON_MENU_LAYOUT_MERGE_ALL: 
+
+<!-- ##### ENUM GarconMenuMergeFileType ##### -->
+<para>
+
+</para>
+
+@GARCON_MENU_MERGE_FILE_PATH: 
+@GARCON_MENU_MERGE_FILE_PARENT: 
+
+<!-- ##### FUNCTION garcon_menu_node_new ##### -->
+<para>
+
+</para>
+
+@node_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_get_node_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_create ##### -->
+<para>
+
+</para>
+
+@node_type: 
+@first_value: 
+@...: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_copy ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_get_string ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_set_string ##### -->
+<para>
+
+</para>
+
+@node: 
+@value: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_get_merge_file_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_set_merge_file_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@type: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_get_merge_file_filename ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_set_merge_file_filename ##### -->
+<para>
+
+</para>
+
+@node: 
+@filename: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_child_node ##### -->
+<para>
+
+</para>
+
+@tree: 
+@type: 
+@reverse: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_child_nodes ##### -->
+<para>
+
+</para>
+
+@tree: 
+@type: 
+@reverse: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_string_children ##### -->
+<para>
+
+</para>
+
+@tree: 
+@type: 
+@reverse: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_boolean_child ##### -->
+<para>
+
+</para>
+
+@tree: 
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_string_child ##### -->
+<para>
+
+</para>
+
+@tree: 
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_rule_matches ##### -->
+<para>
+
+</para>
+
+@tree: 
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_node_type ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_string ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_set_string ##### -->
+<para>
+
+</para>
+
+@tree: 
+@value: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_layout_merge_type ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_merge_file_type ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_get_merge_file_filename ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_set_merge_file_filename ##### -->
+<para>
+
+</para>
+
+@tree: 
+@filename: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_compare ##### -->
+<para>
+
+</para>
+
+@tree: 
+@other_tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_copy ##### -->
+<para>
+
+</para>
+
+@tree: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_free ##### -->
+<para>
+
+</para>
+
+@tree: 
+
+
+<!-- ##### FUNCTION garcon_menu_node_tree_free_data ##### -->
+<para>
+
+</para>
+
+@tree: 
+
+
+<!-- ##### UNION GarconMenuNodeData ##### -->
+<para>
+
+</para>
+
+

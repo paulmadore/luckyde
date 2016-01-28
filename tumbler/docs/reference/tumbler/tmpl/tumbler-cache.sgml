@@ -1,0 +1,110 @@
+<!-- ##### SECTION Title ##### -->
+TumblerCache
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_cache_get_default ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_cache_get_thumbnail ##### -->
+<para>
+
+</para>
+
+@cache: 
+@uri: 
+@flavor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_cache_cleanup ##### -->
+<para>
+
+</para>
+
+@cache: 
+@base_uris: 
+@since: 
+
+
+<!-- ##### FUNCTION tumbler_cache_delete ##### -->
+<para>
+
+</para>
+
+@cache: 
+@uris: 
+
+
+<!-- ##### FUNCTION tumbler_cache_copy ##### -->
+<para>
+
+</para>
+
+@cache: 
+@from_uris: 
+@to_uris: 
+
+
+<!-- ##### FUNCTION tumbler_cache_move ##### -->
+<para>
+
+</para>
+
+@cache: 
+@from_uris: 
+@to_uris: 
+
+
+<!-- ##### FUNCTION tumbler_cache_is_thumbnail ##### -->
+<para>
+
+</para>
+
+@cache: 
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_cache_get_flavors ##### -->
+<para>
+
+</para>
+
+@cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_cache_get_flavor ##### -->
+<para>
+
+</para>
+
+@cache: 
+@name: 
+@Returns: 
+
+

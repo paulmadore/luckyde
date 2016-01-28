@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Besnik <besnik@programeshqip.org>, 2007
+msgid ""
+msgstr ""
+"Project-Id-Version: Garcon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-03 00:30+0200\n"
+"PO-Revision-Date: 2013-11-19 13:10+0000\n"
+"Last-Translator: Xfce <transifex@xfce.org>\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/xfce/language/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/xfce/xfce-accessories.directory.in.h:1
+msgid "Accessories"
+msgstr "Aksesorë"
+
+#: ../data/xfce/xfce-accessories.directory.in.h:2
+msgid "Common desktop tools and applications"
+msgstr "Mjete dhe zbatime të zakonshëm desktopi"
+
+#: ../data/xfce/xfce-development.directory.in.h:1
+msgid "Development"
+msgstr "Zhvillim"
+
+#: ../data/xfce/xfce-development.directory.in.h:2
+msgid "Software development tools"
+msgstr "Mjete për zhvillim programesh"
+
+#: ../data/xfce/xfce-education.directory.in.h:1
+msgid "Education"
+msgstr "Edukim"
+
+#: ../data/xfce/xfce-education.directory.in.h:2
+msgid "Educational software"
+msgstr "Programe edukimi"
+
+#: ../data/xfce/xfce-games.directory.in.h:1
+msgid "Games"
+msgstr "Lojra"
+
+#: ../data/xfce/xfce-games.directory.in.h:2
+msgid "Games, puzzles, and other fun software"
+msgstr "Lojëra, \"puzzle\"-e dhe të tjera programe zbavitjeje"
+
+#: ../data/xfce/xfce-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafika"
+
+#: ../data/xfce/xfce-graphics.directory.in.h:2
+msgid "Graphics creation and manipulation applications"
+msgstr "Zbatime për krijim dhe manipulim grafike"
+
+#: ../data/xfce/xfce-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr ""
+
+#: ../data/xfce/xfce-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr ""
+
+#: ../data/xfce/xfce-multimedia.directory.in.h:1
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: ../data/xfce/xfce-multimedia.directory.in.h:2
+msgid "Audio and video players and editors"
+msgstr "Lojtësa dhe përpunuesa audioje dhe videoje"
+
+#: ../data/xfce/xfce-network.directory.in.h:1
+msgid "Internet"
+msgstr ""
+
+#: ../data/xfce/xfce-network.directory.in.h:2
+msgid "Applications for Internet access"
+msgstr ""
+
+#: ../data/xfce/xfce-office.directory.in.h:1
+msgid "Office"
+msgstr "Zyrë"
+
+#: ../data/xfce/xfce-office.directory.in.h:2
+msgid "Office and productivity applications"
+msgstr "Zbatime zyre dhe prodhimshmërie"
+
+#: ../data/xfce/xfce-other.directory.in.h:1
+msgid "Other"
+msgstr "Tjetër"
+
+#: ../data/xfce/xfce-other.directory.in.h:2
+msgid "Applications that don't fit into other categories"
+msgstr "Zbatime që nuk hyjnë në ndonjë kategori"
+
+#: ../data/xfce/xfce-personal.directory.in.h:1
+msgid "Personal"
+msgstr ""
+
+#: ../data/xfce/xfce-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr ""
+
+#: ../data/xfce/xfce-screensavers.directory.in.h:1
+msgid "Screensavers"
+msgstr "Ekrankursyesa"
+
+#: ../data/xfce/xfce-screensavers.directory.in.h:2
+msgid "Screensaver applets"
+msgstr "Zbatimthe ekrankursyesi"
+
+#: ../data/xfce/xfce-settings.directory.in.h:1
+msgid "Settings"
+msgstr "Rregullime"
+
+#: ../data/xfce/xfce-settings.directory.in.h:2
+msgid "Desktop and system settings applications"
+msgstr "Zbatime për rregullime desktopi dhe sistemi"
+
+#: ../data/xfce/xfce-system.directory.in.h:1
+msgid "System"
+msgstr "Sistem"
+
+#: ../data/xfce/xfce-system.directory.in.h:2
+msgid "System tools and utilities"
+msgstr "Mjete dhe të dobishëm sistemi"
+
+#: ../garcon/garcon-menu.c:702
+#, c-format
+msgid "File \"%s\" not found"
+msgstr "Kartela \"%s\" nuk u gjet"
+
+#: ../garcon/garcon-menu-parser.c:276
+#, c-format
+msgid "Could not load menu file data from %s: %s"
+msgstr "Nuk ngarkoi dot të dhëna menuje kartele prej %s: %s"
+
+#: ../garcon/garcon-menu-parser.c:283
+#, c-format
+msgid "Could not load menu file data from %s"
+msgstr "Nuk ngarkoi dot të dhëna menuje kartele prej %s"
+
+#: ../garcon-gtk/garcon-gtk-menu.c:389
+#, c-format
+msgid "Failed to execute command \"%s\"."
+msgstr ""
+
+#: ../garcon-gtk/garcon-gtk-menu.c:652
+msgid "No applications found"
+msgstr ""
+
+#: ../garcon-gtk/garcon-gtk-menu.c:664
+msgid "Failed to load the applications menu"
+msgstr ""

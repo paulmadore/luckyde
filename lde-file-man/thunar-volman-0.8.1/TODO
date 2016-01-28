@@ -1,0 +1,4 @@
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usb-storage".
+thunar-volman: Unknown block device type "disk".
+thunar-volman: Could not detect the volume corresponding to the device.

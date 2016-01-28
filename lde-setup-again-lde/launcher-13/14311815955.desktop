@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Qalculate!
+Comment=Powerful and easy to use calculator
+Exec=qalculate-gtk
+Icon=qalculate.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;Science;Calculator;
+X-XFCE-Source=file:///usr/share/applications/qalculate-gtk.desktop

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ExoSimpleJob</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Exo Reference Manual">
+<link rel="up" href="exo-jobs.html" title="Part V. Framework for threaded/asynchronous jobs">
+<link rel="prev" href="ExoJob.html" title="ExoJob">
+<link rel="next" href="exo-extensions.html" title="Part VI. Extensions to existing frameworks">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ExoJob.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="exo-jobs.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Exo Reference Manual</th>
+<td><a accesskey="n" href="exo-extensions.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#ExoSimpleJob.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#ExoSimpleJob.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#ExoSimpleJob.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="ExoSimpleJob"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ExoSimpleJob.top_of_page"></a>ExoSimpleJob</span></h2>
+<p>ExoSimpleJob — Simple interface to execute functions asynchronously</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="ExoSimpleJob.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;exo/exo.h&gt;
+
+                    <a class="link" href="ExoSimpleJob.html#ExoSimpleJob-struct" title="ExoSimpleJob">ExoSimpleJob</a>;
+<span class="returnvalue">gboolean</span>            (<a class="link" href="ExoSimpleJob.html#ExoSimpleJobFunc" title="ExoSimpleJobFunc ()">*ExoSimpleJobFunc</a>)                 (<em class="parameter"><code><a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a> *job</code></em>,
+                                                         <em class="parameter"><code><span class="type">GValueArray</span> *param_values</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<a class="link" href="ExoJob.html" title="ExoJob"><span class="returnvalue">ExoJob</span></a> *            <a class="link" href="ExoSimpleJob.html#exo-simple-job-launch" title="exo_simple_job_launch ()">exo_simple_job_launch</a>               (<em class="parameter"><code><a class="link" href="ExoSimpleJob.html#ExoSimpleJobFunc" title="ExoSimpleJobFunc ()"><span class="type">ExoSimpleJobFunc</span></a> func</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> n_param_values</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoSimpleJob.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----<a class="link" href="ExoJob.html" title="ExoJob">ExoJob</a>
+         +----ExoSimpleJob
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoSimpleJob.description"></a><h2>Description</h2>
+<p>
+<a class="link" href="ExoSimpleJob.html" title="ExoSimpleJob">ExoSimpleJob</a> can be used to execute
+functions asynchronously in an <a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a> wrapper object. It is easier to
+use than the <span class="type">GThread</span> system and provides basic signals to follow the
+progress of an operation.
+</p>
+</div>
+<div class="refsect1">
+<a name="ExoSimpleJob.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="ExoSimpleJob-struct"></a><h3>ExoSimpleJob</h3>
+<pre class="programlisting">typedef struct _ExoSimpleJob ExoSimpleJob;</pre>
+<p>
+The <a class="link" href="ExoSimpleJob.html" title="ExoSimpleJob"><span class="type">ExoSimpleJob</span></a> struct contains only private fields and should not be
+directly accessed.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoSimpleJobFunc"></a><h3>ExoSimpleJobFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*ExoSimpleJobFunc)                 (<em class="parameter"><code><a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a> *job</code></em>,
+                                                         <em class="parameter"><code><span class="type">GValueArray</span> *param_values</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+Used by the <a class="link" href="ExoSimpleJob.html" title="ExoSimpleJob"><span class="type">ExoSimpleJob</span></a> to process the <em class="parameter"><code>job</code></em>. See <a class="link" href="ExoSimpleJob.html#exo-simple-job-launch" title="exo_simple_job_launch ()"><code class="function">exo_simple_job_launch()</code></a>
+for further details.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>an <a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>param_values</code></em> :</span></p></td>
+<td>a <span class="type">GValueArray</span> of the <span class="type">GValue</span>s passed to
+<a class="link" href="ExoSimpleJob.html#exo-simple-job-launch" title="exo_simple_job_launch ()"><code class="function">exo_simple_job_launch()</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>return location for errors.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> in case of an error.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-simple-job-launch"></a><h3>exo_simple_job_launch ()</h3>
+<pre class="programlisting"><a class="link" href="ExoJob.html" title="ExoJob"><span class="returnvalue">ExoJob</span></a> *            exo_simple_job_launch               (<em class="parameter"><code><a class="link" href="ExoSimpleJob.html#ExoSimpleJobFunc" title="ExoSimpleJobFunc ()"><span class="type">ExoSimpleJobFunc</span></a> func</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> n_param_values</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);</pre>
+<p>
+Allocates a new <a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a> which executes the specified <em class="parameter"><code>func</code></em> with
+the specified parameters.
+</p>
+<p>
+An example could be:
+</p>
+<p>
+</p>
+<div class="informalexample"><pre class="programlisting">
+static gboolean
+list_directory (ExoJob      *job,
+                GValueArray *param_values,
+                GError     **error)
+{
+  GFileEnumerator *enumerator;
+  GFileInfo       *info;
+  GError          *err = NULL;
+  GFile           *directory;
+
+  if (exo_job_set_error_if_cancelled (EXO_JOB (job), error))
+    return FALSE;
+
+  directory = g_value_get_object (g_value_array_get_nth (param_values, 0));
+
+  enumerator = g_file_enumerate_children (directory,
+                                          "standard::display-name",
+                                          G_FILE_QUERY_INFO_NONE,
+                                          exo_job_get_cancellable (job),
+                                          &amp;err);
+
+  if (err != NULL)
+    {
+      g_propagate_error (error, err);
+      return FALSE;
+    }
+
+  while (TRUE)
+    {
+      info = g_file_enumerator_next_file (enumerator,
+                                          exo_job_get_cancellable (job),
+                                          &amp;err);
+
+      if (info == NULL)
+        break;
+
+      exo_job_info_message (job, _("Child: %s"),
+                            g_file_info_get_display_name (info));
+
+      g_object_unref (info);
+    }
+
+  g_object_unref (enumerator);
+
+  if (err != NULL)
+    {
+      g_propagate_error (error, err);
+      return FALSE;
+    }
+  else
+    {
+      return TRUE;
+    }
+}
+
+...
+
+GFile *file = g_file_new_for_path ("/home/user");
+ExoJob *job = exo_simple_job_launch (list_directory, 1, G_TYPE_FILE, file);
+g_signal_connect (job, "info-message", G_CALLBACK (update_some_widget), widget);
+g_signal_connect (job, "finished", G_CALLBACK (unref_the_job_object), NULL);
+</pre></div>
+<p>
+</p>
+<p>
+The caller is responsible to release the returned <a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a> object
+using <code class="function">g_object_unref()</code> when no longer needed.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>func</code></em> :</span></p></td>
+<td>the <a class="link" href="ExoSimpleJob.html#ExoSimpleJobFunc" title="ExoSimpleJobFunc ()"><span class="type">ExoSimpleJobFunc</span></a> to execute the job.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n_param_values</code></em> :</span></p></td>
+<td>the number of parameters to pass to the <em class="parameter"><code>func</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
+<td>a list of <span class="type">GType</span> and parameter pairs (exactly
+<em class="parameter"><code>n_param_values</code></em> pairs) that are passed to <em class="parameter"><code>func</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the launched <a class="link" href="ExoJob.html" title="ExoJob"><span class="type">ExoJob</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoSimpleJob.see-also"></a><h2>See Also</h2>
+<a class="link" href="ExoJob.html" title="ExoJob">ExoJob</a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

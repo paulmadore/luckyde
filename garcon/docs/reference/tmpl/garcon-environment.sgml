@@ -1,0 +1,56 @@
+<!-- ##### SECTION Title ##### -->
+garcon-environment
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO GARCON_ENVIRONMENT_XFCE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION garcon_set_environment ##### -->
+<para>
+
+</para>
+
+@env: 
+
+
+<!-- ##### FUNCTION garcon_get_environment ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_set_environment_xdg ##### -->
+<para>
+
+</para>
+
+@fallback_env: 
+
+

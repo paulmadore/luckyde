@@ -1,0 +1,395 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuItem
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_item_new ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_new_for_path ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_new_for_uri ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_reload ##### -->
+<para>
+
+</para>
+
+@item: 
+@affects_the_outside: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_reload_from_file ##### -->
+<para>
+
+</para>
+
+@item: 
+@file: 
+@affects_the_outside: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_file ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_uri ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_desktop_id ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_desktop_id ##### -->
+<para>
+
+</para>
+
+@item: 
+@desktop_id: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_command ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_command ##### -->
+<para>
+
+</para>
+
+@item: 
+@command: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_try_exec ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_try_exec ##### -->
+<para>
+
+</para>
+
+@item: 
+@try_exec: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@name: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_generic_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_generic_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@generic_name: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_comment ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_comment ##### -->
+<para>
+
+</para>
+
+@item: 
+@comment: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_icon_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_icon_name ##### -->
+<para>
+
+</para>
+
+@item: 
+@icon_name: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_path ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_path ##### -->
+<para>
+
+</para>
+
+@item: 
+@path: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_hidden ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_hidden ##### -->
+<para>
+
+</para>
+
+@item: 
+@hidden: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_requires_terminal ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_requires_terminal ##### -->
+<para>
+
+</para>
+
+@item: 
+@requires_terminal: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_no_display ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_no_display ##### -->
+<para>
+
+</para>
+
+@item: 
+@no_display: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_supports_startup_notification ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_supports_startup_notification ##### -->
+<para>
+
+</para>
+
+@item: 
+@supports_startup_notification: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_categories ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_set_categories ##### -->
+<para>
+
+</para>
+
+@item: 
+@categories: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_has_category ##### -->
+<para>
+
+</para>
+
+@item: 
+@category: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_show_in_environment ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_only_show_in_environment ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_ref ##### -->
+<para>
+
+</para>
+
+@item: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_unref ##### -->
+<para>
+
+</para>
+
+@item: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_get_allocated ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_increment_allocated ##### -->
+<para>
+
+</para>
+
+@item: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_decrement_allocated ##### -->
+<para>
+
+</para>
+
+@item: 
+
+

@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>XfconfBackend</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<link rel="start" href="index.html" title="Xfconf Reference Manual">
+<link rel="up" href="ch02.html" title="Xfconf Daemon">
+<link rel="prev" href="ch02.html" title="Xfconf Daemon">
+<link rel="next" href="ch03.html" title="Xfconf Client Library">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#xfconf-xfconf-backend.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#xfconf-xfconf-backend.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#xfconf-xfconf-backend.prerequisites" class="shortcut">Prerequisites</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch03.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry" lang="en">
+<a name="xfconf-xfconf-backend"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="xfconf-xfconf-backend.top_of_page"></a>XfconfBackend</span></h2>
+<p>XfconfBackend — Interface for configuration store backends</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-initialize" title="xfconf_backend_initialize ()">xfconf_backend_initialize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-set" title="xfconf_backend_set ()">xfconf_backend_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-get" title="xfconf_backend_get ()">xfconf_backend_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-get-all" title="xfconf_backend_get_all ()">xfconf_backend_get_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-exists" title="xfconf_backend_exists ()">xfconf_backend_exists</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-reset" title="xfconf_backend_reset ()">xfconf_backend_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-flush" title="xfconf_backend_flush ()">xfconf_backend_flush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="xfconf-xfconf-backend.html#xfconf-backend-register-property-changed-func" title="xfconf_backend_register_property_changed_func ()">xfconf_backend_register_property_changed_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="XfconfBackend"></a><div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a href="xfconf-xfconf-backend.html#XfconfBackendInterface" title="struct XfconfBackendInterface">XfconfBackendInterface</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a href="xfconf-xfconf-backend.html#XfconfBackend-struct" title="XfconfBackend">XfconfBackend</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GInterface
+    <span class="lineart">╰──</span> XfconfBackend
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+XfconfBackend requires
+ <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.description"></a><h2>Description</h2>
+<p>
+XfconfBackend is an abstract interface that allows the Xfconf Daemon
+to use different backends for storing configuration data.  These backends
+can be flat text or binary files, a database, or just about anything
+one could think of to store data.
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.functions_details"></a><h2>Functions</h2>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-initialize"></a><h3>xfconf_backend_initialize ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_initialize (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Does any pre-initialization that the backend needs to function.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036540816"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm1036561296"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if initialization
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-set"></a><h3>xfconf_backend_set ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_set (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *channel</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Sets the variant <em class="parameter"><code>value</code></em>
+ for <em class="parameter"><code>property</code></em>
+ on <em class="parameter"><code>channel</code></em>
+.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036573968"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>A channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>A property name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm1036591888"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-get"></a><h3>xfconf_backend_get ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_get (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *channel</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Gets the value of <em class="parameter"><code>property</code></em>
+ on <em class="parameter"><code>channel</code></em>
+ and stores it in <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036611856"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>A channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>A property name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm1036618896"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-get-all"></a><h3>xfconf_backend_get_all ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_get_all (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *channel</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_base</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *properties</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Gets multiple properties and values on <em class="parameter"><code>channel</code></em>
+ and stores them in
+<em class="parameter"><code>properties</code></em>
+, which is already initialized to hold <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>* keys and
+<a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a>* values.  The <em class="parameter"><code>property_base</code></em>
+ parameter can be
+used to limit the retrieval to a sub-tree of the property tree.</p>
+<p>A value of the empty string ("") or forward slash ("/") for
+<em class="parameter"><code>property_base</code></em>
+ indicates the entire channel.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036654096"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>A channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property_base</p></td>
+<td class="parameter_description"><p>The base of properties to return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>properties</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm1036663952"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-exists"></a><h3>xfconf_backend_exists ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_exists (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *channel</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *exists</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Checks to see if <em class="parameter"><code>property</code></em>
+ exists on <em class="parameter"><code>channel</code></em>
+, and stores <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> in <em class="parameter"><code>exists</code></em>
+.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036703504"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>A channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>A property name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exists</p></td>
+<td class="parameter_description"><p>A boolean return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm1036707856"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-reset"></a><h3>xfconf_backend_reset ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_reset (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *channel</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> recursive</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Resets the property identified by <em class="parameter"><code>property</code></em>
+ from <em class="parameter"><code>channel</code></em>
+.
+If <em class="parameter"><code>recursive</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, all sub-properties of <em class="parameter"><code>property</code></em>
+ will be
+reset as well.  If the empty string ("") or a forward slash ("/")
+is specified for <em class="parameter"><code>property</code></em>
+, the entire channel will be reset.</p>
+<p>If none of the properties specified are locked or have root-owned
+system-wide defaults set, this effectively removes the properties
+from the configuration store entirely.</p>
+<div class="refsect3" lang="en">
+<a name="idm1036730384"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>A channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>A property name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>recursive</p></td>
+<td class="parameter_description"><p>Whether or not the reset is recursive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm636607888"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-flush"></a><h3>xfconf_backend_flush ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+xfconf_backend_flush (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>For backends that support persistent storage, ensures that all
+configuration data stored in memory is saved to persistent storage.</p>
+<div class="refsect3" lang="en">
+<a name="idm1008154256"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>An error return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3" lang="en">
+<a name="idm2776541200"></a><h4>Returns</h4>
+<p> The backend should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation
+was successful, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.  On <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>,
+<em class="parameter"><code>error</code></em>
+should be set to a description of the failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="xfconf-backend-register-property-changed-func"></a><h3>xfconf_backend_register_property_changed_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+xfconf_backend_register_property_changed_func
+                               (<em class="parameter"><code><a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> *backend</code></em>,
+                                <em class="parameter"><code><span class="type">XfconfPropertyChangedFunc</span> func</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Registers a function to be called when a property changes.  The
+backend implementation should keep a pointer to <em class="parameter"><code>func</code></em>
+ and <em class="parameter"><code>user_data</code></em>
+
+and call <em class="parameter"><code>func</code></em>
+ when a property in the configuration store changes.</p>
+<div class="refsect3" lang="en">
+<a name="idm2105404048"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>backend</p></td>
+<td class="parameter_description"><p>The <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>A function of type <span class="type">XfconfPropertyChangeFunc</span>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Arbitrary caller-supplied data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="xfconf-xfconf-backend.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2" lang="en">
+<a name="XfconfBackendInterface"></a><h3>struct XfconfBackendInterface</h3>
+<pre class="programlisting">struct XfconfBackendInterface {
+    GTypeInterface parent;
+    
+    gboolean (*initialize)(XfconfBackend *backend,
+                           GError **error);
+    
+    gboolean (*set)(XfconfBackend *backend,
+                    const gchar *channel,
+                    const gchar *property,
+                    const GValue *value,
+                    GError **error);
+    
+    gboolean (*get)(XfconfBackend *backend,
+                    const gchar *channel,
+                    const gchar *property,
+                    GValue *value,
+                    GError **error);
+    
+    gboolean (*get_all)(XfconfBackend *backend,
+                        const gchar *channel,
+                        const gchar *property_base,
+                        GHashTable *properties,
+                        GError **error);
+    
+    gboolean (*exists)(XfconfBackend *backend,
+                       const gchar *channel,
+                       const gchar *property,
+                       gboolean *exists,
+                       GError **error);
+    
+    gboolean (*reset)(XfconfBackend *backend,
+                      const gchar *channel,
+                      const gchar *property,
+                      gboolean recursive,
+                      GError **error);
+
+    gboolean (*list_channels)(XfconfBackend *backend,
+                              GSList **channels,
+                              GError **error);
+
+    gboolean (*is_property_locked)(XfconfBackend *backend,
+                                   const gchar *channel,
+                                   const gchar *property,
+                                   gboolean *locked,
+                                   GError **error);
+    
+    gboolean (*flush)(XfconfBackend *backend,
+                      GError **error);
+
+    void (*register_property_changed_func)(XfconfBackend *backend,
+                                           XfconfPropertyChangedFunc func,
+                                           gpointer user_data);
+    
+    /*&lt; reserved for future expansion &gt;*/
+    void (*_xb_reserved0)();
+    void (*_xb_reserved1)();
+    void (*_xb_reserved2)();
+    void (*_xb_reserved3)();
+};
+</pre>
+<p>An interface for implementing pluggable configuration store backends
+into the Xfconf Daemon.</p>
+<p>See the <a href="xfconf-xfconf-backend.html#XfconfBackend"><span class="type">XfconfBackend</span></a> function documentation for a description of what
+each virtual function in <a href="xfconf-xfconf-backend.html#XfconfBackendInterface" title="struct XfconfBackendInterface"><span class="type">XfconfBackendInterface</span></a> should do.</p>
+<div class="refsect3" lang="en">
+<a name="idp30448"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GTypeInterface"><span class="type">GTypeInterface</span></a> <em class="structfield"><code><a name="XfconfBackendInterface.parent"></a>parent</code></em>;</p></td>
+<td class="struct_member_description"><p>GObject interface parent.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.initialize"></a>initialize</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-initialize" title="xfconf_backend_initialize ()"><code class="function">xfconf_backend_initialize()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.set"></a>set</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-set" title="xfconf_backend_set ()"><code class="function">xfconf_backend_set()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.get"></a>get</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-get" title="xfconf_backend_get ()"><code class="function">xfconf_backend_get()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.get-all"></a>get_all</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-get-all" title="xfconf_backend_get_all ()"><code class="function">xfconf_backend_get_all()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.exists"></a>exists</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-exists" title="xfconf_backend_exists ()"><code class="function">xfconf_backend_exists()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.reset"></a>reset</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-reset" title="xfconf_backend_reset ()"><code class="function">xfconf_backend_reset()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.list-channels"></a>list_channels</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <code class="function">xfconf_backend_list_channels()</code>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.is-property-locked"></a>is_property_locked</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <code class="function">xfconf_backend_is_property_locked()</code>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.flush"></a>flush</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-flush" title="xfconf_backend_flush ()"><code class="function">xfconf_backend_flush()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.register-property-changed-func"></a>register_property_changed_func</code></em> ()</p></td>
+<td class="struct_member_description"><p>See <a href="xfconf-xfconf-backend.html#xfconf-backend-register-property-changed-func" title="xfconf_backend_register_property_changed_func ()"><code class="function">xfconf_backend_register_property_changed_func()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.-xb-reserved0"></a>_xb_reserved0</code></em> ()</p></td>
+<td class="struct_member_description"><p>Reserved for future expansion.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.-xb-reserved1"></a>_xb_reserved1</code></em> ()</p></td>
+<td class="struct_member_description"><p>Reserved for future expansion.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.-xb-reserved2"></a>_xb_reserved2</code></em> ()</p></td>
+<td class="struct_member_description"><p>Reserved for future expansion.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="XfconfBackendInterface.-xb-reserved3"></a>_xb_reserved3</code></em> ()</p></td>
+<td class="struct_member_description"><p>Reserved for future expansion.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="XfconfBackend-struct"></a><h3>XfconfBackend</h3>
+<pre class="programlisting">typedef struct _XfconfBackend XfconfBackend;</pre>
+<p>An instance of a class implementing a <a href="xfconf-xfconf-backend.html#XfconfBackendInterface" title="struct XfconfBackendInterface"><span class="type">XfconfBackendInterface</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

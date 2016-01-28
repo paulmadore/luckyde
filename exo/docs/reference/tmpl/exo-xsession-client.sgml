@@ -1,0 +1,95 @@
+<!-- ##### SECTION Title ##### -->
+ExoXsessionClient
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoXsessionClient ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL ExoXsessionClient::save-yourself ##### -->
+<para>
+
+</para>
+
+@exoxsessionclient: the object which received the signal.
+
+<!-- ##### ARG ExoXsessionClient:group ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG ExoXsessionClient:restart-command ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION exo_xsession_client_new_with_group ##### -->
+<para>
+
+</para>
+
+@leader: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_xsession_client_get_group ##### -->
+<para>
+
+</para>
+
+@client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_xsession_client_set_group ##### -->
+<para>
+
+</para>
+
+@client: 
+@leader: 
+
+
+<!-- ##### FUNCTION exo_xsession_client_get_restart_command ##### -->
+<para>
+
+</para>
+
+@client: 
+@argv: 
+@argc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_xsession_client_set_restart_command ##### -->
+<para>
+
+</para>
+
+@client: 
+@argv: 
+@argc: 
+
+

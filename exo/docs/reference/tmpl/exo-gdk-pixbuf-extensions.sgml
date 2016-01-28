@@ -1,0 +1,102 @@
+<!-- ##### SECTION Title ##### -->
+Extensions to gdk-pixbuf
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_colorize ##### -->
+<para>
+
+</para>
+
+@source: 
+@color: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_frame ##### -->
+<para>
+
+</para>
+
+@source: 
+@frame: 
+@left_offset: 
+@top_offset: 
+@right_offset: 
+@bottom_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_lucent ##### -->
+<para>
+
+</para>
+
+@source: 
+@percent: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_spotlight ##### -->
+<para>
+
+</para>
+
+@source: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_scale_down ##### -->
+<para>
+
+</para>
+
+@source: 
+@preserve_aspect_ratio: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_scale_ratio ##### -->
+<para>
+
+</para>
+
+@source: 
+@dest_size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_gdk_pixbuf_new_from_file_at_max_size ##### -->
+<para>
+
+</para>
+
+@filename: 
+@max_width: 
+@max_height: 
+@preserve_aspect_ratio: 
+@error: 
+@Returns: 
+
+

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Eric python IDE
+Comment=Integrated Development Environment for Python
+GenericName=Integrated Development Environment for Python
+Keywords=programming;code;python;ruby
+Exec=eric
+Terminal=false
+Type=Application
+MimeType=text/x-python;
+Icon=eric
+Categories=Development;IDE;
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/eric.desktop

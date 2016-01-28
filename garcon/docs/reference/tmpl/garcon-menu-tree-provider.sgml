@@ -1,0 +1,42 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuTreeProvider
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_tree_provider_get_tree ##### -->
+<para>
+
+</para>
+
+@provider: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_tree_provider_get_file ##### -->
+<para>
+
+</para>
+
+@provider: 
+@Returns: 
+
+

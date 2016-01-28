@@ -1,0 +1,85 @@
+<!-- ##### SECTION Title ##### -->
+ExoTreeView
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoTreeView ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG ExoTreeView:single-click ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG ExoTreeView:single-click-timeout ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION exo_tree_view_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_tree_view_get_single_click ##### -->
+<para>
+
+</para>
+
+@tree_view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_tree_view_set_single_click ##### -->
+<para>
+
+</para>
+
+@tree_view: 
+@single_click: 
+
+
+<!-- ##### FUNCTION exo_tree_view_get_single_click_timeout ##### -->
+<para>
+
+</para>
+
+@tree_view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_tree_view_set_single_click_timeout ##### -->
+<para>
+
+</para>
+
+@tree_view: 
+@single_click_timeout: 
+
+

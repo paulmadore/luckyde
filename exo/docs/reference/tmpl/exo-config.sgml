@@ -1,0 +1,84 @@
+<!-- ##### SECTION Title ##### -->
+Version Information
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### VARIABLE exo_major_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE exo_minor_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE exo_micro_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION exo_check_version ##### -->
+<para>
+
+</para>
+
+@required_major: 
+@required_minor: 
+@required_micro: 
+@Returns: 
+
+
+<!-- ##### MACRO EXO_MAJOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EXO_MINOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EXO_MICRO_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EXO_CHECK_VERSION ##### -->
+<para>
+
+</para>
+
+@major: 
+@minor: 
+@micro: 
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IrishCoin
+Comment=
+Exec=irishcoin
+Icon=/home/phm/programs/irishcoin.png
+Path=
+Terminal=false
+StartupNotify=false

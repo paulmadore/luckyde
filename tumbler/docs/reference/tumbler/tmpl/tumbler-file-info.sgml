@@ -1,0 +1,119 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-file-info
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_file_info_new ##### -->
+<para>
+
+</para>
+
+@uri: 
+@mime_type: 
+@flavor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_load ##### -->
+<para>
+
+</para>
+
+@info: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_get_uri ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_get_mime_type ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_get_mtime ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_needs_update ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_get_thumbnail ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_array_new_with_flavor ##### -->
+<para>
+
+</para>
+
+@uris: 
+@mime_types: 
+@flavor: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_array_copy ##### -->
+<para>
+
+</para>
+
+@infos: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_file_info_array_free ##### -->
+<para>
+
+</para>
+
+@infos: 
+
+

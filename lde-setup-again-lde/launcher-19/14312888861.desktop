@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Armory
+GenericName=Bitcoin Client
+Comment=Full-featured Bitcoin wallet management application
+Categories=Qt;Network;
+Exec=/usr/bin/armory %u
+Icon=armoryicon
+StartupNotify=false
+Terminal=false
+MimeType=x-scheme-handler/bitcoin
+X-XFCE-Source=file:///usr/share/applications/armory.desktop

@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>garcon-menu-node</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<link rel="start" href="index.html" title="garcon Reference Manual">
+<link rel="up" href="garcon-parsing.html" title="Part III. Parsing and Modifying the Menu Tree">
+<link rel="prev" href="GarconMenuMerger.html" title="GarconMenuMerger">
+<link rel="next" href="GarconMenuParser.html" title="GarconMenuParser">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#garcon-garcon-menu-node.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#garcon-garcon-menu-node.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#garcon-garcon-menu-node.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="garcon-parsing.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GarconMenuMerger.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GarconMenuParser.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry" lang="en">
+<a name="garcon-garcon-menu-node"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="garcon-garcon-menu-node.top_of_page"></a>garcon-menu-node</span></h2>
+<p>garcon-menu-node — </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-new" title="garcon_menu_node_new ()">garcon_menu_node_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GarconMenuNodeType</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-get-node-type" title="garcon_menu_node_get_node_type ()">garcon_menu_node_get_node_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-create" title="garcon_menu_node_create ()">garcon_menu_node_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-copy" title="garcon_menu_node_copy ()">garcon_menu_node_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-get-string" title="garcon_menu_node_get_string ()">garcon_menu_node_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-set-string" title="garcon_menu_node_set_string ()">garcon_menu_node_set_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType"><span class="returnvalue">GarconMenuMergeFileType</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-get-merge-file-type" title="garcon_menu_node_get_merge_file_type ()">garcon_menu_node_get_merge_file_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-set-merge-file-type" title="garcon_menu_node_set_merge_file_type ()">garcon_menu_node_set_merge_file_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-get-merge-file-filename" title="garcon_menu_node_get_merge_file_filename ()">garcon_menu_node_get_merge_file_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-set-merge-file-filename" title="garcon_menu_node_set_merge_file_filename ()">garcon_menu_node_set_merge_file_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="returnvalue">GNode</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-child-node" title="garcon_menu_node_tree_get_child_node ()">garcon_menu_node_tree_get_child_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-child-nodes" title="garcon_menu_node_tree_get_child_nodes ()">garcon_menu_node_tree_get_child_nodes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-string-children" title="garcon_menu_node_tree_get_string_children ()">garcon_menu_node_tree_get_string_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-boolean-child" title="garcon_menu_node_tree_get_boolean_child ()">garcon_menu_node_tree_get_boolean_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-string-child" title="garcon_menu_node_tree_get_string_child ()">garcon_menu_node_tree_get_string_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-rule-matches" title="garcon_menu_node_tree_rule_matches ()">garcon_menu_node_tree_rule_matches</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GarconMenuNodeType</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-node-type" title="garcon_menu_node_tree_get_node_type ()">garcon_menu_node_tree_get_node_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-string" title="garcon_menu_node_tree_get_string ()">garcon_menu_node_tree_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-set-string" title="garcon_menu_node_tree_set_string ()">garcon_menu_node_tree_set_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuLayoutMergeType" title="enum GarconMenuLayoutMergeType"><span class="returnvalue">GarconMenuLayoutMergeType</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-layout-merge-type" title="garcon_menu_node_tree_get_layout_merge_type ()">garcon_menu_node_tree_get_layout_merge_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType"><span class="returnvalue">GarconMenuMergeFileType</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-merge-file-type" title="garcon_menu_node_tree_get_merge_file_type ()">garcon_menu_node_tree_get_merge_file_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-get-merge-file-filename" title="garcon_menu_node_tree_get_merge_file_filename ()">garcon_menu_node_tree_get_merge_file_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-set-merge-file-filename" title="garcon_menu_node_tree_set_merge_file_filename ()">garcon_menu_node_tree_set_merge_file_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-compare" title="garcon_menu_node_tree_compare ()">garcon_menu_node_tree_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="returnvalue">GNode</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-copy" title="garcon_menu_node_tree_copy ()">garcon_menu_node_tree_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-free" title="garcon_menu_node_tree_free ()">garcon_menu_node_tree_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-node.html#garcon-menu-node-tree-free-data" title="garcon_menu_node_tree_free_data ()">garcon_menu_node_tree_free_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody><tr>
+<td class="property_type"><span class="type">GarconMenuNodeType</span></td>
+<td class="property_name"><a href="garcon-garcon-menu-node.html#GarconMenuNode--node-type" title="The “node-type” property">node-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="GarconMenuNode"></a><div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a href="garcon-garcon-menu-node.html#GarconMenuLayoutMergeType" title="enum GarconMenuLayoutMergeType">GarconMenuLayoutMergeType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType">GarconMenuMergeFileType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">union</td>
+<td class="function_name"><a href="garcon-garcon-menu-node.html#GarconMenuNodeData" title="union GarconMenuNodeData">GarconMenuNodeData</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> GarconMenuNode
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.functions_details"></a><h2>Functions</h2>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-new"></a><h3>garcon_menu_node_new ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+garcon_menu_node_new (<em class="parameter"><code><span class="type">GarconMenuNodeType</span> node_type</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625526928"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-get-node-type"></a><h3>garcon_menu_node_get_node_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">GarconMenuNodeType</span>
+garcon_menu_node_get_node_type (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625538320"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-create"></a><h3>garcon_menu_node_create ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+garcon_menu_node_create (<em class="parameter"><code><span class="type">GarconMenuNodeType</span> node_type</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> first_value</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625536400"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-copy"></a><h3>garcon_menu_node_copy ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="returnvalue">GarconMenuNode</span></a> *
+garcon_menu_node_copy (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625555344"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-get-string"></a><h3>garcon_menu_node_get_string ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_node_get_string (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625553424"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-set-string"></a><h3>garcon_menu_node_set_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_set_string (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-get-merge-file-type"></a><h3>garcon_menu_node_get_merge_file_type ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType"><span class="returnvalue">GarconMenuMergeFileType</span></a>
+garcon_menu_node_get_merge_file_type (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625577744"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-set-merge-file-type"></a><h3>garcon_menu_node_set_merge_file_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_set_merge_file_type (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>,
+                                      <em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType"><span class="type">GarconMenuMergeFileType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-get-merge-file-filename"></a><h3>garcon_menu_node_get_merge_file_filename ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_node_get_merge_file_filename
+                               (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625580432"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-set-merge-file-filename"></a><h3>garcon_menu_node_set_merge_file_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_set_merge_file_filename
+                               (<em class="parameter"><code><a href="garcon-garcon-menu-node.html#GarconMenuNode"><span class="type">GarconMenuNode</span></a> *node</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-child-node"></a><h3>garcon_menu_node_tree_get_child_node ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="returnvalue">GNode</span></a> *
+garcon_menu_node_tree_get_child_node (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                      <em class="parameter"><code><span class="type">GarconMenuNodeType</span> type</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> reverse</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625610256"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-child-nodes"></a><h3>garcon_menu_node_tree_get_child_nodes ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+garcon_menu_node_tree_get_child_nodes (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                       <em class="parameter"><code><span class="type">GarconMenuNodeType</span> type</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> reverse</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625618832"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-string-children"></a><h3>garcon_menu_node_tree_get_string_children ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+garcon_menu_node_tree_get_string_children
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                <em class="parameter"><code><span class="type">GarconMenuNodeType</span> type</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> reverse</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625625872"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-boolean-child"></a><h3>garcon_menu_node_tree_get_boolean_child ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_node_tree_get_boolean_child
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                <em class="parameter"><code><span class="type">GarconMenuNodeType</span> type</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625632784"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-string-child"></a><h3>garcon_menu_node_tree_get_string_child ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_node_tree_get_string_child
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                <em class="parameter"><code><span class="type">GarconMenuNodeType</span> type</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625653008"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-rule-matches"></a><h3>garcon_menu_node_tree_rule_matches ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_node_tree_rule_matches (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                    <em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625645328"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-node-type"></a><h3>garcon_menu_node_tree_get_node_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">GarconMenuNodeType</span>
+garcon_menu_node_tree_get_node_type (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625673360"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-string"></a><h3>garcon_menu_node_tree_get_string ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_node_tree_get_string (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3625671056"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-set-string"></a><h3>garcon_menu_node_tree_set_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_tree_set_string (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-layout-merge-type"></a><h3>garcon_menu_node_tree_get_layout_merge_type ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuLayoutMergeType" title="enum GarconMenuLayoutMergeType"><span class="returnvalue">GarconMenuLayoutMergeType</span></a>
+garcon_menu_node_tree_get_layout_merge_type
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp425771760"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-merge-file-type"></a><h3>garcon_menu_node_tree_get_merge_file_type ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-node.html#GarconMenuMergeFileType" title="enum GarconMenuMergeFileType"><span class="returnvalue">GarconMenuMergeFileType</span></a>
+garcon_menu_node_tree_get_merge_file_type
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm2335645968"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-get-merge-file-filename"></a><h3>garcon_menu_node_tree_get_merge_file_filename ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_node_tree_get_merge_file_filename
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm606642832"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-set-merge-file-filename"></a><h3>garcon_menu_node_tree_set_merge_file_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_tree_set_merge_file_filename
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-compare"></a><h3>garcon_menu_node_tree_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+garcon_menu_node_tree_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *other_tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm606639504"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-copy"></a><h3>garcon_menu_node_tree_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="returnvalue">GNode</span></a> *
+garcon_menu_node_tree_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp236596208"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-free"></a><h3>garcon_menu_node_tree_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_tree_free (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-node-tree-free-data"></a><h3>garcon_menu_node_tree_free_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_node_tree_free_data (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *tree</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2" lang="en">
+<a name="GarconMenuLayoutMergeType"></a><h3>enum GarconMenuLayoutMergeType</h3>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp35601392"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GARCON-MENU-LAYOUT-MERGE-MENUS:CAPS"></a>GARCON_MENU_LAYOUT_MERGE_MENUS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GARCON-MENU-LAYOUT-MERGE-FILES:CAPS"></a>GARCON_MENU_LAYOUT_MERGE_FILES</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GARCON-MENU-LAYOUT-MERGE-ALL:CAPS"></a>GARCON_MENU_LAYOUT_MERGE_ALL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuMergeFileType"></a><h3>enum GarconMenuMergeFileType</h3>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp287694832"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GARCON-MENU-MERGE-FILE-PATH:CAPS"></a>GARCON_MENU_MERGE_FILE_PATH</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GARCON-MENU-MERGE-FILE-PARENT:CAPS"></a>GARCON_MENU_MERGE_FILE_PARENT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuNodeData"></a><h3>union GarconMenuNodeData</h3>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-node.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="GarconMenuNode--node-type"></a><h3>The <code class="literal">“node-type”</code> property</h3>
+<pre class="programlisting">  “node-type”                <span class="type">GarconMenuNodeType</span></pre>
+<p>node-type.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GARCON_MENU_NODE_TYPE_MENU</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

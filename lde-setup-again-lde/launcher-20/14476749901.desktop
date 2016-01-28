@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Xonotic
+Comment=FPS
+Exec=/home/phm/programs/Xonotic/xonotic -basedir /home/phm/programs/Xonotic
+Icon=/home/phm/programs/xonotic.png
+Path=
+Terminal=false
+StartupNotify=false

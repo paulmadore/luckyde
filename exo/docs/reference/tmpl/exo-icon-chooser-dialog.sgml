@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+ExoIconChooserDialog
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoIconChooserDialog ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION exo_icon_chooser_dialog_new ##### -->
+<para>
+
+</para>
+
+@title: 
+@parent: 
+@first_button_text: 
+@...: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_icon_chooser_dialog_get_icon ##### -->
+<para>
+
+</para>
+
+@icon_chooser_dialog: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_icon_chooser_dialog_set_icon ##### -->
+<para>
+
+</para>
+
+@icon_chooser_dialog: 
+@icon: 
+@Returns: 
+
+

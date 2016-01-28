@@ -1,0 +1,94 @@
+<!-- ##### SECTION Title ##### -->
+Miscellaneous Utility Functions
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION exo_noop ##### -->
+<para>
+
+</para>
+
+@void: 
+
+
+<!-- ##### FUNCTION exo_noop_one ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_noop_zero ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_noop_null ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_noop_true ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_noop_false ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_atomic_inc ##### -->
+<para>
+
+</para>
+
+@value: 
+
+
+<!-- ##### FUNCTION exo_atomic_dec ##### -->
+<para>
+
+</para>
+
+@value: 
+@Returns: 
+
+

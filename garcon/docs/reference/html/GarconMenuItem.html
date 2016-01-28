@@ -1,0 +1,1055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GarconMenuItem</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<link rel="start" href="index.html" title="garcon Reference Manual">
+<link rel="up" href="garcon-menus.html" title="Part II. Menus and Menu Items">
+<link rel="prev" href="GarconMenuElement.html" title="GarconMenuElement">
+<link rel="next" href="GarconMenuItemCache.html" title="GarconMenuItemCache">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GarconMenuItem.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GarconMenuItem.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GarconMenuItem.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GarconMenuItem.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="garcon-menus.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GarconMenuElement.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GarconMenuItemCache.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry" lang="en">
+<a name="GarconMenuItem"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GarconMenuItem.top_of_page"></a>GarconMenuItem</span></h2>
+<p>GarconMenuItem — </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-new" title="garcon_menu_item_new ()">garcon_menu_item_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-new-for-path" title="garcon_menu_item_new_for_path ()">garcon_menu_item_new_for_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-new-for-uri" title="garcon_menu_item_new_for_uri ()">garcon_menu_item_new_for_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-reload" title="garcon_menu_item_reload ()">garcon_menu_item_reload</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-reload-from-file" title="garcon_menu_item_reload_from_file ()">garcon_menu_item_reload_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-file" title="garcon_menu_item_get_file ()">garcon_menu_item_get_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-uri" title="garcon_menu_item_get_uri ()">garcon_menu_item_get_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-desktop-id" title="garcon_menu_item_get_desktop_id ()">garcon_menu_item_get_desktop_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-desktop-id" title="garcon_menu_item_set_desktop_id ()">garcon_menu_item_set_desktop_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-command" title="garcon_menu_item_get_command ()">garcon_menu_item_get_command</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-command" title="garcon_menu_item_set_command ()">garcon_menu_item_set_command</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-try-exec" title="garcon_menu_item_get_try_exec ()">garcon_menu_item_get_try_exec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-try-exec" title="garcon_menu_item_set_try_exec ()">garcon_menu_item_set_try_exec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-name" title="garcon_menu_item_get_name ()">garcon_menu_item_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-name" title="garcon_menu_item_set_name ()">garcon_menu_item_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-generic-name" title="garcon_menu_item_get_generic_name ()">garcon_menu_item_get_generic_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-generic-name" title="garcon_menu_item_set_generic_name ()">garcon_menu_item_set_generic_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-comment" title="garcon_menu_item_get_comment ()">garcon_menu_item_get_comment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-comment" title="garcon_menu_item_set_comment ()">garcon_menu_item_set_comment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-icon-name" title="garcon_menu_item_get_icon_name ()">garcon_menu_item_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-icon-name" title="garcon_menu_item_set_icon_name ()">garcon_menu_item_set_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-path" title="garcon_menu_item_get_path ()">garcon_menu_item_get_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-path" title="garcon_menu_item_set_path ()">garcon_menu_item_set_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-hidden" title="garcon_menu_item_get_hidden ()">garcon_menu_item_get_hidden</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-hidden" title="garcon_menu_item_set_hidden ()">garcon_menu_item_set_hidden</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-requires-terminal" title="garcon_menu_item_requires_terminal ()">garcon_menu_item_requires_terminal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-requires-terminal" title="garcon_menu_item_set_requires_terminal ()">garcon_menu_item_set_requires_terminal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-no-display" title="garcon_menu_item_get_no_display ()">garcon_menu_item_get_no_display</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-no-display" title="garcon_menu_item_set_no_display ()">garcon_menu_item_set_no_display</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-supports-startup-notification" title="garcon_menu_item_supports_startup_notification ()">garcon_menu_item_supports_startup_notification</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-supports-startup-notification" title="garcon_menu_item_set_supports_startup_notification ()">garcon_menu_item_set_supports_startup_notification</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-categories" title="garcon_menu_item_get_categories ()">garcon_menu_item_get_categories</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-set-categories" title="garcon_menu_item_set_categories ()">garcon_menu_item_set_categories</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-has-category" title="garcon_menu_item_has_category ()">garcon_menu_item_has_category</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-show-in-environment" title="garcon_menu_item_get_show_in_environment ()">garcon_menu_item_get_show_in_environment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-only-show-in-environment" title="garcon_menu_item_only_show_in_environment ()">garcon_menu_item_only_show_in_environment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-ref" title="garcon_menu_item_ref ()">garcon_menu_item_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-unref" title="garcon_menu_item_unref ()">garcon_menu_item_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-get-allocated" title="garcon_menu_item_get_allocated ()">garcon_menu_item_get_allocated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-increment-allocated" title="garcon_menu_item_increment_allocated ()">garcon_menu_item_increment_allocated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="GarconMenuItem.html#garcon-menu-item-decrement-allocated" title="garcon_menu_item_decrement_allocated ()">garcon_menu_item_decrement_allocated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--command" title="The “command” property">command</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--comment" title="The “comment” property">comment</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--desktop-id" title="The “desktop-id” property">desktop-id</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--file" title="The “file” property">file</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--generic-name" title="The “generic-name” property">generic-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--hidden" title="The “hidden” property">hidden</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--icon-name" title="The “icon-name” property">icon-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--no-display" title="The “no-display” property">no-display</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--path" title="The “path” property">path</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--requires-terminal" title="The “requires-terminal” property">requires-terminal</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--supports-startup-notification" title="The “supports-startup-notification” property">supports-startup-notification</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="GarconMenuItem.html#GarconMenuItem--try-exec" title="The “try-exec” property">try-exec</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a href="GarconMenuItem.html#GarconMenuItem-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags">Run First</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> GarconMenuItem
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.functions_details"></a><h2>Functions</h2>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-new"></a><h3>garcon_menu_item_new ()</h3>
+<pre class="programlisting"><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+garcon_menu_item_new (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111461392"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-new-for-path"></a><h3>garcon_menu_item_new_for_path ()</h3>
+<pre class="programlisting"><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+garcon_menu_item_new_for_path (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111484304"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-new-for-uri"></a><h3>garcon_menu_item_new_for_uri ()</h3>
+<pre class="programlisting"><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+garcon_menu_item_new_for_uri (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111491984"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-reload"></a><h3>garcon_menu_item_reload ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_reload (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *affects_the_outside</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111492112"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-reload-from-file"></a><h3>garcon_menu_item_reload_from_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_reload_from_file (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *affects_the_outside</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111505552"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-file"></a><h3>garcon_menu_item_get_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+garcon_menu_item_get_file (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>Get the file for <em class="parameter"><code>item</code></em>
+.</p>
+<div class="refsect3" lang="en">
+<a name="idm1111517968"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a>. The returned object
+should be unreffed with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-uri"></a><h3>garcon_menu_item_get_uri ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_uri (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1111527184"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-desktop-id"></a><h3>garcon_menu_item_get_desktop_id ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_desktop_id (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp325039728"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-desktop-id"></a><h3>garcon_menu_item_set_desktop_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_desktop_id (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desktop_id</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-command"></a><h3>garcon_menu_item_get_command ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_command (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm986378768"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-command"></a><h3>garcon_menu_item_set_command ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_command (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *command</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-try-exec"></a><h3>garcon_menu_item_get_try_exec ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_try_exec (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1725219216"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-try-exec"></a><h3>garcon_menu_item_set_try_exec ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_try_exec (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *try_exec</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-name"></a><h3>garcon_menu_item_get_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp71356784"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-name"></a><h3>garcon_menu_item_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-generic-name"></a><h3>garcon_menu_item_get_generic_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_generic_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm2650186256"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-generic-name"></a><h3>garcon_menu_item_set_generic_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_generic_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *generic_name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-comment"></a><h3>garcon_menu_item_get_comment ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_comment (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm711806736"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-comment"></a><h3>garcon_menu_item_set_comment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_comment (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *comment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-icon-name"></a><h3>garcon_menu_item_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_icon_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3092163216"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-icon-name"></a><h3>garcon_menu_item_set_icon_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_icon_name (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-path"></a><h3>garcon_menu_item_get_path ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+garcon_menu_item_get_path (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm909884432"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-path"></a><h3>garcon_menu_item_set_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_path (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-hidden"></a><h3>garcon_menu_item_get_hidden ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_get_hidden (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm630402832"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-hidden"></a><h3>garcon_menu_item_set_hidden ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_hidden (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> hidden</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-requires-terminal"></a><h3>garcon_menu_item_requires_terminal ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_requires_terminal (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm1199631760"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-requires-terminal"></a><h3>garcon_menu_item_set_requires_terminal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_requires_terminal
+                               (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> requires_terminal</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-no-display"></a><h3>garcon_menu_item_get_no_display ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_get_no_display (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm862948752"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-no-display"></a><h3>garcon_menu_item_set_no_display ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_no_display (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> no_display</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-supports-startup-notification"></a><h3>garcon_menu_item_supports_startup_notification ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_supports_startup_notification
+                               (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm2397158672"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-supports-startup-notification"></a><h3>garcon_menu_item_set_supports_startup_notification ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_supports_startup_notification
+                               (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> supports_startup_notification</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-categories"></a><h3>garcon_menu_item_get_categories ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+garcon_menu_item_get_categories (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3449451408"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-set-categories"></a><h3>garcon_menu_item_set_categories ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_set_categories (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *categories</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-has-category"></a><h3>garcon_menu_item_has_category ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_has_category (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *category</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp252311920"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-show-in-environment"></a><h3>garcon_menu_item_get_show_in_environment ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_get_show_in_environment
+                               (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm583505552"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-only-show-in-environment"></a><h3>garcon_menu_item_only_show_in_environment ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_only_show_in_environment
+                               (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm412787600"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-ref"></a><h3>garcon_menu_item_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_ref (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-unref"></a><h3>garcon_menu_item_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_unref (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-get-allocated"></a><h3>garcon_menu_item_get_allocated ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+garcon_menu_item_get_allocated (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3029733264"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-increment-allocated"></a><h3>garcon_menu_item_increment_allocated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_increment_allocated (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-decrement-allocated"></a><h3>garcon_menu_item_decrement_allocated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_decrement_allocated (<em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--command"></a><h3>The <code class="literal">“command”</code> property</h3>
+<pre class="programlisting">  “command”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Application command.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--comment"></a><h3>The <code class="literal">“comment”</code> property</h3>
+<pre class="programlisting">  “comment”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Comment/description for the application.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--desktop-id"></a><h3>The <code class="literal">“desktop-id”</code> property</h3>
+<pre class="programlisting">  “desktop-id”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Desktop-File Id of the application.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--file"></a><h3>The <code class="literal">“file”</code> property</h3>
+<pre class="programlisting">  “file”                     <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</pre>
+<p>file.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--generic-name"></a><h3>The <code class="literal">“generic-name”</code> property</h3>
+<pre class="programlisting">  “generic-name”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Generic name of the application.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--hidden"></a><h3>The <code class="literal">“hidden”</code> property</h3>
+<pre class="programlisting">  “hidden”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the application has been deleted.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--icon-name"></a><h3>The <code class="literal">“icon-name”</code> property</h3>
+<pre class="programlisting">  “icon-name”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the application icon.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the application.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--no-display"></a><h3>The <code class="literal">“no-display”</code> property</h3>
+<pre class="programlisting">  “no-display”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Visibility state of the menu item.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--path"></a><h3>The <code class="literal">“path”</code> property</h3>
+<pre class="programlisting">  “path”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Working directory path.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--requires-terminal"></a><h3>The <code class="literal">“requires-terminal”</code> property</h3>
+<pre class="programlisting">  “requires-terminal”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether this application requires a terminal.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--supports-startup-notification"></a><h3>The <code class="literal">“supports-startup-notification”</code> property</h3>
+<pre class="programlisting">  “supports-startup-notification” <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Startup notification support.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem--try-exec"></a><h3>The <code class="literal">“try-exec”</code> property</h3>
+<pre class="programlisting">  “try-exec”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Command to check if application is installed.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="GarconMenuItem.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" lang="en">
+<a name="GarconMenuItem-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

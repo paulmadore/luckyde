@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Super Tux Kart
+Comment=
+Exec=/home/phm/programs/supertuxkart/run_game.sh
+Icon=/home/phm/programs/supertuxkart/data/supertuxkart_32.png
+Path=
+Terminal=false
+StartupNotify=false

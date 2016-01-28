@@ -1,0 +1,44 @@
+<!-- ##### SECTION Title ##### -->
+ExoCellRendererEllipsizedText
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoCellRendererEllipsizedText ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG ExoCellRendererEllipsizedText:follow-state ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION exo_cell_renderer_ellipsized_text_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

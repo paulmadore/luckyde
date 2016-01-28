@@ -1,0 +1,148 @@
+<!-- ##### SECTION Title ##### -->
+ExoJob
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoJob ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL ExoJob::error ##### -->
+<para>
+
+</para>
+
+@exojob: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL ExoJob::finished ##### -->
+<para>
+
+</para>
+
+@exojob: the object which received the signal.
+
+<!-- ##### SIGNAL ExoJob::info-message ##### -->
+<para>
+
+</para>
+
+@exojob: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL ExoJob::percent ##### -->
+<para>
+
+</para>
+
+@exojob: the object which received the signal.
+@arg1: 
+
+<!-- ##### FUNCTION exo_job_launch ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_job_cancel ##### -->
+<para>
+
+</para>
+
+@job: 
+
+
+<!-- ##### FUNCTION exo_job_is_cancelled ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_job_get_cancellable ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_job_set_error_if_cancelled ##### -->
+<para>
+
+</para>
+
+@job: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_job_emit ##### -->
+<para>
+
+</para>
+
+@job: 
+@signal_id: 
+@signal_detail: 
+@...: 
+
+
+<!-- ##### FUNCTION exo_job_info_message ##### -->
+<para>
+
+</para>
+
+@job: 
+@format: 
+@...: 
+
+
+<!-- ##### FUNCTION exo_job_percent ##### -->
+<para>
+
+</para>
+
+@job: 
+@percent: 
+
+
+<!-- ##### FUNCTION exo_job_send_to_mainloop ##### -->
+<para>
+
+</para>
+
+@job: 
+@func: 
+@user_data: 
+@destroy_notify: 
+@Returns: 
+
+

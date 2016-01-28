@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>garcon-menu-item-pool</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<link rel="start" href="index.html" title="garcon Reference Manual">
+<link rel="up" href="garcon-menus.html" title="Part II. Menus and Menu Items">
+<link rel="prev" href="GarconMenuItemCache.html" title="GarconMenuItemCache">
+<link rel="next" href="GarconMenuSeparator.html" title="GarconMenuSeparator">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#garcon-garcon-menu-item-pool.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#garcon-garcon-menu-item-pool.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="garcon-menus.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GarconMenuItemCache.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GarconMenuSeparator.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry" lang="en">
+<a name="garcon-garcon-menu-item-pool"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="garcon-garcon-menu-item-pool.top_of_page"></a>garcon-menu-item-pool</span></h2>
+<p>garcon-menu-item-pool — </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-item-pool.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="returnvalue">GarconMenuItemPool</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-new" title="garcon_menu_item_pool_new ()">garcon_menu_item_pool_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-insert" title="garcon_menu_item_pool_insert ()">garcon_menu_item_pool_insert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-lookup" title="garcon_menu_item_pool_lookup ()">garcon_menu_item_pool_lookup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-lookup-file" title="garcon_menu_item_pool_lookup_file ()">garcon_menu_item_pool_lookup_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-foreach" title="garcon_menu_item_pool_foreach ()">garcon_menu_item_pool_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-apply-exclude-rule" title="garcon_menu_item_pool_apply_exclude_rule ()">garcon_menu_item_pool_apply_exclude_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-get-empty" title="garcon_menu_item_pool_get_empty ()">garcon_menu_item_pool_get_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="garcon-garcon-menu-item-pool.html#garcon-menu-item-pool-clear" title="garcon_menu_item_pool_clear ()">garcon_menu_item_pool_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GarconMenuItemPool"></a><div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-item-pool.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> GarconMenuItemPool
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-item-pool.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-item-pool.functions_details"></a><h2>Functions</h2>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-new"></a><h3>garcon_menu_item_pool_new ()</h3>
+<pre class="programlisting"><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="returnvalue">GarconMenuItemPool</span></a> *
+garcon_menu_item_pool_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp619317104"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-insert"></a><h3>garcon_menu_item_pool_insert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_pool_insert (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>,
+                              <em class="parameter"><code><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="type">GarconMenuItem</span></a> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-lookup"></a><h3>garcon_menu_item_pool_lookup ()</h3>
+<pre class="programlisting"><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+garcon_menu_item_pool_lookup (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desktop_id</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3563615504"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-lookup-file"></a><h3>garcon_menu_item_pool_lookup_file ()</h3>
+<pre class="programlisting"><a href="GarconMenuItem.html" title="GarconMenuItem"><span class="returnvalue">GarconMenuItem</span></a> *
+garcon_menu_item_pool_lookup_file (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idm3563622160"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-foreach"></a><h3>garcon_menu_item_pool_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_pool_foreach (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHFunc"><span class="type">GHFunc</span></a> func</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-apply-exclude-rule"></a><h3>garcon_menu_item_pool_apply_exclude_rule ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_pool_apply_exclude_rule
+                               (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GNode"><span class="type">GNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-get-empty"></a><h3>garcon_menu_item_pool_get_empty ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+garcon_menu_item_pool_get_empty (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3" lang="en">
+<a name="idp619274992"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="garcon-menu-item-pool-clear"></a><h3>garcon_menu_item_pool_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+garcon_menu_item_pool_clear (<em class="parameter"><code><a href="garcon-garcon-menu-item-pool.html#GarconMenuItemPool"><span class="type">GarconMenuItemPool</span></a> *pool</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="garcon-garcon-menu-item-pool.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

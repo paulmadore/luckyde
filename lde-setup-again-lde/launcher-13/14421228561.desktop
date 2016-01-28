@@ -1,0 +1,28 @@
+[Desktop Entry]
+Name=Fotoxx
+GenericName=Photo Editor
+Comment=Edit photos and manage collections
+Categories=Graphics;Photography;
+Type=Application
+Terminal=false
+MimeType=image/bmp;image/gif;image/tiff;image/jpeg;image/png;
+Exec=fotoxx %F
+Icon=/usr/share/fotoxx/icons/fotoxx.png
+Keywords=photo;image;raw;editor;exif;collections;
+X-Ayatana-Desktop-Shortcuts=X-blank window;X-last image;X-recent images
+X-XFCE-Source=file:///usr/share/applications/fotoxx.desktop
+
+[X-blank window Shortcut Group]
+Name=blank window
+Exec=fotoxx -b
+TargetEnvironment=Unity
+
+[X-last image Shortcut Group]
+Name=last image
+Exec=fotoxx -p
+TargetEnvironment=Unity
+
+[X-recent images Shortcut Group]
+Name=recent images
+Exec=fotoxx -r
+TargetEnvironment=Unity

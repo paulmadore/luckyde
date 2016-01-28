@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=term
+Comment=
+Exec=xfce4-terminal
+Icon=/home/phm/programs/terminal_matrix_icon_by_borissimo-d5b6ki3.png
+Path=
+Terminal=false
+StartupNotify=false

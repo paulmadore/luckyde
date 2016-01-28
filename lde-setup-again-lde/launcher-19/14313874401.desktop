@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Woodcoin
+Comment=
+Exec=woodcoin
+Icon=/home/phm/programs/woodcoinlogo.png
+Path=
+Terminal=false
+StartupNotify=false

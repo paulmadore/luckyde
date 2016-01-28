@@ -1,0 +1,151 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuDirectory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_directory_new ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_file ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_name ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_set_name ##### -->
+<para>
+
+</para>
+
+@directory: 
+@name: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_comment ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_set_comment ##### -->
+<para>
+
+</para>
+
+@directory: 
+@comment: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_icon_name ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_set_icon_name ##### -->
+<para>
+
+</para>
+
+@directory: 
+@icon: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_no_display ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_set_no_display ##### -->
+<para>
+
+</para>
+
+@directory: 
+@no_display: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_hidden ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_show_in_environment ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_get_visible ##### -->
+<para>
+
+</para>
+
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_directory_equal ##### -->
+<para>
+
+</para>
+
+@directory: 
+@other: 
+@Returns: 
+
+

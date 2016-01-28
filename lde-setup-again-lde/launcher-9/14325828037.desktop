@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Vivaldi (Technical Preview)
+GenericName=Web Browser
+Comment=Access the Internet
+Exec=/usr/bin/vivaldi-preview %U
+Terminal=false
+Icon=vivaldi
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;
+X-XFCE-Source=file:///usr/share/applications/vivaldi-preview.desktop

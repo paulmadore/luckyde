@@ -1,0 +1,44 @@
+<!-- ##### SECTION Title ##### -->
+GarconMenuParser
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_parser_new ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_parser_run ##### -->
+<para>
+
+</para>
+
+@parser: 
+@cancellable: 
+@error: 
+@Returns: 
+
+

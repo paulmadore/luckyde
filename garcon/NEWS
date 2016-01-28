@@ -1,0 +1,195 @@
+0.4.0
+=====
+- Update intltool (bug #8930)
+- Fix menu icons for misconfigured desktop files (Bug 10709)
+- Add case insensitive sorting to the menu (bug #10594)
+- Don't force URLs to be opened in a web browser (bug #10212)
+- Translation updates: ast, bg, de, el, eo, es, fr, he, nb, pl, sk, te
+
+0.3.0
+=====
+- Avoid direct include of garcon-menu.h.
+- Add garcon_set_environment_xdg() function.
+- Add a garcon-gtk library for common gtk functions.
+- Bail out of creating a directory menu if it doesn't have a name.
+- Translation updates: Arabic, Bulgarian, Catalan (Valencian), Czech,
+  Danish, German, Greek, English (Australia), English (United Kingdom),
+  Esperanto, Spanish (Castilian), Estonian, Basque, Finnish, French,
+  Galician, Hebrew, Croatian, Hungarian, Indonesian, Icelandic,
+  Italian, Japanese, Kazakh, Korean, Lithuanian, Malay, Norwegian
+  Bokmal, Dutch (Flemish), Norwegian Nynorsk, Occitan (post 1500),
+  Polish, Portuguese, Portuguese (Brazilian), Romanian, Russian,
+  Slovenian, Albanian, Serbian, Swedish, Telugu, Thai, Turkish, Uyghur,
+  Ukrainian, Urdu, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan).
+
+0.2.1
+=====
+- g_thread_init is deprecated since glib 2.32.
+- Remove unmaintained translations.
+- Fix deprecating warnings in tests.
+- Use new mutex locking api if available.
+- Autotools updates.
+- Translation updates: Arabic, Bulgarian, Spanish (Castilian),
+  Icelandic, Korean, Kurdish, Malay, Dutch (Flemish), Russian,
+  Slovenian, Serbian, Uyghur.
+
+
+0.2.0
+=====
+- Updates for xfce4-run.desktop.
+- Remove xfhelp4.desktop from the menu.
+- Add debugging for file monitoring and reloading.
+- Reduce signal emission on delete events (bug #8671).
+- Translation updates: English (United Kingdom), Croatian, Hungarian,
+  Japanese, Korean, Dutch (Flemish), Romanian, Chinese (China).
+
+
+0.1.12
+======
+- Add missing or fix incorrect licenses.
+- Fix segfault if null is set.
+- Translation updates: Greek, Galician, Japanese, Korean, Dutch
+  (Flemish), Portuguese, Portuguese (Brazilian).
+
+
+0.1.11
+======
+- Use applications-science icon for education directory.
+- Translations updates (cs, da, eo, es, eu, fi, he, ko, pl, ro,
+  te, zh_CN).
+
+
+0.1.10
+======
+- Add hardware and personal directories.
+- Support Link desktop types.
+- Translation updates: ar, bg, ca, cs, de, fr, gl, he, hu, id, is,
+  it, ja, kk, ko, lt, nl, nn, pl, pt, ru, sk, sq, sv, te, tr, uk,
+  zh_CN, zh_TW.
+
+
+0.1.9
+=====
+- Rename Network category to Internet (bug #3459).
+- Queue multiple reload-required signals.
+- A number of small memory leaks have been fixed.
+- Speedup a number of critical code-paths.
+- Use GSList instead of GList where possible.
+- Use XfceRc instead of GKeyFile, this makes garcon depend on
+  libxfce4util, but is faster and more memory efficient.
+- Return an error string instead of freeing it, causing a sefgault in
+  xfce4-panel.
+- Do not decrement the internal refcount of items, this should fixed
+  the usage of <OnlyUnallocated/>.
+- Translations updates: Chinese (Taiwan), rabic, Romanian, Basque,
+  Russian, Spanish (Castilian), Slovak, Portuguese (Brazilian),
+  Turkish, Telugu, Kazakh, Ukrainian, Japanese, German, Portuguese,
+  German, Chinese, Dutch, Italian.
+
+
+0.1.8
+=====
+- Remove the science toplevel category (bug #1038).
+- Fix merging parent menu file (bug #7169).
+- Handle local desktop file loading directly.
+- Don't unref NULL file in GarconMenuDirectory.
+- Translation updates: Telugu, Portuguese (Brazilian), Lithuanian,
+  Dutch (Flemish), Chinese (China), German (de).
+
+
+0.1.7
+=====
+- Respect XDG priorities when returning the menu file (Bug #7470).
+- Translation updates: Slovak.
+
+
+0.1.6
+=====
+- Add <DefaultMergeDirs/> to xfce-applications.menu.
+- Also try the garcon install sysconfigdir for config lookups.
+- Use Xdt macros for debugging and linker optimizations.
+- Default menu prefix to "xfce-".
+- Fix search order of xdg data directories (bug #7187).
+- Fix ordering of menu items for non-english locales (bug #7414).
+- Monitor non-existing data and config directories (bug #7423).
+- Translation updates: Basque, Spanish (Castilian).
+
+
+0.1.5
+=====
+- Add exclude rules for toplevel desktop files to sub menus so that
+  these toplevel items don't appear multiple times.
+- Translation updates: Arabic, Catalan (Valencian), Chinese, Chinese
+  (Taiwan), Croatian, Czech, Danish, English (United Kingdom), Finnish,
+  French, Galician, German, Greek, Hebrew, Hungarian, Indonesian,
+  Italian, Japanese, Kazakh, Norwegian Bokmaal, Portuguese (Brazilian),
+  Romanian, Swedish, Turkish, Ukrainian.
+
+
+0.1.4
+=====
+- Add support for XDG_MENU_PREFIX; use applications.menu as a fallback
+  (bug #5980).
+- Explicitly link against gobject, add other missing libs (bug #6405).
+- Add workaround to fix empty <DefaultLayout> elements (bug #6882).
+- Derive the directory name of <DefaultMergeDirs> from the name of the
+  .menu file (e.g. preferences.menu becomes preferences-merged) (bug
+  #6491).
+- Translation updates (pt_BR, zh_CN, eu, lt)
+
+
+0.1.3
+=====
+- Merge consecutive file change events using an idle handler.
+- Fix empty charset in Polish translation file (bug #6783).
+- Translation updates (pt, ja, id).
+
+
+0.1.2
+=====
+- Fix license headers (bug #6226).
+- Implement file system monitoring, adding the signals
+  GarconMenu::reload-required, GarconMenu::directory-changed and
+  GarconMenuItem::changed for applications to react on file system
+  changes.
+- Improve the code quality of garcon_config_lookup().
+- Lookup relative filenames with garcon_config_build_paths().
+- Rework menu loading a bit.
+- Reload the Categories/OnlyShowIn/NotShowIn fields when reloading
+  a GarconMenuItem.
+- Add new methods (this list may be incomplete):
+  - garcon_menu_element_equal()
+  - garcon_menu_item_pool_clear()
+  - garcon_menu_item_pool_lookup_file().
+- Add Xfce menu data files from xfdesktop (bug #6272).
+- Remove deprecated encoding key from desktop files.
+- Fix a memory leak in merge file nodes with a filename.
+- Translation updates (bm, ca, da, de, el, es, eu, fi, fr, gl, hu, hr,
+  id, it, kk, nl, pj, pl, pt, pt_BR, ru, sv, tr, ug, uk, zh_TW).
+
+
+0.1.1
+=====
+- Don't check for GTK+ in configure.in.in. We don't depend on it.
+- Make tests noinst_PROGRAMS as they are not suited for automatic testing.
+- Fix some compiler warnings in the tests.
+- Drop pot file and switch to xdt 4.7.2.
+- Rename icon to icon_name in GarconMenuDirectory.
+- Use g_value_dub_object where possible.
+- Plug various memory leaks.
+- Silent build.
+- Build ChangeLog in make dist.
+- API documentation improvements.
+- Translation updates (fr, ja, gl, zh_CN, cs, sv, pt_PT, pt, el, hu).
+
+
+0.1.0
+=====
+- This is a complete rewrite of the former Xfce menu library called
+  libxfce4menu. It covers almost every part of the menu specification
+  except for legacy menus and a few XML attributes. In contrast to
+  libxfce4menu, it can also load menus modified with menu editors such
+  as Alacarte as menu merging is now supported. The only crucial
+  feature still missing is monitoring menus and menu items for changes.
+  This is something that will be worked on for the next release.

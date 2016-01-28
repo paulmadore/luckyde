@@ -1,0 +1,35 @@
+[Desktop Entry]
+GenericName=Audio Recorder
+Categories=GNOME;AudioVideo;Recorder
+Exec=audio-recorder
+Icon=audio-recorder
+StartupNotify=true
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
+Name=Audio Recorder
+Name[en_US]=Audio Recorder
+Comment=Easy-to-use audio recording tool
+Comment[en_US]=Easy-to-use audio recording tool
+X-Ayatana-Desktop-Shortcuts=StartRecording;StopRecording;PauseRecording;ShowWindow
+X-XFCE-Source=file:///usr/share/applications/audio-recorder.desktop
+
+[StartRecording Shortcut Group]
+Name=Start
+Exec=audio-recorder --command=start
+TargetEnvironment=Unity
+
+[StopRecording Shortcut Group]
+Name=Stop
+Exec=audio-recorder --command=stop
+TargetEnvironment=Unity
+
+[PauseRecording Shortcut Group]
+Name=Pause
+Exec=audio-recorder --command=pause
+TargetEnvironment=Unity
+
+[ShowWindow Shortcut Group]
+Name=Show window
+Exec=audio-recorder --command=show
+TargetEnvironment=Unity

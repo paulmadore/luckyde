@@ -1,0 +1,89 @@
+TODO list and known issues
+--------------------------
+
+- f->copy() en tâche de fond ?
+	1. faire un fork dans la fonction copy de File.cpp
+	2. ajouter une fonction de watch pour récupérer l'avancement de la copie
+	3. mettre à jour la boîte de dialogue au fur et à mesure de l'avancée de la copie
+
+- rajouter une option pour exclure un ou des dossiers de la recherche
+
+- ceci n'est pas un problème Xfe : permissions des dossiers copiés à partir d'une clé USB
+
+- problème avec les partages Windows qui ne répondent pas (par gvfs ou par fstab). Avec gvfs, problème si lien dans
+  le dossier utilisateur, car ils ne sont pas vus comme des points de montage !
+
+- problème avec SCIM !!! (pas de ö ou ê)
+
+
+- message d'erreur quand on veut redéfinir des raccourcis claviers en utilisant certaines touches interdites (Up, Down, etc.)
+
+- créer et diffuser une archive de scripts
+
+
+- udisks pour monter des clés USB ou des disques USB amovibles ??
+
+Voici comment ça pourrait marcher :
+
+1. L'utilisateur clique sur le menu Tools / Mount USB key
+
+2. La commande suivante est exécutée :
+	ls /dev/disk/by-id/usb*
+
+Si le résultat est vide, pas de clé USB connectée
+Sinon, on identifie les différents devices possibles à partir de la sortie de la commande (/dev/sdc1 ou /dev/sdd1, etc.)
+On lit aussi /etc/mtab pour élminer les clés déjà montées
+
+3. Un dialogue invite l'utilisateur à monter une des clés USB identifiées
+
+4. Ensuite, le montage réussit ou échoue. On traite chaque cas
+
+5. On peut démonter la clé directement via les dossiers de Xfe ou on peut aussi ajouter un menu Tools / Unmount USB key
+qui démonte les clés USB montées
+ 
+NB : udisks --show-info /dev/sdc a deux champs 'vendor' et 'model' qui permettent de nommer la clé détectée (en plus de
+son device)
+
+Et si ce n'est pas de l'USB ?
+Tester en tout cas avec un disque dur amovible...
+
+- Voir Zotero pour la méthode de changement de l'ordre des colonnes
+
+
+
+Known issues
+------------
+
+
+- to allow composed characters (like ä, Ö, ê, etc.) to be entered in xfe, xfw, etc., the FOX library *must* be
+  compiled with the --with-xim configure option.
+- if the mouse pointer is on a menu title, then it is not possible to navigate using the keyboard on the menu titles.
+  This is a FOX issue.
+- in Xfw, if the wordwrap mode is selected an line numbers are displayed, then the line numbers are uncorrectly
+  displayed for wrapped lines. This is also a FOX issue.
+
+
+
+To do
+------
+
+
+- add the ability to delete bookmarks and change their order
+- add a way to change order and display of columns in detailed mode
+- places (home + trash + mtab entries) and bookmark items could be displayed as a tab pane in the tree panel
+- use of MIME types in complement to file associations
+- use a Control Panel style for the Preferences dialog
+- implement lenghty operations in background (image thumbnails, copy...)
+- add context options (copy / paste / delete) to the location bar, like in Firefox
+- add a way to clean history lists (like the open file list, for example)
+- internationalization should handle multiple plural forms (required by languages like polish, czech, etc.)
+
+
+User requests
+--------------
+
+- autosize file name header in detailed view
+- context menus on text dialogs
+- hotkeys to go directly to a directory
+- Samba support (network neighborhood, using Fuse?)
+

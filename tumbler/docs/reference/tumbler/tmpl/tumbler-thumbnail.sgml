@@ -1,0 +1,92 @@
+<!-- ##### SECTION Title ##### -->
+TumblerThumbnail
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT TumblerImageData ##### -->
+<para>
+
+</para>
+
+@colorspace: 
+@data: 
+@has_alpha: 
+@bits_per_sample: 
+@width: 
+@height: 
+@rowstride: 
+
+<!-- ##### FUNCTION tumbler_thumbnail_load ##### -->
+<para>
+
+</para>
+
+@thumbnail: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_needs_update ##### -->
+<para>
+
+</para>
+
+@thumbnail: 
+@uri: 
+@mtime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_save_image_data ##### -->
+<para>
+
+</para>
+
+@thumbnail: 
+@data: 
+@mtime: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_save_file ##### -->
+<para>
+
+</para>
+
+@thumbnail: 
+@file: 
+@mtime: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_get_flavor ##### -->
+<para>
+
+</para>
+
+@thumbnail: 
+@Returns: 
+
+

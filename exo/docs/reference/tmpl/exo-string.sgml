@@ -1,0 +1,99 @@
+<!-- ##### SECTION Title ##### -->
+String Utility Functions
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION exo_str_elide_underscores ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_str_is_equal ##### -->
+<para>
+
+</para>
+
+@a: 
+@b: 
+@Returns: 
+
+
+<!-- ##### MACRO exo_str_is_empty ##### -->
+<para>
+
+</para>
+
+@string: 
+
+
+<!-- ##### FUNCTION exo_str_looks_like_an_uri ##### -->
+<para>
+
+</para>
+
+@str: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_str_replace ##### -->
+<para>
+
+</para>
+
+@str: 
+@pattern: 
+@replacement: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_strdup_strftime ##### -->
+<para>
+
+</para>
+
+@format: 
+@tm: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_strndupv ##### -->
+<para>
+
+</para>
+
+@strv: 
+@num: 
+@Returns: 
+
+
+<!-- ##### MACRO I_ ##### -->
+<para>
+
+</para>
+
+@string: 
+
+

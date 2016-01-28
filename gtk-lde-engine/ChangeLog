@@ -1,0 +1,4140 @@
+commit d560759aece07eb8b7e48fb9c42092acec63b77a
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sat Feb 28 13:41:43 2015 +0100
+
+    Release 2.10.0!
+
+commit a2edb7c877768e9205a7f65f655e7e16470395af
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sat Feb 28 13:11:15 2015 +0100
+
+    Added the flat theme to automake
+
+commit 02c398efdaef7875edc03b253737358927cdb359
+Author: Simon Steinbeiss <simon.steinbeiss@elfenbeinturm.at>
+Date:   Sat Feb 28 11:52:57 2015 +0100
+
+    Added new flat theme
+
+commit 8064e53e4473388df56fb8523c5e963dbf1d9581
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Fri Feb 27 22:40:45 2015 +0100
+
+    Don't free the rc_style on parse errors
+
+commit 0cd2a41ca537812a59a763232f99e6fcb0c1cf62
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Wed Feb 18 20:45:38 2015 +0100
+
+    Post release tag bump.
+
+commit 65ffec3540038b9c132f38d767eda58ccb5ac08e
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Wed Feb 18 20:43:36 2015 +0100
+
+    Release 2.9.1!
+
+commit d4eeec67d89fdaaaa71169595322025031292239
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Wed Feb 18 20:17:56 2015 +0100
+
+    Added default colors to xfce basic theme
+
+commit 1aefb341e026032cdb02ad847bbac80ed36c933e
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Wed Feb 18 20:10:02 2015 +0100
+
+    Fixed used before set variable.
+
+commit 8fdbeef0db8ed759fcf5737fcb63578f1ec08535
+Author: Peter de Ridder <cavalier@the-cavalry.org>
+Date:   Wed Feb 11 21:01:46 2015 +0100
+
+    Post release tag bump.
+
+commit 8c6f520231651dff85cdf8d7ea344180fcbf5199
+Author: Peter de Ridder <cavalier@the-cavalry.org>
+Date:   Wed Feb 11 20:54:50 2015 +0100
+
+    Release 2.9.1!
+
+commit f23358109325bc9644a9ac7e61ff8b4eb3a9a502
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Thu Jan 9 22:11:32 2014 +0100
+
+    Use parent style for retrieving the background.
+
+commit c1c192ded072ebddaa6a139be4be88730ba17ef7
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Jan 5 16:16:22 2014 +0100
+
+    Improved Gtk2 notebook.
+
+commit 21367f9422bca8f0f80c4eb195a8eab69ff9c9da
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Jan 5 15:19:00 2014 +0100
+
+    Use smooth_edge in focus line too.
+
+commit 8debac71ec8834f6ddb33af8617f2128ab792864
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Jan 5 14:00:38 2014 +0100
+
+    Use parent background for smooth edges.
+
+commit d320de29d3592fe26c66c7b5ae40d3adc7fbdaf9
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Fri Dec 27 13:52:17 2013 +0100
+
+    Added focus_color style property.
+
+commit c9b5e1537aac1eb3994b7cbbf16b0b7898844aac
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Dec 15 22:03:51 2013 +0100
+
+    Added flat_border style property.
+
+commit 0c3ce9d7bb5e48aacc78acac86fa7a66a3deef92
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Dec 15 19:46:17 2013 +0100
+
+    More consistent notebook in Gtk2.
+
+commit 52f856d2168f0312cd1988bd7e0db4181f565911
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Dec 15 19:44:52 2013 +0100
+
+    Support trough-side-details.
+
+commit 0dc6b5c0924f354a5e02dd2ed68ce7881f63feb7
+Author: Nick Schermer <nick@xfce.org>
+Date:   Sun Jan 6 12:19:05 2013 +0100
+
+    Autotools updates.
+
+commit 5554fa303912c0d13c01bf4fe21e37990cce9bb4
+Author: Landry Breuil <landry@xfce.org>
+Date:   Wed Aug 22 09:34:45 2012 +0200
+
+    Don't leak a graduent pattern at each draw (bug #8521)
+
+commit e87463265241d35bf4792ae8f8e772546658c418
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Thu Apr 26 21:16:01 2012 +0200
+
+    More consisten extension rendering
+
+commit 18629cb020f1ddfb8a322c5256efc0ca1ab0f290
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Thu Apr 26 21:08:01 2012 +0200
+
+    Use the correct colors for options and checks
+
+commit d68e5e6e5bc7fe771b75e3cc42ff3aee4b5495a3
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Thu Apr 26 21:03:54 2012 +0200
+
+    Corrected DETAIL names
+
+commit 5d8c972547d93ff8f1fb48a813a2c282bf4827db
+Author: Lionel Le Folgoc <lionel@lefolgoc.net>
+Date:   Sun Apr 8 17:45:18 2012 +0200
+
+    Link against libm for floor() and ceil()
+
+commit 8c590f4937b6996ba2b0346aeb92a8f93ea1bedc
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Mar 25 14:12:51 2012 +0200
+
+    Use size for the radio and check boxes (bug #8456)
+
+commit d4fb4dd4eb0077dddf07695331388905212ec3b7
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Mar 25 10:43:58 2012 +0200
+
+    Correctly match gtk-tooltip widgets (bug #8494)
+
+commit a49861be9fc3f4ca2a7e89cd9ae35b2eeaaaf2b0
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Wed Feb 8 20:25:53 2012 +0100
+
+    Correctly draw spin button without state-hint set
+
+commit 9b0c7bb79a20ef2804d753712191f959720b45a7
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Mon Feb 6 21:58:48 2012 +0100
+
+    Render the spin buttons inside the entry part
+    
+    Extended the entry part of the spin button and moved the spinner buttons
+    inside. This gives more consistency with Gtk.
+
+commit b987209c2065518f6354f13883f8bc4180a251a0
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Mon Dec 12 13:01:53 2011 +0100
+
+    Removed unused variables
+
+commit 8a6d5caf69d6b063103608277ed040768323e4e4
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Dec 11 23:18:31 2011 +0100
+
+    Drop AC_PROG_LIBTOOL in favor of LT_PREREQ and LT_INIT
+
+commit e0f3335137f2a3b74cd1535338994fba3d43144e
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Sep 11 12:35:57 2011 +0200
+
+    Post release tag bump.
+
+commit 98beeef2f27af983349bd70bc436fe32dd3ab657
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Sep 11 12:12:42 2011 +0200
+
+    Release 2.9.0!
+
+commit f272406bd900b5d3f5ef91a258fe01705dc70ef9
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Fri Apr 15 21:02:25 2011 +0200
+
+    Rewritten drawing routines to use cairo
+
+commit 7aabfb06eca7731ac5e6c318ae1f7055a3622d0b
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Mar 6 12:26:27 2011 +0100
+
+    Post release tag bump.
+
+commit e5fbfdbe3b224c83831108b728dabe9803225220
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Sun Mar 6 12:13:12 2011 +0100
+
+    Release 2.8.1!
+
+commit d6b60ea674eb1c2bbc9c1ba1b5bb3b41b58500e2
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Mon Feb 28 22:00:44 2011 +0100
+
+    Fixed rendering of inconsistent checkboxes (bug #7279)
+    
+    Draw a [-] (dash) for inconsistent checkboxes.
+
+commit 229f602aa68eb0b6f87fd13acad4787083759120
+Author: Peter de Ridder <peter@xfce.org>
+Date:   Mon Feb 28 21:46:22 2011 +0100
+
+    Fixed rendering of GtkSpinButton (bug #4946)
+    
+    Calculate the size of the text area of a spin button since gtk doesn't
+    provide this size.
+    Also use this size for drawing exterior focus lines.
+
+commit 4e1217e45f43b80c215777e6d77bc708c6283164
+Author: Jannis Pohlmann <jannis@xfce.org>
+Date:   Sun Jan 16 16:43:20 2011 +0100
+
+    Release 2.8.0!
+
+commit 906b508dc355eff1213baa696bf2306a7d460d6f
+Author: Olivier Fourdan <fourdan@xfce.org>
+Date:   Wed Jan 5 10:58:30 2011 +0100
+
+    Fix bug 7061
+    
+    Re-add Xfce 4.6's gtkrc theme as Xfce-4.6
+
+commit b4d9bfb2f8f6ecf3c5ea64042ccec9512555b51d
+Author: Nick Schermer <nick@xfce.org>
+Date:   Sun Jan 2 13:55:28 2011 +0100
+
+    Post release tag bump.
+
+commit b24dfe2f83b798a9baf862adcf7d231a04090ef0
+Author: Nick Schermer <nick@xfce.org>
+Date:   Sun Jan 2 13:53:52 2011 +0100
+
+    Updates for release.
+
+commit 732438cecaad7cab4fc44a267b8ecf9c32aee9b7
+Author: Nick Schermer <nick@xfce.org>
+Date:   Mon Dec 27 21:17:21 2010 +0100
+
+    Cleanup build files.
+    
+    Use xdt, fix some compiler warnings and make thing suitable for git.
+
+commit 22cc6d973f4d2f09af98a2a7afab0c6ae1763a50
+Author: Olivier Fourdan <fourdan@xfce.org>
+Date:   Fri Dec 3 11:34:49 2010 +0100
+
+    Small visual update for xfce 4.8, active window decoration color
+
+commit 96055de9ec4b57f65e6fe438fafd83fcc80c9932
+Author: Olivier Fourdan <fourdan@xfce.org>
+Date:   Fri Dec 3 11:28:28 2010 +0100
+
+    Fix gtkrc warning (bug #5985)
+
+commit 4bb933fee5c063615cfba822533c0e07cb067cdf
+Author: Brian J. Tarricone <brian@tarricone.org>
+Date:   Fri Aug 14 17:00:51 2009 -0700
+
+    add module description file
+
+commit c0839e4e29214f82504edf70b08a00524b67d197
+Author: Stephan Arts <stephan@xfce.org>
+Date:   Tue Feb 24 21:17:05 2009 +0000
+
+    Update ChangeLog
+    
+    
+    
+    (Old svn revision: 29576)
+
+commit 10413425c78ea6bfa0c0243f2555c068a58d1096
+Author: Stephan Arts <stephan@xfce.org>
+Date:   Tue Feb 24 21:04:04 2009 +0000
+
+    == Xfce 4.6.0 Released! ==
+    
+    
+    
+    (Old svn revision: 29575)
+
+commit 72e140c187261ad2633d8e7432de508c0b666e59
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 9 15:42:18 2009 +0000
+
+    Reduce menubar height for smaller screens
+    
+    (Old svn revision: 29475)
+
+commit 56d68fa56d4faae5bb457bbb421d54eaf2cc536e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 9 08:56:51 2009 +0000
+
+    Use continuous focus line only on buttons and text entries
+    
+    (Old svn revision: 29474)
+
+commit e6e8340df8d7574f40caf78dbd0d9693c2545d9d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jan 31 21:34:36 2009 +0000
+
+    Much compact version of the default theme.
+    
+    (Old svn revision: 29418)
+
+commit 2c25b0bc365b908a4d452b7615f28f81547457bc
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jan 23 22:37:56 2009 +0000
+
+    Use a light blue for window decoration with default theme to match the change in xfwm4 default theme
+    
+    (Old svn revision: 29304)
+
+commit 48727e7aa8062ba7fee50b55fb2f33c7efd374ec
+Author: Jannis Pohlmann <jannis@xfce.org>
+Date:   Tue Jan 13 12:19:23 2009 +0000
+
+    	* == 2.5.93 released! ==
+    	* configure.in: Bump version number.
+    
+    (Old svn revision: 29224)
+
+commit bde507ba79d40e1e29a6e4f85ba9c2ce30fd9e99
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 9 21:49:47 2008 +0000
+
+    	* themes/*/Makefile.am: Forgot to remove the README.html from the
+    	  Makefile.am
+    
+    (Old svn revision: 28693)
+
+commit 3bc182bde325a2e704f44be5a7b0d35d0b7fbade
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 9 21:42:17 2008 +0000
+
+    	* src/xfce_theme_draw.c: Fix bg color being shown under group box
+    	  title (Bug #1018),
+    	  src/gradient_draw.c: Fix wrong UTF8 character in credit header
+    	  themes/*/README.html: Remove README.html files (Bug #3280)
+    	* ChangeLog, configure.in: Update ChangeLog and version-number for 2.5.91
+    
+    (Old svn revision: 28692)
+
+commit 8a18ced04a34488e45bb4a99a8855aad2767f5f9
+Author: Stephan Arts <stephan@xfce.org>
+Date:   Mon Oct 13 10:56:47 2008 +0000
+
+    Update Changelog
+    Bump version number to 2.5.91
+    
+    
+    
+    (Old svn revision: 28213)
+
+commit e080148b7c57c7c9c4e6e526f8f02d14a03b8f5c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 21 22:01:41 2008 +0000
+
+    Lighter selection color
+    
+    (Old svn revision: 27358)
+
+commit c810611ff618e3c4e0e028a4dde0f2b5a813c8b1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 20 14:48:53 2008 +0000
+
+    Update theme for 4.5
+    
+    (Old svn revision: 27352)
+
+commit 5e5e7e35ac34ff55298dcfce6fd3f985cc2060a1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 15 14:42:13 2007 +0000
+
+    Including the iconrc is nonsense
+    
+    (Old svn revision: 25916)
+
+commit 05efa60f105366809c0c3c3d9d6366dcc2039498
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 9 19:55:38 2007 +0000
+
+    New default gtk theme that goes with new xfwm4 theme
+    
+    (Old svn revision: 25697)
+
+commit 0c2e05d2ab9857cac61562170ee76711db96aff1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 11 21:49:24 2007 +0000
+
+    Colors
+    
+    (Old svn revision: 25150)
+
+commit e3a967dd9a617fe5db9cd8e973c227cee26a406a
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Sat Jan 20 16:15:17 2007 +0000
+
+    Update NEWS.
+    
+    (Old svn revision: 24648)
+
+commit 726f15e83672db2ea78302a0226e9ba6d39e49bb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jan 19 22:01:49 2007 +0000
+
+    Update ChangeLog
+    
+    (Old svn revision: 24581)
+
+commit a58ecbeaa617c990e26c1015b7138042c016f9c7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jan 19 20:56:07 2007 +0000
+
+    Update version
+    
+    (Old svn revision: 24566)
+
+commit 9ae5be0b56ee57f2d9db8df7b7252458c2c6822e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jan 17 20:21:01 2007 +0000
+
+    Lighter gray
+    
+    (Old svn revision: 24524)
+
+commit f5d12b0aaf03dbf2cb4bd6aaefb0c8acf4923c22
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jan 5 22:11:48 2007 +0000
+
+    Use gradients in menu and menubar
+    
+    (Old svn revision: 24274)
+
+commit eb521c22e473665bf6e50e9cbebc7eb90ed9dbe1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jan 2 18:57:14 2007 +0000
+
+    Simpler theme
+    
+    (Old svn revision: 24243)
+
+commit 76c710729f457a2d8d7f9d8ade6fbb18531c756f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 24 12:00:41 2006 +0000
+
+    No more blue
+    
+    (Old svn revision: 24180)
+
+commit e5c09863f47246c64bcc06aa772c5b892f7aa51b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Dec 20 20:45:50 2006 +0000
+
+    Adjust colors
+    
+    (Old svn revision: 24147)
+
+commit 796f5a6dee73b74a668d4697195bb613111fc2b3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 10 21:50:18 2006 +0000
+
+    Use the same nuance of blue everywhere
+    
+    (Old svn revision: 24077)
+
+commit 245ac9411dbb1f043724cda48be5031d1a5f3e6e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 10 20:56:16 2006 +0000
+
+    The dark blue is too dark, use a light one, even if not from the Tango palette - I hope it looks fine on other LCD displays
+    
+    (Old svn revision: 24075)
+
+commit 3d42440937c9d795f1205eb78cd5001a671419b3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 8 19:31:43 2006 +0000
+
+    Use dark blue instead of gray for active window frame
+    
+    (Old svn revision: 24062)
+
+commit ca1fd6f8439aa814107a08956aca08df4f9661b6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 7 20:45:00 2006 +0000
+
+    Use Tango palette
+    
+    (Old svn revision: 24056)
+
+commit 84798785e34e5ce8b7b82dde5bed2b76c553f64b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 7 20:34:12 2006 +0000
+
+    Use higher contrasts
+    
+    (Old svn revision: 24055)
+
+commit 41c22ef88fa3f9ccfb75c74eae43897c5116e136
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Nov 28 18:41:19 2006 +0000
+
+    Adjust colors
+    
+    (Old svn revision: 24002)
+
+commit efe2134aeb4ebe4135db334d7b60c80298f4b335
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Nov 27 20:51:13 2006 +0000
+
+    Adjust colors
+    
+    (Old svn revision: 23998)
+
+commit 844e833aba18580eb9f1ea729ccb4dd44de834b4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Nov 27 18:37:27 2006 +0000
+
+    Rework the default a bit, change the engine so that scrollbars show the trough border.
+    
+    (Old svn revision: 23993)
+
+commit 306d7b2b59ab3c18df2cc5aa1879639b51210f72
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 18 21:43:16 2006 +0000
+
+    Larger menu bar
+    
+    (Old svn revision: 23900)
+
+commit d96a7b32f7c7bd27c910c3275c36ab1456d06aa8
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Sun Nov 5 10:33:30 2006 +0000
+
+    Update the build framework.
+    
+    
+    
+    (Old svn revision: 23717)
+
+commit 2c54ebf243d3b9acdbcf389f64d79715713dee49
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 24 21:46:20 2006 +0000
+
+    Update version
+    
+    (Old svn revision: 23504)
+
+commit c8a00863d57ab6b4ad211fb3f71c16b13a1c818d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 18 20:10:53 2006 +0000
+
+    Forgot to commit this patch from Mike Massonnet...
+    
+    
+    (Old svn revision: 23464)
+
+commit 034fad83f34521dc8fbed626a59f3d3509941e75
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Sun Sep 3 11:31:54 2006 +0000
+
+    Bump version.
+    
+    (Old svn revision: 23061)
+
+commit 136ee1a37852d74e02f752d4f2fe266bf5c503b9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Aug 24 17:15:14 2006 +0000
+
+    Use a dark frame around selected menu item
+    
+    (Old svn revision: 22872)
+
+commit 74cd21c42570d05b13992836d0ceca7c8ed62156
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 19 20:06:26 2006 +0000
+
+    Try lighter color for progress bar
+    
+    (Old svn revision: 22485)
+
+commit 29460143ae28dd7aee4a2c4b62393b4c2a81ad40
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 19 19:56:31 2006 +0000
+
+    Use gradient for progress bars
+    
+    (Old svn revision: 22484)
+
+commit fa38d228a3cdaf701257e0070faf93ead68a37e3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 20:55:16 2006 +0000
+
+    64bit fix
+    
+    (Old svn revision: 22481)
+
+commit 1a8d15741205877822818403056deb4a5fb6d1d6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 19:58:53 2006 +0000
+
+    Remove cvsignore
+    
+    (Old svn revision: 22478)
+
+commit 1ff8fc79f00208e2a5c53e07485b74884644c0eb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 19:57:20 2006 +0000
+
+    Missing files
+    
+    (Old svn revision: 22477)
+
+commit f557449459eb95b165c73c311d83ca918f65e3fd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 19:56:39 2006 +0000
+
+    Humm, that's the other way arround...
+    
+    (Old svn revision: 22476)
+
+commit 57d6a9cdfd57b58b1f1df9e95a7ca745e97edabd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 19:51:30 2006 +0000
+
+    Change default GTK theme
+    
+    (Old svn revision: 22475)
+
+commit 29aec350a85c8d1fe720d12e22176567135f6db7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 18 19:10:35 2006 +0000
+
+    Reorg
+    
+    (Old svn revision: 22474)
+
+commit 95479868e3920540d49e8b644d1d66883f546b62
+Author: Jean-François Wauthy <pollux@xfce.org>
+Date:   Sun Jul 9 09:56:06 2006 +0000
+
+    bump all versions and dependencies to 4.3.90.2
+    
+    (Old svn revision: 22309)
+
+commit ccc8fdd5e0c0f203fa43016355c74a295abe3e15
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 21 19:01:25 2006 +0000
+
+    Change the color of active window title.
+    
+    (Old svn revision: 21138)
+
+commit 5df8ae919a582d503373d540593b5c1a89268253
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Apr 16 14:43:19 2006 +0000
+
+    Update package
+    
+    (Old svn revision: 21012)
+
+commit 6c8fdefaa69ac8db7b4d31eb7691dd76c703a1ef
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Apr 15 17:32:31 2006 +0000
+
+    Update ChangeLog
+    
+    (Old svn revision: 20917)
+
+commit 20ad625fc8fb89ad4c617f1caaa753e61c9dbb3c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Mar 16 21:23:21 2006 +0000
+
+    Tweak colors
+    
+    (Old svn revision: 20459)
+
+commit 9438c648074d431143eeb65e4bc72b27bbad4e92
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 12 22:06:25 2006 +0000
+
+    Use slightly lighter colors.
+    
+    (Old svn revision: 20372)
+
+commit 75e9ee55f2b880ab12f93803ac4f72b3c61b28fa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Mar 8 18:15:10 2006 +0000
+
+    Change title colors.
+    
+    (Old svn revision: 20294)
+
+commit def3837e813f0a57655276d15785d2546ed50385
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 7 18:23:34 2006 +0000
+
+    Small improvements to the default theme.
+    
+    (Old svn revision: 20278)
+
+commit 27ca96b962c1abab62248304b76a5c79d812c959
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Mar 6 22:06:21 2006 +0000
+
+    Change the default theme a bit
+    
+    (Old svn revision: 20267)
+
+commit f46f18985dff6f58c577e1d64609e89142c00180
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Feb 18 19:05:38 2006 +0000
+
+    Add previous theme as Xfce 4.2
+    
+    (Old svn revision: 19951)
+
+commit c5a9dabc555082c2be423774cdd7b8e619ee2603
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 16 21:05:52 2006 +0000
+
+    Fix a small issue with toolbars and buttons
+    
+    (Old svn revision: 19910)
+
+commit 6f87aff8ca0906ed2c7f9066f3954b5303253e1b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jan 31 22:16:08 2006 +0000
+
+    Seems I got the menu thickness wrong there
+    
+    (Old svn revision: 19701)
+
+commit cbe34015b820b5d4955f230c30a658e4a2a8d81c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jan 31 21:32:32 2006 +0000
+
+    Include new default style for 4.4
+    
+    (Old svn revision: 19698)
+
+commit 3dfe07d77a39bf30f383da2f6a0901b044c7c07b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 6 15:42:04 2005 +0000
+
+    Apply patch submitted by Jasper a while ago.
+    
+    (Old svn revision: 18748)
+
+commit 889647c85c0f37a58d1527c007b5706c6bf1b038
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jun 11 09:21:15 2005 +0000
+
+    Brighter colors
+    
+    
+    (Old svn revision: 15930)
+
+commit 0824526d7a41573de80bc7bf584a60a8921de8a7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 8 05:41:43 2005 +0000
+
+    Restore some settings that were removed
+    
+    
+    (Old svn revision: 15903)
+
+commit cbfe910b316247dd3268d7bb0e865e730c55b43e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jun 7 21:57:13 2005 +0000
+
+    Cleaner theme
+    
+    (Old svn revision: 15900)
+
+commit 18f41481ec727fdb007e2b6b23dbe74fac13729f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat May 14 19:44:38 2005 +0000
+
+    Update ChangeLog
+    
+    (Old svn revision: 14372)
+
+commit bcb5064a8c9a36b7dc2f493628c8ed7b0eaf0649
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 4 20:48:38 2005 +0000
+
+    Update ChangeLog
+    
+    (Old svn revision: 13957)
+
+commit f831d5ea6b2edd468cfbbaee585071c253c50e69
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 3 19:42:00 2005 +0000
+
+    Colors
+    
+    
+    (Old svn revision: 13897)
+
+commit 85a2d8ff1d7c18371d5ef85291a0aa063b1b274d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 28 10:36:00 2005 +0000
+
+    Change default color scheme
+    
+    
+    (Old svn revision: 13823)
+
+commit 61d53833d947d7f4daed6fe5206dddb24b58e9f8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Apr 2 08:10:30 2005 +0000
+
+    New default "xfce" theme with frame colors designed for the default xfwm4 theme.
+    
+    
+    (Old svn revision: 432)
+
+commit 6bc6b3349964ce80f66b2ff7c3d577069a6871aa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 27 17:08:47 2005 +0000
+
+    ExoIconBar doesn't look very good when focus_padding != 2
+    
+    
+    (Old svn revision: 431)
+
+commit c6147e73d41116c168e081d903ed972503939e6d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 22 22:10:39 2005 +0000
+
+    Fix treeview prelight color
+    
+    
+    (Old svn revision: 428)
+
+commit dc34709473d635d5e6236a99fa692eeb854c8691
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Mar 21 21:52:23 2005 +0000
+
+    Fix Adobe Acrobat 7 buttons
+    
+    
+    (Old svn revision: 426)
+
+commit 6656dad704d39879dbeecd5ac6f63aa25c9839de
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Mar 21 21:17:07 2005 +0000
+
+    Adjust progress bar colors
+    
+    
+    (Old svn revision: 424)
+
+commit 7e9fadb52913bb4fc99f47aa9049842db895208e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 20 23:54:12 2005 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 423)
+
+commit 0ca8a00280005af2768ce9bbad9aa8161f84bc90
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 20 23:32:35 2005 +0000
+
+    Scales
+    
+    
+    (Old svn revision: 420)
+
+commit adb8e6a42569dc0a834f9ab31f658ed6b7f3f62b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 20 23:16:02 2005 +0000
+
+    Fix default theme
+    
+    
+    (Old svn revision: 417)
+
+commit 9ea96e0c5cae2ea69d9bd82569916d77ba586a57
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 20 09:26:51 2005 +0000
+
+    thickness
+    
+    
+    (Old svn revision: 416)
+
+commit 6bd62c828c47736cf2529982a056d4728a28326d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 19 21:58:31 2005 +0000
+
+    Fix wrong foreground color in combobox (bug #848)
+    
+    
+    (Old svn revision: 415)
+
+commit e72367d23df763d03731dc702fd13f8b09bbb235
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 19 12:24:39 2005 +0000
+
+    Use "GtkScale" and "GtkProgress" instead of just "Scale" and "Progress" for widget style definition.
+    
+    
+    (Old svn revision: 412)
+
+commit 5fc838b43522f9ba47351c89c2828fa1d566407c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Mar 11 21:07:58 2005 +0000
+
+    Remove xfce-4.2 theme
+    
+    
+    (Old svn revision: 404)
+
+commit 5efda56909368526485b18ef59079a7d10d5deca
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Mar 11 21:06:30 2005 +0000
+
+    Revert to old color scheme
+    
+    
+    (Old svn revision: 403)
+
+commit 3b8afbdf70c4b2ada45e58e26a7e073680592fa6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Mar 10 20:53:17 2005 +0000
+
+    progress bar
+    
+    
+    (Old svn revision: 402)
+
+commit 9627b4efc800c51739376ace3061db6d96c364ca
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Mar 9 21:24:56 2005 +0000
+
+    Rework progress bar.
+    
+    
+    (Old svn revision: 400)
+
+commit 8dae18ac6063fe125b454d014a50c218552c6239
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 6 20:22:11 2005 +0000
+
+    Add frame around scales and progress bars, use different color, improve visibilty ofpressed/active buttons.
+    
+    
+    (Old svn revision: 398)
+
+commit a886dad75c4c0c3f3f8ceeec446a14fa5ba19398
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 22:33:30 2005 +0000
+
+    Use light buttons and remove frame for handles.
+    
+    
+    (Old svn revision: 395)
+
+commit 285e3281da8d0e8681f618991cf77382cad3609b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 14:41:04 2005 +0000
+
+    Change active frame color
+    
+    
+    (Old svn revision: 394)
+
+commit 9019d395e5e7e85c6da5a56097e206ad3572fc9b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 13:24:36 2005 +0000
+
+    Darker active button
+    
+    
+    (Old svn revision: 393)
+
+commit 6dcc3dd7bc1361caf43bb884dac18727f839da58
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 13:20:59 2005 +0000
+
+    New color scheme
+    
+    
+    (Old svn revision: 392)
+
+commit 1ea21d29af8037aa628b3b664829f880fcc95df9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 12:46:32 2005 +0000
+
+    Draw flat frame menu
+    
+    
+    (Old svn revision: 391)
+
+commit e76eed320ff50e8c713424271c9fec3cfaeb9426
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 11:05:33 2005 +0000
+
+    Change window decoration color for benny and jasper.
+    
+    
+    (Old svn revision: 390)
+
+commit eff6c6447e156127bdddc66c87e0e577c6aa4937
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Mar 5 00:12:12 2005 +0000
+
+    Improve shadows of toolbars
+    
+    
+    (Old svn revision: 389)
+
+commit 5dc9ddacc4ef40cf7472f5764e40607b619f7d86
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 28 20:13:58 2005 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 388)
+
+commit bfb729daa4dfc16c21ee7a94f7799e22f7a71ea3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 24 20:54:30 2005 +0000
+
+    Improve theme
+    
+    
+    (Old svn revision: 386)
+
+commit fc717f2781423bdac0b74ea6b64e8562663ebff2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 21 22:01:11 2005 +0000
+
+    Change grip style.
+    
+    
+    (Old svn revision: 385)
+
+commit f48a68ef2ef8538b05d6c992ea0b1393043cc290
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 21 21:54:43 2005 +0000
+
+    Force no shadow for toolbar and menubar
+    
+    
+    (Old svn revision: 384)
+
+commit c3f8aa8d334a9958d37907f8229140d4a62b9f55
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 21 21:29:59 2005 +0000
+
+    Enhance buttons and scrollbars using a darker color.
+    
+    
+    (Old svn revision: 383)
+
+commit 34e77caf5a5e51971432445ef75fb5cc07c3d660
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 11 19:58:50 2005 +0000
+
+    Change default gtk theme.
+    
+    
+    (Old svn revision: 382)
+
+commit 2c9bc4f22468a511b021f823b3945f9184263cdf
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Feb 5 21:35:05 2005 +0000
+
+    Add James Golden's dusk theme, remove generated files.
+    
+    
+    (Old svn revision: 379)
+
+commit 584bfd211e8103ff69f14a4c0f11476d215f0269
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Mon Jan 10 16:46:13 2005 +0000
+
+    Updated NEWS and README
+    
+    
+    (Old svn revision: 378)
+
+commit 3ad85bffa3007a3e4f1c20a2f9d05bdb52911d3a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jan 5 21:00:39 2005 +0000
+
+    Inactive WM frame
+    
+    
+    (Old svn revision: 373)
+
+commit a3da56480b92e75b79115250915629961aadbc24
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jan 3 21:44:59 2005 +0000
+
+    Theme adjust
+    
+    
+    (Old svn revision: 369)
+
+commit a4efa1f15f3d2d4d9406e398d57f95393acd3658
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jan 2 12:50:59 2005 +0000
+
+    Update version and changelog
+    
+    
+    (Old svn revision: 368)
+
+commit 06f8f47d87f1c3c3f370f8c3876dd43e1d4b3e07
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jan 1 22:20:14 2005 +0000
+
+    Progress
+    
+    
+    (Old svn revision: 367)
+
+commit 5f95a87792144fdea5e6d96f4b430fb53035b017
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jan 1 19:35:14 2005 +0000
+
+    Update version number
+    invers gradients for trough
+    
+    
+    (Old svn revision: 366)
+
+commit b2feabc5201a76fc9cf064d74b1ce28f89d11786
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 31 16:08:55 2004 +0000
+
+    Cute progress bar
+    
+    
+    (Old svn revision: 365)
+
+commit 9fba88178d02df6b641280de9970b4ac30739279
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 31 10:31:45 2004 +0000
+
+    Add displacement
+    
+    
+    (Old svn revision: 364)
+
+commit 804a9f7a1c429e78b21c95aca2de360b1f2f923a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 31 10:24:15 2004 +0000
+
+    Scrollbar and sliders
+    
+    
+    (Old svn revision: 363)
+
+commit 19c055095a49a35a7235ded37979a9958d79fa2b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 31 10:04:20 2004 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 362)
+
+commit 461cc6ad0697bc284e11a83a2daf6a0e88f6f2c9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 31 10:02:16 2004 +0000
+
+    Draw frame of sliders
+    
+    
+    (Old svn revision: 361)
+
+commit ce284a16c5239dfd1d902ebcafddb328d4c4945f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 30 23:44:37 2004 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 360)
+
+commit 22ab3a6da221c5e7c40fd35777fc76df9f13cf41
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 30 18:05:07 2004 +0000
+
+    Final touch on theme
+    
+    
+    (Old svn revision: 359)
+
+commit 212514ecb553649f9ae7b3e6022d667e03f6ec19
+Author: Brian Tarricone <brian@tarricone.org>
+Date:   Sat Dec 25 20:33:18 2004 +0000
+
+    fix distcheck-bz2
+    
+    
+    (Old svn revision: 358)
+
+commit 7b73ba4634c63d81b4867a97329408f0bfad1f43
+Author: Brian Tarricone <brian@tarricone.org>
+Date:   Fri Dec 24 00:03:40 2004 +0000
+
+    add dist-bz2 and distcheck-bz2 targets
+    
+    
+    (Old svn revision: 357)
+
+commit ffacd988b3a61cdc8e9552e9da8cd7ea7995a1b6
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Wed Dec 22 20:19:19 2004 +0000
+
+    Bump version to 2.2.4.
+    
+    
+    (Old svn revision: 355)
+
+commit b66c15e44a4b219b60c233644b65de179e5b09f3
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Wed Dec 22 19:23:33 2004 +0000
+
+    Update ChangeLog. Add missing m4 file.
+    
+    
+    (Old svn revision: 354)
+
+commit 302d435970d6a8270cbf988be30a4786ba15208d
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Mon Dec 6 20:48:08 2004 +0000
+
+    Color overrides for ExoIconBar.
+    
+    
+    (Old svn revision: 352)
+
+commit 5093c5be54d15fb3c933aa5d92ab478baf55ad3a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 27 17:29:39 2004 +0000
+
+    Add colors for ROX-Filer's "Collection" widget.
+    
+    
+    (Old svn revision: 351)
+
+commit 4177e3a80893f102e2f9feea68e3092730a50a9a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 27 16:19:51 2004 +0000
+
+    Improve tabs
+    
+    
+    (Old svn revision: 350)
+
+commit 4e97cf4c3cf3d4eff0d2522109c8e8dee2ae0cbf
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 27 15:10:28 2004 +0000
+
+    Use a flat look for tabs
+    
+    
+    (Old svn revision: 349)
+
+commit 6871cf379a46c76a70420c9d72ac1631b098b06a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 13 18:01:28 2004 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 347)
+
+commit ce22f44697eca0065ad477a55dec3289d8588da9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Nov 8 21:39:36 2004 +0000
+
+    autogen
+    
+    
+    (Old svn revision: 346)
+
+commit 049ce536e60e9a4c08e7e5b540d1692b8f32624d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Nov 8 21:31:49 2004 +0000
+
+    Themes fixes
+    
+    
+    (Old svn revision: 345)
+
+commit eadf2d14df89ba6f3f20a47641559d2ef1a900e9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Nov 6 16:23:52 2004 +0000
+
+    Update automake/autoconf/libtool/gettext versions to generate the configure scripts and Makefiles,
+    Update versions of all packages to 4.1.99.1 (ie 4.2 RC1),
+    Update ChangeLogs.
+    
+    
+    (Old svn revision: 344)
+
+commit 865adff369fe1a46e3a12ab4587e027416578df5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 30 19:03:08 2004 +0000
+
+    Global update for 4.1.91 (Xfce 4.2 beta 2)
+    
+    
+    (Old svn revision: 342)
+
+commit 7020bf549eeee95c4a4f5d7ff6da6f03ffb04057
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 29 21:14:17 2004 +0000
+
+    Adjust theme
+    
+    
+    (Old svn revision: 341)
+
+commit 1af171221f8dd94dcbeeb1c10063c3bf902c6ab5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 27 21:06:02 2004 +0000
+
+    ChangeLog
+    
+    
+    (Old svn revision: 340)
+
+commit 2b7d7b5a16c5df73f6e5a28db699404cb91dd09e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 27 21:03:15 2004 +0000
+
+    Common sense
+    
+    
+    (Old svn revision: 339)
+
+commit 61ef9d7cb989ac0dbf8a3950de93a334a88a5bc3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 27 20:56:58 2004 +0000
+
+    Spinbutton tweaking
+    
+    
+    (Old svn revision: 338)
+
+commit 2da47af900a3c8d39799cefb59576315982e8c46
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 27 18:00:49 2004 +0000
+
+    Some simple theme updates
+    
+    
+    (Old svn revision: 337)
+
+commit fd72a002dbb0aded717964b7a536bc391b1dce78
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Oct 25 19:59:07 2004 +0000
+
+    Change spin buttons' shadows.
+    
+    
+    (Old svn revision: 336)
+
+commit 2c2c219280be4d1cfdac25108b5ceed656749326
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Oct 25 19:20:59 2004 +0000
+
+    Code and theme cleanup
+    
+    
+    (Old svn revision: 335)
+
+commit 15463f30585e1c6da92fc2f350b364d6e6ee61d2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Oct 24 18:02:21 2004 +0000
+
+    Remove backward stepper as some apps (OO) don't support it...
+    
+    
+    (Old svn revision: 334)
+
+commit e935c021bb4493f9360c973dcd486ca2a155cf44
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 23 14:45:01 2004 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 333)
+
+commit 78f3fe3abeb24ef580f46013e87c54cade46ce06
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 23 13:35:50 2004 +0000
+
+    Theme cleanup
+    
+    
+    (Old svn revision: 332)
+
+commit aa14ddd4d675fcc5e57d2ed967a9e35c4ed72bd9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 22 20:37:59 2004 +0000
+
+    Updated versions and change logs
+    
+    
+    (Old svn revision: 331)
+
+commit ab2d45b0395614503b263769d330dff8e9da067e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 22 19:33:27 2004 +0000
+
+    Theme fixes
+    update locale [fr] for desktop files
+    
+    
+    (Old svn revision: 330)
+
+commit fe1d28433e90d6a54722cad32def81e11110737b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 8 17:09:03 2004 +0000
+
+    Check for pointer validity in sliders decorations.
+    
+    
+    (Old svn revision: 329)
+
+commit e17e5230dae91e5a9899ad5046712b1ab6be6421
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Oct 7 21:59:11 2004 +0000
+
+    Change sliders for "dawn" theme
+    
+    
+    (Old svn revision: 328)
+
+commit 525ccc5949ef2bb625e58e9ea1edf4e3c0af22ee
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Thu Oct 7 20:35:26 2004 +0000
+
+    Added --enable-final (-O1 for GNU ld) as per Jaspers request. Added missing
+    m4 files.
+    
+    
+    (Old svn revision: 327)
+
+commit 4c68ef89609c302e46bbc6c915ee2065062471fe
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 2 13:28:17 2004 +0000
+
+    Update all files for 4.2 beta 1
+    
+    
+    (Old svn revision: 325)
+
+commit 26d14e7afacf83884f1609fcf894c22ce3eb8a39
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 20 22:22:03 2004 +0000
+
+    Update all ChangeLogs
+    
+    
+    (Old svn revision: 324)
+
+commit 10915a66c549b00000e2e73141846cf665ba6ab6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 16 20:30:03 2004 +0000
+
+    Improve usability of the default theme
+    
+    
+    (Old svn revision: 323)
+
+commit 72ea62c7db4f54d2cd3b89dd79711526ccdd42fc
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Tue Sep 14 20:32:24 2004 +0000
+
+    Cygwin patches by Maarten Boekhold.
+    
+    
+    (Old svn revision: 322)
+
+commit ce0f846db8029bf5378c8bcadb250e885a27193b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 5 20:58:12 2004 +0000
+
+    Default theme imprevements
+    
+    
+    (Old svn revision: 321)
+
+commit d6414a9dfb2b159ba3b727f756b1696a37937fc5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Aug 25 17:57:54 2004 +0000
+
+    Add "grip_style" option to the theme engine.
+    
+    
+    (Old svn revision: 320)
+
+commit 5af204251a7ebeb918d182bf7149c9d83c25c5d3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Aug 24 10:32:21 2004 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 319)
+
+commit 7be5f856483e0db53de78b9f5b12a781bda8d150
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 23 11:06:20 2004 +0000
+
+    ndicator sizes set to 15
+    
+    
+    (Old svn revision: 318)
+
+commit 6c2109eaf5289b79ae26235991ff25d1c09931e3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Aug 20 19:27:18 2004 +0000
+
+    Improve compat with GNOME by adjusting themes for metacity.
+    
+    
+    (Old svn revision: 317)
+
+commit e69b71ad2b99616e28c7359707cf80b3be7f7181
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Aug 20 17:09:43 2004 +0000
+
+    Final touch on gtk theme
+    
+    
+    (Old svn revision: 316)
+
+commit 94e72e3b9ac3249983fc99105bffe5e010afe2aa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Aug 15 19:39:48 2004 +0000
+
+    Resync with repository, most notably:
+    - libxfcegui4 fixes with gtk 2.2
+    - xfwm4 updates
+    - Present panel plugins in alphabetical order
+    - Fix add plugin dialog being placed over the panel when using SM
+    - French po updates
+    - Other various small bug fixes
+    
+    
+    (Old svn revision: 315)
+
+commit 0ccd3255a4d8494baae6a4e9c7fd2004a26b587b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Aug 4 15:51:27 2004 +0000
+
+    Improve drawing of option/radio marks in menu as per user's request.
+    
+    
+    (Old svn revision: 314)
+
+commit 906174c41efdaf48b9182366d5e0ff3ea9bc8313
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jul 23 10:23:32 2004 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 313)
+
+commit c17168da15f43af930482c2a5254cf5feb7d9da4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 21 17:08:17 2004 +0000
+
+    Final touch on default theme, for WM frames.
+    
+    
+    (Old svn revision: 312)
+
+commit f42481ce9242a8da56bbbe10277d8d48e84fb5a9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 21 10:56:35 2004 +0000
+
+    Woops, comited the wrong file.
+    
+    
+    (Old svn revision: 311)
+
+commit 2c8b3a470ba6ea09dfe71cf2b4938451857a86eb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 20 21:19:11 2004 +0000
+
+    Adopt a smoother look for default Xfce theme.
+    
+    
+    (Old svn revision: 310)
+
+commit 5faa7ae29cefafbb31ede926d179123707be134d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jul 17 09:23:24 2004 +0000
+
+    Remove useless focus-padding that has no effect anyway.
+    
+    
+    (Old svn revision: 309)
+
+commit 890d5da938cd9182e6a31bf1c4c1222d71bcdfc2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 13 17:16:52 2004 +0000
+
+    Use a focus padding of 0 for XfceIconbutton widget as suggested by Bernhard Walle
+    
+    
+    (Old svn revision: 308)
+
+commit 0e3471d6731de840e148d1446b0bfe1832eb4d6d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jul 9 12:39:06 2004 +0000
+
+    Fix compilation error with gtk+-2.0.x
+    
+    
+    (Old svn revision: 305)
+
+commit c66b5eaf2b5bbb0f35e2e4dc716dff675caacc05
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 7 19:38:04 2004 +0000
+
+    Enhance contrast of selected widgets
+    
+    
+    (Old svn revision: 302)
+
+commit 2aa16d484dbed477958aebc6fc680eeb8a345f7f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jul 6 20:14:21 2004 +0000
+
+    Make buttons darker
+    
+    
+    (Old svn revision: 301)
+
+commit 0f86b6f59efa479137af9ec3e3c85041c590ea59
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jun 22 10:51:45 2004 +0000
+
+    Drop the black frame
+    
+    
+    (Old svn revision: 300)
+
+commit 765a41348ae97e31b682630c8431c080c5343367
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jun 21 20:24:32 2004 +0000
+
+    Use very slight reverse gradient for default and dawn themes
+    
+    
+    (Old svn revision: 299)
+
+commit 0bb1b0381fd32e11017d3dacaf0e88cd21057d5e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 16 19:24:03 2004 +0000
+
+    Reduce focus padding for gtk buttons so that the icons appear larger in xfce panel
+    
+    
+    (Old svn revision: 298)
+
+commit 73f9d3944bef664cfeed22247e0019d511d57e19
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jun 11 06:32:25 2004 +0000
+
+    Change background color
+    
+    
+    (Old svn revision: 297)
+
+commit d2f83253a79d646916e92cc5720ae720a9c72389
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu May 27 20:41:43 2004 +0000
+
+    Add new theme "Xfce-dawn"
+    
+    
+    (Old svn revision: 296)
+
+commit 6d0c20fd026f65f0671a8b4ebdbaa0d31baefbb5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 19 08:00:41 2004 +0000
+
+    Add theme "cadmium"
+    
+    
+    (Old svn revision: 295)
+
+commit 46ba04b12a64c28bea11aa63b02fe34ae3c6d9df
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 18 19:58:53 2004 +0000
+
+    Fix for multiscreen support
+    
+    
+    (Old svn revision: 293)
+
+commit 43f780f0d390aa9e3f775260c7a843c1c5544a00
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon May 3 21:44:27 2004 +0000
+
+    Update zh_TW translations from umm <umm@pchome.com.tw>
+    
+    
+    (Old svn revision: 291)
+
+commit b4a68526d8efcf64814be1dc0e45a8f14f512571
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 16 21:19:44 2004 +0000
+
+    Blue
+    
+    
+    (Old svn revision: 290)
+
+commit 8cb2512fe80990946f97f0e8afc3675bdd2e7cd5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Mar 12 22:10:17 2004 +0000
+
+    Change xfwm4 frames colors
+    
+    
+    (Old svn revision: 289)
+
+commit d9b3b88c7343ca9a0ca697c6ae0dd4d57286481b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 2 19:00:46 2004 +0000
+
+    Theme change
+    
+    
+    (Old svn revision: 288)
+
+commit 191d0ecaddd7043cdef848751e79e00b9959516c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Feb 28 15:33:27 2004 +0000
+
+    Change default color
+    
+    
+    (Old svn revision: 287)
+
+commit 158a75745d9fd0c18f72a32762e9f5c0affb2367
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 25 21:35:02 2004 +0000
+
+    Use a slightly darker color
+    
+    
+    (Old svn revision: 286)
+
+commit e53be4dba3ab47209b2e5e6b80c5b86e52b30a30
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Feb 24 22:13:43 2004 +0000
+
+    #3 has won the poll
+    
+    
+    (Old svn revision: 285)
+
+commit b22eb4c287f9f28ca8c24ab7b4aa93aaeb891de2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 18 22:31:06 2004 +0000
+
+    Play with gtkrc
+    
+    
+    (Old svn revision: 284)
+
+commit 4d1f935cc4caa6f785b6adf4fe9b17e1983f6c8f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 18 20:52:00 2004 +0000
+
+    Change frame colors, various other small tweaks
+    
+    
+    (Old svn revision: 283)
+
+commit e971d823b1f7b89e1a8b5af44151e541b82cca74
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 13 17:25:17 2004 +0000
+
+    Put back darker title
+    
+    
+    (Old svn revision: 282)
+
+commit 9f4c8e2b988ddd20150465f1167d5c0833d5db72
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 11 20:50:57 2004 +0000
+
+    Change theme
+    
+    
+    (Old svn revision: 281)
+
+commit d75182e813aaf1a63ef9f10eb5189bcb25698d3c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Feb 10 20:15:07 2004 +0000
+
+    Theme
+    
+    
+    (Old svn revision: 280)
+
+commit a2222bd79d5401e8c3b0a4926febf94269c32311
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Feb 9 19:46:01 2004 +0000
+
+    Use a light gray-blue for active title
+    
+    
+    (Old svn revision: 279)
+
+commit 7a2b9f5be1f621097bf7ee887d5579e99bc7f4b3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 6 21:54:12 2004 +0000
+
+    Change gtk theme
+    
+    
+    (Old svn revision: 278)
+
+commit a012d5e4d6bc9dd941c104d9c153e4aa19028b40
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 6 17:56:48 2004 +0000
+
+    Nicer, smoother colors
+    
+    
+    (Old svn revision: 277)
+
+commit 669610e23a7f69c1c5aeb49ce4df3b442dabe5fa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 5 20:05:07 2004 +0000
+
+    Use no gradient on progress bar
+    
+    
+    (Old svn revision: 276)
+
+commit 2ecc8eb1f3f1796d18b2dc3c3f4d28148d3c0b9c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 5 19:33:38 2004 +0000
+
+    Rearrange default gtk theme
+    
+    
+    (Old svn revision: 275)
+
+commit acf1fe49f2536d3e9f95178b32a7de9af42ab1f2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 4 21:08:12 2004 +0000
+
+    Change default theme for GTK
+    
+    
+    (Old svn revision: 274)
+
+commit 78ec54a09723398bee0dbc418aa98de09fe5d17d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jan 25 00:07:12 2004 +0000
+
+    Update libtool and other automake, autoconf and gettext packages
+    
+    
+    (Old svn revision: 270)
+
+commit 4f4f2bd8a94e5bdb48c394614f408162e9e33da5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Dec 15 22:15:55 2003 +0000
+
+    Fix crash in workspace MCS plugin
+    Include a patch from Patrick Bores <p@trickbores.com> that allows pop3 email checking from mailcheck panel plugin (use pop3://username:password@host for the mailbox)
+    Small tweaks to default xfwm4 and gtk themes
+    
+    
+    (Old svn revision: 262)
+
+commit 0f248465189c259d8bc4707b0d7bcdac0afecc4a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 5 21:51:32 2003 +0000
+
+    Change colors to light gray
+    
+    
+    (Old svn revision: 261)
+
+commit 29eeabc3296f82c724f38981ef7ba293c27884fd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 4 22:33:18 2003 +0000
+
+    Change default theme, rename older as xfce-4.0
+    
+    
+    (Old svn revision: 260)
+
+commit 684775767c34366fecc8f85ae1d66ec36b7193ff
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Nov 14 22:10:58 2003 +0000
+
+    enhance contrast for "curve" selected items
+    
+    
+    (Old svn revision: 258)
+
+commit d35bb46cb3cafca2c08fc5b7f2c65906285b67ea
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Fri Nov 7 22:33:04 2003 +0000
+
+    Add missing winter theme
+    
+    
+    (Old svn revision: 257)
+
+commit 0418b152be372fbf93260454bacace819103a2cd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Nov 3 20:29:50 2003 +0000
+
+    Change curve theme a bit
+    
+    
+    (Old svn revision: 254)
+
+commit a6b86d68680b87cc0cbed0e8d7e67804388da19d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 2 08:22:18 2003 +0000
+
+    Add hi.po
+    
+    
+    (Old svn revision: 253)
+
+commit 1cf7879ec250acaadd29ef5fd040713c4664ef03
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Mon Oct 13 18:51:21 2003 +0000
+
+    Update ChangeLog's after syncing with SF. Everything should now be up-to-date.
+    
+    
+    (Old svn revision: 252)
+
+commit 8ea0961f0199852cba9ecc91a2d071620bdd8e4d
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Mon Sep 22 20:52:34 2003 +0000
+
+    Update ChangeLogs
+    
+    
+    (Old svn revision: 249)
+
+commit 1e6521fcb617a9ac9b449cd654076d0f600ddc6a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 21 22:19:03 2003 +0000
+
+    Update version number to 4.0.0
+    Improve focus change for modal dialogs in xfwm4
+    
+    
+    (Old svn revision: 248)
+
+commit 00be6555ded680f8fcfb300fabe80435edc9ef02
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 14 22:05:42 2003 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 247)
+
+commit 4d482ce2d8c6446be08018c58c31b40a389445ea
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 14 21:47:37 2003 +0000
+
+    Change b5 colors
+    
+    
+    (Old svn revision: 246)
+
+commit 6a20ad06954c06e1737f3b6b57ebce4b4ef44a43
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Sep 13 23:13:50 2003 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 245)
+
+commit e9c602c890111cdc110ab533da8d87b85a5c3b69
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Wed Sep 10 07:54:47 2003 +0000
+
+    Update ChangeLogs
+    
+    
+    (Old svn revision: 243)
+
+commit dcc2dbef16b6d7b3358a43dbf4dc23fc532eb180
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Wed Sep 10 07:39:55 2003 +0000
+
+    Update version numbers and po files for release
+    
+    
+    (Old svn revision: 242)
+
+commit ea8887bf670fba316d836f5b8b4b59500ecadd52
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 9 20:22:05 2003 +0000
+
+    Change buttons style
+    
+    
+    (Old svn revision: 241)
+
+commit 2b4d06a7b1e3df0ff98588e85ea3b428b5eba7be
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Tue Aug 26 07:38:22 2003 +0000
+
+    Update changelogs
+    
+    
+    (Old svn revision: 239)
+
+commit a2cddea11e4518a4025d46362dbd35902ec113fb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Aug 12 05:55:44 2003 +0000
+
+    Add secondary backward stepper to scrollbar
+    
+    
+    (Old svn revision: 238)
+
+commit 483923b778e3519e54230ff6d9bfb35254e3ab06
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 4 18:28:51 2003 +0000
+
+    Use solid focus line width to imitate Motif
+    
+    
+    (Old svn revision: 237)
+
+commit 0b4fa6f51bb3aee2a2a2f1998a86ffd6f3dd3660
+Author: Benedikt Meurer <benny@xfce.org>
+Date:   Sun Aug 3 18:45:47 2003 +0000
+
+    Updated ChangeLogs
+    
+    
+    (Old svn revision: 236)
+
+commit ab87be9a63e8d3a4ae2a74308e13b30c31ea8f35
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 30 22:19:53 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 235)
+
+commit 717df79cbc556d8c2b01d64db209cda72e9f9746
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Wed Jul 30 11:31:23 2003 +0000
+
+    Update changlogs
+    
+    
+    (Old svn revision: 234)
+
+commit 7041b25efad1be755ee3c902f0c5f1efd8b23ed1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 28 19:41:19 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 233)
+
+commit fb0f82db922e3862bf5e8833872ba05868fcc5bf
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jul 25 21:17:06 2003 +0000
+
+    Add kde2 theme
+    
+    
+    (Old svn revision: 232)
+
+commit 53d3e33d474fc6f7c79cf23d1da976bbd010bd0e
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Thu Jul 24 09:21:05 2003 +0000
+
+    Remove debian dirs on Martin's request
+    
+    
+    (Old svn revision: 231)
+
+commit e2735caff42e32eddb6476942cd6bef2a81500de
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 20 12:23:20 2003 +0000
+
+    Version 2.1.3
+    Add compat with themes from previous 2.0.x versions of gtk-xfce-engine
+    
+    
+    (Old svn revision: 229)
+
+commit abda54083270b7841418575edae641c6634ae434
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Sat Jul 19 09:29:51 2003 +0000
+
+    Update ChangeLogs
+    
+    
+    (Old svn revision: 228)
+
+commit e92a9d2de9f7d6e8b8cac5393466c6ef76f6ba7e
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Sun Jul 13 08:43:08 2003 +0000
+
+    Update ChangeLogs for release
+    
+    
+    (Old svn revision: 226)
+
+commit 08a74925c701b5ef7d2a8b13cb096ce86f49aaff
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Fri Jul 11 07:33:51 2003 +0000
+
+    Update ChangeLog's for release
+    
+    
+    (Old svn revision: 225)
+
+commit ff64a66ee0b3731d09294593db54f097b35766dc
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Thu Jul 10 09:56:00 2003 +0000
+
+    Update ChangeLog's for release
+    
+    
+    (Old svn revision: 224)
+
+commit 78592f940f59d67329612751df5b6943d93eb26a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 7 22:25:48 2003 +0000
+
+    Update ltmain.sh with patched version
+    
+    
+    (Old svn revision: 223)
+
+commit 8a4d3e7b03d3a02f5bbd08b05e734777ade8f8eb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 7 21:32:15 2003 +0000
+
+    Fix draw_shadow() when widget is too small (ie width/height < 1)
+    
+    
+    (Old svn revision: 222)
+
+commit f8fc3e4b8b65078acc2bbbac1ee432d259583b7a
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Sun Jul 6 19:45:34 2003 +0000
+
+    Updating ChangeLogs
+    
+    
+    (Old svn revision: 221)
+
+commit 39af2cb4be1e993e65c8a356267c5c9c4afc7e23
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 6 13:43:13 2003 +0000
+
+    Apply colors to metacity frames
+    Various small improvements to gtkrc files
+    
+    
+    (Old svn revision: 220)
+
+commit 5063596f45829b28a576599ec5000ef5a140003a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jul 5 16:38:29 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 219)
+
+commit 34260f292000c66dfe40c1ddf64303e647fbe4c3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jul 5 12:31:03 2003 +0000
+
+    Remove ltconfig script as it is generated
+    
+    
+    (Old svn revision: 218)
+
+commit ca359dba5302fd463020d3ef9ad8a671b1aba50d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jul 4 23:37:15 2003 +0000
+
+    libttol update and all
+    
+    
+    (Old svn revision: 217)
+
+commit c90060fbd703aead98c80a962d7f1a9ed19ae2be
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jun 29 20:23:35 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 216)
+
+commit 3b3556317d948b6be12399c085fe2e17c2238c70
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jun 28 21:06:20 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 215)
+
+commit 7fe80784bff6f0fd9464184b33f2a868020102a0
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jun 28 20:44:32 2003 +0000
+
+    Change themes
+    
+    
+    (Old svn revision: 214)
+
+commit 22925809b5e4c3aaaecc5fdb578bceb2da2650cc
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jun 28 09:46:06 2003 +0000
+
+    Update to libtool-1.5
+    Use proper complete CURRENT:REVISION:AGE scheme for lib versionning
+    
+    
+    (Old svn revision: 213)
+
+commit 07f65e1f3d65de85d0abd12ba0a122b3e8430d44
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jun 3 21:25:29 2003 +0000
+
+    Upgrade version number to 2.1.1
+    
+    
+    (Old svn revision: 210)
+
+commit 4ca36c2621212e725ee807c049c947e090aa76f9
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Jun 3 20:16:36 2003 +0000
+
+    Use 1 pix thickness for progress bar
+    
+    
+    (Old svn revision: 209)
+
+commit 2588d3a232809ac30742d972bbdac29dba2944de
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 27 17:13:28 2003 +0000
+
+    Use 1pix thickness for progress bars
+    
+    
+    (Old svn revision: 208)
+
+commit 4a4a2eb4a45e693e0f99dafa53c374b1ea0c3eb8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 27 06:21:43 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 207)
+
+commit 4740e3e58ae6b3b7fce783b4f3b1edf90b4c4d99
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon May 26 21:16:23 2003 +0000
+
+    Rework xfce theme (real nice now)
+    
+    
+    (Old svn revision: 206)
+
+commit 625cfed6dc2d912444362649c194e2b5f2858dfc
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri May 23 22:40:33 2003 +0000
+
+    Reduce contrast of text to get smoother look
+    
+    
+    (Old svn revision: 205)
+
+commit 0a03a62ab7161a44bc78fd8150e01d545d970b3d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 21 20:40:10 2003 +0000
+
+    Change bg color of redmondxp theme
+    
+    
+    (Old svn revision: 204)
+
+commit 6323a2c43896d5d74c1c6ad3ce583d0234c83780
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Thu May 15 11:03:00 2003 +0000
+
+    Mass update of ChangeLogs
+    
+    
+    (Old svn revision: 203)
+
+commit b1cdb3e60f11cefbc26c11e346987aa4402d2b0b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Apr 28 20:46:16 2003 +0000
+
+    Add credits
+    
+    
+    (Old svn revision: 202)
+
+commit 1ffb1d9768acb49dff1a8b49355cde7333d77e29
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Apr 28 20:13:10 2003 +0000
+
+    Small tweaking on "xfce" and "curve" themes
+    
+    
+    (Old svn revision: 201)
+
+commit 98997fa9be3d8a9c106682934593df93c625a874
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Apr 22 19:40:09 2003 +0000
+
+    Change curve colors to look lie Wonderland colors
+    
+    
+    (Old svn revision: 200)
+
+commit 925173f8eb1dfa52881c730e68536c84b90e93ac
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 18 20:48:05 2003 +0000
+
+    Fix Makefile pointing to old theme name
+    
+    
+    (Old svn revision: 199)
+
+commit 389212ee21f67ff9b1011dc76b171bfd56a8b506
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 18 20:32:53 2003 +0000
+
+    Cleanup and reorg, set new version to 2.1.0 (as it features a lot of improvements over gtk-xfce-engine 2.0.x)
+    
+    
+    (Old svn revision: 198)
+
+commit 35dcbbc704d8d8cd40e12a2a008b23f1d7f29195
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 17 20:26:52 2003 +0000
+
+    Various enhancements
+    
+    
+    (Old svn revision: 197)
+
+commit bec739f2b03bda8e7830c0d22fd8c915a59d1279
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Apr 15 21:09:42 2003 +0000
+
+    Change colors for redmondxp theme
+    
+    
+    (Old svn revision: 196)
+
+commit e15a5a5e32edf4dff3a9157a1215288b2511dae1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Apr 14 21:49:36 2003 +0000
+
+    Use inverted gradient for active state, improve Redmondxp theme
+    
+    
+    (Old svn revision: 195)
+
+commit 8bad52dbaf049a2ddebfe4a7c34f71ca6e033986
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Apr 14 19:52:30 2003 +0000
+
+    Adjust widget/colors
+    
+    
+    (Old svn revision: 194)
+
+commit 1fc26b8484aa4f58a85a0d5f599ef63facf0c69f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Apr 13 20:01:55 2003 +0000
+
+    Add gradient scales
+    
+    
+    (Old svn revision: 193)
+
+commit d48f7cc2add8730f9dbf37804835960735129d9d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Apr 13 19:29:22 2003 +0000
+
+    Change xfce default theme to use gradients too :)
+    
+    
+    (Old svn revision: 192)
+
+commit 943be2338c6924a168a68dfb09bdabc23c38de8d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Apr 13 13:56:55 2003 +0000
+
+    Greatly improve themes that use newly added gradients
+    
+    
+    (Old svn revision: 191)
+
+commit 5e0939aecd174d6dcbcdb9911c2624ae7524b335
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Apr 12 22:50:43 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 190)
+
+commit 584e0a422f3b787fe291b656d1240929f34fdb18
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Apr 12 22:30:32 2003 +0000
+
+    New xfce engine gtkrc syntax with a much better scanner.
+    
+    
+    (Old svn revision: 189)
+
+commit 12fb3155bfe47c57e84e5403d167ceb18b57fb29
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 10 22:09:30 2003 +0000
+
+    One more
+    
+    
+    (Old svn revision: 188)
+
+commit cf44071358c0130164dc941212bf861548bea4d3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 10 22:03:00 2003 +0000
+
+    Fix compiler warning
+    
+    
+    (Old svn revision: 187)
+
+commit 911a23d3def595ce45827d5a26bac9ca719cb4f3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 10 22:01:10 2003 +0000
+
+    Add gradients
+    
+    
+    (Old svn revision: 186)
+
+commit 639a39eabd299817c48b1c9d87c1303d14def290
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 4 21:22:36 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 185)
+
+commit 31eb2d47f73d82dd3f2d9215e155f3a406b37761
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 4 21:14:56 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 184)
+
+commit 8074b61d600d2b96bd9af510783202bdbfcea467
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Apr 4 21:12:01 2003 +0000
+
+    Update Xfce-etria theme
+    
+    
+    (Old svn revision: 183)
+
+commit 0abcc65417748094666023be32260a330eb41927
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Apr 3 17:34:30 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 182)
+
+commit 18d00891f6487f3ebaae718225c97fe31b596f31
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Apr 2 20:43:00 2003 +0000
+
+    Forgot to adjust interior focus
+    
+    
+    (Old svn revision: 181)
+
+commit c6797bf655bc34ad04c8bed2b3a7b34671a9e93f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Apr 2 20:24:43 2003 +0000
+
+    Update ChangeLog
+    Improve Etria and Curve themes
+    
+    
+    (Old svn revision: 180)
+
+commit c2cdca30b958aea9dd90a803da7fa27cb7d3fcd5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Apr 1 21:48:11 2003 +0000
+
+    Adjust Etria colors
+    
+    
+    (Old svn revision: 179)
+
+commit d681f1081d1c0fca1cfdb1725a7ce75c66b8e69b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Apr 1 21:33:49 2003 +0000
+
+    Initialize early i18n in mcs plugins
+    Add Etria theme
+    
+    
+    (Old svn revision: 178)
+
+commit 79ada786a088d542502380a5d56ba61ceacdcb0e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Mar 27 20:30:37 2003 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 177)
+
+commit 4ac7a9cae353600c57066444a71f306e0c1e251f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Mar 26 20:20:01 2003 +0000
+
+    Small adjusments in color scheme
+    
+    
+    (Old svn revision: 176)
+
+commit 143b8f715cd34a4d3690afe4f5ff20864df5f765
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 25 19:42:48 2003 +0000
+
+    Change default xfwm4 theme (yeah, again...but that's the default theme, ya know)
+    Change Xfce-curve theme
+    
+    
+    (Old svn revision: 175)
+
+commit d3a8bd592ac85280610ed72d739f50c0f42dfecd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 23 21:17:46 2003 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 174)
+
+commit 15805ca2609d0c1fb4164c651f0d15cb755c41d9
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Wed Mar 19 07:12:08 2003 +0000
+
+    Only add extra autogen parameters when none are given
+    
+    
+    (Old svn revision: 173)
+
+commit e04c73d82349ed60ef13d2556c64283160abc365
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 18 22:33:42 2003 +0000
+
+    Update ChangeLog
+    Update build scripts (ie rerun autogen.sh)
+    Update xfwm4's microdeck theme
+    Remove 1 pix border arround xffm menu bar
+    
+    
+    (Old svn revision: 172)
+
+commit 4533fc5ba26559a46569dbdaec1b26a143015ef3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Mar 16 11:35:45 2003 +0000
+
+    Adjust colors
+    
+    
+    (Old svn revision: 171)
+
+commit e584cf39e8ecd381ec4db203c14a17b02e005c6d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Mar 13 20:39:42 2003 +0000
+
+    Update Changelogs
+    
+    
+    (Old svn revision: 170)
+
+commit b22087fefc2d9d3d61c70d71eaebc37d9be3a575
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 11 22:09:09 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 169)
+
+commit de69830a6a1ef840d9734a90ee609fdba100a5c7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 11 21:05:45 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 168)
+
+commit e48ca15f85c914823b5ea79edc738ef41de0f7e2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 11 20:55:28 2003 +0000
+
+    Slightly adjust colors
+    
+    
+    (Old svn revision: 167)
+
+commit ccc1550d762dc48495f8dc3ac1cb96b255cc6706
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Sun Mar 9 19:14:00 2003 +0000
+
+    Fix autogen.sh to run libtoolize
+    
+    
+    (Old svn revision: 166)
+
+commit af1a0d3af32207861d4ac3a3d6a88d2a1bbca986
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Mar 6 18:54:20 2003 +0000
+
+    Rework the gtk theme files
+    
+    
+    (Old svn revision: 165)
+
+commit 47d14ec1c9124bb66f6ceaa435d50e06836b566d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Mar 5 20:08:49 2003 +0000
+
+    Rework configure script, update xfce theme.
+    
+    
+    (Old svn revision: 164)
+
+commit 829459345bb8061a4c5d063c11931d59ac301ea8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 4 20:02:25 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 163)
+
+commit fb88037c1d73375af3d2bb5f8dce9d4392dc6acd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Mar 4 19:17:47 2003 +0000
+
+    Adjust theme colors
+    
+    
+    (Old svn revision: 162)
+
+commit f12cab3fa8fba2fb92f1a1fa95d1dea5d11dad23
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Mar 3 23:14:36 2003 +0000
+
+    For Joe :)
+    
+    
+    (Old svn revision: 161)
+
+commit 4318a0e8842f7522d1d0643cf25489c656b1352c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 28 23:27:07 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 160)
+
+commit 65aa4a3247a2801442a5fe0d3c6353baf44c3618
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 27 22:16:16 2003 +0000
+
+    ops, remove libtool
+    
+    
+    (Old svn revision: 159)
+
+commit a671af90eb033292ab362bf80a2119b13a684350
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 27 21:53:09 2003 +0000
+
+    Add libtool script
+    
+    
+    (Old svn revision: 158)
+
+commit 53b1d1d06227dde9e703ffb954e537be6a1a940c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Feb 21 18:23:00 2003 +0000
+
+    Rearrange gtkrc
+    
+    
+    (Old svn revision: 157)
+
+commit 19263e6fa1a5b04ecf6a24a4d425e459eacdab05
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Feb 20 21:41:37 2003 +0000
+
+    Rework of frame draw
+    
+    
+    (Old svn revision: 156)
+
+commit 60b84ccd6d839279e516bdec03105471fc390a41
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Feb 19 22:52:23 2003 +0000
+
+    Change curve colors, avoid drawing frame arround toolbars
+    
+    
+    (Old svn revision: 155)
+
+commit 8dbc11448c78509582e7e73d99e09e5c7991b0ec
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jan 23 10:52:32 2003 +0000
+
+    Update auto* stuff
+    
+    
+    (Old svn revision: 154)
+
+commit 32431937aca24055187cfcbdf0c4fe2d6a56719a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jan 23 10:45:09 2003 +0000
+
+    Update autogen.sh and Makefiles
+    
+    
+    (Old svn revision: 153)
+
+commit 5a7f657720585713da14fad72ebbc4f7ad7ee1f4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jan 17 08:55:11 2003 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 152)
+
+commit 5c3ab0374769c72f8b3c29d265c58d2cf82f309c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Dec 21 20:42:36 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 151)
+
+commit 0714737aa2667dbd3638ec019be3df262f1d0256
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 13 11:50:46 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 150)
+
+commit dc74d6857ece56efa227e7b48ff9fda0e3800f34
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Dec 13 10:13:32 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 149)
+
+commit 9a468e0cfe8d4d3c57c3872b15007a735250438d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Dec 12 20:16:44 2002 +0000
+
+    add GTK-2.2 menuitem shadow style and change some other minor changes.
+    
+    
+    (Old svn revision: 148)
+
+commit daccab2b19583be3aae2df0e9b76ae8da4b4c65e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Dec 11 07:08:03 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 147)
+
+commit 569c250d5c84349e65fe90121ee2d28bdee8378e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Dec 10 22:42:36 2002 +0000
+
+    Change various frame draw styles in smooth mode.
+    
+    
+    (Old svn revision: 146)
+
+commit c92278a72467d38bea63be466c6b2d30654f8311
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 1 21:10:34 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 145)
+
+commit fe3ca4b19feb08c623cedf7bebab9267be015adb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 1 21:09:38 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 144)
+
+commit c7ed1acbd6e119895787f075eaad20ed384eec72
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Dec 1 15:55:22 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 143)
+
+commit 26072cab9456d06a1e530d3f55aa664b2c4539c4
+Author: Martin Loschwitz <madkiss@debian.org>
+Date:   Thu Nov 28 20:17:40 2002 +0000
+
+    Update to debian/-subdir included in xfce4_20021127-1.
+    
+    
+    (Old svn revision: 142)
+
+commit e558a16841b92ebbf554373e0f1bf93bc9d81a22
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Nov 28 13:21:08 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 141)
+
+commit 3fa146587042f42f5f55dc3fb8c6dfd25649e0e6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Nov 20 15:59:02 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 140)
+
+commit 8940c388816263f239fe09091223fc96ca440729
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Nov 20 11:35:13 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 139)
+
+commit fa6e8d9b5a6db4f3e15126da05442238151398c7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 10 14:18:44 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 138)
+
+commit 2ac33ffa5ad973b67b935923f9dae5e4648a4439
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 10 13:58:30 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 137)
+
+commit 652da5a3193813cb1271039bf1e4d1ee6faf2d5d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Nov 10 13:53:46 2002 +0000
+
+    Change version number, change frame corners in "smooth" mode.
+    
+    
+    (Old svn revision: 136)
+
+commit 195a8ac5f3ce8cdeaf04e59ed220997d626beca1
+Author: Martin Loschwitz <madkiss@debian.org>
+Date:   Sun Nov 10 10:02:31 2002 +0000
+
+    Initial revision
+    
+    
+    (Old svn revision: 132)
+
+commit b4594c8244b815a6e3192705ded8f07acd51e822
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Nov 5 14:12:29 2002 +0000
+
+    Xfce-curve theme is back.
+    
+    
+    (Old svn revision: 131)
+
+commit 6f1b33e3bf35925483a43e6af49d5a72335c0853
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 22 18:52:19 2002 +0000
+
+    Change colors.
+    
+    
+    (Old svn revision: 130)
+
+commit 8572a7ebd73152fb7f7ed129d2d0455352332662
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 22 14:48:39 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 129)
+
+commit e058d77767cb894999cf2451cc5b8cbfc763a20c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 22 09:51:13 2002 +0000
+
+    Change to lighter color for tabs and buttons
+    
+    
+    (Old svn revision: 128)
+
+commit 90c969f991ff213ad977a5d166d5e2a2b61419cd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Oct 17 19:31:55 2002 +0000
+
+    Change active title color for xfwm4.
+    
+    
+    (Old svn revision: 127)
+
+commit 52ac80a23407c4435bbf8aab03493089d47b6ebe
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 12 13:26:58 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 126)
+
+commit c300750394dd252deb8d9a83075a906bf35230dc
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 11 21:45:37 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 125)
+
+commit fc82f36b81c900f687a18993498437ab4c1e2ff7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Oct 9 20:12:28 2002 +0000
+
+    Change frame for "trough", update ChangLog, set version to 2.0.10
+    
+    
+    (Old svn revision: 124)
+
+commit 61c460a64ed999f52df9ca9d34928d87360d9afe
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 5 20:06:11 2002 +0000
+
+    Remove shadow in trough
+    
+    
+    (Old svn revision: 123)
+
+commit c6524a050b63f5085b8ec5d6d41c33cf4e4e1b81
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 5 15:57:19 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 122)
+
+commit dbed15fe19faf99eb512618bfefaccb7f4b065c6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 5 11:20:36 2002 +0000
+
+    Change scrollbar color for redmondxp gtkrc
+    
+    
+    (Old svn revision: 121)
+
+commit 1ec242b798cade8db8ab5d40f8235acb35779495
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Oct 5 09:59:29 2002 +0000
+
+    trough shadow.
+    
+    
+    (Old svn revision: 120)
+
+commit c6a2aebb120d6b1b85f4e02b3ef95d871be4a894
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 4 22:04:03 2002 +0000
+
+    Change drawing of vscale and hscale, change interior focus border in various "smooth" themes.
+    
+    
+    (Old svn revision: 119)
+
+commit c28e76f7abc1fcf2ecc13f6a57e11fa6ac480cf1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 4 21:19:31 2002 +0000
+
+    Optmizations, revert to dark frame instead of black for widgets in smooth mode
+    
+    
+    (Old svn revision: 118)
+
+commit 6182a2b952368d8985adc1c54200a5477b08bb29
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 4 20:45:18 2002 +0000
+
+    Change scrollbar and various object drawing in smooth mode.
+    
+    
+    (Old svn revision: 117)
+
+commit 20d9ac3c7c0b9671856d301293af27c48eaa4acf
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 4 13:44:48 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 116)
+
+commit 9a59cc519b29dfb619193a88f1e7750913c1791e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Oct 4 13:03:22 2002 +0000
+
+    Switch to smooth mode for "basic" theme.
+    
+    
+    (Old svn revision: 115)
+
+commit 79639753261ddf900384dc75612db05bbeb30b04
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 1 20:03:43 2002 +0000
+
+    Do some oddities with smooth mode :)
+    
+    
+    (Old svn revision: 114)
+
+commit bda5236c585fd97a2d78a9231ae493e9be482029
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 1 17:04:45 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 113)
+
+commit 8727cf408e3c4e830d1ef15518421759683e55d1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 1 14:32:49 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 112)
+
+commit 08dedfce90f7d355f4552220e84017d0028b245a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Oct 1 13:59:05 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 111)
+
+commit 2bc2a1b0cb228c09c5750df713f91361460a4294
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 30 08:07:34 2002 +0000
+
+    Change drawing routine in smooth mode to enhance contrast on widgets.
+    
+    
+    (Old svn revision: 110)
+
+commit d52c3646b7b137f7ebd52691b512801de772988a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Sep 18 14:16:14 2002 +0000
+
+    Even lighter, I'm really hot right now, I need a refreshing theme :)
+    
+    
+    (Old svn revision: 109)
+
+commit 2d93a406b416671f7a281a78ed13545b61bc934a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Sep 18 14:13:23 2002 +0000
+
+    Make b5 theme lighter.
+    
+    
+    (Old svn revision: 108)
+
+commit 81d619f07e4c09c29a474258489a79db851ef810
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 17 20:51:49 2002 +0000
+
+    Update ChangeLog.
+    
+    
+    (Old svn revision: 107)
+
+commit 9271033b0013b8b71512701aa7ec6e7d5e12ae74
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 17 20:40:27 2002 +0000
+
+    Update configure.in
+    
+    
+    (Old svn revision: 106)
+
+commit 82aba8b055af234e24199810c29ead2ce9dc231f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 17 20:30:03 2002 +0000
+
+    Remove Xfce_curve
+    
+    
+    (Old svn revision: 105)
+
+commit e9f6a7ffa206c72bd170ab3ef7f28d44d1ae9b07
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Sep 13 22:08:36 2002 +0000
+
+    Regenerate all Makefile.in in case.
+    
+    
+    (Old svn revision: 104)
+
+commit 8b8340a88a14e02e38ab963503a19ecc3b605600
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 20:00:30 2002 +0000
+
+    Update ChangeLog.
+    
+    
+    (Old svn revision: 103)
+
+commit 3293df9d45a0ed1ae78f5abc3c7c435adb9e27b4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 19:38:27 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 102)
+
+commit 9b72aa195d7942713fd3f20b0246c34a5620a12d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 12:40:34 2002 +0000
+
+    Add theme saltlake
+    
+    
+    (Old svn revision: 101)
+
+commit b4b798588dc32fd66c020271bb1299e3875011d2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 09:40:06 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 100)
+
+commit 4c4788b8c60f51d020ac83dca0264f5d2f0df274
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 09:27:29 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 99)
+
+commit 6ceaa6e9dfb8dff265a77eaded0480d5cc47ac2c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 08:08:48 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 98)
+
+commit 9a3bb2dbe1c7e30d1ade78404ad755adeceb9d0b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 12 07:46:30 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 97)
+
+commit f160b95eb96997a6abcbd88bebe4103cc24e0cc8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Sep 11 21:20:52 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 96)
+
+commit ff844ae8bbf49806bd6ae421309732b64372fb56
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Sep 11 21:17:32 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 95)
+
+commit a7167aedacfb7327416ec54d285ede8060de7b77
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 9 13:40:14 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 94)
+
+commit 0613267335c9ffc2ef2da09e1d1c245b4c0f3e25
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 9 10:34:13 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 93)
+
+commit 5f021ec12a3b82b2f982a2789e7ac9337b391ec0
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 8 20:37:37 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 92)
+
+commit dd2cb2561f2cf616e8711aa1db4cbdf128e21298
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 8 20:26:58 2002 +0000
+
+    Use default gtk theme for drawing arrows instead of our, use flat pressed buttons.
+    
+    
+    (Old svn revision: 91)
+
+commit d5cbc50c8f7a1a42335947f676bc06a3005c2f52
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Sep 6 12:31:14 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 90)
+
+commit c14b5fb05f9508e8191fefceea46413408e8e280
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Sep 6 11:03:09 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 89)
+
+commit 96d05f5b91fef4c064e25464c2e60b03656359d2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Sep 5 15:24:51 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 88)
+
+commit b1009f111e8ce8dcff893f5cdcbfe0d1192c74c4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 3 21:04:05 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 87)
+
+commit ff7796c8faa44d7a570d9c6b383c56db5f14feed
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 3 20:12:43 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 86)
+
+commit 97b815b3814b192fcecf8d39af0471ee86f6b75c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Sep 3 12:47:19 2002 +0000
+
+    Add theme "curve"
+    
+    
+    (Old svn revision: 85)
+
+commit 97e6a33c133ac29a25242fe4655373e023adfb34
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 2 08:31:20 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 84)
+
+commit b9a3f6315ec379f7ecebbffaa3f70e4b9b0ebf3a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Sep 2 07:39:15 2002 +0000
+
+    Replace "rpm -ta" with "rpmbuild -ta"
+    
+    
+    (Old svn revision: 83)
+
+commit 41d090b463376f12366dc78206bc756745b4eed2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Sep 1 08:42:17 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 82)
+
+commit 60bec581106383f714be46705a39850ea5fe6632
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Aug 29 16:11:08 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 81)
+
+commit 16c5fb06921743330d802ba6cf83120a4b85038b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Aug 29 10:51:12 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 80)
+
+commit 8b3be81acbe436bbd311133cd17d4afc12e25f56
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Aug 29 10:44:09 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 79)
+
+commit ea8978f87882c6e6d45dc6b4fc47292d3d3bc606
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Aug 29 07:58:56 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 78)
+
+commit c105501802b17c2f4adef0a5a95a0d217de50a3d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Aug 28 14:03:32 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 77)
+
+commit 5a1f5ea36dc01f35291db5a88a4bd8d8cb72b9a2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Aug 28 08:28:57 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 76)
+
+commit 2824298875ea3e05c68f3aab0f83e9bc97088107
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Aug 27 22:12:20 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 75)
+
+commit 49295c7882393bb19a61986a83d1852087b8cfda
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Aug 27 09:56:46 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 74)
+
+commit b63c27cf7831856b4470f12d911d080185edef3b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue Aug 27 09:47:24 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 73)
+
+commit 842cfe7f6ec7129ef35e52d427e7e4c64731c82d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 26 13:10:44 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 72)
+
+commit 86cfbc6ee75268bbb74f79bfbd0097beb631ec8c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 26 13:02:20 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 71)
+
+commit 14743e70779fb6e6043684eb9656caf57e7125b6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 26 11:22:51 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 70)
+
+commit 86716d8ea68a541cdda0954411add5db520c9549
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 26 11:07:38 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 69)
+
+commit 7d59360effcc9cfaa3480ff03a23153067abd96b
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Aug 26 10:18:57 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 68)
+
+commit a07b204ecf6723e8ea6a8337eccaf20184480533
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Aug 25 11:29:38 2002 +0000
+
+    Make round corners enabled by default, allow disable round corners from configure script.
+    
+    
+    (Old svn revision: 67)
+
+commit 9097a83fe230153fb643005a7ac264cdbb7b8a1d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Aug 24 13:33:19 2002 +0000
+
+    Improve "smooth_edge" mode.
+    The shadow drawing should be faster too.
+    
+    
+    (Old svn revision: 66)
+
+commit 77b79a49582b0c46b7b02d1e1daae57b296b157a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Aug 24 12:34:05 2002 +0000
+
+    Remove round corners. W/out use of shape, it
+    
+    
+    (Old svn revision: 65)
+
+commit 9ea05552074fc2a33bc0bb834aad431a0459dd04
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Aug 24 12:19:04 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 64)
+
+commit 71cb01d3f74e15962fa75bb431f1cc6aa64758ac
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Aug 24 12:18:02 2002 +0000
+
+    Change theme when "smooth_edge" is set, implement round corner to reflect Eugenia's suggestion.
+    
+    
+    (Old svn revision: 63)
+
+commit 770b1c448a3c46045a040647e1d12ac3c1544f3a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Aug 23 13:37:56 2002 +0000
+
+    REvert latest changes, going nowhere.
+    
+    
+    (Old svn revision: 62)
+
+commit d32f33d2f52ea9232c6d984ed258224a85ec41a4
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Aug 23 11:15:25 2002 +0000
+
+    Round corners (more)
+    
+    
+    (Old svn revision: 61)
+
+commit cb4f5660d324a9fa175fb8ac75791bd752fa4f9d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Aug 23 08:55:58 2002 +0000
+
+    An attempt to implement slight round corners as suggested by Eugenia ;-)
+    
+    
+    (Old svn revision: 60)
+
+commit d263daf9ece98ad3d7c2b6191dc0dfc741350255
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 24 12:34:49 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 59)
+
+commit 5c548b4c836694088ffa013e9e949dafe1122343
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 24 12:32:02 2002 +0000
+
+    Add GTK_LIBS dependency so that PyGTK apps work with the theme (as suggested by Michele Campeotto <micampe@micampe.it>)
+    
+    
+    (Old svn revision: 58)
+
+commit c71d209509cef09b95ed2c7c34c6b9171d1e6f40
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jul 18 10:02:03 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 57)
+
+commit 59eab4bb47d5e044fbdde794f009e649a6a3033a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jul 18 10:00:30 2002 +0000
+
+    Change prelight color.
+    
+    
+    (Old svn revision: 56)
+
+commit 605a3242493f408cf0815ab21dbf2f32c19c05c8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jul 18 09:00:49 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 55)
+
+commit cd27e63834cd9cf3dc6232e9547bd4faf4718743
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jul 17 20:24:43 2002 +0000
+
+    Add new scheme "Xfce_light"
+    
+    
+    (Old svn revision: 54)
+
+commit cf6b020a61dfe5cc9afd9ae91e5218e130d0b15f
+Author: Jasper Huijsmans <jbhuijsmans@home.nl>
+Date:   Tue Jul 16 17:13:45 2002 +0000
+
+    small fix for compile error
+    
+    
+    (Old svn revision: 53)
+
+commit 60234501d15e2c44d6aabce3b785c75024c03088
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 15 20:29:41 2002 +0000
+
+    Change scrollbar size to 13 instead of 15 for XFce-Redmondxp and Xfce-b5
+    
+    
+    (Old svn revision: 52)
+
+commit 75044db10ba5155575d2207221c324ffae3fa1f8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 15 20:23:54 2002 +0000
+
+    Major improvement, add an option to the theme "smooth_edge", boolean, so one can set it to get slicker look.
+    Modified all themes, moved some default out of the code and put it the gtkrc files to give more control to the theme creator.
+    
+    
+    (Old svn revision: 51)
+
+commit 82fb07c7ef1b58530bfc8f58f2c32895a1b66bc5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 15 13:03:44 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 50)
+
+commit 1b9e0024003dab485484bfef75075b21e4933fca
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 15 12:46:03 2002 +0000
+
+    Change shadows
+    
+    
+    (Old svn revision: 49)
+
+commit 5fd663e95f993741ba473923031c89f7ae6f0fa3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 15 12:37:47 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 48)
+
+commit 99f57ab888153fdbfa7c7efe6cdb4363a16144ab
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 14 20:31:48 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 47)
+
+commit 32ab46cb90ee8d2478d729c8a1efe7957d6ab3fd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 14 20:25:32 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 46)
+
+commit df611469811b903de5f7b7dbf1213d0d125f4ede
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 14 19:34:12 2002 +0000
+
+    Revert latest changes
+    
+    
+    (Old svn revision: 45)
+
+commit 9262c3f24147a4300a749124365679e8736d0a63
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 14 13:57:21 2002 +0000
+
+    Revert the change on arrows.
+    
+    
+    (Old svn revision: 44)
+
+commit 456b459e35cda7f970039fe536e88b4b024403de
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jul 14 13:51:18 2002 +0000
+
+    Change the shadow of widget to be less sharp, ie by using dark_gc instead of black_gc to render the shadow (People may not like this)
+    
+    
+    (Old svn revision: 43)
+
+commit d0008973d05b8904cacc50085e8fdf10fdf32b25
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jul 4 19:27:22 2002 +0000
+
+    Update ChangeLog, release 2.0.6
+    
+    
+    (Old svn revision: 42)
+
+commit a37d756da7c94daf55a265b0bcff1184198634e7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jul 4 13:34:23 2002 +0000
+
+    Add Xfce-Redmondxp theme
+    
+    
+    (Old svn revision: 41)
+
+commit e3854b2311d6499e86049a11f5f04e0bb15d3c7e
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 1 21:40:31 2002 +0000
+
+    Update ChangeLog
+    
+    
+    (Old svn revision: 40)
+
+commit ba7bd6be2bd9d303ac702291e54d4c24e02ec229
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jul 1 08:31:58 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 39)
+
+commit 7606b74c335a7a5c89f253903c2ff076a472ae55
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sun Jun 30 20:14:14 2002 +0000
+
+    Improve default gtkrc
+    
+    
+    (Old svn revision: 38)
+
+commit 9c197d3daf78375db503a9935f457e5b57c47be5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jun 28 08:34:12 2002 +0000
+
+    Add theme Xfce_funklor based on a theme by Michael Pearce (chuzwuzza@optushome.com.au),
+    Improve Xfce theme.
+    
+    
+    (Old svn revision: 37)
+
+commit 291cf050e9f6241a5aec034674c8353e751f17e6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jun 27 07:56:54 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 36)
+
+commit 324adff34be48e554b0a22d0f27575a831497462
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jun 24 10:51:09 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 35)
+
+commit e3df80037aede32979fee7265992d61d9d06b414
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Mon Jun 24 10:15:34 2002 +0000
+
+    Add a new "basic" sample theme using xfce engine.
+    
+    
+    (Old svn revision: 34)
+
+commit 4a29bee5663872c00bbf743528c744220e6de93f
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Sat Jun 22 14:58:45 2002 +0000
+
+    Bump 2.0.6, change provided gtkrc
+    
+    
+    (Old svn revision: 33)
+
+commit bf326e04d31e8c60de669fb6b367cc2bc149406a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri Jun 14 20:35:07 2002 +0000
+
+    Fix some remaining deprecated calls
+    
+    
+    (Old svn revision: 32)
+
+commit c48f9db6eff0caf17ee8dd38098d0b744c99f2f1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jun 13 21:47:05 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 31)
+
+commit 5a156d6d630d8bbee1f2c5cce23bbafa498813cd
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jun 13 21:46:31 2002 +0000
+
+    Various cleanups
+    
+    
+    (Old svn revision: 30)
+
+commit ec58c63fe8051d016ea4946e5fe46ea22ae72de7
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu Jun 6 08:14:18 2002 +0000
+
+    Whoops, forgot to update CVS !
+    
+    
+    (Old svn revision: 29)
+
+commit d48b555218ace259b8a085a9045b154adbc350e5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 14:18:54 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 28)
+
+commit 586e1296982ef612205f1dbe2404218c996ce4fa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 14:05:37 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 27)
+
+commit 6a4334653899456e2269a369dd5b4852f192d5e8
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 14:03:43 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 26)
+
+commit 13e2e6bdf0a33c900906e717225f2e277bf98c70
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 13:50:54 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 25)
+
+commit a2764b2b170c9d9f2cec2962c216d27d99a2ffea
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 13:40:41 2002 +0000
+
+    Add default selected base color that was missing
+    
+    
+    (Old svn revision: 24)
+
+commit 06a82a40f991d15e3d29ae672cfb2a1a0d37ea72
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed Jun 5 13:15:31 2002 +0000
+
+    Improve contrast in provided gtkrc and update version nbr to 2.0.4
+    
+    
+    (Old svn revision: 23)
+
+commit 63062ecd66c82f936399df590fbaa77f96758178
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri May 31 23:13:51 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 22)
+
+commit d0c069f965c55eb6fab6c07092659159c3a2ca63
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Fri May 31 09:23:53 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 21)
+
+commit 08726587b0405eee7c9bcdd83dafb48f8ed5dbc5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu May 30 15:09:13 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 20)
+
+commit 932efb00d2d9293bb23c04a1273dd4776454c5b5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu May 30 10:55:30 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 19)
+
+commit 2b021e078af53bb717dfa22ec73731f2b6c4a16d
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu May 30 10:22:06 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 18)
+
+commit dbb5ab2ddd0f9df0a3b5fd6114c520c367004bbb
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Thu May 30 06:30:52 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 17)
+
+commit 93a985554ca40d8854b3d3ba82750616eac0cb5c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 21:09:34 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 16)
+
+commit aefa13f06b4a437a70818e0ff9f5bf5f77179e29
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 13:05:28 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 15)
+
+commit 97ab7ae83032fc736732b39d2315b6cf4eb312c5
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 10:33:05 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 14)
+
+commit 05c29469bc7d22e63a95fcce1065f33f0d4612c2
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 08:13:29 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 13)
+
+commit 4d5471e4ac9bfbe52e6437abb22bb527a7cf4dab
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 08:08:18 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 12)
+
+commit 42e89e9b17a9c91aea5d14628a67236e78d58fab
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Wed May 29 08:03:18 2002 +0000
+
+    Add default gtkrc for GNOME
+    
+    
+    (Old svn revision: 11)
+
+commit 88d0338726fe49dacd1576007414a8b3f53acaa1
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 21:36:45 2002 +0000
+
+    Add -DG_DISABLE_DEPRECATED
+    
+    
+    (Old svn revision: 10)
+
+commit 8f6d59f7dfb7b5ef251ede7661e439fd3937da26
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 21:17:42 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 9)
+
+commit a11b419f29bd0e860c3eca701b74c0b5e75b3cc3
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 21:02:52 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 8)
+
+commit c46105dac11f7383b991ff64e5c3f0d8e2f26e9c
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 16:55:35 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 7)
+
+commit 090d050a5de7c6d82ad02956f0d318f56e86c9a6
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 16:44:11 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 6)
+
+commit 0960bc2cf131d47f95c5873f490fe5144a1d7e9a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 16:38:31 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 5)
+
+commit 2b0469bdf1fc4f420f9f9eb75beb110dad3e74aa
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 15:18:19 2002 +0000
+
+    *** empty log message ***
+    
+    
+    (Old svn revision: 4)
+
+commit 63349b8549f6cea28021ea7585eb205eea86661a
+Author: Olivier Fourdan <fourdan.olivier@wanadoo.fr>
+Date:   Tue May 28 14:41:57 2002 +0000
+
+    Initial import
+    
+    
+    (Old svn revision: 3)
+
+commit cd1d14a4924eea8fdf20b60ce09aadfc7d343937
+Author: Unknown Author <xfce4-dev@xfce.org>
+Date:   Tue May 28 14:41:57 2002 +0000
+
+    New repository initialized by cvs2svn.
+    
+    (Old svn revision: 2)

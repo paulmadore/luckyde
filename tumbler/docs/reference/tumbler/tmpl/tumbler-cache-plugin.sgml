@@ -1,0 +1,40 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-cache-plugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_cache_plugin_get_default ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_cache_plugin_get_cache ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+

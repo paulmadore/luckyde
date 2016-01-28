@@ -1,0 +1,3 @@
+xs/Xfconf.xs
+xs/XfconfBinding.xs
+xs/XfconfChannel.xs

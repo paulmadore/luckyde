@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>String Utility Functions</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Exo Reference Manual">
+<link rel="up" href="exo-miscelleanous.html" title="Part VII. Miscelleanous">
+<link rel="prev" href="exo-Executing-Applications.html" title="Executing Applications">
+<link rel="next" href="exo-Miscellaneous-Utility-Functions.html" title="Miscellaneous Utility Functions">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="exo-Executing-Applications.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="exo-miscelleanous.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Exo Reference Manual</th>
+<td><a accesskey="n" href="exo-Miscellaneous-Utility-Functions.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#exo-String-Utility-Functions.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#exo-String-Utility-Functions.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="exo-String-Utility-Functions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="exo-String-Utility-Functions.top_of_page"></a>String Utility Functions</span></h2>
+<p>String Utility Functions — Various string-related functions</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="exo-String-Utility-Functions.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;exo/exo.h&gt;
+
+<span class="returnvalue">gchar</span> *             <a class="link" href="exo-String-Utility-Functions.html#exo-str-elide-underscores" title="exo_str_elide_underscores ()">exo_str_elide_underscores</a>           (<em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="exo-String-Utility-Functions.html#exo-str-is-equal" title="exo_str_is_equal ()">exo_str_is_equal</a>                    (<em class="parameter"><code>const <span class="type">gchar</span> *a</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *b</code></em>);
+#define             <a class="link" href="exo-String-Utility-Functions.html#exo-str-is-empty" title="exo_str_is_empty()">exo_str_is_empty</a>                    (string)
+<span class="returnvalue">gboolean</span>            <a class="link" href="exo-String-Utility-Functions.html#exo-str-looks-like-an-uri" title="exo_str_looks_like_an_uri ()">exo_str_looks_like_an_uri</a>           (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="exo-String-Utility-Functions.html#exo-str-replace" title="exo_str_replace ()">exo_str_replace</a>                     (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *pattern</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *replacement</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="exo-String-Utility-Functions.html#exo-strdup-strftime" title="exo_strdup_strftime ()">exo_strdup_strftime</a>                 (<em class="parameter"><code>const <span class="type">gchar</span> *format</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">struct tm</span> *tm</code></em>);
+<span class="returnvalue">gchar</span> **            <a class="link" href="exo-String-Utility-Functions.html#exo-strndupv" title="exo_strndupv ()">exo_strndupv</a>                        (<em class="parameter"><code><span class="type">gchar</span> **strv</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> num</code></em>);
+#define             <a class="link" href="exo-String-Utility-Functions.html#I-:CAPS" title="I_()">I_</a>                                  (string)
+</pre>
+</div>
+<div class="refsect1">
+<a name="exo-String-Utility-Functions.description"></a><h2>Description</h2>
+<p>
+This section describes a number of utility functions for
+manipulating strings.
+</p>
+</div>
+<div class="refsect1">
+<a name="exo-String-Utility-Functions.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="exo-str-elide-underscores"></a><h3>exo_str_elide_underscores ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             exo_str_elide_underscores           (<em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>);</pre>
+<p>
+Returns a copy of <em class="parameter"><code>text</code></em> with all mnemonic underscores
+stripped off.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td>A zero terminated string.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A copy of <em class="parameter"><code>text</code></em> without underscores. The returned string
+must be freed when no longer required.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-str-is-equal"></a><h3>exo_str_is_equal ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            exo_str_is_equal                    (<em class="parameter"><code>const <span class="type">gchar</span> *a</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *b</code></em>);</pre>
+<p>
+<code class="literal">NULL</code>-safe string comparison. Returns <code class="literal">TRUE</code> if both <em class="parameter"><code>a</code></em> and <em class="parameter"><code>b</code></em> are
+<code class="literal">NULL</code> or if <em class="parameter"><code>a</code></em> and <em class="parameter"><code>b</code></em> refer to valid strings which are equal.
+</p>
+<p>
+You should always prefer this function over <code class="function">strcmp()</code>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>a</code></em> :</span></p></td>
+<td>A pointer to first string or <code class="literal">NULL</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>b</code></em> :</span></p></td>
+<td>A pointer to second string or <code class="literal">NULL</code>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>a</code></em> equals <em class="parameter"><code>b</code></em>, else <code class="literal">FALSE</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-str-is-empty"></a><h3>exo_str_is_empty()</h3>
+<pre class="programlisting">#define             exo_str_is_empty(string)</pre>
+<p>
+Macro to check if a string is <code class="literal">NULL</code> or empty. You should prefer
+this function over strlen (str) == 0.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>string</code></em> :</span></p></td>
+<td>a string</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if the string is not <code class="literal">NULL</code> and its length &gt; 1,
+<code class="literal">FALSE</code> otherwise.
+Since : 0.5.0</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-str-looks-like-an-uri"></a><h3>exo_str_looks_like_an_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            exo_str_looks_like_an_uri           (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>);</pre>
+<p>
+Check if <em class="parameter"><code>str</code></em> looks like an uri. This function is no guarantee that
+the uri exists, or is supported by the system.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>str</code></em> :</span></p></td>
+<td>an input string.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if the <em class="parameter"><code>str</code></em> looks like an URI
+according to RFC 2396, <code class="literal">FALSE</code> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 0.5.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-str-replace"></a><h3>exo_str_replace ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             exo_str_replace                     (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *pattern</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *replacement</code></em>);</pre>
+<p>
+Searches <em class="parameter"><code>str</code></em> for occurances of <em class="parameter"><code>pattern</code></em> and replaces each
+such occurance with <em class="parameter"><code>replacement</code></em>. Returns a newly allocated
+copy of <em class="parameter"><code>str</code></em> on which the given replacement were performed.
+The caller is responsible to free the returned string using
+<code class="function">g_free()</code> when no longer needed.
+</p>
+<p>
+Note that <em class="parameter"><code>pattern</code></em> and <em class="parameter"><code>replacement</code></em> don't need to be of the
+same size. If <em class="parameter"><code>replacement</code></em> is <code class="literal">NULL</code>, the pattern will be
+removed from the string.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>str</code></em> :</span></p></td>
+<td>the input string.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>pattern</code></em> :</span></p></td>
+<td>a search pattern in <em class="parameter"><code>str</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>replacement</code></em> :</span></p></td>
+<td>replacement string for <em class="parameter"><code>pattern</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated copy of <em class="parameter"><code>str</code></em> where all occurances of
+<em class="parameter"><code>pattern</code></em> are replaced with <em class="parameter"><code>replacement</code></em>. Or <code class="literal">NULL</code> if
+<em class="parameter"><code>str</code></em> and/or <em class="parameter"><code>pattern</code></em> is <code class="literal">NULL</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 0.3.1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-strdup-strftime"></a><h3>exo_strdup_strftime ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             exo_strdup_strftime                 (<em class="parameter"><code>const <span class="type">gchar</span> *format</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">struct tm</span> *tm</code></em>);</pre>
+<p>
+Cover for standard date-and-time-formatting routine strftime that returns
+a newly-allocated string of the correct size. The caller is responsible
+to free the returned string using <code class="function">g_free()</code> when no longer needed.
+</p>
+<p>
+Besides the buffer management, there are two differences between this
+and the library strftime:
+</p>
+<p>
+The modifiers "-" and "_" between a "%" and a numeric directive
+are defined as for the GNU version of strftime. "-" means "do not
+pad the field" and "_" means "pad with spaces instead of zeroes".
+</p>
+<p>
+Non-ANSI extensions to strftime are flagged at runtime with a
+warning, so it's easy to notice use of the extensions without
+testing with multiple versions of the library.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>format</code></em> :</span></p></td>
+<td>format string to pass to strftime(3). See the strftime(3) documentation
+for details.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>tm</code></em> :</span></p></td>
+<td>date/time, in struct tm format.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated string containing the formatted date/time.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 0.3.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-strndupv"></a><h3>exo_strndupv ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **            exo_strndupv                        (<em class="parameter"><code><span class="type">gchar</span> **strv</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> num</code></em>);</pre>
+<p>
+Creates a new string vector containing the first <em class="parameter"><code>n</code></em> elements
+of <em class="parameter"><code>strv</code></em>. If called on a <code class="literal">NULL</code> value or <em class="parameter"><code>num</code></em> is 0, <a class="link" href="exo-String-Utility-Functions.html#exo-strndupv" title="exo_strndupv ()"><code class="function">exo_strndupv()</code></a>
+simply returns <code class="literal">NULL</code>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>strv</code></em> :</span></p></td>
+<td>String vector to duplicate.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>num</code></em> :</span></p></td>
+<td>Number of strings in <em class="parameter"><code>strv</code></em> to duplicate.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A new NULL-terminated array of strings or <code class="literal">NULL</code>.
+Should be freed using <code class="function">g_strfreev()</code> when no longer needed.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="I-:CAPS"></a><h3>I_()</h3>
+<pre class="programlisting">#define             I_(string)</pre>
+<p>
+Shortcut for <code class="function">g_intern_static_string()</code> to return a
+canonical representation for <em class="parameter"><code>string</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>string</code></em> :</span></p></td>
+<td>A static string.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a canonical representation for the string.
+Since : 0.3.1.1</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

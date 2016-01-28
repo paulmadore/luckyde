@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ExoToolbarsEditorDialog</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Exo Reference Manual">
+<link rel="up" href="exo-toolbars.html" title="Part II. Editable Toolbars">
+<link rel="prev" href="ExoToolbarsEditor.html" title="ExoToolbarsEditor">
+<link rel="next" href="ExoToolbarsView.html" title="ExoToolbarsView">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ExoToolbarsEditor.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="exo-toolbars.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Exo Reference Manual</th>
+<td><a accesskey="n" href="ExoToolbarsView.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#ExoToolbarsEditorDialog.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#ExoToolbarsEditorDialog.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#ExoToolbarsEditorDialog.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#ExoToolbarsEditorDialog.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="ExoToolbarsEditorDialog"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ExoToolbarsEditorDialog.top_of_page"></a>ExoToolbarsEditorDialog</span></h2>
+<p>ExoToolbarsEditorDialog — Dialog to edit toolbars</p>
+</td>
+<td valign="top" align="right"><img src="exo-toolbars-editor-dialog.png"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="ExoToolbarsEditorDialog.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;exo/exo.h&gt;
+
+                    <a class="link" href="ExoToolbarsEditorDialog.html#ExoToolbarsEditorDialog-struct" title="ExoToolbarsEditorDialog">ExoToolbarsEditorDialog</a>;
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="ExoToolbarsEditorDialog.html#exo-toolbars-editor-dialog-new-with-model" title="exo_toolbars_editor_dialog_new_with_model ()">exo_toolbars_editor_dialog_new_with_model</a>
+                                                        (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsEditorDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----GtkObject
+               +----GtkWidget
+                     +----GtkContainer
+                           +----GtkBin
+                                 +----GtkWindow
+                                       +----GtkDialog
+                                             +----ExoToolbarsEditorDialog
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsEditorDialog.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ExoToolbarsEditorDialog implements
+ AtkImplementorIface and  GtkBuildable.</p>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsEditorDialog.description"></a><h2>Description</h2>
+<p>
+Provides an easy-to-use wrapper for the <a class="link" href="ExoToolbarsEditor.html" title="ExoToolbarsEditor"><span class="type">ExoToolbarsEditor</span></a> widget.
+</p>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsEditorDialog.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="ExoToolbarsEditorDialog-struct"></a><h3>ExoToolbarsEditorDialog</h3>
+<pre class="programlisting">typedef struct _ExoToolbarsEditorDialog ExoToolbarsEditorDialog;</pre>
+<p>
+The <a class="link" href="ExoToolbarsEditorDialog.html" title="ExoToolbarsEditorDialog"><span class="type">ExoToolbarsEditorDialog</span></a> struct contains only private fields and
+should not be directly accessed.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-editor-dialog-new-with-model"></a><h3>exo_toolbars_editor_dialog_new_with_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         exo_toolbars_editor_dialog_new_with_model
+                                                        (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="ExoToolbarsEditorDialog.html" title="ExoToolbarsEditorDialog"><span class="type">ExoToolbarsEditorDialog</span></a> that is associated with
+<em class="parameter"><code>ui_manager</code></em> and <em class="parameter"><code>model</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ui_manager</code></em> :</span></p></td>
+<td>A <span class="type">GtkUIManager</span>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>model</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A new <a class="link" href="ExoToolbarsEditorDialog.html" title="ExoToolbarsEditorDialog"><span class="type">ExoToolbarsEditorDialog</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsEditorDialog.see-also"></a><h2>See Also</h2>
+<a class="link" href="ExoToolbarsEditor.html" title="ExoToolbarsEditor"><span class="type">ExoToolbarsEditor</span></a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

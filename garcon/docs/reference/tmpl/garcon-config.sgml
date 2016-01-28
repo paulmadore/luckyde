@@ -1,0 +1,102 @@
+<!-- ##### SECTION Title ##### -->
+garcon-config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO GARCON_MAJOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GARCON_MINOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GARCON_MICRO_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GARCON_CHECK_VERSION ##### -->
+<para>
+
+</para>
+
+@major: 
+@minor: 
+@micro: 
+
+
+<!-- ##### VARIABLE garcon_major_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE garcon_minor_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE garcon_micro_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION garcon_check_version ##### -->
+<para>
+
+</para>
+
+@required_major: 
+@required_minor: 
+@required_micro: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_config_lookup ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_config_build_paths ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+

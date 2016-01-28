@@ -1,0 +1,70 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-thumbnail-flavor
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_flavor_new ##### -->
+<para>
+
+</para>
+
+@name: 
+@width: 
+@height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_flavor_new_normal ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_flavor_new_large ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_flavor_get_name ##### -->
+<para>
+
+</para>
+
+@flavor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnail_flavor_get_size ##### -->
+<para>
+
+</para>
+
+@flavor: 
+@width: 
+@height: 
+
+

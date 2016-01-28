@@ -1,0 +1,76 @@
+<!-- ##### SECTION Title ##### -->
+Executing Applications
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION exo_execute_preferred_application ##### -->
+<para>
+
+</para>
+
+@category: 
+@parameter: 
+@working_directory: 
+@envp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_execute_preferred_application_on_screen ##### -->
+<para>
+
+</para>
+
+@category: 
+@parameter: 
+@working_directory: 
+@envp: 
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_execute_terminal_shell ##### -->
+<para>
+
+</para>
+
+@command_line: 
+@working_directory: 
+@envp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_execute_terminal_shell_on_screen ##### -->
+<para>
+
+</para>
+
+@command_line: 
+@working_directory: 
+@envp: 
+@screen: 
+@error: 
+@Returns: 
+
+

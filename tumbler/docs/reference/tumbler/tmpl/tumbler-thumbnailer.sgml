@@ -1,0 +1,116 @@
+<!-- ##### SECTION Title ##### -->
+TumblerThumbnailer
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_create ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@cancellable: 
+@info: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_get_hash_keys ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_get_mime_types ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_get_uri_schemes ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_get_priority ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_get_max_file_size ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_supports_location ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_supports_hash_key ##### -->
+<para>
+
+</para>
+
+@thumbnailer: 
+@hash_key: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_array_copy ##### -->
+<para>
+
+</para>
+
+@thumbnailers: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_thumbnailer_array_free ##### -->
+<para>
+
+</para>
+
+@thumbnailers: 
+@length: 
+
+

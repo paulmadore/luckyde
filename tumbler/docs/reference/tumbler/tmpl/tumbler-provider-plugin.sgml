@@ -1,0 +1,41 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-provider-plugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tumbler_provider_plugin_new ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tumbler_provider_plugin_get_types ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@types: 
+@n_types: 
+
+

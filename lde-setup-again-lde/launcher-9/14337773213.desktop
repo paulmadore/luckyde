@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor
+Comment=
+Exec=torbrowser
+Icon=/home/phm/programs/torbrowser/Browser/browser/icons/mozicon128.png
+Path=
+Terminal=false
+StartupNotify=false

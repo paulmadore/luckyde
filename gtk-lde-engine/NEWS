@@ -1,0 +1,62 @@
+2.10.0
+======
+- Add new theme Xfce-flat
+- Fix invalid free on theme parse error
+
+2.9.2
+=====
+- Add default colors to xfce basic theme
+- Fix uninitialized value (bug #10877)
+
+2.9.1
+=====
+- Changed rendering of the spinner
+- Correctly match gtk-tooltip widgets (bug #8494)
+- Use size for the radio and check boxes (bug #8456)
+- Don't leak a graduent pattern at each draw (bug #8521)
+- Support trough-side-details
+- Added flat_border and focus_color style properties
+- More rendering improvements
+
+2.9.0
+=====
+- Changed drawing routines to use cairo
+
+2.8.1
+=====
+- Fix rendering of GtkSpinButton (bug #4946)
+- Fix rendering of inconsistent checkboxes (bug #7279)
+
+2.8.0
+=====
+- Re-add Xfce 4.6's gtkrc theme as Xfce-4.6 (bug #7061).
+
+2.7.0
+=====
+- Cleanup build files.
+- Small visual update for xfce 4.8, active window decoration color.
+- Fix gtkrc warning (bug #5985).
+
+2.6.0
+=======
+- Much compact version of the default theme.
+
+2.5.99.1
+========
+- Update WM colors to match the new xfwm4 decoration theme
+
+2.5.92
+======
+- Fix bg color being shown under group box title (Bug #1018)
+- Remove README.html files (Bug #3280)
+
+2.4.0
+=====
+- Several improvements to the default theme.
+- Change the engine so that scrollbars show the trough border. 
+
+
+2.2.5
+=====
+- Completely new default theme.
+- Improved drawing of control elements to enhance usability.

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=komodo
+GenericName=Editor
+Comment=
+Exec=/home/phm/Komodo-Edit-9/lib/mozilla/komodo %F
+Icon=/home/phm/Komodo-Edit-9/share/icons/komodo48.png
+Terminal=false
+Type=Application
+MimeType=text/plain;
+Categories=ActiveState;Application;Development;Editor;Utility;TextEditor;
+X-XFCE-Source=file:///home/phm/.local/share/applications/komodo-edit-9-nightly.desktop
+Path=
+StartupNotify=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=XFE
+Comment=
+Exec=xfe /home/phm/stuff
+Icon=/home/phm/programs/xfe.png
+Path=
+Terminal=false
+StartupNotify=false

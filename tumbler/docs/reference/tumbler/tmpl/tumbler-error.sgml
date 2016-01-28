@@ -1,0 +1,50 @@
+<!-- ##### SECTION Title ##### -->
+tumbler-error
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO TUMBLER_ERROR_DOMAIN ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO TUMBLER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM TumblerErrorEnum ##### -->
+<para>
+
+</para>
+
+@TUMBLER_ERROR_UNSUPPORTED: 
+@TUMBLER_ERROR_CONNECTION_ERROR: 
+@TUMBLER_ERROR_INVALID_FORMAT: 
+@TUMBLER_ERROR_IS_THUMBNAIL: 
+@TUMBLER_ERROR_SAVE_FAILED: 
+@TUMBLER_ERROR_UNSUPPORTED_FLAVOR: 
+@TUMBLER_ERROR_NO_CONTENT: 
+@TUMBLER_ERROR_SHUTTING_DOWN: 
+

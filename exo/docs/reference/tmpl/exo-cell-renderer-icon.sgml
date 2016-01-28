@@ -1,0 +1,59 @@
+<!-- ##### SECTION Title ##### -->
+ExoCellRendererIcon
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoCellRendererIcon ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG ExoCellRendererIcon:follow-state ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG ExoCellRendererIcon:gicon ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG ExoCellRendererIcon:icon ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG ExoCellRendererIcon:size ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION exo_cell_renderer_icon_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

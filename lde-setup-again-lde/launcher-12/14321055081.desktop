@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=select screenshoot
+Comment=
+Exec=xfce4-screenshooter -r
+Icon=applets-screenshooter-symbolic
+Path=
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ExoIconBar</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Exo Reference Manual">
+<link rel="up" href="exo-widgets.html" title="Part III. Additional widgets">
+<link rel="prev" href="exo-widgets.html" title="Part III. Additional widgets">
+<link rel="next" href="ExoIconChooserDialog.html" title="ExoIconChooserDialog">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="exo-widgets.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="exo-widgets.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Exo Reference Manual</th>
+<td><a accesskey="n" href="ExoIconChooserDialog.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#ExoIconBar.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#ExoIconBar.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#ExoIconBar.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#ExoIconBar.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#ExoIconBar.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#ExoIconBar.style-properties" class="shortcut">Style Properties</a>
+                   | 
+                  <a href="#ExoIconBar.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="ExoIconBar"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ExoIconBar.top_of_page"></a>ExoIconBar</span></h2>
+<p>ExoIconBar — A widget for displaying icon bars</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="ExoIconBar.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;exo/exo.h&gt;
+
+                    <a class="link" href="ExoIconBar.html#ExoIconBar-struct" title="ExoIconBar">ExoIconBar</a>;
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="ExoIconBar.html#exo-icon-bar-new" title="exo_icon_bar_new ()">exo_icon_bar_new</a>                    (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="ExoIconBar.html#exo-icon-bar-new-with-model" title="exo_icon_bar_new_with_model ()">exo_icon_bar_new_with_model</a>         (<em class="parameter"><code><span class="type">GtkTreeModel</span> *model</code></em>);
+<span class="returnvalue">GtkTreeModel</span> *      <a class="link" href="ExoIconBar.html#exo-icon-bar-get-model" title="exo_icon_bar_get_model ()">exo_icon_bar_get_model</a>              (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-model" title="exo_icon_bar_set_model ()">exo_icon_bar_set_model</a>              (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeModel</span> *model</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-get-pixbuf-column" title="exo_icon_bar_get_pixbuf_column ()">exo_icon_bar_get_pixbuf_column</a>      (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-pixbuf-column" title="exo_icon_bar_set_pixbuf_column ()">exo_icon_bar_set_pixbuf_column</a>      (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-get-text-column" title="exo_icon_bar_get_text_column ()">exo_icon_bar_get_text_column</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-text-column" title="exo_icon_bar_set_text_column ()">exo_icon_bar_set_text_column</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">GtkOrientation</span>      <a class="link" href="ExoIconBar.html#exo-icon-bar-get-orientation" title="exo_icon_bar_get_orientation ()">exo_icon_bar_get_orientation</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-orientation" title="exo_icon_bar_set_orientation ()">exo_icon_bar_set_orientation</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkOrientation</span> orientation</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-get-active" title="exo_icon_bar_get_active ()">exo_icon_bar_get_active</a>             (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-active" title="exo_icon_bar_set_active ()">exo_icon_bar_set_active</a>             (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> idx</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="ExoIconBar.html#exo-icon-bar-get-active-iter" title="exo_icon_bar_get_active_iter ()">exo_icon_bar_get_active_iter</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoIconBar.html#exo-icon-bar-set-active-iter" title="exo_icon_bar_set_active_iter ()">exo_icon_bar_set_active_iter</a>        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----GtkObject
+               +----GtkWidget
+                     +----GtkContainer
+                           +----ExoIconBar
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ExoIconBar implements
+ AtkImplementorIface and  GtkBuildable.</p>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--active" title='The "active" property'>active</a>"                   <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--model" title='The "model" property'>model</a>"                    <span class="type">GtkTreeModel</span>*         : Read / Write
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--orientation" title='The "orientation" property'>orientation</a>"              <span class="type">GtkOrientation</span>        : Read / Write
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--pixbuf-column" title='The "pixbuf-column" property'>pixbuf-column</a>"            <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--text-column" title='The "text-column" property'>text-column</a>"              <span class="type">gint</span>                  : Read / Write
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.style-properties"></a><h2>Style Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-active-item-border-color" title='The "active-item-border-color" style property'>active-item-border-color</a>" <span class="type">GdkColor</span>*             : Read
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-active-item-fill-color" title='The "active-item-fill-color" style property'>active-item-fill-color</a>"   <span class="type">GdkColor</span>*             : Read
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-active-item-text-color" title='The "active-item-text-color" style property'>active-item-text-color</a>"   <span class="type">GdkColor</span>*             : Read
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-cursor-item-border-color" title='The "cursor-item-border-color" style property'>cursor-item-border-color</a>" <span class="type">GdkColor</span>*             : Read
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-cursor-item-fill-color" title='The "cursor-item-fill-color" style property'>cursor-item-fill-color</a>"   <span class="type">GdkColor</span>*             : Read
+  "<a class="link" href="ExoIconBar.html#ExoIconBar--s-cursor-item-text-color" title='The "cursor-item-text-color" style property'>cursor-item-text-color</a>"   <span class="type">GdkColor</span>*             : Read
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="ExoIconBar.html#ExoIconBar-selection-changed" title='The "selection-changed" signal'>selection-changed</a>"                              : <code class="literal">Run First</code>
+  "<a class="link" href="ExoIconBar.html#ExoIconBar-set-scroll-adjustments" title='The "set-scroll-adjustments" signal'>set-scroll-adjustments</a>"                         : <code class="literal">Run Last</code>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.description"></a><h2>Description</h2>
+<p>
+A widget that displays any object that implements the <span class="type">GtkTreeModel</span> interface
+in an icon bar.
+</p>
+<p>
+</p>
+<div class="example">
+<a name="idp7234352"></a><p class="title"><b>Example 1. 
+  Creating a new <span class="structname">ExoIconBar</span> with a <span class="structname">GtkListStore</span>
+</b></p>
+<div class="example-contents"><pre class="programlisting">
+enum
+{
+  PIXBUF_COLUMN,
+  STRING_COLUMN,
+  N_COLUMNS,
+};
+
+{
+  GtkListStore *store;
+  GtkWidget    *bar;
+
+  // make a new list store
+  store = gtk_list_store_new (N_COLUMNS, GDK_TYPE_PIXBUF, G_TYPE_STRING);
+
+  // fill the store with data
+  fill_store (store);
+
+  // create the icon bar
+  bar = exo_icon_bar_new_with_model (GTK_TREE_MODEL (store));
+  exo_icon_bar_set_pixbuf_column (EXO_ICON_BAR (bar), PIXBUF_COLUMN);
+  exo_icon_bar_set_text_column (EXO_ICON_BAR (bar), TEXT_COLUMN);
+  gtk_widget_show (bar);
+
+  // the icon bar keeps a reference on the store now
+  g_object_unref (G_OBJECT (store));
+
+  // add the bar to your GUI now...
+}
+</pre></div>
+</div>
+<p><br class="example-break">
+</p>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="ExoIconBar-struct"></a><h3>ExoIconBar</h3>
+<pre class="programlisting">typedef struct _ExoIconBar ExoIconBar;</pre>
+<p>
+The <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> struct contains only private fields and should not
+be directly accessed.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-new"></a><h3>exo_icon_bar_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         exo_icon_bar_new                    (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Creates a new <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> without model.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-new-with-model"></a><h3>exo_icon_bar_new_with_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         exo_icon_bar_new_with_model         (<em class="parameter"><code><span class="type">GtkTreeModel</span> *model</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> and associates it with
+<em class="parameter"><code>model</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>model</code></em> :</span></p></td>
+<td>A <span class="type">GtkTreeModel</span>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a newly allocated <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>, which is associated with <em class="parameter"><code>model</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-model"></a><h3>exo_icon_bar_get_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkTreeModel</span> *      exo_icon_bar_get_model              (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);</pre>
+<p>
+Returns the model the <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> is based on. Returns <code class="literal">NULL</code> if
+the model is unset.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>A <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A <span class="type">GtkTreeModel</span>, or <code class="literal">NULL</code> if none is currently being used.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-model"></a><h3>exo_icon_bar_set_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_model              (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeModel</span> *model</code></em>);</pre>
+<p>
+Sets the model for a <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>. If the <em class="parameter"><code>icon_bar</code></em> already has a model
+set, it will remove it before settings the new model. If <em class="parameter"><code>model</code></em> is <code class="literal">NULL</code>,
+then it will unset the old model.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>A <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>model</code></em> :</span></p></td>
+<td>A <span class="type">GtkTreeModel</span> or <code class="literal">NULL</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-pixbuf-column"></a><h3>exo_icon_bar_get_pixbuf_column ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                exo_icon_bar_get_pixbuf_column      (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);</pre>
+<p>
+Returns the column with pixbufs for <em class="parameter"><code>icon_bar</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the pixbuf column, or -1 if it's unset.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-pixbuf-column"></a><h3>exo_icon_bar_set_pixbuf_column ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_pixbuf_column      (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
+<p>
+Sets the column with pixbufs for <em class="parameter"><code>icon_bar</code></em> to be <em class="parameter"><code>column</code></em>. The pixbuf
+column must be of type <span class="type">GDK_TYPE_PIXBUF</span>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
+<td>A column in the currently used model.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-text-column"></a><h3>exo_icon_bar_get_text_column ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                exo_icon_bar_get_text_column        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);</pre>
+<p>
+Returns the column with text for <em class="parameter"><code>icon_bar</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the text column, or -1 if it's unset.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-text-column"></a><h3>exo_icon_bar_set_text_column ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_text_column        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
+<p>
+Sets the column with text for <em class="parameter"><code>icon_bar</code></em> to be <em class="parameter"><code>column</code></em>. The
+text column must be of type <span class="type">G_TYPE_STRING</span>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
+<td>A column in the currently used model or -1 to
+use no text in <em class="parameter"><code>icon_bar</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-orientation"></a><h3>exo_icon_bar_get_orientation ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkOrientation</span>      exo_icon_bar_get_orientation        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);</pre>
+<p>
+Retrieves the current orientation of the toolbar. See
+<a class="link" href="ExoIconBar.html#exo-icon-bar-set-orientation" title="exo_icon_bar_set_orientation ()"><code class="function">exo_icon_bar_set_orientation()</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>The orientation of <em class="parameter"><code>icon_bar</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-orientation"></a><h3>exo_icon_bar_set_orientation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_orientation        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkOrientation</span> orientation</code></em>);</pre>
+<p>
+Sets whether the <em class="parameter"><code>icon_bar</code></em> should appear horizontally
+or vertically.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>orientation</code></em> :</span></p></td>
+<td>A new <span class="type">GtkOrientation</span>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-active"></a><h3>exo_icon_bar_get_active ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                exo_icon_bar_get_active             (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>);</pre>
+<p>
+Returns the index of the currently active item, or -1 if there's no
+active item.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>An integer which is the index of the currently active item,
+or -1 if there's no active item.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-active"></a><h3>exo_icon_bar_set_active ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_active             (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> idx</code></em>);</pre>
+<p>
+Sets the active item of <em class="parameter"><code>icon_bar</code></em> to be the item at <em class="parameter"><code>idx</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>idx</code></em> :</span></p></td>
+<td>An index in the model passed during construction,
+or -1 to have no active item.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-get-active-iter"></a><h3>exo_icon_bar_get_active_iter ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            exo_icon_bar_get_active_iter        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);</pre>
+<p>
+Sets <em class="parameter"><code>iter</code></em> to point to the current active item, if it exists.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
+<td>An uninitialized <span class="type">GtkTreeIter</span>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>iter</code></em> was set.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-icon-bar-set-active-iter"></a><h3>exo_icon_bar_set_active_iter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_icon_bar_set_active_iter        (<em class="parameter"><code><a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);</pre>
+<p>
+Sets the current active item to be the one referenced by <em class="parameter"><code>iter</code></em>. <em class="parameter"><code>iter</code></em>
+must correspond to a path of depth one.
+</p>
+<p>
+This can only be called if <em class="parameter"><code>icon_bar</code></em> is associated with <span class="type">GtkTreeModel</span>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
+<td>The <span class="type">GtkTreeIter</span>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ExoIconBar--active"></a><h3>The <code class="literal">"active"</code> property</h3>
+<pre class="programlisting">  "active"                   <span class="type">gint</span>                  : Read / Write</pre>
+<p>
+The item which is currently active.
+</p>
+<p>
+Allowed values: &gt;= -1
+</p>
+<p>
+Default value: -1
+</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--model"></a><h3>The <code class="literal">"model"</code> property</h3>
+<pre class="programlisting">  "model"                    <span class="type">GtkTreeModel</span>*         : Read / Write</pre>
+<p>
+The model for the icon bar.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--orientation"></a><h3>The <code class="literal">"orientation"</code> property</h3>
+<pre class="programlisting">  "orientation"              <span class="type">GtkOrientation</span>        : Read / Write</pre>
+<p>
+The orientation of the icon bar.
+</p>
+<p>
+Default value: <code class="literal">GTK_ORIENTATION_VERTICAL</code>
+</p>
+<p>Default value: GTK_ORIENTATION_VERTICAL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--pixbuf-column"></a><h3>The <code class="literal">"pixbuf-column"</code> property</h3>
+<pre class="programlisting">  "pixbuf-column"            <span class="type">gint</span>                  : Read / Write</pre>
+<p>
+The ::pixbuf-column property contains the number of the model column
+containing the pixbufs which are displyed. The pixbuf column must be
+of type <span class="type">GDK_TYPE_PIXBUF</span>. Setting this property to -1 turns off the
+display of pixbufs.
+</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--text-column"></a><h3>The <code class="literal">"text-column"</code> property</h3>
+<pre class="programlisting">  "text-column"              <span class="type">gint</span>                  : Read / Write</pre>
+<p>
+The ::text-column property contains the number of the model column
+containing the texts which are displayed. The text column must be
+of type <span class="type">G_TYPE_STRING</span>. If this property is set to -1, no texts
+are displayed.
+</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.style-property-details"></a><h2>Style Property Details</h2>
+<div class="refsect2">
+<a name="ExoIconBar--s-active-item-border-color"></a><h3>The <code class="literal">"active-item-border-color"</code> style property</h3>
+<pre class="programlisting">  "active-item-border-color" <span class="type">GdkColor</span>*             : Read</pre>
+<p>Active item border color.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--s-active-item-fill-color"></a><h3>The <code class="literal">"active-item-fill-color"</code> style property</h3>
+<pre class="programlisting">  "active-item-fill-color"   <span class="type">GdkColor</span>*             : Read</pre>
+<p>Active item fill color.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--s-active-item-text-color"></a><h3>The <code class="literal">"active-item-text-color"</code> style property</h3>
+<pre class="programlisting">  "active-item-text-color"   <span class="type">GdkColor</span>*             : Read</pre>
+<p>Active item text color.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--s-cursor-item-border-color"></a><h3>The <code class="literal">"cursor-item-border-color"</code> style property</h3>
+<pre class="programlisting">  "cursor-item-border-color" <span class="type">GdkColor</span>*             : Read</pre>
+<p>Cursor item border color.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--s-cursor-item-fill-color"></a><h3>The <code class="literal">"cursor-item-fill-color"</code> style property</h3>
+<pre class="programlisting">  "cursor-item-fill-color"   <span class="type">GdkColor</span>*             : Read</pre>
+<p>Cursor item fill color.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar--s-cursor-item-text-color"></a><h3>The <code class="literal">"cursor-item-text-color"</code> style property</h3>
+<pre class="programlisting">  "cursor-item-text-color"   <span class="type">GdkColor</span>*             : Read</pre>
+<p>Cursor item text color.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ExoIconBar-selection-changed"></a><h3>The <code class="literal">"selection-changed"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> *icon_bar,
+                                                        <span class="type">gpointer</span>    user_data)      : <code class="literal">Run First</code></pre>
+<p>
+This signal is emitted whenever the currently selected icon
+changes.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>The <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoIconBar-set-scroll-adjustments"></a><h3>The <code class="literal">"set-scroll-adjustments"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>    *icon_bar,
+                                                        <span class="type">GtkAdjustment</span> *hadjustment,
+                                                        <span class="type">GtkAdjustment</span> *vadjustment,
+                                                        <span class="type">gpointer</span>       user_data)        : <code class="literal">Run Last</code></pre>
+<p>
+Used internally to make the <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a> scrollable.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_bar</code></em> :</span></p></td>
+<td>The <a class="link" href="ExoIconBar.html" title="ExoIconBar"><span class="type">ExoIconBar</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hadjustment</code></em> :</span></p></td>
+<td>The horizontal adjustment.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>vadjustment</code></em> :</span></p></td>
+<td>The vertical adjustment.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoIconBar.see-also"></a><h2>See Also</h2>
+<a class="ulink" href="http://library.gnome.org/devel/gtk/stable/GtkTreeModel.html" target="_top">
+           GtkTreeModel</a>,
+           <a class="ulink" href="http://library.gnome.org/devel/gtk/stable/TreeWidget.html" target="_top">
+           Tree and List Widget Overview</a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

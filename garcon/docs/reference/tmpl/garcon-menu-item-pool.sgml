@@ -1,0 +1,98 @@
+<!-- ##### SECTION Title ##### -->
+garcon-menu-item-pool
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_insert ##### -->
+<para>
+
+</para>
+
+@pool: 
+@item: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_lookup ##### -->
+<para>
+
+</para>
+
+@pool: 
+@desktop_id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_lookup_file ##### -->
+<para>
+
+</para>
+
+@pool: 
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_foreach ##### -->
+<para>
+
+</para>
+
+@pool: 
+@func: 
+@user_data: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_apply_exclude_rule ##### -->
+<para>
+
+</para>
+
+@pool: 
+@node: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_get_empty ##### -->
+<para>
+
+</para>
+
+@pool: 
+@Returns: 
+
+
+<!-- ##### FUNCTION garcon_menu_item_pool_clear ##### -->
+<para>
+
+</para>
+
+@pool: 
+
+

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Seamonkey
+GenericName=Internet Suite
+Comment=Web Browser, Email/News Client, HTML Editor, IRC Client
+Exec=seamonkey %u
+Icon=seamonkey-mozilla-build
+Terminal=false
+X-MultipleArgs=false
+StartupWMClass=SeaMonkey
+Type=Application
+Categories=Network;WebBrowser;Email;WebDevelopment;IRCClient;
+X-XFCE-Source=file:///usr/share/applications/seamonkey-mozilla-build.desktop
+Path=
+StartupNotify=false

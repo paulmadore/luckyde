@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=calibre
+GenericName=E-book library management
+Comment=E-book library management
+Exec=calibre %f
+Icon=calibre-gui
+Categories=Office;Database;FileTools;Viewer;Qt;
+MimeType=x-content/ebook-reader;
+X-XFCE-Source=file:///usr/share/applications/calibre-gui.desktop

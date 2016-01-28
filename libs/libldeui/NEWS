@@ -1,0 +1,168 @@
+4.12.0
+======
+- Bump version
+- Lots of translation updates
+
+4.11.2
+======
+- Bump dependencies versions (autotools, Xfce libraries)
+- Remove SVN $Id$ tags
+- Properly quote AC_LANG_SOURCE
+- Fix autoconf m4 directory warning
+- Fix IT_PROG_INTLTOOL warning
+- Fix build with --enable-debug=full and GTK3 (bug #11176)
+- Add .gitignore
+- Fix grabbing shortcuts with <Super> modifier (bug #10373)
+- Avoid double forking when spawning external apps (bug #9373)
+- Don't drop startup notify hint when resetting to defaults (bug #10630)
+- Add <Ctrl><Alt>l shortcut for screen locking (xflock4) (bug #10728)
+- Fix xfce_dialog_show_help()
+
+4.11.1
+======
+- Add xfce_dialog_show_help_with_version() so applications can send
+  their own version number and not the desktop version.
+- Translation updates: Arabic, Bulgarian, Bengali, Danish, German,
+  Greek, Finnish, Galician, Croatian, Icelandic, Japanese, Kazakh,
+  Korean, Lithuanian, Malay, Norwegian Bokmal, Norwegian Nynorsk,
+  Occitan (post 1500), Portuguese, Portuguese (Brazilian), Romanian,
+  Russian, Slovak, Slovenian, Serbian, Telugu, Ukrainian, Chinese
+  (China), Chinese (Hong Kong), Chinese (Taiwan).
+
+4.11.0
+======
+- Compile GTK+-3 version of libxfce4ui when possible.
+- Depend on GTK 2.24 and Glib 2.28.
+- Only define distclean files in maintainer mode (bug #8974).
+- Don't remove keyboard shortcut when entered twice (bug #8749).
+- Fix keyboard shortcuts with Shift modifier (bug #8744).
+- Fix alt + print being detected as SysReq (bug #7897).
+- Use <Primary> instead of <Control> (bug #8200).
+- Fix keyboard shortcuts with keypad (bug #4178).
+- Autotools updates.
+- Prefer exo-open for opening the manual pages.
+- Add error domain for XfceSmClient.
+- Translation updates: Amharic, Arabic, Asturian, Bulgarian, Bengali,
+  Catalan (Valencian), Czech, Danish, German, Greek, English (United
+  Kingdom), Spanish (Castilian), Basque, Finnish, French, Galician,
+  Hebrew, Croatian, Hungarian, Indonesian, Icelandic, Italian,
+  Japanese, Kazakh, Korean, Kurdish, Lithuanian, Latvian, Norwegian
+  Bokmal, Dutch (Flemish), Norwegian Nynorsk, Panjabi (Punjabi),
+  Polish, Portuguese, Portuguese (Brazilian), Romanian, Russian,
+  Sinhala, Slovak, Serbian, Swedish, Telugu, Thai, Tagalog, Tagalog
+  (Philippines), Turkish, Uyghur, Ukrainian, Urdu, Urdu (Pakistan),
+  Vietnamese, Chinese (China), Chinese (Taiwan).
+
+4.10.0
+======
+- Update contributor credits.
+- Update translators, week 15 and 16.
+- Enable startup notification in xfce4-appfinder shortcuts.
+- Check abicheck.sh to be more portable (bug #8702).
+- Translation updates: English (United Kingdom), Spanish (Castilian),
+  Galician, Japanese, Kazakh, Korean, Dutch (Flemish), Portuguese,
+  Portuguese (Brazilian), Chinese (China).
+
+4.9.2
+=====
+- Update translators, week 13 and 14.
+- Increase gtk and glib versions.
+- Bump 4util dependency.
+- Remove unused function prototype.
+- Translation updates: German, Greek, Galician, Japanese, Korean,
+  Dutch (Flemish), Polish, Portuguese, Russian, Turkish.
+
+4.9.1
+=====
+- Open docs.xfce.org when Help in xfce4-about is clicked.
+- Cache header icons and avoid large icons in XfceTitledDialog.
+- Restore glade directory information in .pc file.
+- Update translator credits.
+- Translation updates (ar, ca, cs, da, de, es, eu, fi, fr, hu, id,
+  it, kk, ko, lt, nl, nn, pt, pt_BR, ru, sk, te, tr, uk, zh_CN, zh_TW).
+
+4.9.0
+=====
+- A lot of improvements in the shortcuts code.
+- Add Alt + F1 as a shortcut for applications menu.
+- Remove unused code from the internal header widget.
+- Add xfce4-about from xfce-utils package.
+- Use xdt-csource instead of exo-csource, depend on xdt 4.9.0.
+- Update to new xfce4-appfinder commands.
+- Fix build against 3.9 Glade (bug #7334).
+- Add shortcuts for XF86WWW and XF86Mail.
+- Simplify the xfce_gdk_screen_get_active fucntion.
+- Add xfce_dialog_show_help function.
+
+4.8.1
+=====
+- Fix memory leak (bug #8079).
+- Translation updates: ar, is, ko, ms, nl, ru, sk, te, tl, zh_CN.
+
+4.8.0
+=====
+- Fix memory corruption in the register function (bug #5892).
+- Translation updates: Romanian.
+
+4.7.6
+=====
+- Fix ABI check in ppc (bug #7005).
+- Update default shortcuts for xfce4-display-settings (bug #7036).
+- Translation updates (pt, he, cs, en_BG, nb, ar).
+
+4.7.5
+=====
+- Also request an interact for save-state-extended.
+- Return a NULL state file is the sm-client is disabled.
+- Fix the save-state signal.
+- Translation updates (pt).
+
+4.7.4
+=====
+- Add startup notification support for shortcuts.
+- Translation updates (gl, sv, ja, it, ug).
+
+4.7.3
+=====
+- Fix typo preventing shortcuts from working with new users.
+- Make g_critical warning about exit(0) a DBG message.
+- Translation updates (is, zh_TW, tr, hu, fr, sk, el, id, de).
+
+
+4.7.2
+=====
+- Add key binding to popup Xfdesktop menu (bug #4994).
+- Print warning before calling exit(0) in the session client.
+- Test if working directory exists before spawning command.
+- Allow icon names in xfce_gtk_button_new_mixed().
+- Unset startup notification when launching in terminal.
+- Make variable a volatile for thread safety.
+- Fix bold labels in xfce_gtk_frame_box_new().
+- Cleanup code comments.
+- Translation updates (gl, de, nl, fi, ru, hu, uk, si, kk, pt, da,
+  es, hr, eu, pr_BR, bn, pa, zh_CN).
+
+
+4.7.1
+=====
+- New function xfce_spawn_on_screen_with_child_watch().
+- Don't generate enums for XfceSMClientPriority.
+- Build ChangeLog during make dist.
+- Add visibility/alias handing code.
+- Rename configure.in.in to configure.ac.in.
+- Some other small fixes.
+- Translation updates (es, pt_BR, sv, pt, kk, ca, gl, sk, cs, lv, eu,
+  zh_CN, ja).
+
+
+4.7.0
+=====
+Initial version of the library. The intention of this new library is a
+cleanup of the old libxfcegui4 library to remove the deprecated code
+and get rid of netk (since 4.6 we use libwnck for that).
+
+Biggest changes compared to libxfcegui4:
+- New session manager client.
+- Improved code for spawing applications.
+- New dialog functions.
+- Support for glade-3's GtkBuilder implementation.

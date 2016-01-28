@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ExoToolbarsView</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Exo Reference Manual">
+<link rel="up" href="exo-toolbars.html" title="Part II. Editable Toolbars">
+<link rel="prev" href="ExoToolbarsEditorDialog.html" title="ExoToolbarsEditorDialog">
+<link rel="next" href="exo-widgets.html" title="Part III. Additional widgets">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ExoToolbarsEditorDialog.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="exo-toolbars.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Exo Reference Manual</th>
+<td><a accesskey="n" href="exo-widgets.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#ExoToolbarsView.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#ExoToolbarsView.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#ExoToolbarsView.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#ExoToolbarsView.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#ExoToolbarsView.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#ExoToolbarsView.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="ExoToolbarsView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ExoToolbarsView.top_of_page"></a>ExoToolbarsView</span></h2>
+<p>ExoToolbarsView — Widget for displaying toolbars</p>
+</td>
+<td valign="top" align="right"><img src="exo-toolbars-view.png"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="ExoToolbarsView.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;exo/exo.h&gt;
+
+                    <a class="link" href="ExoToolbarsView.html#ExoToolbarsView-struct" title="ExoToolbarsView">ExoToolbarsView</a>;
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-new" title="exo_toolbars_view_new ()">exo_toolbars_view_new</a>               (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>);
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-new-with-model" title="exo_toolbars_view_new_with_model ()">exo_toolbars_view_new_with_model</a>    (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-get-editing" title="exo_toolbars_view_get_editing ()">exo_toolbars_view_get_editing</a>       (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-set-editing" title="exo_toolbars_view_set_editing ()">exo_toolbars_view_set_editing</a>       (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> editing</code></em>);
+<a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="returnvalue">ExoToolbarsModel</span></a> *  <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-get-model" title="exo_toolbars_view_get_model ()">exo_toolbars_view_get_model</a>         (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-set-model" title="exo_toolbars_view_set_model ()">exo_toolbars_view_set_model</a>         (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);
+<span class="returnvalue">GtkUIManager</span> *      <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-get-ui-manager" title="exo_toolbars_view_get_ui_manager ()">exo_toolbars_view_get_ui_manager</a>    (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="ExoToolbarsView.html#exo-toolbars-view-set-ui-manager" title="exo_toolbars_view_set_ui_manager ()">exo_toolbars_view_set_ui_manager</a>    (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----GtkObject
+               +----GtkWidget
+                     +----GtkContainer
+                           +----GtkBox
+                                 +----GtkVBox
+                                       +----ExoToolbarsView
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ExoToolbarsView implements
+ AtkImplementorIface,  GtkBuildable and  GtkOrientable.</p>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="ExoToolbarsView.html#ExoToolbarsView--editing" title='The "editing" property'>editing</a>"                  <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="ExoToolbarsView.html#ExoToolbarsView--model" title='The "model" property'>model</a>"                    <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a>*     : Read / Write
+  "<a class="link" href="ExoToolbarsView.html#ExoToolbarsView--ui-manager" title='The "ui-manager" property'>ui-manager</a>"               <span class="type">GtkUIManager</span>*         : Read / Write
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="ExoToolbarsView.html#ExoToolbarsView-action-request" title='The "action-request" signal'>action-request</a>"                                 : <code class="literal">Run Last</code>
+  "<a class="link" href="ExoToolbarsView.html#ExoToolbarsView-customize" title='The "customize" signal'>customize</a>"                                      : <code class="literal">Run Last</code>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.description"></a><h2>Description</h2>
+<p>
+A widget that displays toolbars as described in a <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> object.
+</p>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="ExoToolbarsView-struct"></a><h3>ExoToolbarsView</h3>
+<pre class="programlisting">typedef struct _ExoToolbarsView ExoToolbarsView;</pre>
+<p>
+The <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> struct contains only private fields and should
+not be directly accessed.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-new"></a><h3>exo_toolbars_view_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         exo_toolbars_view_new               (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ui_manager</code></em> :</span></p></td>
+<td>A <span class="type">GtkUIManager</span>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A newly created <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-new-with-model"></a><h3>exo_toolbars_view_new_with_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         exo_toolbars_view_new_with_model    (<em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> and associates it with
+<em class="parameter"><code>model</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ui_manager</code></em> :</span></p></td>
+<td>A <span class="type">GtkUIManager</span>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>model</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A newly created <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-get-editing"></a><h3>exo_toolbars_view_get_editing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            exo_toolbars_view_get_editing       (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);</pre>
+<p>
+Gets wether <em class="parameter"><code>view</code></em> is currently being edited.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>view</code></em> is currently being edited, else <code class="literal">FALSE</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-set-editing"></a><h3>exo_toolbars_view_set_editing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_toolbars_view_set_editing       (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> editing</code></em>);</pre>
+<p>
+Sets wether <em class="parameter"><code>view</code></em> is currently being edited.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>editing</code></em> :</span></p></td>
+<td>New editing mode.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-get-model"></a><h3>exo_toolbars_view_get_model ()</h3>
+<pre class="programlisting"><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="returnvalue">ExoToolbarsModel</span></a> *  exo_toolbars_view_get_model         (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);</pre>
+<p>
+Returns the <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> currently associated with
+<em class="parameter"><code>view</code></em> or <code class="literal">NULL</code> if <em class="parameter"><code>view</code></em> has no model.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>The <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> associated with <em class="parameter"><code>view</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-set-model"></a><h3>exo_toolbars_view_set_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_toolbars_view_set_model         (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> *model</code></em>);</pre>
+<p>
+Set the <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> currently associated with
+<em class="parameter"><code>view</code></em> or <code class="literal">NULL</code> to disconnect from the active model.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>model</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> or <code class="literal">NULL</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-get-ui-manager"></a><h3>exo_toolbars_view_get_ui_manager ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkUIManager</span> *      exo_toolbars_view_get_ui_manager    (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>);</pre>
+<p>
+Returns the <span class="type">GtkUIManager</span> currently associated with <em class="parameter"><code>view</code></em> or <code class="literal">NULL</code> is
+no ui-manager has been set.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>The <span class="type">GtkUIManager</span> associated with <em class="parameter"><code>view</code></em> or <code class="literal">NULL</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="exo-toolbars-view-set-ui-manager"></a><h3>exo_toolbars_view_set_ui_manager ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                exo_toolbars_view_set_ui_manager    (<em class="parameter"><code><a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkUIManager</span> *ui_manager</code></em>);</pre>
+<p>
+Set the <span class="type">GtkUIManager</span> currently associated with <em class="parameter"><code>view</code></em> or <code class="literal">NULL</code>
+to disconnect from the current ui-manager.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ui_manager</code></em> :</span></p></td>
+<td>A <span class="type">GtkUIManager</span> or <code class="literal">NULL</code>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ExoToolbarsView--editing"></a><h3>The <code class="literal">"editing"</code> property</h3>
+<pre class="programlisting">  "editing"                  <span class="type">gboolean</span>              : Read / Write</pre>
+<p>
+This property tells if the toolbars contained with this
+<a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> are currently being edited by the user.
+If the user edits a view, the view will act as proxy
+and make the requested changes to the model.
+</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoToolbarsView--model"></a><h3>The <code class="literal">"model"</code> property</h3>
+<pre class="programlisting">  "model"                    <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a>*     : Read / Write</pre>
+<p>
+The <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> associated with this <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>
+or <code class="literal">NULL</code> if there is no model currently associated with this
+view. The view is build up from the model, which says, that
+it will display the toolbars as described in the model.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoToolbarsView--ui-manager"></a><h3>The <code class="literal">"ui-manager"</code> property</h3>
+<pre class="programlisting">  "ui-manager"               <span class="type">GtkUIManager</span>*         : Read / Write</pre>
+<p>
+The <span class="type">GtkUIManager</span> currently associated with this <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>
+or <code class="literal">NULL</code>. The <span class="type">GtkUIManager</span> object is used to translate action
+names as used by the <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a> into <span class="type">GtkAction</span> objects,
+which are then used to create and maintain the items in the
+toolbars.
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ExoToolbarsView-action-request"></a><h3>The <code class="literal">"action-request"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view,
+                                                        <span class="type">gchar</span>           *arg1,
+                                                        <span class="type">gpointer</span>         user_data)      : <code class="literal">Run Last</code></pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ExoToolbarsView-customize"></a><h3>The <code class="literal">"customize"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a> *view,
+                                                        <span class="type">gpointer</span>         user_data)      : <code class="literal">Run Last</code></pre>
+<p>
+This signal is emitted if the users chooses the
+<span class="emphasis"><em>Customize Toolbars...</em></span> option
+from the right-click menu.
+</p>
+<p>
+Please take note, that the option will only be
+present in the right-click menu, if you had previously
+connected a handler to this signal.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>An <a class="link" href="ExoToolbarsView.html" title="ExoToolbarsView"><span class="type">ExoToolbarsView</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ExoToolbarsView.see-also"></a><h2>See Also</h2>
+<a class="link" href="ExoToolbarsEditor.html" title="ExoToolbarsEditor"><span class="type">ExoToolbarsEditor</span></a>, <a class="link" href="ExoToolbarsEditorDialog.html" title="ExoToolbarsEditorDialog"><span class="type">ExoToolbarsEditorDialog</span></a>, <a class="link" href="ExoToolbarsModel.html" title="ExoToolbarsModel"><span class="type">ExoToolbarsModel</span></a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

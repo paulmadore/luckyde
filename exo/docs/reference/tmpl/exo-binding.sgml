@@ -1,0 +1,142 @@
+<!-- ##### SECTION Title ##### -->
+Binding Properties Functions
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT ExoBinding ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT ExoMutualBinding ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### USER_FUNCTION ExoBindingTransform ##### -->
+<para>
+
+</para>
+
+@src_value: 
+@dst_value: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_binding_new ##### -->
+<para>
+
+</para>
+
+@src_object: 
+@src_property: 
+@dst_object: 
+@dst_property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_binding_new_full ##### -->
+<para>
+
+</para>
+
+@src_object: 
+@src_property: 
+@dst_object: 
+@dst_property: 
+@transform: 
+@destroy_notify: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_binding_new_with_negation ##### -->
+<para>
+
+</para>
+
+@src_object: 
+@src_property: 
+@dst_object: 
+@dst_property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_binding_unbind ##### -->
+<para>
+
+</para>
+
+@binding: 
+
+
+<!-- ##### FUNCTION exo_mutual_binding_new ##### -->
+<para>
+
+</para>
+
+@object1: 
+@property1: 
+@object2: 
+@property2: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_mutual_binding_new_full ##### -->
+<para>
+
+</para>
+
+@object1: 
+@property1: 
+@object2: 
+@property2: 
+@transform: 
+@reverse_transform: 
+@destroy_notify: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_mutual_binding_new_with_negation ##### -->
+<para>
+
+</para>
+
+@object1: 
+@property1: 
+@object2: 
+@property2: 
+@Returns: 
+
+
+<!-- ##### FUNCTION exo_mutual_binding_unbind ##### -->
+<para>
+
+</para>
+
+@binding: 
+
+

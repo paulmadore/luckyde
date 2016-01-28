@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Twin Robots
+Comment=
+Exec=twinrobots
+Icon=/home/phm/programs/TwinRobots/TwinRobots_Data/Resources/UnityPlayer.png
+Path=
+Terminal=false
+StartupNotify=false

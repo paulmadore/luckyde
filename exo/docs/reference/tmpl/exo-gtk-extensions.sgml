@@ -1,0 +1,50 @@
+<!-- ##### SECTION Title ##### -->
+Extensions to Gtk
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION exo_gtk_object_destroy_later ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### FUNCTION exo_gtk_file_chooser_add_thumbnail_preview ##### -->
+<para>
+
+</para>
+
+@chooser: 
+
+
+<!-- ##### FUNCTION exo_gtk_url_about_dialog_hook ##### -->
+<para>
+
+</para>
+
+@about_dialog: 
+@link: 
+@user_data: 
+
+

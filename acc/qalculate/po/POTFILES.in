@@ -1,0 +1,30 @@
+# List of source files containing translatable strings.
+[encoding: UTF-8]
+data/qalculate-gtk.desktop.in
+data/about.glade
+data/argumentrules.glade
+data/setbase.glade
+data/csvexport.glade
+data/csvimport.glade
+data/datasetedit.glade
+data/datasets.glade
+data/decimals.glade
+data/functionedit.glade
+data/functions.glade
+data/main.glade
+data/matrix.glade
+data/matrixedit.glade
+data/namesedit.glade
+data/nbases.glade
+data/plot.glade
+data/precision.glade
+data/preferences.glade
+data/unit.glade
+data/unitedit.glade
+data/units.glade
+data/unknownedit.glade
+data/variableedit.glade
+data/variables.glade
+src/main.cc
+src/interface.cc
+src/callbacks.cc

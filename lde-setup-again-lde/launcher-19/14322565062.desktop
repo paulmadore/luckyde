@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Qora
+Comment=
+Exec=/home/phm/programs/Qora/run.sh
+Icon=/home/phm/programs/Qora/images/icons/icon128.png
+Path=
+Terminal=false
+StartupNotify=false

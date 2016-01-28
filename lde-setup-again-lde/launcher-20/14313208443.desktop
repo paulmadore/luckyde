@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=OpenTTD
+Icon=openttd
+Exec=openttd
+Terminal=false
+Categories=Game;
+Comment=A clone of Transport Tycoon Deluxe
+Keywords=game;simulation;transport;tycoon;deluxe;economics;multiplayer;money;train;ship;bus;truck;aircraft;cargo
+Comment[en]=A simulation game based on Transport Tycoon Deluxe
+Comment[en_US]=A simulation game based on Transport Tycoon Deluxe
+X-XFCE-Source=file:///usr/share/applications/openttd.desktop

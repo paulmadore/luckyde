@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=screenshot
+Comment=
+Exec=xfce4-screenshooter
+Icon=logviewer
+Path=
+Terminal=false
+StartupNotify=false
