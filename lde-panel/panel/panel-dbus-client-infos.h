@@ -18,8 +18,8 @@ _dbus_glib_async_data_free (gpointer stuff)
 }
 #endif
 
-#ifndef DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel
-#define DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel
+#ifndef DBUS_GLIB_CLIENT_WRAPPERS_org_ldece_Panel
+#define DBUS_GLIB_CLIENT_WRAPPERS_org_ldece_Panel
 
 static
 #ifdef G_HAVE_INLINE
@@ -244,6 +244,6 @@ _panel_dbus_client_terminate_async (DBusGProxy *proxy, const gboolean IN_restart
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "Terminate", _panel_dbus_client_terminate_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_BOOLEAN, IN_restart, G_TYPE_INVALID);
 }
-#endif /* defined DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel */
+#endif /* defined DBUS_GLIB_CLIENT_WRAPPERS_org_ldece_Panel */
 
 G_END_DECLS

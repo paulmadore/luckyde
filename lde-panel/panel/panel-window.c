@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
- * Copyright (C) 2014 Jannis Pohlmann <jannis@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@ldece.org>
+ * Copyright (C) 2014 Jannis Pohlmann <jannis@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -36,12 +36,12 @@
 #include <libwnck/libwnck.h>
 
 #include <exo/exo.h>
-#include <xfconf/xfconf.h>
+#include <ldeconf/ldeconf.h>
 #include <common/panel-private.h>
 #include <common/panel-debug.h>
 #include <common/panel-utils.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 #include <panel/panel-base-window.h>
 #include <panel/panel-window.h>
 #include <panel/panel-item-dialog.h>
@@ -65,7 +65,7 @@
 #define HANDLE_SIZE           (HANDLE_DOTS * (HANDLE_PIXELS + \
                                HANDLE_PIXEL_SPACE) - HANDLE_PIXEL_SPACE)
 #define HANDLE_SIZE_TOTAL     (2 * HANDLE_SPACING + HANDLE_SIZE)
-#define IS_HORIZONTAL(window) ((window)->mode == XFCE_PANEL_PLUGIN_MODE_HORIZONTAL)
+#define IS_HORIZONTAL(window) ((window)->mode == ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL)
 
 
 
@@ -292,7 +292,7 @@ struct _PanelWindow
   guint                size;
   gdouble              length;
   guint                length_adjust : 1;
-  XfcePanelPluginMode  mode;
+  ldecePanelPluginMode  mode;
   guint                nrows;
   SnapPosition         snap_position;
   guint                span_monitors : 1;
@@ -329,9 +329,9 @@ struct _PanelWindow
   gint                 grab_y;
 };
 
-/* used for a full XfcePanelWindow name in the class, but not in the code */
-typedef PanelWindow      XfcePanelWindow;
-typedef PanelWindowClass XfcePanelWindowClass;
+/* used for a full ldecePanelWindow name in the class, but not in the code */
+typedef PanelWindow      ldecePanelWindow;
+typedef PanelWindowClass ldecePanelWindowClass;
 
 
 
@@ -343,7 +343,7 @@ static GdkAtom net_wm_strut_partial_atom = 0;
 
 
 
-G_DEFINE_TYPE (XfcePanelWindow, panel_window, PANEL_TYPE_BASE_WINDOW)
+G_DEFINE_TYPE (ldecePanelWindow, panel_window, PANEL_TYPE_BASE_WINDOW)
 
 
 
@@ -385,8 +385,8 @@ panel_window_class_init (PanelWindowClass *klass)
   g_object_class_install_property (gobject_class,
                                    PROP_MODE,
                                    g_param_spec_enum ("mode", NULL, NULL,
-                                                      XFCE_TYPE_PANEL_PLUGIN_MODE,
-                                                      XFCE_PANEL_PLUGIN_MODE_HORIZONTAL,
+                                                      ldeCE_TYPE_PANEL_PLUGIN_MODE,
+                                                      ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL,
                                                       EXO_PARAM_READWRITE));
 
   g_object_class_install_property (gobject_class,
@@ -495,7 +495,7 @@ panel_window_init (PanelWindow *window)
   window->wnck_active_window = NULL;
   window->struts_edge = STRUTS_EDGE_NONE;
   window->struts_disabled = FALSE;
-  window->mode = XFCE_PANEL_PLUGIN_MODE_HORIZONTAL;
+  window->mode = ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL;
   window->size = 48;
   window->nrows = 1;
   window->length = 0.10;
@@ -616,7 +616,7 @@ panel_window_set_property (GObject      *object,
   const gchar         *val_string;
   gboolean             update = FALSE;
   gint                 x, y, snap_position;
-  XfcePanelPluginMode  val_mode;
+  ldecePanelPluginMode  val_mode;
 
   switch (prop_id)
     {
@@ -2424,7 +2424,7 @@ panel_window_set_autohide_behavior (PanelWindow     *window,
                                 "resizable", TRUE,
                                 "type-hint", GDK_WINDOW_TYPE_HINT_DOCK,
                                 "gravity", GDK_GRAVITY_STATIC,
-                                "name", "XfcePanelWindowHidden",
+                                "name", "ldecePanelWindowHidden",
                                 NULL);
 
           /* move the window offscreen */
@@ -2743,10 +2743,10 @@ static void
 panel_window_plugin_set_mode (GtkWidget *widget,
                               gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_WINDOW (user_data));
 
-  xfce_panel_plugin_provider_set_mode (XFCE_PANEL_PLUGIN_PROVIDER (widget),
+  ldece_panel_plugin_provider_set_mode (ldeCE_PANEL_PLUGIN_PROVIDER (widget),
                                        PANEL_WINDOW (user_data)->mode);
 }
 
@@ -2756,10 +2756,10 @@ static void
 panel_window_plugin_set_size (GtkWidget *widget,
                               gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_WINDOW (user_data));
 
-  xfce_panel_plugin_provider_set_size (XFCE_PANEL_PLUGIN_PROVIDER (widget),
+  ldece_panel_plugin_provider_set_size (ldeCE_PANEL_PLUGIN_PROVIDER (widget),
                                        PANEL_WINDOW (user_data)->size);
 }
 
@@ -2769,10 +2769,10 @@ static void
 panel_window_plugin_set_nrows (GtkWidget *widget,
                                gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_WINDOW (user_data));
 
-  xfce_panel_plugin_provider_set_nrows (XFCE_PANEL_PLUGIN_PROVIDER (widget),
+  ldece_panel_plugin_provider_set_nrows (ldeCE_PANEL_PLUGIN_PROVIDER (widget),
                                         PANEL_WINDOW (user_data)->nrows);
 }
 
@@ -2783,60 +2783,60 @@ panel_window_plugin_set_screen_position (GtkWidget *widget,
                                          gpointer   user_data)
 {
   PanelWindow        *window = PANEL_WINDOW (user_data);
-  XfceScreenPosition  position;
+  ldeceScreenPosition  position;
 
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_WINDOW (user_data));
 
   switch (window->snap_position)
     {
     case SNAP_POSITION_NONE:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_FLOATING_H :
-          XFCE_SCREEN_POSITION_FLOATING_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_FLOATING_H :
+          ldeCE_SCREEN_POSITION_FLOATING_V;
       break;
 
     case SNAP_POSITION_NW:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_NW_H :
-          XFCE_SCREEN_POSITION_NW_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_NW_H :
+          ldeCE_SCREEN_POSITION_NW_V;
       break;
 
     case SNAP_POSITION_NE:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_NE_H :
-          XFCE_SCREEN_POSITION_NE_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_NE_H :
+          ldeCE_SCREEN_POSITION_NE_V;
       break;
 
     case SNAP_POSITION_SW:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_SW_H :
-          XFCE_SCREEN_POSITION_SW_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_SW_H :
+          ldeCE_SCREEN_POSITION_SW_V;
       break;
 
     case SNAP_POSITION_SE:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_SE_H :
-          XFCE_SCREEN_POSITION_SE_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_SE_H :
+          ldeCE_SCREEN_POSITION_SE_V;
       break;
 
     case SNAP_POSITION_W:
     case SNAP_POSITION_WC:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_FLOATING_H :
-          XFCE_SCREEN_POSITION_W;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_FLOATING_H :
+          ldeCE_SCREEN_POSITION_W;
       break;
 
     case SNAP_POSITION_E:
     case SNAP_POSITION_EC:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_FLOATING_H :
-          XFCE_SCREEN_POSITION_E;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_FLOATING_H :
+          ldeCE_SCREEN_POSITION_E;
       break;
 
     case SNAP_POSITION_S:
     case SNAP_POSITION_SC:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_S :
-          XFCE_SCREEN_POSITION_FLOATING_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_S :
+          ldeCE_SCREEN_POSITION_FLOATING_V;
       break;
 
     case SNAP_POSITION_N:
     case SNAP_POSITION_NC:
-      position = IS_HORIZONTAL (window) ? XFCE_SCREEN_POSITION_N :
-          XFCE_SCREEN_POSITION_FLOATING_V;
+      position = IS_HORIZONTAL (window) ? ldeCE_SCREEN_POSITION_N :
+          ldeCE_SCREEN_POSITION_FLOATING_V;
       break;
 
     default:
@@ -2844,7 +2844,7 @@ panel_window_plugin_set_screen_position (GtkWidget *widget,
       break;
     }
 
-  xfce_panel_plugin_provider_set_screen_position (XFCE_PANEL_PLUGIN_PROVIDER (widget),
+  ldece_panel_plugin_provider_set_screen_position (ldeCE_PANEL_PLUGIN_PROVIDER (widget),
                                                   position);
 }
 
@@ -2866,7 +2866,7 @@ panel_window_new (GdkScreen *screen,
                        "type-hint", GDK_WINDOW_TYPE_HINT_DOCK,
                        "gravity", GDK_GRAVITY_STATIC,
                        "role", "Panel",
-                       "name", "XfcePanelWindow",
+                       "name", "ldecePanelWindow",
                        NULL);
 }
 
@@ -2899,9 +2899,9 @@ panel_window_set_povider_info (PanelWindow *window,
   PanelBaseWindow *base_window = PANEL_BASE_WINDOW (window);
 
   panel_return_if_fail (PANEL_IS_WINDOW (window));
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (provider));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (provider));
 
-  xfce_panel_plugin_provider_set_locked (XFCE_PANEL_PLUGIN_PROVIDER (provider),
+  ldece_panel_plugin_provider_set_locked (ldeCE_PANEL_PLUGIN_PROVIDER (provider),
                                          panel_window_get_locked (window));
 
   if (PANEL_IS_PLUGIN_EXTERNAL (provider))
@@ -3007,7 +3007,7 @@ panel_window_focus (PanelWindow *window)
 
   /* we need a slightly custom version of the call through Gtk+ to
    * properly focus the panel when a plugin calls
-   * xfce_panel_plugin_focus_widget() */
+   * ldece_panel_plugin_focus_widget() */
   event.type = ClientMessage;
   event.window = GDK_WINDOW_XID (GTK_WIDGET (window)->window);
   event.message_type = gdk_x11_get_xatom_by_name ("_NET_ACTIVE_WINDOW");
@@ -3033,7 +3033,7 @@ panel_window_focus (PanelWindow *window)
 
 void
 panel_window_migrate_autohide_property (PanelWindow   *window,
-                                        XfconfChannel *xfconf,
+                                        ldeconfChannel *ldeconf,
                                         const gchar   *property_base)
 {
   gboolean autohide;
@@ -3041,38 +3041,38 @@ panel_window_migrate_autohide_property (PanelWindow   *window,
   gchar   *old_property;
 
   panel_return_if_fail (PANEL_IS_WINDOW (window));
-  panel_return_if_fail (XFCONF_IS_CHANNEL (xfconf));
+  panel_return_if_fail (ldeCONF_IS_CHANNEL (ldeconf));
   panel_return_if_fail (property_base != NULL && *property_base != '\0');
 
   old_property = g_strdup_printf ("%s/autohide", property_base);
 
   /* check if we have an old "autohide" property for this panel */
-  if (xfconf_channel_has_property (xfconf, old_property))
+  if (ldeconf_channel_has_property (ldeconf, old_property))
     {
       new_property = g_strdup_printf ("%s/autohide-behavior", property_base);
 
       /* migrate from old "autohide" to new "autohide-behavior" if the latter
        * isn't set already */
-      if (!xfconf_channel_has_property (xfconf, new_property))
+      if (!ldeconf_channel_has_property (ldeconf, new_property))
         {
           /* find out whether or not autohide was enabled in the old config */
-          autohide = xfconf_channel_get_bool (xfconf, old_property, FALSE);
+          autohide = ldeconf_channel_get_bool (ldeconf, old_property, FALSE);
 
           /* set autohide behavior to always or never, depending on whether it
            * was enabled in the old configuration */
-          if (xfconf_channel_set_uint (xfconf,
+          if (ldeconf_channel_set_uint (ldeconf,
                                        new_property,
                                        autohide ? AUTOHIDE_BEHAVIOR_ALWAYS
                                                 : AUTOHIDE_BEHAVIOR_NEVER))
             {
               /* remove the old autohide property */
-              xfconf_channel_reset_property (xfconf, old_property, FALSE);
+              ldeconf_channel_reset_property (ldeconf, old_property, FALSE);
             }
         }
       else
         {
           /* the new property is already set, simply remove the old property */
-          xfconf_channel_reset_property (xfconf, old_property, FALSE);
+          ldeconf_channel_reset_property (ldeconf, old_property, FALSE);
         }
     }
 }

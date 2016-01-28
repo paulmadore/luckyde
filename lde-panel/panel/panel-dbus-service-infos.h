@@ -362,7 +362,7 @@ static const DBusGMethodInfo dbus_glib_panel_dbus_service_methods[] = {
 const DBusGObjectInfo dbus_glib_panel_dbus_service_object_info = {  1,
   dbus_glib_panel_dbus_service_methods,
   6,
-"org.xfce.Panel\0DisplayPreferencesDialog\0S\0active\0I\0u\0socket_id\0I\0s\0\0org.xfce.Panel\0DisplayItemsDialog\0S\0active\0I\0u\0\0org.xfce.Panel\0Save\0S\0\0org.xfce.Panel\0AddNewItem\0S\0plugin_name\0I\0s\0arguments\0I\0as\0\0org.xfce.Panel\0PluginEvent\0S\0plugin_name\0I\0s\0name\0I\0s\0value\0I\0v\0succeed\0O\0F\0N\0b\0\0org.xfce.Panel\0Terminate\0S\0restart\0I\0b\0\0\0",
+"org.ldece.Panel\0DisplayPreferencesDialog\0S\0active\0I\0u\0socket_id\0I\0s\0\0org.ldece.Panel\0DisplayItemsDialog\0S\0active\0I\0u\0\0org.ldece.Panel\0Save\0S\0\0org.ldece.Panel\0AddNewItem\0S\0plugin_name\0I\0s\0arguments\0I\0as\0\0org.ldece.Panel\0PluginEvent\0S\0plugin_name\0I\0s\0name\0I\0s\0value\0I\0v\0succeed\0O\0F\0N\0b\0\0org.ldece.Panel\0Terminate\0S\0restart\0I\0b\0\0\0",
 "\0",
 "\0"
 };

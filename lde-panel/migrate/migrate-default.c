@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@lde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,9 +29,9 @@
 
 #include <gtk/gtk.h>
 #include <xfconf/xfconf.h>
-#include <libxfce4util/libxfce4util.h>
+#include <liblde4util/liblde4util.h>
 #include <migrate/migrate-default.h>
-#include <libxfce4panel/xfce-panel-macros.h>
+#include <liblde4panel/lde-panel-macros.h>
 
 
 
@@ -148,9 +148,9 @@ migrate_default_start_element_handler (GMarkupParseContext  *context,
                 {
                   channel_name = attribute_values[i];
 
-                  /* this is an xfce4-panel workaround to make it work
+                  /* this is an lde4-panel workaround to make it work
                    * with the custom channel names */
-                  channel_name = XFCE_PANEL_CHANNEL_NAME;
+                  channel_name = LDE_PANEL_CHANNEL_NAME;
                 }
             }
         }

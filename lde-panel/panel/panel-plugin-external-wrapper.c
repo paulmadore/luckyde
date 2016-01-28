@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,14 +32,14 @@
 
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeutil/libldeutil.h>
 
 #include <common/panel-private.h>
 #include <common/panel-dbus.h>
 #include <common/panel-debug.h>
 
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 
 #include <panel/panel-module.h>
 #include <panel/panel-plugin-external.h>
@@ -66,7 +66,7 @@ static gboolean   panel_plugin_external_wrapper_remote_event             (PanelP
                                                                           const GValue                   *value,
                                                                           guint                          *handle);
 static gboolean   panel_plugin_external_wrapper_dbus_provider_signal     (PanelPluginExternalWrapper     *external,
-                                                                          XfcePanelPluginProviderSignal   provider_signal,
+                                                                          ldecePanelPluginProviderSignal   provider_signal,
                                                                           GError                        **error);
 static gboolean   panel_plugin_external_wrapper_dbus_remote_event_result (PanelPluginExternalWrapper     *external,
                                                                           guint                           handle,
@@ -290,7 +290,7 @@ panel_plugin_external_wrapper_remote_event (PanelPluginExternal *external,
   const GValue *real_value = value;
 
   panel_return_val_if_fail (PANEL_IS_PLUGIN_EXTERNAL_WRAPPER (external), TRUE);
-  panel_return_val_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (external), TRUE);
+  panel_return_val_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (external), TRUE);
   panel_return_val_if_fail (value == NULL || G_IS_VALUE (value), FALSE);
 
   if (G_UNLIKELY (handle_counter > G_MAXUINT - 2))
@@ -318,11 +318,11 @@ panel_plugin_external_wrapper_remote_event (PanelPluginExternal *external,
 
 static gboolean
 panel_plugin_external_wrapper_dbus_provider_signal (PanelPluginExternalWrapper     *external,
-                                                    XfcePanelPluginProviderSignal   provider_signal,
+                                                    ldecePanelPluginProviderSignal   provider_signal,
                                                     GError                        **error)
 {
   panel_return_val_if_fail (PANEL_IS_PLUGIN_EXTERNAL (external), FALSE);
-  panel_return_val_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (external), FALSE);
+  panel_return_val_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (external), FALSE);
 
   switch (provider_signal)
     {
@@ -336,7 +336,7 @@ panel_plugin_external_wrapper_dbus_provider_signal (PanelPluginExternalWrapper  
 
     default:
       /* other signals are handled in panel-applications.c */
-      xfce_panel_plugin_provider_emit_signal (XFCE_PANEL_PLUGIN_PROVIDER (external),
+      ldece_panel_plugin_provider_emit_signal (ldeCE_PANEL_PLUGIN_PROVIDER (external),
                                               provider_signal);
       break;
     }

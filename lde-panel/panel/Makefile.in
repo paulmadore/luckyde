@@ -88,7 +88,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = xfce4-panel$(EXEEXT)
+bin_PROGRAMS = lde-panel$(EXEEXT)
 subdir = panel
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
@@ -101,32 +101,32 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__objects_1 = xfce4_panel-panel-marshal.$(OBJEXT)
-am_xfce4_panel_OBJECTS = $(am__objects_1) xfce4_panel-main.$(OBJEXT) \
-	xfce4_panel-panel-application.$(OBJEXT) \
-	xfce4_panel-panel-base-window.$(OBJEXT) \
-	xfce4_panel-panel-dbus-client.$(OBJEXT) \
-	xfce4_panel-panel-dbus-service.$(OBJEXT) \
-	xfce4_panel-panel-dialogs.$(OBJEXT) \
-	xfce4_panel-panel-item-dialog.$(OBJEXT) \
-	xfce4_panel-panel-itembar.$(OBJEXT) \
-	xfce4_panel-panel-module.$(OBJEXT) \
-	xfce4_panel-panel-module-factory.$(OBJEXT) \
-	xfce4_panel-panel-plugin-external.$(OBJEXT) \
-	xfce4_panel-panel-plugin-external-wrapper.$(OBJEXT) \
-	xfce4_panel-panel-plugin-external-46.$(OBJEXT) \
-	xfce4_panel-panel-preferences-dialog.$(OBJEXT) \
-	xfce4_panel-panel-tic-tac-toe.$(OBJEXT) \
-	xfce4_panel-panel-window.$(OBJEXT)
-xfce4_panel_OBJECTS = $(am_xfce4_panel_OBJECTS)
+am__objects_1 = lde_panel-panel-marshal.$(OBJEXT)
+am_lde_panel_OBJECTS = $(am__objects_1) lde_panel-main.$(OBJEXT) \
+	lde_panel-panel-application.$(OBJEXT) \
+	lde_panel-panel-base-window.$(OBJEXT) \
+	lde_panel-panel-dbus-client.$(OBJEXT) \
+	lde_panel-panel-dbus-service.$(OBJEXT) \
+	lde_panel-panel-dialogs.$(OBJEXT) \
+	lde_panel-panel-item-dialog.$(OBJEXT) \
+	lde_panel-panel-itembar.$(OBJEXT) \
+	lde_panel-panel-module.$(OBJEXT) \
+	lde_panel-panel-module-factory.$(OBJEXT) \
+	lde_panel-panel-plugin-external.$(OBJEXT) \
+	lde_panel-panel-plugin-external-wrapper.$(OBJEXT) \
+	lde_panel-panel-plugin-external-46.$(OBJEXT) \
+	lde_panel-panel-preferences-dialog.$(OBJEXT) \
+	lde_panel-panel-tic-tac-toe.$(OBJEXT) \
+	lde_panel-panel-window.$(OBJEXT)
+lde_panel_OBJECTS = $(am_lde_panel_OBJECTS)
 am__DEPENDENCIES_1 =
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-xfce4_panel_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(xfce4_panel_CFLAGS) \
-	$(CFLAGS) $(xfce4_panel_LDFLAGS) $(LDFLAGS) -o $@
+lde_panel_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(lde_panel_CFLAGS) \
+	$(CFLAGS) $(lde_panel_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -161,8 +161,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(xfce4_panel_SOURCES)
-DIST_SOURCES = $(xfce4_panel_SOURCES)
+SOURCES = $(lde_panel_SOURCES)
+DIST_SOURCES = $(lde_panel_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -302,20 +302,20 @@ LIBWNCK_VERSION = @LIBWNCK_VERSION@
 LIBX11_CFLAGS = @LIBX11_CFLAGS@
 LIBX11_LDFLAGS = @LIBX11_LDFLAGS@
 LIBX11_LIBS = @LIBX11_LIBS@
-LIBXFCE4PANEL_VERINFO = @LIBXFCE4PANEL_VERINFO@
-LIBXFCE4PANEL_VERSION = @LIBXFCE4PANEL_VERSION@
-LIBXFCE4PANEL_VERSION_API = @LIBXFCE4PANEL_VERSION_API@
-LIBXFCE4PANEL_VERSION_MAJOR = @LIBXFCE4PANEL_VERSION_MAJOR@
-LIBXFCE4PANEL_VERSION_MICRO = @LIBXFCE4PANEL_VERSION_MICRO@
-LIBXFCE4PANEL_VERSION_MINOR = @LIBXFCE4PANEL_VERSION_MINOR@
-LIBXFCE4UI_CFLAGS = @LIBXFCE4UI_CFLAGS@
-LIBXFCE4UI_LIBS = @LIBXFCE4UI_LIBS@
-LIBXFCE4UI_REQUIRED_VERSION = @LIBXFCE4UI_REQUIRED_VERSION@
-LIBXFCE4UI_VERSION = @LIBXFCE4UI_VERSION@
-LIBXFCE4UTIL_CFLAGS = @LIBXFCE4UTIL_CFLAGS@
-LIBXFCE4UTIL_LIBS = @LIBXFCE4UTIL_LIBS@
-LIBXFCE4UTIL_REQUIRED_VERSION = @LIBXFCE4UTIL_REQUIRED_VERSION@
-LIBXFCE4UTIL_VERSION = @LIBXFCE4UTIL_VERSION@
+LIBldePANEL_VERINFO = @LIBldePANEL_VERINFO@
+LIBldePANEL_VERSION = @LIBldePANEL_VERSION@
+LIBldePANEL_VERSION_API = @LIBldePANEL_VERSION_API@
+LIBldePANEL_VERSION_MAJOR = @LIBldePANEL_VERSION_MAJOR@
+LIBldePANEL_VERSION_MICRO = @LIBldePANEL_VERSION_MICRO@
+LIBldePANEL_VERSION_MINOR = @LIBldePANEL_VERSION_MINOR@
+LIBldeUI_CFLAGS = @LIBldeUI_CFLAGS@
+LIBldeUI_LIBS = @LIBldeUI_LIBS@
+LIBldeUI_REQUIRED_VERSION = @LIBldeUI_REQUIRED_VERSION@
+LIBldeUI_VERSION = @LIBldeUI_VERSION@
+LIBldeUTIL_CFLAGS = @LIBldeUTIL_CFLAGS@
+LIBldeUTIL_LIBS = @LIBldeUTIL_LIBS@
+LIBldeUTIL_REQUIRED_VERSION = @LIBldeUTIL_REQUIRED_VERSION@
+LIBldeUTIL_VERSION = @LIBldeUTIL_VERSION@
 LIPO = @LIPO@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
@@ -360,11 +360,11 @@ SHELL = @SHELL@
 STRIP = @STRIP@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
-XFCE4_PANEL_CONFIG_VERSION = @XFCE4_PANEL_CONFIG_VERSION@
-XFCONF_CFLAGS = @XFCONF_CFLAGS@
-XFCONF_LIBS = @XFCONF_LIBS@
-XFCONF_REQUIRED_VERSION = @XFCONF_REQUIRED_VERSION@
-XFCONF_VERSION = @XFCONF_VERSION@
+lde_PANEL_CONFIG_VERSION = @lde_PANEL_CONFIG_VERSION@
+ldeCONF_CFLAGS = @ldeCONF_CFLAGS@
+ldeCONF_LIBS = @ldeCONF_LIBS@
+ldeCONF_REQUIRED_VERSION = @ldeCONF_REQUIRED_VERSION@
+ldeCONF_VERSION = @ldeCONF_VERSION@
 XGETTEXT = @XGETTEXT@
 XGETTEXT_ARGS = @XGETTEXT_ARGS@
 XMKMF = @XMKMF@
@@ -428,17 +428,17 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AM_CPPFLAGS = \
 	-I$(top_srcdir) \
-	-DG_LOG_DOMAIN=\"xfce4-panel\" \
+	-DG_LOG_DOMAIN=\"lde-panel\" \
 	-DWNCK_I_KNOW_THIS_IS_UNSTABLE \
-	-DDATADIR=\"$(datadir)/xfce4\" \
-	-DLIBDIR=\"$(libdir)/xfce4\" \
-	-DHELPERDIR=\"$(HELPER_PATH_PREFIX)/xfce4/panel\" \
+	-DDATADIR=\"$(datadir)/lde\" \
+	-DLIBDIR=\"$(libdir)/lde\" \
+	-DHELPERDIR=\"$(HELPER_PATH_PREFIX)/lde/panel\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	-DDBUS_API_SUBJECT_TO_CHANGE \
 	-DWNCK_I_KNOW_THIS_IS_UNSTABLE \
 	$(PLATFORM_CPPFLAGS)
 
-xfce4_panel_built_sources = \
+lde_panel_built_sources = \
 	panel-dbus-service-infos.h \
 	panel-dbus-client-infos.h \
 	panel-marshal.c \
@@ -446,8 +446,8 @@ xfce4_panel_built_sources = \
 	panel-plugin-external-wrapper-infos.h \
 	panel-preferences-dialog-ui.h
 
-xfce4_panel_SOURCES = \
-	$(xfce4_panel_built_sources) \
+lde_panel_SOURCES = \
+	$(lde_panel_built_sources) \
 	main.c \
 	panel-application.c \
 	panel-application.h \
@@ -480,40 +480,40 @@ xfce4_panel_SOURCES = \
 	panel-window.c \
 	panel-window.h
 
-xfce4_panel_CFLAGS = \
+lde_panel_CFLAGS = \
 	$(GTK_CFLAGS) \
 	$(GMODULE_CFLAGS) \
 	$(EXO_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(LIBXFCE4UI_CFLAGS) \
+	$(LIBldeUTIL_CFLAGS) \
+	$(LIBldeUI_CFLAGS) \
 	$(LIBWNCK_CFLAGS) \
 	$(DBUS_CFLAGS) \
-	$(XFCONF_CFLAGS) \
+	$(ldeCONF_CFLAGS) \
 	$(LIBX11_CFLAGS) \
 	$(LIBWNCK_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-xfce4_panel_LDFLAGS = \
+lde_panel_LDFLAGS = \
 	-no-undefined \
 	$(PLATFORM_LDFLAGS)
 
-xfce4_panel_LDADD = \
-	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+lde_panel_LDADD = \
+	$(top_builddir)/libldepanel/libldepanel-$(LIBldePANEL_VERSION_API).la \
 	$(top_builddir)/common/libpanel-common.la \
 	$(GTK_LIBS) \
 	$(EXO_LIBS) \
 	$(GMODULE_LIBS) \
-	$(LIBXFCE4UTIL_LIBS) \
-	$(LIBXFCE4UI_LIBS) \
+	$(LIBldeUTIL_LIBS) \
+	$(LIBldeUI_LIBS) \
 	$(LIBWNCK_LIBS) \
-	$(XFCONF_LIBS) \
+	$(ldeCONF_LIBS) \
 	$(DBUS_LIBS) \
 	$(LIBX11_LIBS) \
 	$(LIBWNCK_LIBS) \
 	-lm
 
-xfce4_panel_DEPENDENCIES = \
-	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+lde_panel_DEPENDENCIES = \
+	$(top_builddir)/libldepanel/libldepanel-$(LIBldePANEL_VERSION_API).la \
 	$(top_builddir)/common/libpanel-common.la
 
 
@@ -524,10 +524,10 @@ xfce4_panel_DEPENDENCIES = \
 #	$(AM_V_GEN) echo "#include <panel/panel-marshal.h>" > $@ \
 #	&& glib-genmarshal --body --prefix=panel_marshal $< >> $@
 @MAINTAINER_MODE_TRUE@DISTCLEANFILES = \
-@MAINTAINER_MODE_TRUE@	$(xfce4_panel_built_sources)
+@MAINTAINER_MODE_TRUE@	$(lde_panel_built_sources)
 
 @MAINTAINER_MODE_TRUE@BUILT_SOURCES = \
-@MAINTAINER_MODE_TRUE@	$(xfce4_panel_built_sources)
+@MAINTAINER_MODE_TRUE@	$(lde_panel_built_sources)
 
 EXTRA_DIST = \
 	panel-dbus-service-infos.xml \
@@ -619,9 +619,9 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-xfce4-panel$(EXEEXT): $(xfce4_panel_OBJECTS) $(xfce4_panel_DEPENDENCIES) $(EXTRA_xfce4_panel_DEPENDENCIES) 
-	@rm -f xfce4-panel$(EXEEXT)
-	$(AM_V_CCLD)$(xfce4_panel_LINK) $(xfce4_panel_OBJECTS) $(xfce4_panel_LDADD) $(LIBS)
+lde-panel$(EXEEXT): $(lde_panel_OBJECTS) $(lde_panel_DEPENDENCIES) $(EXTRA_lde_panel_DEPENDENCIES) 
+	@rm -f lde-panel$(EXEEXT)
+	$(AM_V_CCLD)$(lde_panel_LINK) $(lde_panel_OBJECTS) $(lde_panel_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -629,23 +629,23 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-main.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-application.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-base-window.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-dbus-client.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-dbus-service.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-dialogs.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-item-dialog.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-itembar.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-marshal.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-module-factory.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-module.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-plugin-external-46.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-plugin-external.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-preferences-dialog.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xfce4_panel-panel-window.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-main.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-application.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-base-window.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-dbus-client.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-dbus-service.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-dialogs.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-item-dialog.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-itembar.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-marshal.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-module-factory.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-module.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-plugin-external-46.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-plugin-external.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-preferences-dialog.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-tic-tac-toe.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lde_panel-panel-window.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -668,243 +668,243 @@ distclean-compile:
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LTCOMPILE) -c -o $@ $<
 
-xfce4_panel-panel-marshal.o: panel-marshal.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-marshal.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-marshal.Tpo -c -o xfce4_panel-panel-marshal.o `test -f 'panel-marshal.c' || echo '$(srcdir)/'`panel-marshal.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-marshal.Tpo $(DEPDIR)/xfce4_panel-panel-marshal.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-marshal.c' object='xfce4_panel-panel-marshal.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-marshal.o: panel-marshal.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-marshal.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-marshal.Tpo -c -o lde_panel-panel-marshal.o `test -f 'panel-marshal.c' || echo '$(srcdir)/'`panel-marshal.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-marshal.Tpo $(DEPDIR)/lde_panel-panel-marshal.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-marshal.c' object='lde_panel-panel-marshal.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-marshal.o `test -f 'panel-marshal.c' || echo '$(srcdir)/'`panel-marshal.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-marshal.o `test -f 'panel-marshal.c' || echo '$(srcdir)/'`panel-marshal.c
 
-xfce4_panel-panel-marshal.obj: panel-marshal.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-marshal.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-marshal.Tpo -c -o xfce4_panel-panel-marshal.obj `if test -f 'panel-marshal.c'; then $(CYGPATH_W) 'panel-marshal.c'; else $(CYGPATH_W) '$(srcdir)/panel-marshal.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-marshal.Tpo $(DEPDIR)/xfce4_panel-panel-marshal.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-marshal.c' object='xfce4_panel-panel-marshal.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-marshal.obj: panel-marshal.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-marshal.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-marshal.Tpo -c -o lde_panel-panel-marshal.obj `if test -f 'panel-marshal.c'; then $(CYGPATH_W) 'panel-marshal.c'; else $(CYGPATH_W) '$(srcdir)/panel-marshal.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-marshal.Tpo $(DEPDIR)/lde_panel-panel-marshal.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-marshal.c' object='lde_panel-panel-marshal.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-marshal.obj `if test -f 'panel-marshal.c'; then $(CYGPATH_W) 'panel-marshal.c'; else $(CYGPATH_W) '$(srcdir)/panel-marshal.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-marshal.obj `if test -f 'panel-marshal.c'; then $(CYGPATH_W) 'panel-marshal.c'; else $(CYGPATH_W) '$(srcdir)/panel-marshal.c'; fi`
 
-xfce4_panel-main.o: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-main.o -MD -MP -MF $(DEPDIR)/xfce4_panel-main.Tpo -c -o xfce4_panel-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-main.Tpo $(DEPDIR)/xfce4_panel-main.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='xfce4_panel-main.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-main.o: main.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-main.o -MD -MP -MF $(DEPDIR)/lde_panel-main.Tpo -c -o lde_panel-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-main.Tpo $(DEPDIR)/lde_panel-main.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='lde_panel-main.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
 
-xfce4_panel-main.obj: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-main.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-main.Tpo -c -o xfce4_panel-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-main.Tpo $(DEPDIR)/xfce4_panel-main.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='xfce4_panel-main.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-main.obj: main.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-main.obj -MD -MP -MF $(DEPDIR)/lde_panel-main.Tpo -c -o lde_panel-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-main.Tpo $(DEPDIR)/lde_panel-main.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='main.c' object='lde_panel-main.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
 
-xfce4_panel-panel-application.o: panel-application.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-application.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-application.Tpo -c -o xfce4_panel-panel-application.o `test -f 'panel-application.c' || echo '$(srcdir)/'`panel-application.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-application.Tpo $(DEPDIR)/xfce4_panel-panel-application.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-application.c' object='xfce4_panel-panel-application.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-application.o: panel-application.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-application.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-application.Tpo -c -o lde_panel-panel-application.o `test -f 'panel-application.c' || echo '$(srcdir)/'`panel-application.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-application.Tpo $(DEPDIR)/lde_panel-panel-application.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-application.c' object='lde_panel-panel-application.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-application.o `test -f 'panel-application.c' || echo '$(srcdir)/'`panel-application.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-application.o `test -f 'panel-application.c' || echo '$(srcdir)/'`panel-application.c
 
-xfce4_panel-panel-application.obj: panel-application.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-application.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-application.Tpo -c -o xfce4_panel-panel-application.obj `if test -f 'panel-application.c'; then $(CYGPATH_W) 'panel-application.c'; else $(CYGPATH_W) '$(srcdir)/panel-application.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-application.Tpo $(DEPDIR)/xfce4_panel-panel-application.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-application.c' object='xfce4_panel-panel-application.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-application.obj: panel-application.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-application.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-application.Tpo -c -o lde_panel-panel-application.obj `if test -f 'panel-application.c'; then $(CYGPATH_W) 'panel-application.c'; else $(CYGPATH_W) '$(srcdir)/panel-application.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-application.Tpo $(DEPDIR)/lde_panel-panel-application.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-application.c' object='lde_panel-panel-application.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-application.obj `if test -f 'panel-application.c'; then $(CYGPATH_W) 'panel-application.c'; else $(CYGPATH_W) '$(srcdir)/panel-application.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-application.obj `if test -f 'panel-application.c'; then $(CYGPATH_W) 'panel-application.c'; else $(CYGPATH_W) '$(srcdir)/panel-application.c'; fi`
 
-xfce4_panel-panel-base-window.o: panel-base-window.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-base-window.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-base-window.Tpo -c -o xfce4_panel-panel-base-window.o `test -f 'panel-base-window.c' || echo '$(srcdir)/'`panel-base-window.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-base-window.Tpo $(DEPDIR)/xfce4_panel-panel-base-window.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-base-window.c' object='xfce4_panel-panel-base-window.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-base-window.o: panel-base-window.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-base-window.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-base-window.Tpo -c -o lde_panel-panel-base-window.o `test -f 'panel-base-window.c' || echo '$(srcdir)/'`panel-base-window.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-base-window.Tpo $(DEPDIR)/lde_panel-panel-base-window.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-base-window.c' object='lde_panel-panel-base-window.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-base-window.o `test -f 'panel-base-window.c' || echo '$(srcdir)/'`panel-base-window.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-base-window.o `test -f 'panel-base-window.c' || echo '$(srcdir)/'`panel-base-window.c
 
-xfce4_panel-panel-base-window.obj: panel-base-window.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-base-window.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-base-window.Tpo -c -o xfce4_panel-panel-base-window.obj `if test -f 'panel-base-window.c'; then $(CYGPATH_W) 'panel-base-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-base-window.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-base-window.Tpo $(DEPDIR)/xfce4_panel-panel-base-window.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-base-window.c' object='xfce4_panel-panel-base-window.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-base-window.obj: panel-base-window.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-base-window.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-base-window.Tpo -c -o lde_panel-panel-base-window.obj `if test -f 'panel-base-window.c'; then $(CYGPATH_W) 'panel-base-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-base-window.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-base-window.Tpo $(DEPDIR)/lde_panel-panel-base-window.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-base-window.c' object='lde_panel-panel-base-window.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-base-window.obj `if test -f 'panel-base-window.c'; then $(CYGPATH_W) 'panel-base-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-base-window.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-base-window.obj `if test -f 'panel-base-window.c'; then $(CYGPATH_W) 'panel-base-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-base-window.c'; fi`
 
-xfce4_panel-panel-dbus-client.o: panel-dbus-client.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dbus-client.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dbus-client.Tpo -c -o xfce4_panel-panel-dbus-client.o `test -f 'panel-dbus-client.c' || echo '$(srcdir)/'`panel-dbus-client.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dbus-client.Tpo $(DEPDIR)/xfce4_panel-panel-dbus-client.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-client.c' object='xfce4_panel-panel-dbus-client.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dbus-client.o: panel-dbus-client.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dbus-client.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-dbus-client.Tpo -c -o lde_panel-panel-dbus-client.o `test -f 'panel-dbus-client.c' || echo '$(srcdir)/'`panel-dbus-client.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dbus-client.Tpo $(DEPDIR)/lde_panel-panel-dbus-client.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-client.c' object='lde_panel-panel-dbus-client.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dbus-client.o `test -f 'panel-dbus-client.c' || echo '$(srcdir)/'`panel-dbus-client.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dbus-client.o `test -f 'panel-dbus-client.c' || echo '$(srcdir)/'`panel-dbus-client.c
 
-xfce4_panel-panel-dbus-client.obj: panel-dbus-client.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dbus-client.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dbus-client.Tpo -c -o xfce4_panel-panel-dbus-client.obj `if test -f 'panel-dbus-client.c'; then $(CYGPATH_W) 'panel-dbus-client.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-client.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dbus-client.Tpo $(DEPDIR)/xfce4_panel-panel-dbus-client.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-client.c' object='xfce4_panel-panel-dbus-client.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dbus-client.obj: panel-dbus-client.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dbus-client.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-dbus-client.Tpo -c -o lde_panel-panel-dbus-client.obj `if test -f 'panel-dbus-client.c'; then $(CYGPATH_W) 'panel-dbus-client.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-client.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dbus-client.Tpo $(DEPDIR)/lde_panel-panel-dbus-client.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-client.c' object='lde_panel-panel-dbus-client.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dbus-client.obj `if test -f 'panel-dbus-client.c'; then $(CYGPATH_W) 'panel-dbus-client.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-client.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dbus-client.obj `if test -f 'panel-dbus-client.c'; then $(CYGPATH_W) 'panel-dbus-client.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-client.c'; fi`
 
-xfce4_panel-panel-dbus-service.o: panel-dbus-service.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dbus-service.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dbus-service.Tpo -c -o xfce4_panel-panel-dbus-service.o `test -f 'panel-dbus-service.c' || echo '$(srcdir)/'`panel-dbus-service.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dbus-service.Tpo $(DEPDIR)/xfce4_panel-panel-dbus-service.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-service.c' object='xfce4_panel-panel-dbus-service.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dbus-service.o: panel-dbus-service.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dbus-service.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-dbus-service.Tpo -c -o lde_panel-panel-dbus-service.o `test -f 'panel-dbus-service.c' || echo '$(srcdir)/'`panel-dbus-service.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dbus-service.Tpo $(DEPDIR)/lde_panel-panel-dbus-service.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-service.c' object='lde_panel-panel-dbus-service.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dbus-service.o `test -f 'panel-dbus-service.c' || echo '$(srcdir)/'`panel-dbus-service.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dbus-service.o `test -f 'panel-dbus-service.c' || echo '$(srcdir)/'`panel-dbus-service.c
 
-xfce4_panel-panel-dbus-service.obj: panel-dbus-service.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dbus-service.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dbus-service.Tpo -c -o xfce4_panel-panel-dbus-service.obj `if test -f 'panel-dbus-service.c'; then $(CYGPATH_W) 'panel-dbus-service.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-service.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dbus-service.Tpo $(DEPDIR)/xfce4_panel-panel-dbus-service.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-service.c' object='xfce4_panel-panel-dbus-service.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dbus-service.obj: panel-dbus-service.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dbus-service.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-dbus-service.Tpo -c -o lde_panel-panel-dbus-service.obj `if test -f 'panel-dbus-service.c'; then $(CYGPATH_W) 'panel-dbus-service.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-service.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dbus-service.Tpo $(DEPDIR)/lde_panel-panel-dbus-service.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dbus-service.c' object='lde_panel-panel-dbus-service.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dbus-service.obj `if test -f 'panel-dbus-service.c'; then $(CYGPATH_W) 'panel-dbus-service.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-service.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dbus-service.obj `if test -f 'panel-dbus-service.c'; then $(CYGPATH_W) 'panel-dbus-service.c'; else $(CYGPATH_W) '$(srcdir)/panel-dbus-service.c'; fi`
 
-xfce4_panel-panel-dialogs.o: panel-dialogs.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dialogs.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dialogs.Tpo -c -o xfce4_panel-panel-dialogs.o `test -f 'panel-dialogs.c' || echo '$(srcdir)/'`panel-dialogs.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dialogs.Tpo $(DEPDIR)/xfce4_panel-panel-dialogs.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dialogs.c' object='xfce4_panel-panel-dialogs.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dialogs.o: panel-dialogs.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dialogs.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-dialogs.Tpo -c -o lde_panel-panel-dialogs.o `test -f 'panel-dialogs.c' || echo '$(srcdir)/'`panel-dialogs.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dialogs.Tpo $(DEPDIR)/lde_panel-panel-dialogs.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dialogs.c' object='lde_panel-panel-dialogs.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dialogs.o `test -f 'panel-dialogs.c' || echo '$(srcdir)/'`panel-dialogs.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dialogs.o `test -f 'panel-dialogs.c' || echo '$(srcdir)/'`panel-dialogs.c
 
-xfce4_panel-panel-dialogs.obj: panel-dialogs.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-dialogs.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-dialogs.Tpo -c -o xfce4_panel-panel-dialogs.obj `if test -f 'panel-dialogs.c'; then $(CYGPATH_W) 'panel-dialogs.c'; else $(CYGPATH_W) '$(srcdir)/panel-dialogs.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-dialogs.Tpo $(DEPDIR)/xfce4_panel-panel-dialogs.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dialogs.c' object='xfce4_panel-panel-dialogs.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-dialogs.obj: panel-dialogs.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-dialogs.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-dialogs.Tpo -c -o lde_panel-panel-dialogs.obj `if test -f 'panel-dialogs.c'; then $(CYGPATH_W) 'panel-dialogs.c'; else $(CYGPATH_W) '$(srcdir)/panel-dialogs.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-dialogs.Tpo $(DEPDIR)/lde_panel-panel-dialogs.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-dialogs.c' object='lde_panel-panel-dialogs.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-dialogs.obj `if test -f 'panel-dialogs.c'; then $(CYGPATH_W) 'panel-dialogs.c'; else $(CYGPATH_W) '$(srcdir)/panel-dialogs.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-dialogs.obj `if test -f 'panel-dialogs.c'; then $(CYGPATH_W) 'panel-dialogs.c'; else $(CYGPATH_W) '$(srcdir)/panel-dialogs.c'; fi`
 
-xfce4_panel-panel-item-dialog.o: panel-item-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-item-dialog.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-item-dialog.Tpo -c -o xfce4_panel-panel-item-dialog.o `test -f 'panel-item-dialog.c' || echo '$(srcdir)/'`panel-item-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-item-dialog.Tpo $(DEPDIR)/xfce4_panel-panel-item-dialog.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-item-dialog.c' object='xfce4_panel-panel-item-dialog.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-item-dialog.o: panel-item-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-item-dialog.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-item-dialog.Tpo -c -o lde_panel-panel-item-dialog.o `test -f 'panel-item-dialog.c' || echo '$(srcdir)/'`panel-item-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-item-dialog.Tpo $(DEPDIR)/lde_panel-panel-item-dialog.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-item-dialog.c' object='lde_panel-panel-item-dialog.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-item-dialog.o `test -f 'panel-item-dialog.c' || echo '$(srcdir)/'`panel-item-dialog.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-item-dialog.o `test -f 'panel-item-dialog.c' || echo '$(srcdir)/'`panel-item-dialog.c
 
-xfce4_panel-panel-item-dialog.obj: panel-item-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-item-dialog.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-item-dialog.Tpo -c -o xfce4_panel-panel-item-dialog.obj `if test -f 'panel-item-dialog.c'; then $(CYGPATH_W) 'panel-item-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-item-dialog.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-item-dialog.Tpo $(DEPDIR)/xfce4_panel-panel-item-dialog.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-item-dialog.c' object='xfce4_panel-panel-item-dialog.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-item-dialog.obj: panel-item-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-item-dialog.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-item-dialog.Tpo -c -o lde_panel-panel-item-dialog.obj `if test -f 'panel-item-dialog.c'; then $(CYGPATH_W) 'panel-item-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-item-dialog.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-item-dialog.Tpo $(DEPDIR)/lde_panel-panel-item-dialog.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-item-dialog.c' object='lde_panel-panel-item-dialog.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-item-dialog.obj `if test -f 'panel-item-dialog.c'; then $(CYGPATH_W) 'panel-item-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-item-dialog.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-item-dialog.obj `if test -f 'panel-item-dialog.c'; then $(CYGPATH_W) 'panel-item-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-item-dialog.c'; fi`
 
-xfce4_panel-panel-itembar.o: panel-itembar.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-itembar.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-itembar.Tpo -c -o xfce4_panel-panel-itembar.o `test -f 'panel-itembar.c' || echo '$(srcdir)/'`panel-itembar.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-itembar.Tpo $(DEPDIR)/xfce4_panel-panel-itembar.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-itembar.c' object='xfce4_panel-panel-itembar.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-itembar.o: panel-itembar.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-itembar.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-itembar.Tpo -c -o lde_panel-panel-itembar.o `test -f 'panel-itembar.c' || echo '$(srcdir)/'`panel-itembar.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-itembar.Tpo $(DEPDIR)/lde_panel-panel-itembar.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-itembar.c' object='lde_panel-panel-itembar.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-itembar.o `test -f 'panel-itembar.c' || echo '$(srcdir)/'`panel-itembar.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-itembar.o `test -f 'panel-itembar.c' || echo '$(srcdir)/'`panel-itembar.c
 
-xfce4_panel-panel-itembar.obj: panel-itembar.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-itembar.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-itembar.Tpo -c -o xfce4_panel-panel-itembar.obj `if test -f 'panel-itembar.c'; then $(CYGPATH_W) 'panel-itembar.c'; else $(CYGPATH_W) '$(srcdir)/panel-itembar.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-itembar.Tpo $(DEPDIR)/xfce4_panel-panel-itembar.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-itembar.c' object='xfce4_panel-panel-itembar.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-itembar.obj: panel-itembar.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-itembar.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-itembar.Tpo -c -o lde_panel-panel-itembar.obj `if test -f 'panel-itembar.c'; then $(CYGPATH_W) 'panel-itembar.c'; else $(CYGPATH_W) '$(srcdir)/panel-itembar.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-itembar.Tpo $(DEPDIR)/lde_panel-panel-itembar.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-itembar.c' object='lde_panel-panel-itembar.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-itembar.obj `if test -f 'panel-itembar.c'; then $(CYGPATH_W) 'panel-itembar.c'; else $(CYGPATH_W) '$(srcdir)/panel-itembar.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-itembar.obj `if test -f 'panel-itembar.c'; then $(CYGPATH_W) 'panel-itembar.c'; else $(CYGPATH_W) '$(srcdir)/panel-itembar.c'; fi`
 
-xfce4_panel-panel-module.o: panel-module.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-module.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-module.Tpo -c -o xfce4_panel-panel-module.o `test -f 'panel-module.c' || echo '$(srcdir)/'`panel-module.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-module.Tpo $(DEPDIR)/xfce4_panel-panel-module.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module.c' object='xfce4_panel-panel-module.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-module.o: panel-module.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-module.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-module.Tpo -c -o lde_panel-panel-module.o `test -f 'panel-module.c' || echo '$(srcdir)/'`panel-module.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-module.Tpo $(DEPDIR)/lde_panel-panel-module.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module.c' object='lde_panel-panel-module.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-module.o `test -f 'panel-module.c' || echo '$(srcdir)/'`panel-module.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-module.o `test -f 'panel-module.c' || echo '$(srcdir)/'`panel-module.c
 
-xfce4_panel-panel-module.obj: panel-module.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-module.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-module.Tpo -c -o xfce4_panel-panel-module.obj `if test -f 'panel-module.c'; then $(CYGPATH_W) 'panel-module.c'; else $(CYGPATH_W) '$(srcdir)/panel-module.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-module.Tpo $(DEPDIR)/xfce4_panel-panel-module.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module.c' object='xfce4_panel-panel-module.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-module.obj: panel-module.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-module.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-module.Tpo -c -o lde_panel-panel-module.obj `if test -f 'panel-module.c'; then $(CYGPATH_W) 'panel-module.c'; else $(CYGPATH_W) '$(srcdir)/panel-module.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-module.Tpo $(DEPDIR)/lde_panel-panel-module.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module.c' object='lde_panel-panel-module.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-module.obj `if test -f 'panel-module.c'; then $(CYGPATH_W) 'panel-module.c'; else $(CYGPATH_W) '$(srcdir)/panel-module.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-module.obj `if test -f 'panel-module.c'; then $(CYGPATH_W) 'panel-module.c'; else $(CYGPATH_W) '$(srcdir)/panel-module.c'; fi`
 
-xfce4_panel-panel-module-factory.o: panel-module-factory.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-module-factory.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-module-factory.Tpo -c -o xfce4_panel-panel-module-factory.o `test -f 'panel-module-factory.c' || echo '$(srcdir)/'`panel-module-factory.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-module-factory.Tpo $(DEPDIR)/xfce4_panel-panel-module-factory.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module-factory.c' object='xfce4_panel-panel-module-factory.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-module-factory.o: panel-module-factory.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-module-factory.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-module-factory.Tpo -c -o lde_panel-panel-module-factory.o `test -f 'panel-module-factory.c' || echo '$(srcdir)/'`panel-module-factory.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-module-factory.Tpo $(DEPDIR)/lde_panel-panel-module-factory.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module-factory.c' object='lde_panel-panel-module-factory.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-module-factory.o `test -f 'panel-module-factory.c' || echo '$(srcdir)/'`panel-module-factory.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-module-factory.o `test -f 'panel-module-factory.c' || echo '$(srcdir)/'`panel-module-factory.c
 
-xfce4_panel-panel-module-factory.obj: panel-module-factory.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-module-factory.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-module-factory.Tpo -c -o xfce4_panel-panel-module-factory.obj `if test -f 'panel-module-factory.c'; then $(CYGPATH_W) 'panel-module-factory.c'; else $(CYGPATH_W) '$(srcdir)/panel-module-factory.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-module-factory.Tpo $(DEPDIR)/xfce4_panel-panel-module-factory.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module-factory.c' object='xfce4_panel-panel-module-factory.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-module-factory.obj: panel-module-factory.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-module-factory.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-module-factory.Tpo -c -o lde_panel-panel-module-factory.obj `if test -f 'panel-module-factory.c'; then $(CYGPATH_W) 'panel-module-factory.c'; else $(CYGPATH_W) '$(srcdir)/panel-module-factory.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-module-factory.Tpo $(DEPDIR)/lde_panel-panel-module-factory.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-module-factory.c' object='lde_panel-panel-module-factory.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-module-factory.obj `if test -f 'panel-module-factory.c'; then $(CYGPATH_W) 'panel-module-factory.c'; else $(CYGPATH_W) '$(srcdir)/panel-module-factory.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-module-factory.obj `if test -f 'panel-module-factory.c'; then $(CYGPATH_W) 'panel-module-factory.c'; else $(CYGPATH_W) '$(srcdir)/panel-module-factory.c'; fi`
 
-xfce4_panel-panel-plugin-external.o: panel-plugin-external.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external.Tpo -c -o xfce4_panel-panel-plugin-external.o `test -f 'panel-plugin-external.c' || echo '$(srcdir)/'`panel-plugin-external.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external.c' object='xfce4_panel-panel-plugin-external.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external.o: panel-plugin-external.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external.Tpo -c -o lde_panel-panel-plugin-external.o `test -f 'panel-plugin-external.c' || echo '$(srcdir)/'`panel-plugin-external.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external.Tpo $(DEPDIR)/lde_panel-panel-plugin-external.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external.c' object='lde_panel-panel-plugin-external.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external.o `test -f 'panel-plugin-external.c' || echo '$(srcdir)/'`panel-plugin-external.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external.o `test -f 'panel-plugin-external.c' || echo '$(srcdir)/'`panel-plugin-external.c
 
-xfce4_panel-panel-plugin-external.obj: panel-plugin-external.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external.Tpo -c -o xfce4_panel-panel-plugin-external.obj `if test -f 'panel-plugin-external.c'; then $(CYGPATH_W) 'panel-plugin-external.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external.c' object='xfce4_panel-panel-plugin-external.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external.obj: panel-plugin-external.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external.Tpo -c -o lde_panel-panel-plugin-external.obj `if test -f 'panel-plugin-external.c'; then $(CYGPATH_W) 'panel-plugin-external.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external.Tpo $(DEPDIR)/lde_panel-panel-plugin-external.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external.c' object='lde_panel-panel-plugin-external.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external.obj `if test -f 'panel-plugin-external.c'; then $(CYGPATH_W) 'panel-plugin-external.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external.obj `if test -f 'panel-plugin-external.c'; then $(CYGPATH_W) 'panel-plugin-external.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external.c'; fi`
 
-xfce4_panel-panel-plugin-external-wrapper.o: panel-plugin-external-wrapper.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external-wrapper.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Tpo -c -o xfce4_panel-panel-plugin-external-wrapper.o `test -f 'panel-plugin-external-wrapper.c' || echo '$(srcdir)/'`panel-plugin-external-wrapper.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-wrapper.c' object='xfce4_panel-panel-plugin-external-wrapper.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external-wrapper.o: panel-plugin-external-wrapper.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external-wrapper.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Tpo -c -o lde_panel-panel-plugin-external-wrapper.o `test -f 'panel-plugin-external-wrapper.c' || echo '$(srcdir)/'`panel-plugin-external-wrapper.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Tpo $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-wrapper.c' object='lde_panel-panel-plugin-external-wrapper.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external-wrapper.o `test -f 'panel-plugin-external-wrapper.c' || echo '$(srcdir)/'`panel-plugin-external-wrapper.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external-wrapper.o `test -f 'panel-plugin-external-wrapper.c' || echo '$(srcdir)/'`panel-plugin-external-wrapper.c
 
-xfce4_panel-panel-plugin-external-wrapper.obj: panel-plugin-external-wrapper.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external-wrapper.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Tpo -c -o xfce4_panel-panel-plugin-external-wrapper.obj `if test -f 'panel-plugin-external-wrapper.c'; then $(CYGPATH_W) 'panel-plugin-external-wrapper.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-wrapper.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external-wrapper.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-wrapper.c' object='xfce4_panel-panel-plugin-external-wrapper.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external-wrapper.obj: panel-plugin-external-wrapper.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external-wrapper.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Tpo -c -o lde_panel-panel-plugin-external-wrapper.obj `if test -f 'panel-plugin-external-wrapper.c'; then $(CYGPATH_W) 'panel-plugin-external-wrapper.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-wrapper.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Tpo $(DEPDIR)/lde_panel-panel-plugin-external-wrapper.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-wrapper.c' object='lde_panel-panel-plugin-external-wrapper.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external-wrapper.obj `if test -f 'panel-plugin-external-wrapper.c'; then $(CYGPATH_W) 'panel-plugin-external-wrapper.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-wrapper.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external-wrapper.obj `if test -f 'panel-plugin-external-wrapper.c'; then $(CYGPATH_W) 'panel-plugin-external-wrapper.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-wrapper.c'; fi`
 
-xfce4_panel-panel-plugin-external-46.o: panel-plugin-external-46.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external-46.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Tpo -c -o xfce4_panel-panel-plugin-external-46.o `test -f 'panel-plugin-external-46.c' || echo '$(srcdir)/'`panel-plugin-external-46.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-46.c' object='xfce4_panel-panel-plugin-external-46.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external-46.o: panel-plugin-external-46.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external-46.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external-46.Tpo -c -o lde_panel-panel-plugin-external-46.o `test -f 'panel-plugin-external-46.c' || echo '$(srcdir)/'`panel-plugin-external-46.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external-46.Tpo $(DEPDIR)/lde_panel-panel-plugin-external-46.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-46.c' object='lde_panel-panel-plugin-external-46.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external-46.o `test -f 'panel-plugin-external-46.c' || echo '$(srcdir)/'`panel-plugin-external-46.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external-46.o `test -f 'panel-plugin-external-46.c' || echo '$(srcdir)/'`panel-plugin-external-46.c
 
-xfce4_panel-panel-plugin-external-46.obj: panel-plugin-external-46.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-plugin-external-46.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Tpo -c -o xfce4_panel-panel-plugin-external-46.obj `if test -f 'panel-plugin-external-46.c'; then $(CYGPATH_W) 'panel-plugin-external-46.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-46.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Tpo $(DEPDIR)/xfce4_panel-panel-plugin-external-46.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-46.c' object='xfce4_panel-panel-plugin-external-46.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-plugin-external-46.obj: panel-plugin-external-46.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-plugin-external-46.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-plugin-external-46.Tpo -c -o lde_panel-panel-plugin-external-46.obj `if test -f 'panel-plugin-external-46.c'; then $(CYGPATH_W) 'panel-plugin-external-46.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-46.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-plugin-external-46.Tpo $(DEPDIR)/lde_panel-panel-plugin-external-46.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-plugin-external-46.c' object='lde_panel-panel-plugin-external-46.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-plugin-external-46.obj `if test -f 'panel-plugin-external-46.c'; then $(CYGPATH_W) 'panel-plugin-external-46.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-46.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-plugin-external-46.obj `if test -f 'panel-plugin-external-46.c'; then $(CYGPATH_W) 'panel-plugin-external-46.c'; else $(CYGPATH_W) '$(srcdir)/panel-plugin-external-46.c'; fi`
 
-xfce4_panel-panel-preferences-dialog.o: panel-preferences-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-preferences-dialog.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Tpo -c -o xfce4_panel-panel-preferences-dialog.o `test -f 'panel-preferences-dialog.c' || echo '$(srcdir)/'`panel-preferences-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Tpo $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-preferences-dialog.c' object='xfce4_panel-panel-preferences-dialog.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-preferences-dialog.o: panel-preferences-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-preferences-dialog.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-preferences-dialog.Tpo -c -o lde_panel-panel-preferences-dialog.o `test -f 'panel-preferences-dialog.c' || echo '$(srcdir)/'`panel-preferences-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-preferences-dialog.Tpo $(DEPDIR)/lde_panel-panel-preferences-dialog.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-preferences-dialog.c' object='lde_panel-panel-preferences-dialog.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-preferences-dialog.o `test -f 'panel-preferences-dialog.c' || echo '$(srcdir)/'`panel-preferences-dialog.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-preferences-dialog.o `test -f 'panel-preferences-dialog.c' || echo '$(srcdir)/'`panel-preferences-dialog.c
 
-xfce4_panel-panel-preferences-dialog.obj: panel-preferences-dialog.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-preferences-dialog.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Tpo -c -o xfce4_panel-panel-preferences-dialog.obj `if test -f 'panel-preferences-dialog.c'; then $(CYGPATH_W) 'panel-preferences-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-preferences-dialog.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Tpo $(DEPDIR)/xfce4_panel-panel-preferences-dialog.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-preferences-dialog.c' object='xfce4_panel-panel-preferences-dialog.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-preferences-dialog.obj: panel-preferences-dialog.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-preferences-dialog.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-preferences-dialog.Tpo -c -o lde_panel-panel-preferences-dialog.obj `if test -f 'panel-preferences-dialog.c'; then $(CYGPATH_W) 'panel-preferences-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-preferences-dialog.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-preferences-dialog.Tpo $(DEPDIR)/lde_panel-panel-preferences-dialog.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-preferences-dialog.c' object='lde_panel-panel-preferences-dialog.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-preferences-dialog.obj `if test -f 'panel-preferences-dialog.c'; then $(CYGPATH_W) 'panel-preferences-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-preferences-dialog.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-preferences-dialog.obj `if test -f 'panel-preferences-dialog.c'; then $(CYGPATH_W) 'panel-preferences-dialog.c'; else $(CYGPATH_W) '$(srcdir)/panel-preferences-dialog.c'; fi`
 
-xfce4_panel-panel-tic-tac-toe.o: panel-tic-tac-toe.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-tic-tac-toe.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Tpo -c -o xfce4_panel-panel-tic-tac-toe.o `test -f 'panel-tic-tac-toe.c' || echo '$(srcdir)/'`panel-tic-tac-toe.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Tpo $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-tic-tac-toe.c' object='xfce4_panel-panel-tic-tac-toe.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-tic-tac-toe.o: panel-tic-tac-toe.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-tic-tac-toe.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-tic-tac-toe.Tpo -c -o lde_panel-panel-tic-tac-toe.o `test -f 'panel-tic-tac-toe.c' || echo '$(srcdir)/'`panel-tic-tac-toe.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-tic-tac-toe.Tpo $(DEPDIR)/lde_panel-panel-tic-tac-toe.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-tic-tac-toe.c' object='lde_panel-panel-tic-tac-toe.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-tic-tac-toe.o `test -f 'panel-tic-tac-toe.c' || echo '$(srcdir)/'`panel-tic-tac-toe.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-tic-tac-toe.o `test -f 'panel-tic-tac-toe.c' || echo '$(srcdir)/'`panel-tic-tac-toe.c
 
-xfce4_panel-panel-tic-tac-toe.obj: panel-tic-tac-toe.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-tic-tac-toe.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Tpo -c -o xfce4_panel-panel-tic-tac-toe.obj `if test -f 'panel-tic-tac-toe.c'; then $(CYGPATH_W) 'panel-tic-tac-toe.c'; else $(CYGPATH_W) '$(srcdir)/panel-tic-tac-toe.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Tpo $(DEPDIR)/xfce4_panel-panel-tic-tac-toe.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-tic-tac-toe.c' object='xfce4_panel-panel-tic-tac-toe.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-tic-tac-toe.obj: panel-tic-tac-toe.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-tic-tac-toe.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-tic-tac-toe.Tpo -c -o lde_panel-panel-tic-tac-toe.obj `if test -f 'panel-tic-tac-toe.c'; then $(CYGPATH_W) 'panel-tic-tac-toe.c'; else $(CYGPATH_W) '$(srcdir)/panel-tic-tac-toe.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-tic-tac-toe.Tpo $(DEPDIR)/lde_panel-panel-tic-tac-toe.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-tic-tac-toe.c' object='lde_panel-panel-tic-tac-toe.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-tic-tac-toe.obj `if test -f 'panel-tic-tac-toe.c'; then $(CYGPATH_W) 'panel-tic-tac-toe.c'; else $(CYGPATH_W) '$(srcdir)/panel-tic-tac-toe.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-tic-tac-toe.obj `if test -f 'panel-tic-tac-toe.c'; then $(CYGPATH_W) 'panel-tic-tac-toe.c'; else $(CYGPATH_W) '$(srcdir)/panel-tic-tac-toe.c'; fi`
 
-xfce4_panel-panel-window.o: panel-window.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-window.o -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-window.Tpo -c -o xfce4_panel-panel-window.o `test -f 'panel-window.c' || echo '$(srcdir)/'`panel-window.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-window.Tpo $(DEPDIR)/xfce4_panel-panel-window.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-window.c' object='xfce4_panel-panel-window.o' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-window.o: panel-window.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-window.o -MD -MP -MF $(DEPDIR)/lde_panel-panel-window.Tpo -c -o lde_panel-panel-window.o `test -f 'panel-window.c' || echo '$(srcdir)/'`panel-window.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-window.Tpo $(DEPDIR)/lde_panel-panel-window.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-window.c' object='lde_panel-panel-window.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-window.o `test -f 'panel-window.c' || echo '$(srcdir)/'`panel-window.c
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-window.o `test -f 'panel-window.c' || echo '$(srcdir)/'`panel-window.c
 
-xfce4_panel-panel-window.obj: panel-window.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -MT xfce4_panel-panel-window.obj -MD -MP -MF $(DEPDIR)/xfce4_panel-panel-window.Tpo -c -o xfce4_panel-panel-window.obj `if test -f 'panel-window.c'; then $(CYGPATH_W) 'panel-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-window.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/xfce4_panel-panel-window.Tpo $(DEPDIR)/xfce4_panel-panel-window.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-window.c' object='xfce4_panel-panel-window.obj' libtool=no @AMDEPBACKSLASH@
+lde_panel-panel-window.obj: panel-window.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -MT lde_panel-panel-window.obj -MD -MP -MF $(DEPDIR)/lde_panel-panel-window.Tpo -c -o lde_panel-panel-window.obj `if test -f 'panel-window.c'; then $(CYGPATH_W) 'panel-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-window.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/lde_panel-panel-window.Tpo $(DEPDIR)/lde_panel-panel-window.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='panel-window.c' object='lde_panel-panel-window.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(xfce4_panel_CFLAGS) $(CFLAGS) -c -o xfce4_panel-panel-window.obj `if test -f 'panel-window.c'; then $(CYGPATH_W) 'panel-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-window.c'; fi`
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(lde_panel_CFLAGS) $(CFLAGS) -c -o lde_panel-panel-window.obj `if test -f 'panel-window.c'; then $(CYGPATH_W) 'panel-window.c'; else $(CYGPATH_W) '$(srcdir)/panel-window.c'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo

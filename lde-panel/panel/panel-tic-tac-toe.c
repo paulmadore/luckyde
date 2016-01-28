@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2010 Nick Schermer <nick@ldece.org>
  *
  * The game code has been taken (with adjustments) from the javascript
  * game of Stephen Ostermiller: http://ostermiller.org/calc/tictactoe.html.
@@ -27,8 +27,8 @@
 #include <string.h>
 #endif
 
-#include <libxfce4ui/libxfce4ui.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeui/libldeui.h>
+#include <libldeutil/libldeutil.h>
 
 #include <common/panel-private.h>
 #include <panel/panel-tic-tac-toe.h>
@@ -56,12 +56,12 @@ static void panel_tic_tac_toe_new_game       (PanelTicTacToe *dialog);
 
 struct _PanelTicTacToeClass
 {
-  XfceTitledDialogClass __parent__;
+  ldeceTitledDialogClass __parent__;
 };
 
 struct _PanelTicTacToe
 {
-  XfceTitledDialog  __parent__;
+  ldeceTitledDialog  __parent__;
 
   GtkWidget *buttons[9];
   GtkWidget *labels[9];
@@ -86,7 +86,7 @@ enum
 
 
 
-G_DEFINE_TYPE (PanelTicTacToe, panel_tic_tac_toe, XFCE_TYPE_TITLED_DIALOG)
+G_DEFINE_TYPE (PanelTicTacToe, panel_tic_tac_toe, ldeCE_TYPE_TITLED_DIALOG)
 
 
 
@@ -120,7 +120,7 @@ panel_tic_tac_toe_init (PanelTicTacToe *dialog)
   gtk_window_set_icon_name (GTK_WINDOW (dialog), "applications-games");
   gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
 
-  button = xfce_gtk_button_new_mixed (GTK_STOCK_NEW, _("_New Game"));
+  button = ldece_gtk_button_new_mixed (GTK_STOCK_NEW, _("_New Game"));
   gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_ACCEPT);
   gtk_dialog_add_button (GTK_DIALOG (dialog), GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE);
 
@@ -558,11 +558,11 @@ panel_tic_tac_toe_highlight_winner (PanelTicTacToe *dialog,
   tie = winner_hex (TIE, 0);
   if ((winner & tie) == winner_hex (PLAYER_X, 0))
     {
-      attr = pango_attr_foreground_new (0xffff, 0, 0);
+      attr = pango_attr_foreground_new (0ldefff, 0, 0);
     }
   else if ((winner & tie) == winner_hex (PLAYER_O, 0))
     {
-      attr = pango_attr_foreground_new (0, 0, 0xffff);
+      attr = pango_attr_foreground_new (0, 0, 0ldefff);
     }
   else
     {

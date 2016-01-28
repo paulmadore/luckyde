@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,12 +23,12 @@
 #include <gmodule.h>
 #include <exo/exo.h>
 #include <glib/gstdio.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeutil/libldeutil.h>
 
 #include <common/panel-private.h>
 #include <common/panel-debug.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 
 #include <panel/panel-module.h>
 #include <panel/panel-module-factory.h>
@@ -148,7 +148,7 @@ panel_module_init (PanelModule *module)
   module->library = NULL;
   module->construct_func = NULL;
   module->plugin_type = G_TYPE_NONE;
-  module->api = g_strdup (LIBXFCE4PANEL_VERSION_API);
+  module->api = g_strdup (LIBldePANEL_VERSION_API);
 }
 
 
@@ -208,7 +208,7 @@ panel_module_load (GTypeModule *type_module)
     }
 
     /* check if there is a preinit function */
-  if (g_module_symbol (module->library, "xfce_panel_module_preinit", &foo))
+  if (g_module_symbol (module->library, "ldece_panel_module_preinit", &foo))
     {
       /* large message, but technically never shown to normal users */
       g_warning ("The plugin \"%s\" is marked as internal in the desktop file, "
@@ -221,13 +221,13 @@ panel_module_load (GTypeModule *type_module)
       /* from now on, run this plugin in a wrapper */
       module->mode = WRAPPER;
       g_free (module->api);
-      module->api = g_strdup (LIBXFCE4PANEL_VERSION_API);
+      module->api = g_strdup (LIBldePANEL_VERSION_API);
 
       return FALSE;
     }
 
   /* try to link the contruct function */
-  if (g_module_symbol (module->library, "xfce_panel_module_init", (gpointer) &init_func))
+  if (g_module_symbol (module->library, "ldece_panel_module_init", (gpointer) &init_func))
     {
       /* initialize the plugin */
       module->plugin_type = init_func (type_module, &make_resident);
@@ -236,7 +236,7 @@ panel_module_load (GTypeModule *type_module)
       if (make_resident)
         g_module_make_resident (module->library);
     }
-  else if (!g_module_symbol (module->library, "xfce_panel_module_construct",
+  else if (!g_module_symbol (module->library, "ldece_panel_module_construct",
                              (gpointer) &module->construct_func))
     {
       g_critical ("Module \"%s\" lacks a plugin register function.",
@@ -304,7 +304,7 @@ panel_module_new_from_desktop_file (const gchar *filename,
                                     gboolean     force_external)
 {
   PanelModule *module = NULL;
-  XfceRc      *rc;
+  ldeceRc      *rc;
   const gchar *module_name;
   gchar       *path;
   const gchar *module_exec;
@@ -314,7 +314,7 @@ panel_module_new_from_desktop_file (const gchar *filename,
   panel_return_val_if_fail (!exo_str_is_empty (filename), NULL);
   panel_return_val_if_fail (!exo_str_is_empty (name), NULL);
 
-  rc = xfce_rc_simple_open (filename, TRUE);
+  rc = ldece_rc_simple_open (filename, TRUE);
   if (G_UNLIKELY (rc == NULL))
     {
       g_critical ("Plugin %s: Unable to read from desktop file \"%s\"",
@@ -322,25 +322,25 @@ panel_module_new_from_desktop_file (const gchar *filename,
       return NULL;
     }
 
-  if (!xfce_rc_has_group (rc, "Xfce Panel"))
+  if (!ldece_rc_has_group (rc, "ldece Panel"))
     {
       g_critical ("Plugin %s: Desktop file \"%s\" has no "
-                  "\"Xfce Panel\" group", name, filename);
-      xfce_rc_close (rc);
+                  "\"ldece Panel\" group", name, filename);
+      ldece_rc_close (rc);
       return NULL;
     }
 
-  xfce_rc_set_group (rc, "Xfce Panel");
+  ldece_rc_set_group (rc, "ldece Panel");
 
   /* read module location from the desktop file */
-  module_name = xfce_rc_read_entry_untranslated (rc, "X-XFCE-Module", NULL);
+  module_name = ldece_rc_read_entry_untranslated (rc, "X-ldeCE-Module", NULL);
   if (G_LIKELY (module_name != NULL))
     {
 #ifndef NDEBUG
-      if (xfce_rc_has_entry (rc, "X-XFCE-Module-Path"))
+      if (ldece_rc_has_entry (rc, "X-ldeCE-Module-Path"))
         {
           /* show a messsage if the old module path key still exists */
-          g_message ("Plugin %s: The \"X-XFCE-Module-Path\" key is "
+          g_message ("Plugin %s: The \"X-ldeCE-Module-Path\" key is "
                      "ignored in \"%s\", the panel will look for the "
                      "module in %s. See bug #5455 why this decision was made",
                      name, filename, PANEL_PLUGINS_LIB_DIR);
@@ -366,11 +366,11 @@ panel_module_new_from_desktop_file (const gchar *filename,
 
           /* run mode of the module, by default everything runs in
            * the wrapper, unless defined otherwise */
-          if (force_external || !xfce_rc_read_bool_entry (rc, "X-XFCE-Internal", FALSE))
+          if (force_external || !ldece_rc_read_bool_entry (rc, "X-ldeCE-Internal", FALSE))
             {
               module->mode = WRAPPER;
               g_free (module->api);
-              module->api = g_strdup (xfce_rc_read_entry (rc, "X-XFCE-API", LIBXFCE4PANEL_VERSION_API));
+              module->api = g_strdup (ldece_rc_read_entry (rc, "X-ldeCE-API", LIBldePANEL_VERSION_API));
             }
           else
             module->mode = INTERNAL;
@@ -385,7 +385,7 @@ panel_module_new_from_desktop_file (const gchar *filename,
   else
     {
       /* yeah, we support ancient shizzle too... */
-      module_exec = xfce_rc_read_entry_untranslated (rc, "X-XFCE-Exec", NULL);
+      module_exec = ldece_rc_read_entry_untranslated (rc, "X-ldeCE-Exec", NULL);
       if (module_exec != NULL
           && g_path_is_absolute (module_exec)
           && g_file_test (module_exec, G_FILE_TEST_EXISTS))
@@ -407,11 +407,11 @@ panel_module_new_from_desktop_file (const gchar *filename,
       panel_assert (module->mode != UNKNOWN);
 
       /* read the remaining information */
-      module->display_name = g_strdup (xfce_rc_read_entry (rc, "Name", name));
-      module->comment = g_strdup (xfce_rc_read_entry (rc, "Comment", NULL));
-      module->icon_name = g_strdup (xfce_rc_read_entry_untranslated (rc, "Icon", NULL));
+      module->display_name = g_strdup (ldece_rc_read_entry (rc, "Name", name));
+      module->comment = g_strdup (ldece_rc_read_entry (rc, "Comment", NULL));
+      module->icon_name = g_strdup (ldece_rc_read_entry_untranslated (rc, "Icon", NULL));
 
-      module_unique = xfce_rc_read_entry (rc, "X-XFCE-Unique", NULL);
+      module_unique = ldece_rc_read_entry (rc, "X-ldeCE-Unique", NULL);
       if (G_LIKELY (module_unique == NULL))
         module->unique_mode = UNIQUE_FALSE;
       else if (strcasecmp (module_unique, "screen") == 0)
@@ -426,7 +426,7 @@ panel_module_new_from_desktop_file (const gchar *filename,
                              PANEL_DEBUG_BOOL (module->mode == INTERNAL));
     }
 
-  xfce_rc_close (rc);
+  ldece_rc_close (rc);
 
   return module;
 }
@@ -599,9 +599,9 @@ panel_module_get_api (PanelModule *module)
 
 
 PanelModule *
-panel_module_get_from_plugin_provider (XfcePanelPluginProvider *provider)
+panel_module_get_from_plugin_provider (ldecePanelPluginProvider *provider)
 {
-  panel_return_val_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (provider), NULL);
+  panel_return_val_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (provider), NULL);
 
   /* return the panel module */
   return g_object_get_qdata (G_OBJECT (provider), module_quark);

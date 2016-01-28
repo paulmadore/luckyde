@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<channel name="xfce4-panel" version="1.0">
+<channel name="lde4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
@@ -65,7 +65,7 @@
     </property>
     <property name="plugin-12" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="xfce4-appfinder.desktop"/>
+        <value type="string" value="lde4-appfinder.desktop"/>
       </property>
     </property>
     <property name="plugin-13" type="string" value="separator"/>

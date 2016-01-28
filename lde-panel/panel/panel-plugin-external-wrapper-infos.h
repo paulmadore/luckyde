@@ -164,8 +164,8 @@ static const DBusGMethodInfo dbus_glib_panel_plugin_external_wrapper_methods[] =
 const DBusGObjectInfo dbus_glib_panel_plugin_external_wrapper_object_info = {  1,
   dbus_glib_panel_plugin_external_wrapper_methods,
   2,
-"org.xfce.Panel.Wrapper\0ProviderSignal\0S\0signal\0I\0u\0\0org.xfce.Panel.Wrapper\0RemoteEventResult\0S\0handle\0I\0u\0result\0I\0b\0\0\0",
-"org.xfce.Panel.Wrapper\0Set\0org.xfce.Panel.Wrapper\0RemoteEvent\0\0",
+"org.ldece.Panel.Wrapper\0ProviderSignal\0S\0signal\0I\0u\0\0org.ldece.Panel.Wrapper\0RemoteEventResult\0S\0handle\0I\0u\0result\0I\0b\0\0\0",
+"org.ldece.Panel.Wrapper\0Set\0org.ldece.Panel.Wrapper\0RemoteEvent\0\0",
 "\0"
 };
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,8 +25,8 @@
 #endif
 
 #include <exo/exo.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 #include <common/panel-private.h>
 #include <common/panel-debug.h>
 #include <panel/panel-base-window.h>
@@ -209,7 +209,7 @@ panel_base_window_init (PanelBaseWindow *window)
   window->priv->borders = PANEL_BORDER_NONE;
   window->priv->active_timeout_id = 0;
 
-  /* some wm require stick to show the window on all workspaces, on xfwm4
+  /* some wm require stick to show the window on all workspaces, on ldewm4
    * the type-hint already takes care of that */
   gtk_window_stick (GTK_WINDOW (window));
 
@@ -748,7 +748,7 @@ static void
 panel_base_window_set_plugin_background_alpha (GtkWidget *widget,
                                                gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_BASE_WINDOW (user_data));
 
   /* if the plugin is external, send the new alpha value to the wrapper/socket  */
@@ -766,7 +766,7 @@ panel_base_window_set_plugin_background_color (GtkWidget *widget,
   PanelBaseWindow *window = PANEL_BASE_WINDOW (user_data);
   GdkColor        *color;
 
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_BASE_WINDOW (user_data));
 
   /* send null if the style is not a bg color */
@@ -782,7 +782,7 @@ static void
 panel_base_window_set_plugin_background_image (GtkWidget *widget,
                                                gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
   panel_return_if_fail (PANEL_IS_BASE_WINDOW (user_data));
 
   if (PANEL_IS_PLUGIN_EXTERNAL (widget))

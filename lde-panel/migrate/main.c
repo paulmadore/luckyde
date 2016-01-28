@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@lde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,9 +32,9 @@
 
 #include <gtk/gtk.h>
 #include <xfconf/xfconf.h>
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
-#include <libxfce4panel/xfce-panel-macros.h>
+#include <liblde4util/liblde4util.h>
+#include <liblde4ui/liblde4ui.h>
+#include <liblde4panel/lde-panel-macros.h>
 
 #include <migrate/migrate-46.h>
 #include <migrate/migrate-config.h>
@@ -42,7 +42,7 @@
 
 
 
-#define DEFAULT_CONFIG_FILENAME "xfce4" G_DIR_SEPARATOR_S "panel" G_DIR_SEPARATOR_S "default.xml"
+#define DEFAULT_CONFIG_FILENAME "lde4" G_DIR_SEPARATOR_S "panel" G_DIR_SEPARATOR_S "default.xml"
 #define DEFAULT_CONFIG_PATH     XDGCONFIGDIR G_DIR_SEPARATOR_S DEFAULT_CONFIG_FILENAME
 
 
@@ -62,7 +62,7 @@ main (gint argc, gchar **argv)
   gboolean       migrate_vendor_default;
 
   /* set translation domain */
-  xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+  lde_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
 #ifndef NDEBUG
   /* terminate the program on warnings and critical messages */
@@ -78,16 +78,16 @@ main (gint argc, gchar **argv)
       return EXIT_FAILURE;
     }
 
-  channel = xfconf_channel_get (XFCE_PANEL_CHANNEL_NAME);
+  channel = xfconf_channel_get (LDE_PANEL_CHANNEL_NAME);
   if (!xfconf_channel_has_property (channel, "/panels"))
     {
       /* lookup the old 4.6 config file */
-      filename_46 = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, XFCE_46_CONFIG);
+      filename_46 = lde_resource_lookup (LDE_RESOURCE_CONFIG, LDE_46_CONFIG);
 
       /* lookup the default configuration */
-      xfce_resource_push_path (XFCE_RESOURCE_CONFIG, XDGCONFIGDIR);
-      filename_default = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, DEFAULT_CONFIG_FILENAME);
-      xfce_resource_pop_path (XFCE_RESOURCE_CONFIG);
+      lde_resource_push_path (LDE_RESOURCE_CONFIG, XDGCONFIGDIR);
+      filename_default = lde_resource_lookup (LDE_RESOURCE_CONFIG, DEFAULT_CONFIG_FILENAME);
+      lde_resource_pop_path (LDE_RESOURCE_CONFIG);
 
       if (filename_46 == NULL && filename_default == NULL)
         {
@@ -100,7 +100,7 @@ main (gint argc, gchar **argv)
       migrate_vendor_default = (g_strcmp0 (DEFAULT_CONFIG_PATH, filename_default) != 0);
 
       /* check if we auto-migrate the default configuration */
-      if (g_getenv ("XFCE_PANEL_MIGRATE_DEFAULT") != NULL
+      if (g_getenv ("LDE_PANEL_MIGRATE_DEFAULT") != NULL
           || migrate_vendor_default)
         {
           if (filename_46 != NULL)
@@ -157,7 +157,7 @@ main (gint argc, gchar **argv)
           /* restore 4.6 config */
           if (!migrate_46 (filename_46, channel, &error))
             {
-              xfce_dialog_show_error (NULL, error, _("Failed to migrate the old panel configuration"));
+              lde_dialog_show_error (NULL, error, _("Failed to migrate the old panel configuration"));
               g_error_free (error);
               retval = EXIT_FAILURE;
             }
@@ -169,7 +169,7 @@ main (gint argc, gchar **argv)
           /* apply default config */
           if (!migrate_default (filename_default, &error))
             {
-              xfce_dialog_show_error (NULL, error, _("Failed to load the default configuration"));
+              lde_dialog_show_error (NULL, error, _("Failed to load the default configuration"));
               g_error_free (error);
               retval = EXIT_FAILURE;
             }
@@ -180,13 +180,13 @@ main (gint argc, gchar **argv)
     }
 
   configver = xfconf_channel_get_int (channel, "/configver", -1);
-  if (configver < XFCE4_PANEL_CONFIG_VERSION)
+  if (configver < LDE4_PANEL_CONFIG_VERSION)
     {
       g_message (_("Panel config needs migration..."));
 
       if (!migrate_config (channel, configver, &error))
         {
-          xfce_dialog_show_error (NULL, error, _("Failed to migrate the existing configuration"));
+          lde_dialog_show_error (NULL, error, _("Failed to migrate the existing configuration"));
           g_error_free (error);
           retval = EXIT_FAILURE;
         }
@@ -196,7 +196,7 @@ main (gint argc, gchar **argv)
         }
 
       /* migration complete, set new version */
-      xfconf_channel_set_int (channel, "/configver", XFCE4_PANEL_CONFIG_VERSION);
+      xfconf_channel_set_int (channel, "/configver", LDE4_PANEL_CONFIG_VERSION);
     }
 
   xfconf_shutdown ();

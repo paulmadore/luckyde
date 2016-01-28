@@ -1,15 +1,15 @@
-<node name="/org/xfce/Panel/Wrapper">
+<node name="/org/ldece/Panel/Wrapper">
   <!--
-    org.xfce.Panel.Wrapper
+    org.ldece.Panel.Wrapper
   -->
-  <interface name="org.xfce.Panel.Wrapper">
+  <interface name="org.ldece.Panel.Wrapper">
     <annotation name="org.freedesktop.DBus.GLib.CSymbol"
                 value="panel_plugin_external_wrapper_dbus" />
     <annotation name="org.freedesktop.DBus.GLib.ClientCSymbol"
                 value="wrapper_dbus" />
 
     <!--
-      i : unsigned integer : enum from XfcePanelPluginProviderPropType.
+      i : unsigned integer : enum from ldecePanelPluginProviderPropType.
       v : value            : GValue with the value for the property.
     -->
     <signal name="Set">
@@ -28,7 +28,7 @@
     </signal>
 
     <!--
-      signal : A provider signal from XfcePanelPluginProviderSignal.
+      signal : A provider signal from ldecePanelPluginProviderSignal.
     -->
     <method name="ProviderSignal">
       <annotation name="org.freedesktop.DBus.Method.NoReply" value="true" />

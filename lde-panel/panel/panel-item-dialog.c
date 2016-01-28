@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,12 +25,12 @@
 #endif
 
 #include <exo/exo.h>
-#include <libxfce4ui/libxfce4ui.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeui/libldeui.h>
+#include <libldeutil/libldeutil.h>
 
 #include <common/panel-private.h>
 #include <common/panel-utils.h>
-#include <libxfce4panel/libxfce4panel.h>
+#include <libldepanel/libldepanel.h>
 
 #include <panel/panel-application.h>
 #include <panel/panel-item-dialog.h>
@@ -42,7 +42,7 @@
 
 
 #define BORDER         (6)
-#define ITEMS_HELP_URL "http://www.xfce.org"
+#define ITEMS_HELP_URL "http://www.ldece.org"
 
 
 
@@ -97,12 +97,12 @@ static void         panel_item_dialog_text_renderer          (GtkTreeViewColumn 
 
 struct _PanelItemDialogClass
 {
-  XfceTitledDialogClass __parent__;
+  ldeceTitledDialogClass __parent__;
 };
 
 struct _PanelItemDialog
 {
-  XfceTitledDialog  __parent__;
+  ldeceTitledDialog  __parent__;
 
   PanelApplication   *application;
 
@@ -126,17 +126,17 @@ enum
 
 static const GtkTargetEntry drag_targets[] =
 {
-  { "xfce-panel/plugin-name", 0, 0 }
+  { "ldece-panel/plugin-name", 0, 0 }
 };
 
 static const GtkTargetEntry drop_targets[] =
 {
-  { "xfce-panel/plugin-widget", GTK_TARGET_SAME_APP, 0 }
+  { "ldece-panel/plugin-widget", GTK_TARGET_SAME_APP, 0 }
 };
 
 
 
-G_DEFINE_TYPE (PanelItemDialog, panel_item_dialog, XFCE_TYPE_TITLED_DIALOG)
+G_DEFINE_TYPE (PanelItemDialog, panel_item_dialog, ldeCE_TYPE_TITLED_DIALOG)
 
 
 
@@ -188,7 +188,7 @@ panel_item_dialog_init (PanelItemDialog *dialog)
       G_CALLBACK (panel_item_dialog_unique_changed), dialog);
 
   gtk_window_set_title (GTK_WINDOW (dialog), _("Add New Items"));
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog),
+  ldece_titled_dialog_set_subtitle (ldeCE_TITLED_DIALOG (dialog),
       _("Add new plugins to the panel"));
   gtk_window_set_icon_name (GTK_WINDOW (dialog), GTK_STOCK_ADD);
   gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
@@ -570,8 +570,8 @@ panel_item_dialog_drag_data_received (GtkWidget        *treeview,
 
   /* ask the plugin to cleanup when we destroy a panel window */
   widget = gtk_drag_get_source_widget (context);
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
-  xfce_panel_plugin_provider_ask_remove (XFCE_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  ldece_panel_plugin_provider_ask_remove (ldeCE_PANEL_PLUGIN_PROVIDER (widget));
 
   gtk_drag_finish (context, TRUE, FALSE, drag_time);
 

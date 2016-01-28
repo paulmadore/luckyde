@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@
 #define __PANEL_PLUGIN_EXTERNAL_46_H__
 
 #include <gtk/gtk.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 #include <panel/panel-module.h>
 
 G_BEGIN_DECLS

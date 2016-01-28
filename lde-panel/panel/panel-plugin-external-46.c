@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,13 +33,13 @@
 #include <exo/exo.h>
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeutil/libldeutil.h>
 
 #include <common/panel-private.h>
 #include <common/panel-debug.h>
 
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 
 #include <panel/panel-module.h>
 #include <panel/panel-plugin-external-46.h>
@@ -151,7 +151,7 @@ panel_plugin_external_46_client_event (GtkWidget      *widget,
 
         default:
           /* other signals are handled in panel-applications.c */
-          xfce_panel_plugin_provider_emit_signal (XFCE_PANEL_PLUGIN_PROVIDER (external),
+          ldece_panel_plugin_provider_emit_signal (ldeCE_PANEL_PLUGIN_PROVIDER (external),
                                                   provider_signal);
           break;
         }
@@ -320,9 +320,9 @@ panel_plugin_external_46_remote_event (PanelPluginExternal *external,
                                        guint               *handle)
 {
   panel_return_val_if_fail (PANEL_IS_PLUGIN_EXTERNAL_46 (external), TRUE);
-  panel_return_val_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (external), TRUE);
+  panel_return_val_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (external), TRUE);
 
-  g_warning ("Plugin %s is compiled as an Xfce 4.6 binary. It needs to be "
+  g_warning ("Plugin %s is compiled as an ldece 4.6 binary. It needs to be "
              "ported to the new library plugin framework to be able to use "
              "remote events.", panel_module_get_name (external->module));
 

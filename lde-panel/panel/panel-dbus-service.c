@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,9 +30,9 @@
 #include <exo/exo.h>
 #include <common/panel-private.h>
 #include <common/panel-dbus.h>
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
-#include <libxfce4panel/libxfce4panel.h>
+#include <libldeutil/libldeutil.h>
+#include <libldeui/libldeui.h>
+#include <libldepanel/libldepanel.h>
 
 #include <panel/panel-dbus-service.h>
 #include <panel/panel-application.h>
@@ -171,7 +171,7 @@ panel_dbus_service_finalize (GObject *object)
 
   if (G_LIKELY (service->connection != NULL))
     {
-      /* release the org.xfce.Panel name */
+      /* release the org.ldece.Panel name */
       connection = dbus_g_connection_get_connection (service->connection);
       dbus_bus_release_name (connection, PANEL_DBUS_NAME, NULL);
       dbus_g_connection_flush (service->connection);
@@ -283,14 +283,14 @@ panel_dbus_service_plugin_event_free (gpointer data)
 
 
 static void
-panel_dbus_service_plugin_event_result (XfcePanelPluginProvider *prev_provider,
+panel_dbus_service_plugin_event_result (ldecePanelPluginProvider *prev_provider,
                                         guint                    handle,
                                         gboolean                 result,
                                         PanelDBusService        *service)
 {
   PluginEvent             *event;
   GSList                  *li, *lnext;
-  XfcePanelPluginProvider *provider;
+  ldecePanelPluginProvider *provider;
   guint                    new_handle;
   gboolean                 new_result;
 
@@ -311,10 +311,10 @@ panel_dbus_service_plugin_event_result (XfcePanelPluginProvider *prev_provider,
               new_handle = 0;
 
               /* maybe the plugin has been destroyed */
-              if (!XFCE_PANEL_PLUGIN_PROVIDER (provider))
+              if (!ldeCE_PANEL_PLUGIN_PROVIDER (provider))
                 continue;
 
-              new_result = xfce_panel_plugin_provider_remote_event (provider, event->name,
+              new_result = ldece_panel_plugin_provider_remote_event (provider, event->name,
                                                                     &event->value, &new_handle);
 
               if (new_handle > 0 && lnext != NULL)
@@ -376,8 +376,8 @@ panel_dbus_service_plugin_event (PanelDBusService  *service,
     {
       lnext = li->next;
 
-      panel_return_val_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (li->data), FALSE);
-      result = xfce_panel_plugin_provider_remote_event (li->data, name, value, &handle);
+      panel_return_val_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (li->data), FALSE);
+      result = ldece_panel_plugin_provider_remote_event (li->data, name, value, &handle);
 
       if (handle > 0 && lnext != NULL)
         {
@@ -473,10 +473,10 @@ panel_dbus_service_is_owner (PanelDBusService *service)
 void
 panel_dbus_service_exit_panel (gboolean restart)
 {
-  XfceSMClient *sm_client;
+  ldeceSMClient *sm_client;
 
-  sm_client = xfce_sm_client_get ();
-  xfce_sm_client_set_restart_style (sm_client, XFCE_SM_CLIENT_RESTART_NORMAL);
+  sm_client = ldece_sm_client_get ();
+  ldece_sm_client_set_restart_style (sm_client, ldeCE_SM_CLIENT_RESTART_NORMAL);
 
   dbus_exit_restart = !!restart;
 

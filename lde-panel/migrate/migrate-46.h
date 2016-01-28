@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@lde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 
 G_BEGIN_DECLS
 
-#define XFCE_46_CONFIG  "xfce4" G_DIR_SEPARATOR_S "panel" G_DIR_SEPARATOR_S "panels.xml"
+#define LDE_46_CONFIG  "lde4" G_DIR_SEPARATOR_S "panel" G_DIR_SEPARATOR_S "panels.xml"
 
 gboolean migrate_46 (const gchar    *filename,
                      XfconfChannel  *channel,

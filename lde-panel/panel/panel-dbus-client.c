@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,11 +26,11 @@
 
 #include <exo/exo.h>
 #include <dbus/dbus-glib.h>
-#include <libxfce4util/libxfce4util.h>
+#include <libldeutil/libldeutil.h>
 #include <common/panel-private.h>
 #include <common/panel-dbus.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 
 #include <panel/panel-dbus-client.h>
 #include <panel/panel-dbus-service.h>

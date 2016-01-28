@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,11 +25,11 @@
 #endif
 
 #include <exo/exo.h>
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <libldeutil/libldeutil.h>
+#include <libldeui/libldeui.h>
 
 #include <common/panel-private.h>
-#include <libxfce4panel/libxfce4panel.h>
+#include <libldepanel/libldepanel.h>
 
 #include <panel/panel-dialogs.h>
 #include <panel/panel-application.h>
@@ -42,7 +42,7 @@ panel_dialogs_show_about_email_hook (GtkAboutDialog *dialog,
                                      const gchar    *uri,
                                      gpointer        data)
 {
-  if (g_strcmp0 ("tictactoe@xfce.org", uri) == 0)
+  if (g_strcmp0 ("tictactoe@ldece.org", uri) == 0)
     {
       /* open tic-tac-toe */
       panel_tic_tac_toe_show ();
@@ -63,14 +63,14 @@ panel_dialogs_show_about (void)
   authors = g_new0 (gchar *, 4);
   authors[0] = g_strdup_printf ("%s:\n%s\n",
                                 _("Maintainers"),
-                                "Nick Schermer <nick@xfce.org>");
+                                "Nick Schermer <nick@ldece.org>");
   authors[1] = g_strdup_printf ("%s:\n%s\n",
                                 _("Deskbar Mode"),
                                 "Andrzej Radecki <ndrwrdck@gmail.com>");
   authors[2] = g_strdup_printf ("%s:\n%s\n%s\n",
                                 _("Inactive Maintainers"),
-                                "Jasper Huijsmans <jasper@xfce.org>",
-                                "Tic-tac-toe <tictactoe@xfce.org>");
+                                "Jasper Huijsmans <jasper@ldece.org>",
+                                "Tic-tac-toe <tictactoe@ldece.org>");
 
   gtk_about_dialog_set_email_hook (panel_dialogs_show_about_email_hook, NULL, NULL);
 #if !GTK_CHECK_VERSION (2, 18, 0)
@@ -79,14 +79,14 @@ panel_dialogs_show_about (void)
 
   gtk_show_about_dialog (NULL,
                          "authors", authors,
-                         "comments", _("The panel of the Xfce Desktop Environment"),
-                         "copyright", "Copyright \302\251 2004-2012 Xfce Development Team",
+                         "comments", _("The panel of the ldece Desktop Environment"),
+                         "copyright", "Copyright \302\251 2004-2012 ldece Development Team",
                          "destroy-with-parent", TRUE,
-                         "license", XFCE_LICENSE_GPL,
+                         "license", ldeCE_LICENSE_GPL,
                          "program-name", PACKAGE_NAME,
                          "translator-credits", _("translator-credits"),
                          "version", PACKAGE_VERSION,
-                         "website", "http://www.xfce.org/",
+                         "website", "http://www.ldece.org/",
                          "logo-icon-name", PACKAGE_NAME,
                          NULL);
 
@@ -228,7 +228,7 @@ panel_dialogs_kiosk_warning (void)
 
   if (locked)
     {
-      xfce_dialog_show_warning (NULL,
+      ldece_dialog_show_warning (NULL,
           _("Because the panel is running in kiosk mode, you are not allowed "
             "to make changes to the panel configuration as a regular user"),
           _("Modifying the panel is not allowed"));

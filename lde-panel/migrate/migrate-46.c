@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2009-2010 Nick Schermer <nick@lde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,9 +29,9 @@
 
 #include <gtk/gtk.h>
 #include <xfconf/xfconf.h>
-#include <libxfce4util/libxfce4util.h>
+#include <liblde4util/liblde4util.h>
 #include <migrate/migrate-46.h>
-#include <libxfce4panel/xfce-panel-macros.h>
+#include <liblde4panel/lde-panel-macros.h>
 
 
 
@@ -105,65 +105,65 @@ migrate_46_panel_screen_position (XfceScreenPosition  screen_position,
   switch (screen_position)
     {
     /* top */
-    case XFCE_SCREEN_POSITION_NW_H:
+    case LDE_SCREEN_POSITION_NW_H:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_NW;
       break;
 
-    case XFCE_SCREEN_POSITION_N:
+    case LDE_SCREEN_POSITION_N:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_NC;
       break;
 
-    case XFCE_SCREEN_POSITION_NE_H:
+    case LDE_SCREEN_POSITION_NE_H:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_NE;
       break;
 
     /* left */
-    case XFCE_SCREEN_POSITION_NW_V:
+    case LDE_SCREEN_POSITION_NW_V:
       *snap_position = SNAP_POSITION_NW;
       break;
 
-    case XFCE_SCREEN_POSITION_W:
+    case LDE_SCREEN_POSITION_W:
       *snap_position = SNAP_POSITION_WC;
       break;
 
-    case XFCE_SCREEN_POSITION_SW_V:
+    case LDE_SCREEN_POSITION_SW_V:
       *snap_position = SNAP_POSITION_SW;
       break;
 
     /* right */
-    case XFCE_SCREEN_POSITION_NE_V:
+    case LDE_SCREEN_POSITION_NE_V:
       *snap_position = SNAP_POSITION_NE;
       break;
 
-    case XFCE_SCREEN_POSITION_E:
+    case LDE_SCREEN_POSITION_E:
       *snap_position = SNAP_POSITION_EC;
       break;
 
-    case XFCE_SCREEN_POSITION_SE_V:
+    case LDE_SCREEN_POSITION_SE_V:
       *snap_position = SNAP_POSITION_SE;
       break;
 
     /* bottom */
-    case XFCE_SCREEN_POSITION_SW_H:
+    case LDE_SCREEN_POSITION_SW_H:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_SW;
       break;
 
-    case XFCE_SCREEN_POSITION_S:
+    case LDE_SCREEN_POSITION_S:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_SC;
       break;
 
-    case XFCE_SCREEN_POSITION_SE_H:
+    case LDE_SCREEN_POSITION_SE_H:
       *horizontal = TRUE;
       *snap_position = SNAP_POSITION_SE;
       break;
 
     /* floating */
-    case XFCE_SCREEN_POSITION_FLOATING_H:
+    case LDE_SCREEN_POSITION_FLOATING_H:
       *horizontal = TRUE;
       break;
 
@@ -198,8 +198,8 @@ migrate_46_panel_set_property (ConfigParser  *parser,
   else if (strcmp (property_name, "screen-position") == 0)
     {
       parser->panel_screen_position = CLAMP (atoi (value),
-                                             XFCE_SCREEN_POSITION_NONE,
-                                             XFCE_SCREEN_POSITION_FLOATING_V);
+                                             LDE_SCREEN_POSITION_NONE,
+                                             LDE_SCREEN_POSITION_FLOATING_V);
     }
   else if (strcmp (property_name, "xoffset") == 0)
     {
@@ -256,19 +256,19 @@ migrate_46_panel_set_property (ConfigParser  *parser,
 
 
 #define migrate_46_plugin_string(old_name, new_name, fallback) \
-  if (xfce_rc_has_entry (rc, old_name)) \
+  if (lde_rc_has_entry (rc, old_name)) \
     xfconf_channel_set_string (channel, "/" new_name, \
-        xfce_rc_read_entry (rc, old_name, fallback))
+        lde_rc_read_entry (rc, old_name, fallback))
 
 #define migrate_46_plugin_bool(old_name, new_name, fallback) \
-  if (xfce_rc_has_entry (rc, old_name)) \
+  if (lde_rc_has_entry (rc, old_name)) \
     xfconf_channel_set_bool (channel, "/" new_name, \
-        xfce_rc_read_bool_entry (rc, old_name, fallback))
+        lde_rc_read_bool_entry (rc, old_name, fallback))
 
 #define migrate_46_plugin_uint(old_name, new_name, fallback) \
-  if (xfce_rc_has_entry (rc, old_name)) \
+  if (lde_rc_has_entry (rc, old_name)) \
     xfconf_channel_set_uint (channel, "/" new_name, \
-        xfce_rc_read_int_entry (rc, old_name, fallback))
+        lde_rc_read_int_entry (rc, old_name, fallback))
 
 
 
@@ -280,10 +280,10 @@ migrate_46_plugin_actions (XfconfChannel *channel,
   guint first_action = 0;
   guint second_action = 0;
 
-  if (!xfce_rc_has_entry (rc, "type"))
+  if (!lde_rc_has_entry (rc, "type"))
     return;
 
-  type = xfce_rc_read_int_entry (rc, "types", 0);
+  type = lde_rc_read_int_entry (rc, "types", 0);
   switch (type)
     {
     case 0: /* ACTION_QUIT */
@@ -312,10 +312,10 @@ migrate_46_plugin_clock (XfconfChannel *channel,
 {
   gint type;
 
-  if (xfce_rc_has_entry (rc, "ClockType"))
+  if (lde_rc_has_entry (rc, "ClockType"))
     {
-      type = xfce_rc_read_int_entry (rc, "ClockType", 0);
-      if (type == 4) /* XFCE_CLOCK_LCD */
+      type = lde_rc_read_int_entry (rc, "ClockType", 0);
+      if (type == 4) /* LDE_CLOCK_LCD */
         type++; /* Skip CLOCK_PLUGIN_MODE_FUZZY */
       xfconf_channel_set_uint (channel, "/mode", type);
     }
@@ -344,7 +344,7 @@ migrate_46_plugin_iconbox (XfconfChannel *channel,
   migrate_46_plugin_bool ("all_workspaces", "include-all-workspaces", TRUE);
 
   /* TODO
-   * xfce_rc_write_int_entry (rc, "expand", iconbox->expand); */
+   * lde_rc_write_int_entry (rc, "expand", iconbox->expand); */
 }
 
 
@@ -364,9 +364,9 @@ migrate_46_plugin_launcher (XfconfChannel  *channel,
   GValue    *value;
   gchar     *filename;
 
-  if (xfce_rc_has_group (rc, "Global"))
+  if (lde_rc_has_group (rc, "Global"))
     {
-      xfce_rc_set_group (rc, "Global");
+      lde_rc_set_group (rc, "Global");
 
       migrate_46_plugin_bool ("MoveFirst", "move-first", FALSE);
       migrate_46_plugin_bool ("ArrowPosition", "arrow-position", 0);
@@ -378,15 +378,15 @@ migrate_46_plugin_launcher (XfconfChannel  *channel,
   for (i = 0; i < 100 /* arbitrary */; i++)
     {
       g_snprintf (buf, sizeof (buf), "Entry %d", i);
-      if (!xfce_rc_has_group (rc, buf))
+      if (!lde_rc_has_group (rc, buf))
         break;
 
-      xfce_rc_set_group (rc, buf);
+      lde_rc_set_group (rc, buf);
 
-      g_snprintf (buf, sizeof (buf), "xfce4" G_DIR_SEPARATOR_S "panel"
+      g_snprintf (buf, sizeof (buf), "lde4" G_DIR_SEPARATOR_S "panel"
                   G_DIR_SEPARATOR_S LAUNCHER_FOLDER "-%d" G_DIR_SEPARATOR_S "%ld%d.desktop",
                   plugin_id, timeval.tv_sec, i);
-      path = xfce_resource_save_location (XFCE_RESOURCE_CONFIG, buf, TRUE);
+      path = lde_resource_save_location (LDE_RESOURCE_CONFIG, buf, TRUE);
       if (G_UNLIKELY (path == NULL))
         {
           g_set_error (error, G_FILE_ERROR_FAILED, G_FILE_ERROR,
@@ -401,7 +401,7 @@ migrate_46_plugin_launcher (XfconfChannel  *channel,
           break;
         }
 
-      new_desktop = xfce_rc_simple_open (path, FALSE);
+      new_desktop = lde_rc_simple_open (path, FALSE);
       if (G_UNLIKELY (new_desktop == NULL))
         {
           g_set_error (error, G_FILE_ERROR_FAILED, G_FILE_ERROR,
@@ -411,37 +411,37 @@ migrate_46_plugin_launcher (XfconfChannel  *channel,
         }
 
 
-      xfce_rc_set_group (new_desktop, G_KEY_FILE_DESKTOP_GROUP);
+      lde_rc_set_group (new_desktop, G_KEY_FILE_DESKTOP_GROUP);
 
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_TYPE,
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_TYPE,
           G_KEY_FILE_DESKTOP_TYPE_APPLICATION);
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_NAME,
-          xfce_rc_read_entry (rc, "Name", ""));
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_COMMENT,
-          xfce_rc_read_entry (rc, "Comment", ""));
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_ICON,
-          xfce_rc_read_entry (rc, "Icon", ""));
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_EXEC,
-          xfce_rc_read_entry (rc, "Exec", ""));
-      xfce_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_PATH,
-          xfce_rc_read_entry (rc, "Path", ""));
-      xfce_rc_write_bool_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_TERMINAL,
-          xfce_rc_read_bool_entry (rc, "Terminal", FALSE));
-      xfce_rc_write_bool_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY,
-          xfce_rc_read_bool_entry (rc, "StartupNotify", FALSE));
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_NAME,
+          lde_rc_read_entry (rc, "Name", ""));
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_COMMENT,
+          lde_rc_read_entry (rc, "Comment", ""));
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_ICON,
+          lde_rc_read_entry (rc, "Icon", ""));
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_EXEC,
+          lde_rc_read_entry (rc, "Exec", ""));
+      lde_rc_write_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_PATH,
+          lde_rc_read_entry (rc, "Path", ""));
+      lde_rc_write_bool_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_TERMINAL,
+          lde_rc_read_bool_entry (rc, "Terminal", FALSE));
+      lde_rc_write_bool_entry (new_desktop, G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY,
+          lde_rc_read_bool_entry (rc, "StartupNotify", FALSE));
 
-      xfce_rc_flush (new_desktop);
-      if (xfce_rc_is_dirty (new_desktop))
+      lde_rc_flush (new_desktop);
+      if (lde_rc_is_dirty (new_desktop))
         {
           g_set_error (error, G_FILE_ERROR_FAILED, G_FILE_ERROR,
                        "Failed to flush desktop file \"%s\"", path);
           g_free (path);
-          xfce_rc_close (new_desktop);
+          lde_rc_close (new_desktop);
           break;
         }
 
       g_free (path);
-      xfce_rc_close (new_desktop);
+      lde_rc_close (new_desktop);
 
       value = g_new0 (GValue, 1);
       g_value_init (value, G_TYPE_STRING);
@@ -474,10 +474,10 @@ migrate_46_plugin_separator (XfconfChannel *channel,
   gint  type;
   guint style;
 
-  if (!xfce_rc_has_entry (rc, "separator-type"))
+  if (!lde_rc_has_entry (rc, "separator-type"))
     return;
 
-  type = xfce_rc_read_int_entry (rc, "separator-type", 0);
+  type = lde_rc_read_int_entry (rc, "separator-type", 0);
   switch (type)
     {
     case 0: /* SEP_SPACE */
@@ -520,20 +520,20 @@ static void
 migrate_46_plugin_systray (XfconfChannel *channel,
                            XfceRc        *rc)
 {
-  if (xfce_rc_has_group (rc, "Global"))
+  if (lde_rc_has_group (rc, "Global"))
     {
-      xfce_rc_set_group (rc, "Global");
+      lde_rc_set_group (rc, "Global");
 
       migrate_46_plugin_bool ("ShowFrame", "show-frame", TRUE);
       migrate_46_plugin_uint ("Rows", "rows", 1);
     }
 
-  if (xfce_rc_has_group (rc, "Applications"))
+  if (lde_rc_has_group (rc, "Applications"))
     {
-      xfce_rc_set_group (rc, "Applications");
+      lde_rc_set_group (rc, "Applications");
 
       /* TODO */
-      /* xfce_rc_read_bool_entry (rc, appname, hidden); */
+      /* lde_rc_read_bool_entry (rc, appname, hidden); */
     }
 }
 
@@ -549,9 +549,9 @@ migrate_46_plugin_tasklist (XfconfChannel *channel,
   migrate_46_plugin_bool ("show_handles", "show-handle", TRUE);
 
   /* TODO
-   * xfce_rc_write_int_entry (rc, "width", tasklist->width);
-   * xfce_rc_write_bool_entry (rc, "fixed_width", tasklist->fixed_width);
-   * xfce_rc_write_bool_entry (rc, "expand", tasklist->expand); */
+   * lde_rc_write_int_entry (rc, "width", tasklist->width);
+   * lde_rc_write_bool_entry (rc, "fixed_width", tasklist->fixed_width);
+   * lde_rc_write_bool_entry (rc, "expand", tasklist->expand); */
 }
 
 
@@ -560,33 +560,33 @@ static void
 migrate_46_plugin_windowlist (XfconfChannel *channel,
                               XfceRc        *rc)
 {
-  if (xfce_rc_has_entry (rc, "urgency_notify"))
+  if (lde_rc_has_entry (rc, "urgency_notify"))
     xfconf_channel_set_bool (channel, "/urgentcy-notification",
-      xfce_rc_read_int_entry (rc, "button_layout", 0) > 0);
+      lde_rc_read_int_entry (rc, "button_layout", 0) > 0);
 
   migrate_46_plugin_uint ("button_layout", "style", 0);
   migrate_46_plugin_bool ("show_all_workspaces", "all-workspaces", TRUE);
   migrate_46_plugin_bool ("show_workspace_actions", "workspace-actions", FALSE);
 
   /* TODO
-   * xfce_rc_read_bool_entry (rc, "show_window_icons", TRUE); */
+   * lde_rc_read_bool_entry (rc, "show_window_icons", TRUE); */
 }
 
 
 
 static void
-migrate_46_plugin_xfce4_menu (XfconfChannel *channel,
+migrate_46_plugin_lde4_menu (XfconfChannel *channel,
                               XfceRc        *rc)
 {
   migrate_46_plugin_bool ("show_menu_icons", "show-menu-icons", TRUE);
   migrate_46_plugin_bool ("show_button_title", "show-button-title", TRUE);
   migrate_46_plugin_string ("menu_file", "custom-menu-file", "");
-  migrate_46_plugin_string ("icon_file", "button-icon", "xfce4-panel-menu");
+  migrate_46_plugin_string ("icon_file", "button-icon", "lde4-panel-menu");
   migrate_46_plugin_string ("button_title", "button-title", "");
 
-  if (xfce_rc_has_entry (rc, "use_default_menu"))
+  if (lde_rc_has_entry (rc, "use_default_menu"))
     xfconf_channel_set_bool (channel, "/custom-menu",
-       !xfce_rc_read_bool_entry (rc, "use_default_menu", TRUE));
+       !lde_rc_read_bool_entry (rc, "use_default_menu", TRUE));
 }
 
 
@@ -605,13 +605,13 @@ migrate_46_panel_add_plugin (ConfigParser  *parser,
   g_return_if_fail (XFCONF_IS_CHANNEL (parser->channel));
 
   /* open the old rc file of the plugin */
-  g_snprintf (base, sizeof (base), "xfce4" G_DIR_SEPARATOR_S
+  g_snprintf (base, sizeof (base), "lde4" G_DIR_SEPARATOR_S
              "panel" G_DIR_SEPARATOR_S "%s-%s.rc", name, id);
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, base, TRUE);
+  rc = lde_rc_config_open (LDE_RESOURCE_CONFIG, base, TRUE);
 
   /* open a panel with the propert base for the plugin */
   g_snprintf (base, sizeof (base), "/plugins/plugin-%d", parser->plugin_id_counter);
-  channel = xfconf_channel_new_with_property_base (XFCE_PANEL_CHANNEL_NAME, base);
+  channel = xfconf_channel_new_with_property_base (LDE_PANEL_CHANNEL_NAME, base);
 
   if (strcmp (name, "actions") == 0)
     {
@@ -665,11 +665,11 @@ migrate_46_panel_add_plugin (ConfigParser  *parser,
       if (G_LIKELY (rc != NULL))
         migrate_46_plugin_windowlist (channel, rc);
     }
-  else if (strcmp (name, "xfce4-menu") == 0)
+  else if (strcmp (name, "lde4-menu") == 0)
     {
       plugin_name = "applicationsmenu";
       if (G_LIKELY (rc != NULL))
-        migrate_46_plugin_xfce4_menu (channel, rc);
+        migrate_46_plugin_lde4_menu (channel, rc);
     }
   else
     {
@@ -679,7 +679,7 @@ migrate_46_panel_add_plugin (ConfigParser  *parser,
   /* close plugin configs */
   g_object_unref (G_OBJECT (channel));
   if (G_LIKELY (rc != NULL))
-    xfce_rc_close (rc);
+    lde_rc_close (rc);
 
   /* store the (new) plugin name */
   xfconf_channel_set_string (parser->channel, base, plugin_name);
@@ -718,7 +718,7 @@ migrate_46_start_element_handler (GMarkupParseContext  *context,
           parser->panel_plugin_ids = g_ptr_array_new ();
 
           /* set defaults */
-          parser->panel_screen_position = XFCE_SCREEN_POSITION_NONE;
+          parser->panel_screen_position = LDE_SCREEN_POSITION_NONE;
           parser->panel_xoffset = 100;
           parser->panel_yoffset = 100;
           parser->panel_transparency = 100;

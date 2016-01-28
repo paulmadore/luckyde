@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2011 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2011 Nick Schermer <nick@ldece.org>
  * Copyright (C)      2011 Andrzej <ndrwrdck@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -26,11 +26,11 @@
 #include <exo/exo.h>
 
 #include <common/panel-private.h>
-#include <libxfce4panel/libxfce4panel.h>
+#include <libldepanel/libldepanel.h>
 
 #include <panel/panel-itembar.h>
 
-#define IS_HORIZONTAL(itembar) ((itembar)->mode == XFCE_PANEL_PLUGIN_MODE_HORIZONTAL)
+#define IS_HORIZONTAL(itembar) ((itembar)->mode == ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL)
 #define HIGHLIGHT_SIZE         2
 
 
@@ -90,7 +90,7 @@ struct _PanelItembar
   GSList              *children;
 
   /* some properties we clone from the panel window */
-  XfcePanelPluginMode  mode;
+  ldecePanelPluginMode  mode;
   gint                 size;
   gint                 nrows;
 
@@ -185,8 +185,8 @@ panel_itembar_class_init (PanelItembarClass *klass)
                                    PROP_MODE,
                                    g_param_spec_enum ("mode",
                                                       NULL, NULL,
-                                                      XFCE_TYPE_PANEL_PLUGIN_MODE,
-                                                      XFCE_PANEL_PLUGIN_MODE_HORIZONTAL,
+                                                      ldeCE_TYPE_PANEL_PLUGIN_MODE,
+                                                      ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL,
                                                       EXO_PARAM_WRITABLE));
 
   g_object_class_install_property (gobject_class,
@@ -231,7 +231,7 @@ static void
 panel_itembar_init (PanelItembar *itembar)
 {
   itembar->children = NULL;
-  itembar->mode = XFCE_PANEL_PLUGIN_MODE_HORIZONTAL;
+  itembar->mode = ldeCE_PANEL_PLUGIN_MODE_HORIZONTAL;
   itembar->size = 30;
   itembar->nrows = 1;
   itembar->highlight_index = -1;

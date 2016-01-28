@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,9 +26,9 @@
 
 #include <exo/exo.h>
 #include <glib/gstdio.h>
-#include <xfconf/xfconf.h>
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <ldeconf/ldeconf.h>
+#include <libldeutil/libldeutil.h>
+#include <libldeui/libldeui.h>
 
 #ifdef GDK_WINDOWING_X11
 #include <X11/Xlib.h>
@@ -36,11 +36,11 @@
 #endif
 
 #include <common/panel-private.h>
-#include <common/panel-xfconf.h>
+#include <common/panel-ldeconf.h>
 #include <common/panel-debug.h>
 #include <common/panel-utils.h>
-#include <libxfce4panel/libxfce4panel.h>
-#include <libxfce4panel/xfce-panel-plugin-provider.h>
+#include <libldepanel/libldepanel.h>
+#include <libldepanel/ldece-panel-plugin-provider.h>
 
 #include <panel/panel-dbus-service.h>
 #include <panel/panel-base-window.h>
@@ -116,8 +116,8 @@ struct _PanelApplication
   /* the plugin factory */
   PanelModuleFactory *factory;
 
-  /* xfconf channel */
-  XfconfChannel      *xfconf;
+  /* ldeconf channel */
+  ldeconfChannel      *ldeconf;
 
   /* internal list of all the panel windows */
   GSList             *windows;
@@ -162,15 +162,15 @@ enum
 
 static const GtkTargetEntry drag_targets[] =
 {
-  { "xfce-panel/plugin-widget",
+  { "ldece-panel/plugin-widget",
     GTK_TARGET_SAME_APP, TARGET_PLUGIN_WIDGET }
 };
 
 static const GtkTargetEntry drop_targets[] =
 {
-  { "xfce-panel/plugin-name",
+  { "ldece-panel/plugin-name",
     GTK_TARGET_SAME_APP, TARGET_PLUGIN_NAME },
-  { "xfce-panel/plugin-widget",
+  { "ldece-panel/plugin-widget",
     GTK_TARGET_SAME_APP, TARGET_PLUGIN_WIDGET },
   { "text/uri-list", 0, TARGET_TEXT_URI_LIST }
 };
@@ -204,22 +204,22 @@ panel_application_init (PanelApplication *application)
   application->drop_data_ready = FALSE;
   application->drop_occurred = FALSE;
 
-  /* get the xfconf channel (singleton) */
-  application->xfconf = panel_properties_get_channel (G_OBJECT (application));
+  /* get the ldeconf channel (singleton) */
+  application->ldeconf = panel_properties_get_channel (G_OBJECT (application));
 
   /* check if we need to migrate configuration */
-  configver = xfconf_channel_get_int (application->xfconf, "/configver", -1);
-  if (G_UNLIKELY (configver < XFCE4_PANEL_CONFIG_VERSION))
+  configver = ldeconf_channel_get_int (application->ldeconf, "/configver", -1);
+  if (G_UNLIKELY (configver < lde_PANEL_CONFIG_VERSION))
     {
       if (!g_spawn_command_line_sync (MIGRATE_BIN, NULL, NULL, NULL, &error))
         {
-          xfce_dialog_show_error (NULL, error, _("Failed to launch the migration application"));
+          ldece_dialog_show_error (NULL, error, _("Failed to launch the migration application"));
           g_error_free (error);
         }
     }
 
   /* check if we need to force all plugins to run external */
-  if (xfconf_channel_get_bool (application->xfconf, "/force-all-external", FALSE))
+  if (ldeconf_channel_get_bool (application->ldeconf, "/force-all-external", FALSE))
     panel_module_factory_force_all_external ();
 
   /* get a factory reference so it never unloads */
@@ -281,7 +281,7 @@ panel_application_autosave_timer (gpointer user_data)
 
 
 static void
-panel_application_xfconf_window_bindings (PanelApplication *application,
+panel_application_ldeconf_window_bindings (PanelApplication *application,
                                           PanelWindow      *window,
                                           gboolean          save_properties)
 {
@@ -308,21 +308,21 @@ panel_application_xfconf_window_bindings (PanelApplication *application,
     { NULL }
   };
 
-  panel_return_if_fail (XFCONF_IS_CHANNEL (application->xfconf));
+  panel_return_if_fail (ldeCONF_IS_CHANNEL (application->ldeconf));
 
   /* create the property base */
   property_base = g_strdup_printf ("/panels/panel-%d", panel_window_get_id (window));
 
   /* migrate old autohide property */
-  panel_window_migrate_autohide_property (window, application->xfconf, property_base);
+  panel_window_migrate_autohide_property (window, application->ldeconf, property_base);
 
   /* bind all the properties */
-  panel_properties_bind (application->xfconf, G_OBJECT (window),
+  panel_properties_bind (application->ldeconf, G_OBJECT (window),
                          property_base, properties, save_properties);
 
   /* set locking for this panel */
   panel_window_set_locked (window,
-      xfconf_channel_is_property_locked (application->xfconf, property_base));
+      ldeconf_channel_is_property_locked (application->ldeconf, property_base));
 
   g_free (property_base);
 }
@@ -349,11 +349,11 @@ panel_application_load_real (PanelApplication *application)
   gboolean      save_changed_ids = FALSE;
 
   panel_return_if_fail (PANEL_IS_APPLICATION (application));
-  panel_return_if_fail (XFCONF_IS_CHANNEL (application->xfconf));
+  panel_return_if_fail (ldeCONF_IS_CHANNEL (application->ldeconf));
 
   display = gdk_display_get_default ();
 
-  if (xfconf_channel_get_property (application->xfconf, "/panels", &val)
+  if (ldeconf_channel_get_property (application->ldeconf, "/panels", &val)
       && (G_VALUE_HOLDS_UINT (&val)
           || G_VALUE_HOLDS (&val, PANEL_PROPERTIES_TYPE_VALUE_ARRAY)))
     {
@@ -389,7 +389,7 @@ panel_application_load_real (PanelApplication *application)
 
           /* start the panel directly on the correct screen */
           g_snprintf (buf, sizeof (buf), "/panels/panel-%d/output-name", panel_id);
-          output_name = xfconf_channel_get_string (application->xfconf, buf, NULL);
+          output_name = ldeconf_channel_get_string (application->ldeconf, buf, NULL);
           if (output_name != NULL
               && strncmp (output_name, "screen-", 7) == 0
               && sscanf (output_name, "screen-%d", &screen_num) == 1)
@@ -404,7 +404,7 @@ panel_application_load_real (PanelApplication *application)
 
           /* walk all the plugins on the panel */
           g_snprintf (buf, sizeof (buf), "/panels/panel-%d/plugin-ids", panel_id);
-          array = xfconf_channel_get_arrayv (application->xfconf, buf);
+          array = ldeconf_channel_get_arrayv (application->ldeconf, buf);
           if (array == NULL)
             continue;
 
@@ -417,7 +417,7 @@ panel_application_load_real (PanelApplication *application)
 
               /* get the plugin name */
               g_snprintf (buf, sizeof (buf), "/plugins/plugin-%d", unique_id);
-              name = xfconf_channel_get_string (application->xfconf, buf, NULL);
+              name = ldeconf_channel_get_string (application->ldeconf, buf, NULL);
 
               /* append the plugin to the panel */
               if (unique_id < 1 || name == NULL
@@ -426,8 +426,8 @@ panel_application_load_real (PanelApplication *application)
                 {
                   /* plugin could not be loaded, remove it from the channel */
                   g_snprintf (buf, sizeof (buf), "/panels/plugin-%d", unique_id);
-                  if (xfconf_channel_has_property (application->xfconf, buf))
-                    xfconf_channel_reset_property (application->xfconf, buf, TRUE);
+                  if (ldeconf_channel_has_property (application->ldeconf, buf))
+                    ldeconf_channel_reset_property (application->ldeconf, buf, TRUE);
 
                   /* show warnings */
                   g_message ("Plugin \"%s-%d\" was not found and has been "
@@ -440,10 +440,10 @@ panel_application_load_real (PanelApplication *application)
               g_free (name);
             }
 
-          xfconf_array_free (array);
+          ldeconf_array_free (array);
         }
 
-      /* free xfconf array or uint */
+      /* free ldeconf array or uint */
       g_value_unset (&val);
     }
 
@@ -539,7 +539,7 @@ panel_application_plugin_move_drag_end (GtkWidget        *item,
                                         GdkDragContext   *context,
                                         PanelApplication *application)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (item));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (item));
   panel_return_if_fail (PANEL_IS_APPLICATION (application));
 
   /* disconnect this signal */
@@ -564,7 +564,7 @@ panel_application_plugin_move (GtkWidget        *item,
   PanelModule    *module;
   GtkIconTheme   *theme;
 
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (item));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (item));
   panel_return_if_fail (PANEL_IS_APPLICATION (application));
 
   /* block autohide */
@@ -576,7 +576,7 @@ panel_application_plugin_move (GtkWidget        *item,
   gtk_target_list_unref (target_list);
 
   /* set the drag context icon name */
-  module = panel_module_get_from_plugin_provider (XFCE_PANEL_PLUGIN_PROVIDER (item));
+  module = panel_module_get_from_plugin_provider (ldeCE_PANEL_PLUGIN_PROVIDER (item));
   icon_name = panel_module_get_icon_name (module);
   theme = gtk_icon_theme_get_for_screen (gtk_widget_get_screen (item));
   if (!exo_str_is_empty (icon_name)
@@ -606,15 +606,15 @@ panel_application_plugin_delete_config (PanelApplication *application,
   panel_return_if_fail (!exo_str_is_empty (name));
   panel_return_if_fail (unique_id != -1);
 
-  /* remove the xfconf property */
+  /* remove the ldeconf property */
   property = g_strdup_printf (PANEL_PLUGIN_PROPERTY_BASE, unique_id);
-  if (xfconf_channel_has_property (application->xfconf, property))
-    xfconf_channel_reset_property (application->xfconf, property, TRUE);
+  if (ldeconf_channel_has_property (application->ldeconf, property))
+    ldeconf_channel_reset_property (application->ldeconf, property, TRUE);
   g_free (property);
 
   /* lookup the rc file */
   filename = g_strdup_printf (PANEL_PLUGIN_RC_RELATIVE_PATH, name, unique_id);
-  path = xfce_resource_lookup (XFCE_RESOURCE_CONFIG, filename);
+  path = ldece_resource_lookup (ldeCE_RESOURCE_CONFIG, filename);
   g_free (filename);
 
   /* unlink the rc file */
@@ -629,18 +629,18 @@ static void
 panel_application_plugin_remove (GtkWidget *widget,
                                  gpointer   user_data)
 {
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (widget));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (widget));
 
   /* ask the plugin to cleanup when we destroy a panel window */
-  xfce_panel_plugin_provider_emit_signal (XFCE_PANEL_PLUGIN_PROVIDER (widget),
+  ldece_panel_plugin_provider_emit_signal (ldeCE_PANEL_PLUGIN_PROVIDER (widget),
                                           PROVIDER_SIGNAL_REMOVE_PLUGIN);
 }
 
 
 
 static void
-panel_application_plugin_provider_signal (XfcePanelPluginProvider       *provider,
-                                          XfcePanelPluginProviderSignal  provider_signal,
+panel_application_plugin_provider_signal (ldecePanelPluginProvider       *provider,
+                                          ldecePanelPluginProviderSignal  provider_signal,
                                           PanelApplication              *application)
 {
   GtkWidget   *itembar;
@@ -649,7 +649,7 @@ panel_application_plugin_provider_signal (XfcePanelPluginProvider       *provide
   gchar       *name;
 
   panel_return_if_fail (PANEL_IS_APPLICATION (application));
-  panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (provider));
+  panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (provider));
 
   window = PANEL_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (provider)));
   panel_return_if_fail (PANEL_IS_WINDOW (window));
@@ -709,11 +709,11 @@ panel_application_plugin_provider_signal (XfcePanelPluginProvider       *provide
       if (!panel_window_get_locked (window))
         {
           /* give plugin the opportunity to cleanup special configuration */
-          xfce_panel_plugin_provider_removed (provider);
+          ldece_panel_plugin_provider_removed (provider);
 
           /* store the provider's unique id and name (lost after destroy) */
-          unique_id = xfce_panel_plugin_provider_get_unique_id (provider);
-          name = g_strdup (xfce_panel_plugin_provider_get_name (provider));
+          unique_id = ldece_panel_plugin_provider_get_unique_id (provider);
+          name = g_strdup (ldece_panel_plugin_provider_get_name (provider));
 
           /* destroy the plugin */
           gtk_widget_destroy (GTK_WIDGET (provider));
@@ -922,7 +922,7 @@ panel_application_drag_data_received (PanelWindow      *window,
           provider = gtk_drag_get_source_widget (context);
 
           /* debug check */
-          panel_return_if_fail (XFCE_IS_PANEL_PLUGIN_PROVIDER (provider));
+          panel_return_if_fail (ldeCE_IS_PANEL_PLUGIN_PROVIDER (provider));
 
           /* check if we move to another itembar */
           parent_itembar = gtk_widget_get_parent (provider);
@@ -982,7 +982,7 @@ panel_application_drag_data_received (PanelWindow      *window,
               if (G_LIKELY (uris != NULL))
                 {
                   n_items = g_strv_length (uris);
-                  if (xfce_dialog_confirm (NULL, GTK_STOCK_ADD, _("Create _Launcher"),
+                  if (ldece_dialog_confirm (NULL, GTK_STOCK_ADD, _("Create _Launcher"),
                                            _("This will create a new launcher plugin on the panel and inserts "
                                              "the dropped files as menu items."),
                                            ngettext ("Create new launcher from %d desktop file",
@@ -1068,12 +1068,12 @@ panel_application_drag_motion (GtkWidget        *window,
           drag_action = GDK_ACTION_COPY;
         }
     }
-  else if (target == gdk_atom_intern_static_string ("xfce-panel/plugin-name"))
+  else if (target == gdk_atom_intern_static_string ("ldece-panel/plugin-name"))
     {
       /* insert a new plugin */
       drag_action = GDK_ACTION_COPY;
     }
-  else if (target == gdk_atom_intern_static_string ("xfce-panel/plugin-widget"))
+  else if (target == gdk_atom_intern_static_string ("ldece-panel/plugin-widget"))
     {
       /* move an existing plugin */
       drag_action = GDK_ACTION_MOVE;
@@ -1241,16 +1241,16 @@ panel_application_save (PanelApplication *application,
                         PanelSaveTypes    save_types)
 {
   GSList        *li;
-  XfconfChannel *channel = application->xfconf;
+  ldeconfChannel *channel = application->ldeconf;
   GValue        *value;
   GPtrArray     *panels = NULL;
   gint           panel_id;
 
   panel_return_if_fail (PANEL_IS_APPLICATION (application));
-  panel_return_if_fail (XFCONF_IS_CHANNEL (channel));
+  panel_return_if_fail (ldeCONF_IS_CHANNEL (channel));
 
   /* leave if the whole application is locked */
-  if (xfconf_channel_is_property_locked (channel, "/panels"))
+  if (ldeconf_channel_is_property_locked (channel, "/panels"))
     return;
 
   if (PANEL_HAS_FLAG (save_types, SAVE_PANEL_IDS))
@@ -1275,9 +1275,9 @@ panel_application_save (PanelApplication *application,
   if (panels != NULL)
     {
       /* store the panel ids */
-      if (!xfconf_channel_set_arrayv (channel, "/panels", panels))
+      if (!ldeconf_channel_set_arrayv (channel, "/panels", panels))
         g_warning ("Failed to store the number of panels");
-      xfconf_array_free (panels);
+      ldeconf_array_free (panels);
     }
 }
 
@@ -1290,9 +1290,9 @@ panel_application_save_window (PanelApplication *application,
 {
   GList                   *children, *lp;
   GtkWidget               *itembar;
-  XfcePanelPluginProvider *provider;
+  ldecePanelPluginProvider *provider;
   gchar                    buf[50];
-  XfconfChannel           *channel = application->xfconf;
+  ldeconfChannel           *channel = application->ldeconf;
   GPtrArray               *array = NULL;
   GValue                  *value;
   gint                     plugin_id;
@@ -1323,8 +1323,8 @@ panel_application_save_window (PanelApplication *application,
       if (G_UNLIKELY (children == NULL))
         {
           g_snprintf (buf, sizeof (buf), "/panels/panel-%d/plugin-ids", panel_id);
-          if (xfconf_channel_has_property (channel, buf))
-            xfconf_channel_reset_property (channel, buf, FALSE);
+          if (ldeconf_channel_has_property (channel, buf))
+            ldeconf_channel_reset_property (channel, buf, FALSE);
           return;
         }
 
@@ -1334,11 +1334,11 @@ panel_application_save_window (PanelApplication *application,
   /* walk all the plugin children */
   for (lp = children; lp != NULL; lp = lp->next)
     {
-      provider = XFCE_PANEL_PLUGIN_PROVIDER (lp->data);
+      provider = ldeCE_PANEL_PLUGIN_PROVIDER (lp->data);
 
       if (array != NULL)
         {
-          plugin_id = xfce_panel_plugin_provider_get_unique_id (provider);
+          plugin_id = ldece_panel_plugin_provider_get_unique_id (provider);
 
           /* add plugin id to the array */
           value = g_new0 (GValue, 1);
@@ -1348,20 +1348,20 @@ panel_application_save_window (PanelApplication *application,
 
           /* make sure the plugin type-name is store in the plugin item */
           g_snprintf (buf, sizeof (buf), "/plugins/plugin-%d", plugin_id);
-          xfconf_channel_set_string (channel, buf, xfce_panel_plugin_provider_get_name (provider));
+          ldeconf_channel_set_string (channel, buf, ldece_panel_plugin_provider_get_name (provider));
         }
 
       /* ask the plugin to save */
       if (PANEL_HAS_FLAG (save_types, SAVE_PLUGIN_PROVIDERS))
-        xfce_panel_plugin_provider_save (provider);
+        ldece_panel_plugin_provider_save (provider);
     }
 
   if (array != NULL)
     {
       /* store the plugin ids for this panel */
       g_snprintf (buf, sizeof (buf), "/panels/panel-%d/plugin-ids", panel_id);
-      xfconf_channel_set_arrayv (channel, buf, array);
-      xfconf_array_free (array);
+      ldeconf_channel_set_arrayv (channel, buf, array);
+      ldeconf_array_free (array);
     }
 
   g_list_free (children);
@@ -1490,7 +1490,7 @@ panel_application_new_window (PanelApplication *application,
 
   panel_return_val_if_fail (PANEL_IS_APPLICATION (application), NULL);
   panel_return_val_if_fail (screen == NULL || GDK_IS_SCREEN (screen), NULL);
-  panel_return_val_if_fail (XFCONF_IS_CHANNEL (application->xfconf), NULL);
+  panel_return_val_if_fail (ldeCONF_IS_CHANNEL (application->ldeconf), NULL);
   panel_return_val_if_fail (new_window || !panel_application_window_id_exists (application, panel_id), NULL);
 
   if (new_window)
@@ -1514,9 +1514,9 @@ panel_application_new_window (PanelApplication *application,
 
   if (new_window)
     {
-      /* remove the old xfconf properties to be sure */
+      /* remove the old ldeconf properties to be sure */
       property = g_strdup_printf ("/panels/panel-%d", panel_id);
-      xfconf_channel_reset_property (application->xfconf, property, TRUE);
+      ldeconf_channel_reset_property (application->ldeconf, property, TRUE);
       g_free (property);
     }
 
@@ -1542,8 +1542,8 @@ panel_application_new_window (PanelApplication *application,
   g_signal_connect (G_OBJECT (window), "drag-leave",
                     G_CALLBACK (panel_application_drag_leave), application);
 
-  /* add the xfconf bindings */
-  panel_application_xfconf_window_bindings (application, PANEL_WINDOW (window), FALSE);
+  /* add the ldeconf bindings */
+  panel_application_ldeconf_window_bindings (application, PANEL_WINDOW (window), FALSE);
 
   /* make sure the panel has a valid position, else it is not visible */
   if (!panel_window_has_position (PANEL_WINDOW (window)))
@@ -1605,7 +1605,7 @@ panel_application_remove_window (PanelApplication *application,
 
   /* remove the panel settings */
   property = g_strdup_printf ("/panels/panel-%d", panel_id);
-  xfconf_channel_reset_property (application->xfconf, property, TRUE);
+  ldeconf_channel_reset_property (application->ldeconf, property, TRUE);
   g_free (property);
 
   /* save changed panel ids */
@@ -1687,11 +1687,11 @@ panel_application_get_locked (PanelApplication *application)
   GSList *li;
 
   panel_return_val_if_fail (PANEL_IS_APPLICATION (application), TRUE);
-  panel_return_val_if_fail (XFCONF_IS_CHANNEL (application->xfconf), TRUE);
+  panel_return_val_if_fail (ldeCONF_IS_CHANNEL (application->ldeconf), TRUE);
 
   /* don't even look for the individual window if the
    * entire channel is locked */
-  if (xfconf_channel_is_property_locked (application->xfconf, "/"))
+  if (ldeconf_channel_is_property_locked (application->ldeconf, "/"))
     return TRUE;
 
   /* if one of the windows is not locked, the user can still modify
@@ -1710,31 +1710,31 @@ panel_application_get_locked (PanelApplication *application)
 void
 panel_application_logout (void)
 {
-  XfceSMClient *sm_client;
+  ldeceSMClient *sm_client;
   GError       *error = NULL;
-  const gchar  *command = "xfce4-session-logout";
+  const gchar  *command = "lde-session-logout";
 
-  /* first try to session client to logout else fallback and spawn xfce4-session-logout */
-  sm_client = xfce_sm_client_get ();
-  if (xfce_sm_client_is_connected (sm_client))
+  /* first try to session client to logout else fallback and spawn lde-session-logout */
+  sm_client = ldece_sm_client_get ();
+  if (ldece_sm_client_is_connected (sm_client))
     {
-      xfce_sm_client_request_shutdown (sm_client, XFCE_SM_CLIENT_SHUTDOWN_HINT_ASK);
+      ldece_sm_client_request_shutdown (sm_client, ldeCE_SM_CLIENT_SHUTDOWN_HINT_ASK);
 
       return;
     }
   else if (g_getenv ("SESSION_MANAGER") == NULL)
     {
-      if (xfce_dialog_confirm (NULL, GTK_STOCK_QUIT, NULL,
+      if (ldece_dialog_confirm (NULL, GTK_STOCK_QUIT, NULL,
           _("You have started X without session manager. Clicking Quit will close the X server."),
           _("Are you sure you want to quit the panel?")))
-        command = "xfce4-panel --quit";
+        command = "lde-panel --quit";
       else
         return;
     }
 
   if (!g_spawn_command_line_async (command, &error))
     {
-      xfce_dialog_show_error (NULL, error, _("Failed to execute command \"%s\""),
+      ldece_dialog_show_error (NULL, error, _("Failed to execute command \"%s\""),
                               command);
       g_error_free (error);
     }

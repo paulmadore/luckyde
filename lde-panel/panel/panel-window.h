@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2010 Nick Schermer <nick@xfce.org>
+ * Copyright (C) 2008-2010 Nick Schermer <nick@ldece.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #define __PANEL_WINDOW_H__
 
 #include <gtk/gtk.h>
-#include <xfconf/xfconf.h>
+#include <ldeconf/ldeconf.h>
 
 G_BEGIN_DECLS
 
@@ -59,7 +59,7 @@ gboolean   panel_window_get_locked                (PanelWindow   *window);
 void       panel_window_focus                     (PanelWindow   *window);
 
 void       panel_window_migrate_autohide_property (PanelWindow   *window,
-                                                   XfconfChannel *xfconf,
+                                                   ldeconfChannel *ldeconf,
                                                    const gchar   *property_base);
 
 G_END_DECLS

@@ -1,20 +1,20 @@
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir) \
-	-DG_LOG_DOMAIN=\"xfce4-panel\" \
+	-DG_LOG_DOMAIN=\"lde-panel\" \
 	-DWNCK_I_KNOW_THIS_IS_UNSTABLE \
-	-DDATADIR=\"$(datadir)/xfce4\" \
-	-DLIBDIR=\"$(libdir)/xfce4\" \
-	-DHELPERDIR=\"$(HELPER_PATH_PREFIX)/xfce4/panel\" \
+	-DDATADIR=\"$(datadir)/lde\" \
+	-DLIBDIR=\"$(libdir)/lde\" \
+	-DHELPERDIR=\"$(HELPER_PATH_PREFIX)/lde/panel\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	-DDBUS_API_SUBJECT_TO_CHANGE \
 	-DWNCK_I_KNOW_THIS_IS_UNSTABLE \
 	$(PLATFORM_CPPFLAGS)
 
 bin_PROGRAMS = \
-	xfce4-panel
+	lde-panel
 
-xfce4_panel_built_sources = \
+lde_panel_built_sources = \
 	panel-dbus-service-infos.h \
 	panel-dbus-client-infos.h \
 	panel-marshal.c \
@@ -22,8 +22,8 @@ xfce4_panel_built_sources = \
 	panel-plugin-external-wrapper-infos.h \
 	panel-preferences-dialog-ui.h
 
-xfce4_panel_SOURCES = \
-	$(xfce4_panel_built_sources) \
+lde_panel_SOURCES = \
+	$(lde_panel_built_sources) \
 	main.c \
 	panel-application.c \
 	panel-application.h \
@@ -56,40 +56,40 @@ xfce4_panel_SOURCES = \
 	panel-window.c \
 	panel-window.h
 
-xfce4_panel_CFLAGS = \
+lde_panel_CFLAGS = \
 	$(GTK_CFLAGS) \
 	$(GMODULE_CFLAGS) \
 	$(EXO_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(LIBXFCE4UI_CFLAGS) \
+	$(LIBldeUTIL_CFLAGS) \
+	$(LIBldeUI_CFLAGS) \
 	$(LIBWNCK_CFLAGS) \
 	$(DBUS_CFLAGS) \
-	$(XFCONF_CFLAGS) \
+	$(ldeCONF_CFLAGS) \
 	$(LIBX11_CFLAGS) \
 	$(LIBWNCK_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-xfce4_panel_LDFLAGS = \
+lde_panel_LDFLAGS = \
 	-no-undefined \
 	$(PLATFORM_LDFLAGS)
 
-xfce4_panel_LDADD = \
-	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+lde_panel_LDADD = \
+	$(top_builddir)/libldepanel/libldepanel-$(LIBldePANEL_VERSION_API).la \
 	$(top_builddir)/common/libpanel-common.la \
 	$(GTK_LIBS) \
 	$(EXO_LIBS) \
 	$(GMODULE_LIBS) \
-	$(LIBXFCE4UTIL_LIBS) \
-	$(LIBXFCE4UI_LIBS) \
+	$(LIBldeUTIL_LIBS) \
+	$(LIBldeUI_LIBS) \
 	$(LIBWNCK_LIBS) \
-	$(XFCONF_LIBS) \
+	$(ldeCONF_LIBS) \
 	$(DBUS_LIBS) \
 	$(LIBX11_LIBS) \
 	$(LIBWNCK_LIBS) \
 	-lm
 
-xfce4_panel_DEPENDENCIES = \
-	$(top_builddir)/libxfce4panel/libxfce4panel-$(LIBXFCE4PANEL_VERSION_API).la \
+lde_panel_DEPENDENCIES = \
+	$(top_builddir)/libldepanel/libldepanel-$(LIBldePANEL_VERSION_API).la \
 	$(top_builddir)/common/libpanel-common.la
 
 if MAINTAINER_MODE
@@ -121,10 +121,10 @@ panel-preferences-dialog-ui.h: $(srcdir)/panel-preferences-dialog.glade Makefile
 #	&& glib-genmarshal --body --prefix=panel_marshal $< >> $@
 
 DISTCLEANFILES = \
-	$(xfce4_panel_built_sources)
+	$(lde_panel_built_sources)
 
 BUILT_SOURCES = \
-	$(xfce4_panel_built_sources)
+	$(lde_panel_built_sources)
 
 endif
 
