@@ -1,29 +1,29 @@
 icons32dir = $(datadir)/icons/hicolor/32x32/apps
 
 icons32_DATA = \
-	32x32/xfce4-backdrop.png		\
-	32x32/xfce4-menueditor.png
+	32x32/lde-backdrop.png		\
+	32x32/lde-menueditor.png
 
 icons48dir = $(datadir)/icons/hicolor/48x48/apps
 
 icons48_DATA = \
-	48x48/xfce4-backdrop.png		\
-	48x48/xfce4-menueditor.png
+	48x48/lde-backdrop.png		\
+	48x48/lde-menueditor.png
 
 iconsscdir = $(datadir)/icons/hicolor/scalable/apps
 
 iconssc_DATA = \
-	scalable/xfce4-backdrop.svg		\
-	scalable/xfce4-menueditor.svg
+	scalable/lde-backdrop.svg		\
+	scalable/lde-menueditor.svg
 
 pixmapsdir = $(datadir)/pixmaps
 
 pixmaps_DATA = \
-	xfce4_xicon.png \
-	xfce4_xicon1.png \
-	xfce4_xicon2.png \
-	xfce4_xicon3.png \
-	xfce4_xicon4.png
+	lde_xicon.png \
+	lde_xicon1.png \
+	lde_xicon2.png \
+	lde_xicon3.png \
+	lde_xicon4.png
 
 pixmapsxdir = $(datadir)/pixmaps/xfdesktop
 
