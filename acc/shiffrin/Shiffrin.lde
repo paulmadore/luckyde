@@ -1,0 +1,10 @@
+The intention here is to change a few key features with Xpad which are believed to break the intended UX of LDE. The program's name is derived from Richard Shiffrin, who along with Richard Atkinson did some of the first groundbreaking researching, creating a model of the human memory. 
+
+Features missing: 
+
+Save to file (should be done in markdown or plaintext)
+Attach to desktop
+Emphasis 
+Back up notes archive
+
+phm
