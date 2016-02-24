@@ -1,0 +1,9 @@
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://foldersync/content/central-overlay.xul 
+locale  foldersync  en-US  jar:chrome/foldersync.jar!/locale/en-US/
+skin    foldersync  classic/1.0 jar:chrome/foldersync.jar!/skin/
+locale  foldersync  de     jar:chrome/foldersync.jar!/locale/de/
+content foldersync  jar:chrome/foldersync.jar!/content/
+locale  foldersync  es-AR  jar:chrome/foldersync.jar!/locale/es-AR/
+locale  foldersync  fr     jar:chrome/foldersync.jar!/locale/fr/
+locale  foldersync  hr-HR  jar:chrome/foldersync.jar!/locale/hr-HR/
+locale  foldersync  zh-CN  jar:chrome/foldersync.jar!/locale/zh-CN/

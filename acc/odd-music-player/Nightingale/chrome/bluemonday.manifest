@@ -1,0 +1,10 @@
+skin  mozapps  bluemonday  chrome://songbird-mozapps/skin/
+content bluemonday  jar:bluemonday.jar!/feathers/bluemonday/songbird/chrome/content/
+skin  songbird  bluemonday  jar:bluemonday.jar!/feathers/bluemonday/songbird/chrome/skin/
+skin  songbird-os-specific  bluemonday  jar:bluemonday.jar!/feathers/bluemonday/songbird/chrome/skin/os-specific/
+override chrome://songbird/skin/icons/displaypane-servicepane-bottom.png chrome://songbird/skin/icons/mac/displaypane-servicepane-bottom.png os=darwin
+skin  bluemonday  bluemonday  jar:bluemonday.jar!/feathers/bluemonday/songbird/chrome/skin/
+override chrome://songbird/skin/icons/displaypane-right-sidebar.png chrome://songbird/skin/icons/mac/displaypane-right-sidebar.png os=darwin
+override chrome://songbird/skin/icons/displaypane-contentpane-bottom.png chrome://songbird/skin/icons/mac/displaypane-contentpane-bottom.png os=darwin
+locale  bluemonday  en-US  jar:bluemonday.jar!/feathers/bluemonday/songbird/chrome/locale/en-US/
+skin  global  bluemonday  chrome://songbird-global/skin/

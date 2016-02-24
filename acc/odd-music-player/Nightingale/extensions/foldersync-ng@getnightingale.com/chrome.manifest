@@ -1,0 +1,3 @@
+locale foldersync-ng de    jar:chrome/foldersync-ng.jar!/locale/de/
+override chrome://foldersync/locale/branding.dtd chrome://foldersync-ng/locale/branding.dtd
+locale foldersync-ng en-US jar:chrome/foldersync-ng.jar!/locale/en-US/

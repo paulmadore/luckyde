@@ -1,0 +1,11 @@
+locale  playlistfolders  de     jar:chrome/playlistfolders.jar!/locale/de/
+locale  playlistfolders  zh-CN  jar:chrome/playlistfolders.jar!/locale/zh-CN/
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://playlistfolders/content/overlay.xul
+locale  playlistfolders  tr     jar:chrome/playlistfolders.jar!/locale/tr/
+locale  playlistfolders  en-US  jar:chrome/playlistfolders.jar!/locale/en-US/
+locale  playlistfolders  sv-SE  jar:chrome/playlistfolders.jar!/locale/sv-SE/
+locale  playlistfolders  hr-HR     jar:chrome/playlistfolders.jar!/locale/hr-HR/
+content playlistfolders  jar:chrome/playlistfolders.jar!/content/
+locale  playlistfolders  sr     jar:chrome/playlistfolders.jar!/locale/sr/
+locale  playlistfolders  fr     jar:chrome/playlistfolders.jar!/locale/fr/
+skin    playlistfolders  classic/1.0 jar:chrome/playlistfolders.jar!/skin/
