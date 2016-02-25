@@ -1,0 +1,9 @@
+[Xfdashboard Theme]
+_Name=xfdashboard-auber
+_Comment=Aubergine theme for xfdashboard
+Style=xfdashboard-auber.css
+Layout=xfdashboard.xml;xfdashboard-secondary.xml
+Effects=effects.xml
+Author=lacios
+Version=@PACKAGE_VERSION@
+Screenshot=screenshot-xfdashboard-auber.png

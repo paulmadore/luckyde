@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+_Name=Xfdashboard
+_Comment=Start xfdashboard as daemon in background
+TryExec=@bindir@/xfdashboard
+Exec=@bindir@/xfdashboard -d
+Icon=xfdashboard
+NotShowIn=GNOME;KDE;Unity;
+Terminal=false
+Hidden=true
