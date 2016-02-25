@@ -1,0 +1,161 @@
+
+          ___         _    _
+     __ _| _ \___  __| |__| |___ _ _
+    / _` |  _/ _ \/ _` / _` / -_) '_|
+    \__, |_| \___/\__,_\__,_\___|_|
+    |___/
+           Media and podcast aggregator
+
+    Copyright 2005-2015 Thomas Perl and the gPodder Team
+
+
+ [ LICENSE ]
+
+    Historically, gPodder was licensed under the terms of the "GNU GPLv2 or
+    later", and has been upgraded to "GNU GPLv3 or later" in August 2007.
+
+    Code that has been solely written by thp was re-licensed to a more
+    permissive license (ISC license) in August 2013. The new license is
+    DFSG-compatible, FSF-approved, OSI-approved and GPL-compatible (see
+    http://en.wikipedia.org/wiki/ISC_license for more information).
+
+    For the license that applies to a file, see the copyright header in it.
+
+ [ WHAT IS THIS? ]
+
+    This is the gPodder Core, including the core Python modules as well as
+    the command-line interface "gpo". Since version 4, the user interfaces
+    have been split out into different packages that can be found elsewhere:
+
+      - QML UI: http://github.com/gpodder/gpodder-ui-qml
+
+ [ DEPENDENCIES ]
+
+    - Python 3.2 or newer              http://python.org/
+    - podcastparser 0.4.0              http://gpodder.org/podcastparser/
+    - minidb 2                         http://github.com/thp/minidb
+
+    Use "pip install -r requirements.txt" to install Python dependencies.
+
+ [ BUILD DEPENDENCIES ]
+
+    - gettext
+
+ [ TEST DEPENDENCIES ]
+
+    - python3-nose
+    - python3-minimock
+    - python3-coverage
+
+ [ TESTING ]
+
+    To run automated tests, use...
+
+        make test
+
+    Tests in gPodder are written in two different ways:
+
+       - doctests      http://docs.python.org/3/library/doctest
+       - unittests     http://docs.python.org/3/library/unittest
+
+    If you want to add unit tests for a specific module (ex: gpodder.model),
+    you should add the tests as test_gpodder.test_model, or in other words:
+
+        The file       src/gpodder/model.py
+        is tested by   tests/test_gpodder/test_model.py
+
+
+ [ RUNNING AND INSTALLATION ]
+
+    To run gPodder from source, use..
+
+        bin/gpo                  for the command-line interface
+
+    To install gPodder system-wide, use "make install". By default, this
+    will install all translations. The following environment variables
+    are processed by setup.py:
+
+        LINGUAS                  space-separated list of languages to install
+        GPODDER_MANPATH_NO_SHARE if set, install manpages to $PREFIX/man/man1
+
+    See setup.py for a list of recognized UIs.
+
+    Example: Install with German and Dutch translations:
+
+        export LINGUAS="de nl"
+        make install
+
+    The "make install" target also supports DESTDIR and PREFIX for installing
+    into an alternative root (default /) and prefix (default /usr):
+
+        make install DESTDIR=tmp/ PREFIX=/usr/local/
+
+
+ [ PORTABLE MODE / ROAMING PROFILES ]
+
+    The run-time environment variable GPODDER_HOME is used to set
+    the location for storing the database and downloaded files.
+
+    This can be used for multiple configurations or to store the
+    download directory directly on a MP3 player or USB disk:
+
+        export GPODDER_HOME=/media/usbdisk/gpodder-data/
+
+    By default, gPodder 4 uses the XDG Base Directory Specification
+    for determining the location of data files ($XDG_DATA_HOME) and
+    configuration files ($XDG_CONFIG_HOME):
+
+        http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+
+
+ [ CHANGING THE DOWNLOAD DIRECTORY ]
+
+    The run-time environment variable GPODDER_DOWNLOAD_DIR is used to
+    set the location for storing the downloads only (independent of the
+    data directory GPODDER_HOME):
+
+        export GPODDER_DOWNLOAD_DIR=/media/BigDisk/Podcasts/
+
+    In this case, the database and settings will be stored in the default
+    location, with the downloads stored in /media/BigDisk/Podcasts/.
+
+    Another example would be to set both environment variables:
+
+        export GPODDER_HOME=~/bla/gpodder/
+        export GPODDER_DOWNLOAD_DIR=~/Music/Podcasts/
+
+    This will store the database and settings files in ~/bla/gpodder/
+    and the downloads in ~/Music/Podcasts/. If GPODDER_DOWNLOAD_DIR is
+    not set, $GPODDER_HOME will be used if $GPODDER_HOME is set, or
+    the XDG Base Directory (inside $XDG_DATA_HOME) otherwise.
+
+
+ [ LOGGING ]
+
+    By default, gPodder writes log files to a folder in $XDG_CACHE_HOME (or
+    $GPODDER_HOME if it is set) and removes
+    them after a certain amount of times. To avoid this behavior, you can set
+    the environment variable GPODDER_WRITE_LOGS to "no", e.g:
+
+        export GPODDER_WRITE_LOGS=no
+
+ [ AUTOMATIC DOWNLOADING ]
+
+    If you are using gPodder on a server, you can add the following command
+    to your crontab(5) to automatically check for episodes and download them:
+
+        gpo run --batch
+
+    It will only show output if new episodes are found (or if there was an
+    error updating feeds) and/or downloaded, which is useful for cronjobs.
+
+ [ MORE INFORMATION ]
+
+    - Homepage                         http://gpodder.org/
+    - Bug tracker                      http://bugs.gpodder.org/
+    - Mailing list                     http://freelists.org/list/gpodder
+    - IRC channel                      #gpodder on irc.freenode.net
+
+  ............................................................................
+             Last updated: 2014-12-23 by Thomas Perl <thp.io/about>
+

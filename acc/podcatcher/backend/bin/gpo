@@ -1,0 +1,1238 @@
+#!/usr/bin/env python3
+
+#
+# gPodder: Media and podcast aggregator
+# Copyright (c) 2005-2015 Thomas Perl and the gPodder Team
+#
+# gPodder is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# gPodder is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+
+# gpo - A better command-line interface to gPodder using the gPodder API
+# by Thomas Perl <thp@gpodder.org>; 2009-05-07
+
+
+"""
+  Usage: gpo [--verbose|-v] [--batch|-b] [--help|-h] [COMMAND] [params...]
+
+  - Subscription management -
+
+    subscribe URL [TITLE]      Subscribe to a new feed at URL (as TITLE)
+    rename URL TITLE           Rename feed at URL to TITLE
+    rewrite OLDURL NEWURL      Change the feed URL of [OLDURL] to [NEWURL]
+    unsubscribe URL            Unsubscribe from feed at URL
+
+    import FILENAME|URL        Subscribe to all podcasts in an OPML file
+    export FILENAME            Export all subscriptions to an OPML file
+
+    info URL                   Show information about feed at URL
+    enable URL                 Enable feed updates for the feed at URL
+    disable URL                Disable feed updates for the feed at URL
+
+    list                       List all subscribed podcasts
+    update [URL]               Check for new episodes (all or only at URL)
+
+  - Episode management -
+
+    download [URL]             Download new episodes (all or only from URL)
+
+    pending [URL]              List new episodes (all or only from URL)
+    episodes [URL]             List episodes (all or only from URL)
+    query EQL                  Query episodes based on an EQL expression
+
+  The commands "pending", "episodes" and "query" show an alphanumeric ID of
+  the episode that can be used with the following commands:
+
+    mark old|new EPISODE       Mark episode as old or new (new = pending)
+    fetch EPISODE              Download a single episode now
+    rm EPISODE                 Delete episode
+    details EPISODE            Display episode details and shownotes
+
+    apply COMMAND              Apply COMMAND (mark old|new, fetch, rm,
+                               details) to episodes matched in the last
+                               query command
+
+  - Podcast directory -
+
+    search QUERY               Search for podcasts on gpodder.net
+    directory                  Show all static podcast directory results
+
+  - Configuration -
+
+    set [key] [value]          List one (all) keys or set to a new value
+
+  - Other commands -
+
+    run                        Update and download episodes (useful with -b)
+    versioncheck               Check if a new gPodder version is available
+    license                    Show the software license information
+    registry                   Print registered resolvers
+    shortcuts                  List available URL shortcuts
+
+"""
+
+import sys
+import collections
+import os
+import re
+import inspect
+import functools
+import itertools
+try:
+    import readline
+except ImportError:
+    readline = None
+import shlex
+import pydoc
+import gettext
+import logging
+import subprocess
+
+try:
+    import termios
+    import fcntl
+    import struct
+except ImportError:
+    termios = None
+    fcntl = None
+    struct = None
+
+# A poor man's argparse/getopt - but it works for our use case :)
+class Flags:
+    verbose = ('-v', '--verbose')
+    batch = ('-b', '--batch')
+
+    @classmethod
+    def _parse(cls, argv):
+        for key in vars(cls):
+            if key.startswith('_'):
+                continue
+            setattr(cls, key, sum(cls._eat_argv(argv, getattr(cls, key))))
+
+    @classmethod
+    def _eat_argv(cls, args, candidates):
+        for candidate in candidates:
+            while candidate in args:
+                args.remove(candidate)
+                yield 1
+
+Flags._parse(sys.argv)
+
+gpodder_script = sys.argv[0]
+if os.path.islink(gpodder_script):
+    gpodder_script = os.readlink(gpodder_script)
+gpodder_dir = os.path.join(os.path.dirname(gpodder_script), '..')
+prefix = os.path.abspath(os.path.normpath(gpodder_dir))
+
+src_dir = os.path.join(prefix, 'src')
+
+if os.path.exists(os.path.join(src_dir, 'gpodder', '__init__.py')):
+    # Run gPodder from local source folder (not installed)
+    sys.path.insert(0, src_dir)
+
+# i18n setup
+translation = gettext.translation('gpodder', fallback=True)
+_ = translation.gettext
+N_ = translation.ngettext
+
+have_ansi = sys.stdout.isatty() and not Flags.batch
+interactive_console = sys.stdin.isatty() and sys.stdout.isatty() and not Flags.batch
+is_single_command = False
+
+import gpodder
+from gpodder import core
+from gpodder import opml
+from gpodder import util
+from gpodder import query
+from gpodder import registry
+from gpodder import directory
+from gpodder.config import config_value_to_string
+
+
+def incolor(color_id, s):
+    if have_ansi and cli._config.ui.cli.colors:
+        return '\033[9%dm%s\033[0m' % (color_id, s)
+    return s
+
+# ANSI Colors: red = 1, green = 2, yellow = 3, blue = 4
+inred, ingreen, inyellow, inblue = (functools.partial(incolor, x) for x in range(1, 5))
+
+LOG_LEVEL_PRINT = 60
+logging.addLevelName(LOG_LEVEL_PRINT, 'OUT')
+
+
+def out(*args, **kwargs):
+    if Flags.batch:
+        sep = kwargs.get('sep', ' ')
+        message = sep.join(a.strip() for a in args)
+        if message:
+            for line in message.split('\n'):
+                logger.log(LOG_LEVEL_PRINT, line)
+    else:
+        print(*args, **kwargs)
+
+
+def FirstArgumentIsPodcastURL(function):
+    """Decorator for functions that take a podcast URL as first arg"""
+    setattr(function, '_first_arg_is_podcast', True)
+    return function
+
+def get_terminal_size():
+    if None in (termios, fcntl, struct):
+        return (80, 24)
+
+    s = struct.pack('HHHH', 0, 0, 0, 0)
+    stdout = sys.stdout.fileno()
+    x = fcntl.ioctl(stdout, termios.TIOCGWINSZ, s)
+    rows, cols, xp, yp = struct.unpack('HHHH', x)
+    return rows, cols
+
+
+class gPodderCli(object):
+    COLUMNS = 80
+    EXIT_COMMANDS = ('quit', 'exit', 'bye')
+
+    def __init__(self, verbose):
+        self.core = core.Core(verbose=verbose, stdout=Flags.batch)
+        self._db = self.core.db
+        self._config = self.core.config
+        self._model = self.core.model
+
+        self._current_action = ''
+        self._current_progress = -1
+        self._commands = dict((name.rstrip('_'), func) for name, func in inspect.getmembers(self)
+                              if inspect.ismethod(func) and not name.startswith('_'))
+        self._prefixes, self._expansions = self._build_prefixes_expansions()
+        self._prefixes.update({'?': 'help'})
+        self._valid_commands = sorted(self._prefixes.values())
+        self._last_query_match = []
+
+    def _build_prefixes_expansions(self):
+        prefixes = {}
+        expansions = collections.defaultdict(list)
+        names = sorted(self._commands.keys())
+        names.extend(self.EXIT_COMMANDS)
+
+        # Generator for all prefixes of a given string (longest first)
+        # e.g. ['gpodder', 'gpodde', 'gpodd', 'gpod', 'gpo', 'gp', 'g']
+        mkprefixes = lambda n: (n[:x] for x in range(len(n), 0, -1))
+
+        # Return True if the given prefix is unique in "names"
+        is_unique = lambda p: len([n for n in names if n.startswith(p)]) == 1
+
+        for name in names:
+            is_still_unique = True
+            unique_expansion = None
+            for prefix in mkprefixes(name):
+                if is_unique(prefix):
+                    unique_expansion = '[%s]%s' % (prefix, name[len(prefix):])
+                    prefixes[prefix] = name
+                    continue
+
+                if unique_expansion is not None:
+                    expansions[prefix].append(unique_expansion)
+                    continue
+
+        return prefixes, expansions
+
+    def _start_action(self, msg, args):
+        line = msg % args
+        if len(line) > self.COLUMNS-7:
+            line = line[:self.COLUMNS-7-3] + '...'
+        else:
+            line = line + (' '*(self.COLUMNS-7-len(line)))
+        self._current_action = line
+        self._current_progress = -1
+        if not Flags.batch:
+            out(self._current_action, '[....]', end='')
+        self._update_action()
+
+    def _update_action(self, progress=None):
+        if Flags.batch:
+            # Don't show progress when in batch mode
+            return
+
+        if progress is None:
+            if self._current_progress == -1:
+                # No need to update the status message
+                return
+            self._current_progress = -1
+            result = '[....]'
+        else:
+            new_progress = int(progress * 100)
+            if new_progress == self._current_progress:
+                # No need to update the status message
+                return
+            self._current_progress = new_progress
+            progress = '%3d%%' % (self._current_progress,)
+            result = '['+inblue(progress)+']'
+
+        out(('' if Flags.batch else '\r') + self._current_action, result, end='')
+
+    def _finish_action(self, success=True, skip=False):
+        if skip:
+            result = '['+inyellow('SKIP')+']'
+        elif success:
+            result = '['+ingreen('DONE')+']'
+        else:
+            result = '['+inred('FAIL')+']'
+
+        out(('' if Flags.batch else '\r') + self._current_action, result)
+        self._current_action = ''
+
+    def _atexit(self):
+        self.core.shutdown()
+
+    # -------------------------------------------------------------------
+
+    def import_(self, url):
+        """Import subscriptions from an OPML file
+
+        import http://example.com/subscriptions.opml
+
+            Import subscriptions from the given URL
+
+        import ./feeds.opml
+
+            Import subscriptions from a local file
+        """
+        for channel in opml.Importer(url).items:
+            self.subscribe(channel['url'], channel.get('title'))
+
+    def export(self, filename):
+        """Export subscriptions to an OPML file
+
+        export ./subscriptions.opml
+
+            Export the subscriptinos to a local file
+        """
+        podcasts = self._model.get_podcasts()
+        opml.Exporter(filename).write(podcasts)
+
+    def _get_podcast(self, url, create=False, check_only=False):
+        """Get a specific podcast by URL
+
+        Returns a podcast object for the URL or None if
+        the podcast has not been subscribed to.
+        """
+        url = self.core.model.normalize_feed_url(url)
+
+        if url is None:
+            self._error(_('Invalid URL: %(url)s') % {'url': url})
+            return None
+
+        # Subscribe to new podcast
+        if create:
+            return self._model.load_podcast(url, create=True)
+
+        # Load existing podcast
+        for podcast in self._model.get_podcasts():
+            if podcast.url == url:
+                return podcast
+
+        if not check_only:
+            self._error(_('Not subscribed to %(url)s') % {'url': url})
+        return None
+
+    def subscribe(self, url, title=None):
+        """Subscribe to a new podcast via a URL
+
+        subscribe http://example.org/feed.rss
+
+            Subscribe to the feed at the given URL
+
+        Use {shortcuts} for a list of shortcut URLs you can use here.
+        """
+        self._start_action(_('Subscribing to %(url)s'), {'url': url})
+
+        existing = self._get_podcast(url, check_only=True)
+        if existing is not None:
+            self._finish_action(skip=True)
+            self._error(_('Already subscribed to %(url)s') % {'url': existing.url})
+            return True
+
+        try:
+            podcast = self._get_podcast(url, create=True)
+            if podcast is None:
+                self._error(_('Subscription to %(url)s failed') % {'url': url})
+                return True
+
+            if title is not None:
+                podcast.rename(title)
+            podcast.save()
+            self._finish_action()
+
+            if podcast.url != url:
+                self._info(_('Resolved feed URL: %(url)s') % {'url': ingreen(podcast.url)})
+
+            return True
+        except Exception as e:
+            self._finish_action(success=False)
+            logger.warn('Cannot subscribe: %s', e, exc_info=True)
+            self._error(getattr(e, 'strerror', str(e)))
+            return True
+
+    def _print_config(self, search_for):
+        for key in sorted(self._config.all_keys()):
+            if search_for is None or search_for.lower() in key.lower():
+                value = config_value_to_string(self._config._lookup(key))
+                out(key, '=', value)
+
+    def set(self, key=None, value=None):
+        """Get and set configuration values
+
+        set
+
+            List all configuration options and their values
+
+        set a b
+
+            Set configuration option "a" to value "b"
+        """
+        if value is None:
+            self._print_config(key)
+            return
+
+        try:
+            current_value = self._config._lookup(key)
+            current_type = type(current_value)
+        except KeyError:
+            self._error(_('Configuration option %(key)s not found') % {'key': key})
+            return
+
+        if current_type == dict:
+            self._error(_('Invalid configuration option: %(key)s') % {'key': key})
+            return
+
+        self._config.update_field(key, value)
+        self.set(key)
+
+    @FirstArgumentIsPodcastURL
+    def rename(self, url, title):
+        """Rename an existing subscription
+
+        rename http://example.org/feed.xml "Some Podcast"
+
+            Rename the subscription denoted by the URL to "Some Podcast"
+        """
+        podcast = self._get_podcast(url)
+
+        if podcast is not None:
+            old_title = podcast.title
+            podcast.rename(title)
+            self._info(old_title, '=>', title)
+
+        return True
+
+    @FirstArgumentIsPodcastURL
+    def unsubscribe(self, url):
+        """Remove a subscription and all downloaded episodes
+
+        unsubscribe http://example.org/episodes.rss
+
+            Remove subscription and all downloads for the given URL
+        """
+        podcast = self._get_podcast(url)
+
+        if podcast is not None:
+            podcast.unsubscribe()
+            self._error(_('Removed %(url)s') % {'url': url})
+
+        return True
+
+    def _is_episode_new(self, episode):
+        return (episode.state == gpodder.STATE_NORMAL and episode.is_new)
+
+    def _format_episode(self, episode):
+        status_str = '   '
+
+        if self._is_episode_new(episode):
+            # is new
+            status_str = 'NEW'
+        elif (episode.state == gpodder.STATE_DOWNLOADED):
+            # is downloaded
+            status_str = 'DL '
+        elif (episode.state == gpodder.STATE_DELETED):
+            # is deleted
+            status_str = 'DEL'
+
+        return '[%04x] %s %s (%s)' % (episode.id, status_str, episode.title, self._format_filesize(episode.file_size))
+
+    def _episodesList(self, podcast):
+        return (self._format_episode(e) for e in podcast.episodes)
+
+    @FirstArgumentIsPodcastURL
+    def info(self, url):
+        """Get information about a podcast subscription
+
+        info http://example.org/show.rss
+
+            List metadata and episodes for the given podcast
+        """
+        podcast = self._get_podcast(url)
+
+        if podcast is not None:
+            def feed_update_status_msg(podcast):
+                return ('disabled' if podcast.pause_subscription else 'enabled')
+
+            title, url, status = podcast.title, podcast.url, \
+                feed_update_status_msg(podcast)
+            episodes = self._episodesList(podcast)
+            episodes = '\n      '.join(episodes)
+            self._pager("""
+    Title: %(title)s
+    URL: %(url)s
+    Feed update is %(status)s
+
+    Episodes:
+      %(episodes)s
+            """ % locals())
+
+        return True
+
+    @FirstArgumentIsPodcastURL
+    def episodes(self, url=None):
+        """List episodes (all or for a given subscription)
+
+        episodes
+
+            List episodes from all subscriptions
+
+        episodes http://example.net/podcast.xml
+
+            List episodes from the given subscription only
+        """
+        output = []
+        for podcast in self._get_podcasts(url):
+            podcast_printed = False
+            episodes = self._episodesList(podcast)
+            episodes = '\n      '.join(episodes)
+            output.append("""
+    Episodes from %s:
+      %s
+""" % (podcast.url, episodes))
+
+        self._pager('\n'.join(output))
+        return True
+
+    def query(self, *args):
+        """Query all episodes using an EQL expression
+
+        query video and not downloaded and mb < 10 and since < 7
+
+            Find all episodes that are videos, not yet downloaded, smaller than
+            10 MB and released in the last 7 days.
+
+        Use {apply} after this command to apply an action to the query results.
+        """
+        self._last_query_match = []
+        if not args:
+            self._error(_('Usage: query EQL'))
+            return False
+
+        query_string = ' '.join(args)
+        eql = query.EQL(query_string)
+
+        output = []
+        count = 0
+        for podcast in self._model.get_podcasts():
+            have_header = False
+            for episode in podcast.episodes:
+                if eql.match(episode):
+                    if not have_header:
+                        output.append(self._format_podcast(podcast))
+                        have_header = True
+                    output.append(self._format_episode(episode))
+                    count += 1
+                    self._last_query_match.append(episode.id)
+
+        output.append(N_('%(count)d episode matched', '%(count)d episodes matched', count) % {'count': count})
+        if count:
+            output.append(inblue(_('Use "apply" to apply a single-episode command')))
+        out('\n'.join(output))
+        return True
+
+    def _format_podcast(self, podcast):
+        if not podcast.pause_subscription:
+            return ' '.join(('#', ingreen(podcast.title)))
+
+        return ' '.join(('#', inred(podcast.title), '-', _('Subscription suspended')))
+
+    def list(self):
+        """List all podcast subscriptions
+
+        list
+
+            Lists all subscribed podcasts (title and URL)
+        """
+        for podcast in self._model.get_podcasts():
+            out(self._format_podcast(podcast))
+            out(podcast.url)
+
+        return True
+
+    def _update_podcast(self, podcast):
+        if not Flags.batch:
+            self._start_action('%s', podcast.title)
+        try:
+            podcast.update()
+            if not Flags.batch:
+                self._finish_action()
+        except Exception as e:
+            if Flags.batch:
+                self._start_action('%s', podcast.title)
+            self._finish_action(False)
+
+    def _pending_message(self, count):
+        if Flags.batch and count == 0:
+            # Don't announce non-actions in batch mode
+            return ''
+
+        return N_('%(count)d new episode', '%(count)d new episodes', count) % {'count': count}
+
+    def run(self):
+        """Check for new episodes, then download them
+
+        run
+
+            Run "update" and then "download" in sequence
+        """
+        self.update()
+        self.download()
+
+    @FirstArgumentIsPodcastURL
+    def update(self, url=None):
+        """Check for new episodes
+
+        update
+
+            Check for new episodes for all subscriptions
+
+        update http://example.org/feed.atom
+
+            Check for new episodes in the given subscription only
+        """
+        count = 0
+        if not Flags.batch:
+            out(_('Checking for new episodes'))
+
+        for podcast in self._get_podcasts(url):
+            if not podcast.pause_subscription:
+                self._update_podcast(podcast)
+                count += sum(1 for e in podcast.episodes if self._is_episode_new(e))
+            elif not Flags.batch:
+                self._start_action('%s', podcast.title)
+                self._finish_action(skip=True)
+
+        out(inblue(self._pending_message(count)))
+        return True
+
+    def _get_podcasts(self, url):
+        """ get either all podcasts or the one with the given URL """
+        for podcast in self._model.get_podcasts():
+            if url is None or podcast.url == url:
+                yield podcast
+
+    @FirstArgumentIsPodcastURL
+    def pending(self, url=None):
+        """List new episodes
+
+        pending
+
+            List new episodes from all subscriptions
+
+        pending http://example.org/episodes.rss
+
+            List new episodes from the given subscription only
+
+        Use {download} to download all pending episodes.
+        """
+        count = 0
+        for podcast in self._get_podcasts(url):
+            podcast_printed = False
+            for episode in podcast.episodes:
+                if self._is_episode_new(episode):
+                    if not podcast_printed:
+                        out('#', ingreen(podcast.title))
+                        podcast_printed = True
+                    out(' ', '[%04x]' % episode.id, episode.title)
+                    count += 1
+
+        out(inblue(self._pending_message(count)))
+        return True
+
+    def _lookup_episode(self, episode_id):
+        try:
+            episode_id = int(episode_id, 16)
+        except Exception as e:
+            self._error(_('Invalid episode ID: %(error)s') % {'error': str(e)})
+            return None
+
+        for podcast in self._model.get_podcasts():
+            for episode in podcast.episodes:
+                if episode.id == episode_id:
+                    return episode
+
+        self._error(_('Episode ID not found: %(id)x') % {'id': episode_id})
+        return None
+
+    def mark(self, action, episode_id):
+        """Mark an episode as old or new
+
+        mark 00ab new
+
+            Mark episode with ID 00ab as new
+
+        mark af02 old
+
+            Mark episode with ID af02 as old
+
+        Use {episodes} or {query} to find episodes you can mark as new. Can be
+        used in combination with {apply} to mark multiple episodes as old/new.
+        """
+        VALID_ACTIONS = ('new', 'old')
+        if action not in VALID_ACTIONS:
+            self._error(_('Invalid action: %(action)s. Valid actions: %(valid_actions)s') % {
+                'action': action, 'valid_actions': ', '.join(VALID_ACTIONS)})
+            return False
+
+        episode = self._lookup_episode(episode_id)
+        if episode is None:
+            return False
+
+        if action == 'old':
+            self._info(_('Episode marked as old: %(title)s') % {'title': ingreen(episode.title)})
+            episode.is_new = False
+        elif action == 'new':
+            self._info(_('Episode marked as new: %(title)s') % {'title': ingreen(episode.title)})
+            episode.is_new = True
+            if episode.is_new and episode.state == gpodder.STATE_DELETED:
+                episode.state = gpodder.STATE_NORMAL
+
+        episode.save()
+        return True
+
+    def fetch(self, episode_id):
+        """Download an episode
+
+        fetch 0124
+
+            Download episode with ID 0124
+
+        Use {episodes} or {query} to find episode IDs required for this command.
+        Can be used in combination with {apply} to download multiple episodes.
+        """
+        episode = self._lookup_episode(episode_id)
+        if episode is None:
+            return False
+
+        if episode.state == gpodder.STATE_DOWNLOADED:
+            self._error(_('Episode already downloaded'))
+            return False
+
+        self._download_episode(episode)
+        self._download_summary(1)
+        return True
+
+    def rm(self, episode_id):
+        """Delete an episode
+
+        rm 0fa1
+
+            Delete episode with ID 0fa1
+
+        Use {episodes} or {query} to find episode IDs required for this command.
+        Can be used in combination with {apply} to delete multiple episodes.
+        """
+        episode = self._lookup_episode(episode_id)
+        if episode is None:
+            return False
+
+        out(inred(_('Episode deleted: %(episode)s') % {'episode': episode.title}))
+        episode.delete_download()
+        return True
+
+    def _format_filesize(self, num):
+        for x in ['bytes', 'KB', 'MB', 'GB', 'TB']:
+            if num < 1024.0:
+                return "%3.1f %s" % (num, x)
+            num /= 1024.0
+
+    def details(self, episode_id):
+        """Show details about an episode
+
+        details 00f3
+
+            Show details for episode 00f3
+
+        Use {episodes} or {query} to find episode IDs required for this command.
+        Can be used in combination with {apply} to show multiple episodes's details.
+        """
+        episode = self._lookup_episode(episode_id)
+        if episode is None:
+            return False
+
+        out('[%04x]' % episode.id, inblue(episode.title))
+        out('from', ingreen(episode.parent.title))
+        out('Size:', self._format_filesize(episode.file_size))
+        out('='*len(episode.title))
+        out(episode.description)
+        if episode.chapters:
+            out('Chapters:')
+            for chapter in episode.chapters:
+                out('  %s: %s' % (util.format_time(chapter['start']), chapter['title']))
+        out('')
+        return True
+
+    def apply(self, *args):
+        """Apply a command to the last query result list
+
+        Must be used after {query}.
+
+        apply mark old
+
+            Mark all episodes in the last query result as old
+
+        apply fetch
+
+            Download all episodes found in the last query
+
+        Commands that can be used with {apply} are:
+            - fetch
+            - mark new
+            - mark old
+            - rm
+            - details
+        """
+        if is_single_command:
+            self._error(_('"apply" can only be used during an interactive session'))
+            return False
+
+        if not self._last_query_match:
+            self._error(_('Empty query result (use "query" first)'))
+            return False
+
+        if args not in (('fetch',), ('mark', 'new'), ('mark', 'old'), ('rm',), ('details',)):
+            self._error(_('Cannot apply this command'))
+            return False
+
+        for episode_id in self._last_query_match:
+            cmd = list(args) + ['%x' % episode_id]
+            self._parse(cmd)
+
+    def search(self, *query):
+        """ search for podcasts """
+        if not query:
+            self._error(_('Please provide a search query'))
+            return
+
+        query = ' '.join(query)
+
+        def is_search_provider(provider):
+            return provider.kind == directory.Provider.PROVIDER_SEARCH
+
+        self._format_directory_results(registry.directory.select(is_search_provider),
+                lambda provider: provider.on_search(query))
+
+    def directory(self):
+        def is_static_provider(provider):
+            return provider.kind == directory.Provider.PROVIDER_STATIC
+
+        self._format_directory_results(registry.directory.select(is_static_provider),
+                lambda provider: provider.on_static())
+
+    def _format_directory_results(self, providers, get_entries_func):
+        result = []
+
+        for provider in providers:
+            result.extend([ingreen('==== {} ===='.format(provider.name)), ''])
+            def _format_result(entry):
+                if entry.subscribers > 0:
+                    title = '{} ({} subscriber(s))'.format(entry.title, entry.subscribers)
+                else:
+                    title = entry.title
+
+                return '\n'.join([title, inblue(entry.url), ''])
+
+            result.extend(_format_result(entry) for entry in get_entries_func(provider))
+            result.append('')
+
+        self._pager('\n'.join(result))
+
+    def _download_summary(self, count):
+        if Flags.batch and count == 0:
+            # Don't announce non-actions in batch mode
+            return
+
+        self._info(N_('%(count)d episode downloaded', '%(count)d episodes downloaded', count) % {'count': count})
+
+    def _download_episode(self, episode):
+        self._start_action(_('Downloading %(episode)s'), {'episode': episode.title})
+        assert episode.state != gpodder.STATE_DOWNLOADED
+        episode.download(self._update_action)
+        self._finish_action()
+
+    @FirstArgumentIsPodcastURL
+    def download(self, url=None):
+        """Download all pending episodes
+
+        download
+
+            Download all pending episodes for all subscriptions
+
+        download http://example.com/podcast/episodes.xml
+
+            Download all pending episodes for the given subscription
+
+        Use {pending} to see a list of episodes that would be downloaded.
+        """
+        count = 0
+        for podcast in self._get_podcasts(url):
+            podcast_printed = False
+            for episode in podcast.episodes:
+                if self._is_episode_new(episode):
+                    if not podcast_printed:
+                        out(inblue(podcast.title))
+                        podcast_printed = True
+                    self._download_episode(episode)
+                    count += 1
+
+        self._download_summary(count)
+        return True
+
+    @FirstArgumentIsPodcastURL
+    def disable(self, url):
+        """Pause subscription of a given feed
+
+        disable http://example.org/feed.rss
+
+            Disable feed updates for the given subscription.
+
+        Disabled subscriptions will not be included in checks for new episodes
+        with {update}. Use {enable} to re-enable subscriptions. Disabling of a
+        feed is useful if you want to keep downloaded episodes, but do not want
+        to check for new episodes. Use {unsubscribe} if you want to remove the
+        subscription and delete downloaded episodes.
+        """
+        podcast = self._get_podcast(url)
+
+        if podcast is not None:
+            if not podcast.pause_subscription:
+                podcast.pause_subscription = True
+                podcast.save()
+            self._error(_('Subscription suspended: %(url)s') % {'url': url})
+
+        return True
+
+    @FirstArgumentIsPodcastURL
+    def enable(self, url):
+        """Resume subscription of a given feed
+
+        enable http://example.net/podcast/latest.atom
+
+            Enable feed updates for the given subscription.
+
+        Use {disable} to disable subscriptions. Use {unsubscribe} if you want
+        to remove the subscription and delete downloaded episodes.
+        """
+        podcast = self._get_podcast(url)
+
+        if podcast is not None:
+            if podcast.pause_subscription:
+                podcast.pause_subscription = False
+                podcast.save()
+            self._error(_('Subscription resumed: %(url)s') % {'url': url})
+
+        return True
+
+    def versioncheck(self):
+        """Check if a new version of gPodder is available
+
+        versioncheck
+
+            Contact the gPodder server to check if there's a new version
+        """
+        up_to_date, latest_version, releasedate, __ = util.get_update_info()
+
+        info = {'latestversion': ingreen(latest_version),
+                'latestdate': ingreen(releasedate),
+                'url': inblue(gpodder.__url__),
+                'thisversion': inred(gpodder.__version__),
+                'thisdate': inred(gpodder.__date__)}
+
+        if up_to_date:
+            self._info(_('No software updates available'))
+        else:
+            self._info(_('New version %(latestversion)s available (released: %(latestdate)s)') % info)
+            self._info(_('You have version %(thisversion)s (released: %(thisdate)s)') % info)
+            self._info(_('Download the new version from %(url)s') % info)
+
+    def registry(self):
+        """Print all registered providers
+
+        registry
+
+            Print a list of provider types and providers
+
+        This is mostly useful for debugging and during development. Providers are
+        installed into the registry by plugins to support parsing, displaying
+        and handling of special content feeds that are not purely podcasts.
+        """
+        registry.dump()
+        return True
+
+    def shortcuts(self):
+        """List all URL shortcuts that can be used for feed URLs
+
+        shortcuts
+
+            Print a list of shortcuts and their expansions
+
+        Shortcuts displayed here can be used instead of the full URL to save typing
+        and ease adding commonly-used feed URL patterns without having to remember
+        or type the full URL each time. Plugins can add new shortcuts.
+        """
+        placeholder = ingreen('<name>')
+        for key, value in sorted(self.core.model.get_prefixes().items()):
+            out(':'.join((key, placeholder)), '->', value.replace('%s', placeholder))
+
+    @FirstArgumentIsPodcastURL
+    def rewrite(self, old_url, new_url):
+        """Change the feed URL of an existing subscription
+
+        rewrite http://example.org/feed.xml http://example.net/podcast.rss
+
+            Change the feed URL of the existing subscription to a new URL
+        """
+        podcast = self._get_podcast(old_url)
+        if podcast is not None:
+            result = podcast.rewrite_url(new_url)
+            if result is None:
+                self._error(_('Invalid URL: %(url)s') % {'url': new_url})
+            else:
+                new_url = result
+                self._error(old_url, '=>', new_url)
+        return True
+
+    def help(self, command=None):
+        """Show help about existing commands
+
+        help
+
+            Show summary of available commands
+
+        help subscribe
+
+            Show help about the subscribe command
+        """
+        if command is None:
+            out(stylize(__doc__), end='')
+            fmt = {'command': inblue(_('<command>'))}
+            out(_('Use "help %(command)s" to get detailed help for a command') % fmt)
+            return True
+
+        if command in self._commands:
+            doc = inspect.getdoc(self._commands[command])
+            if doc is None:
+                self._error(_('No documentation available (command exists)'))
+                return False
+            else:
+                out('', docize(doc, command), '', sep='\n')
+                return True
+
+        self._error(_('No such command'))
+        return False
+
+    def license(self):
+        """Show software license and copyright information
+
+        license
+
+            Show the license and copyright messages
+        """
+        self._pager(gpodder.__doc__)
+
+    # -------------------------------------------------------------------
+
+    def _pager(self, output):
+        if have_ansi:
+            # Need two additional rows for command prompt
+            rows_needed = len(output.splitlines()) + 2
+            rows, cols = get_terminal_size()
+            if rows_needed < rows:
+                out(output)
+            else:
+                if util.find_command('less'):
+                    p = subprocess.Popen(['less', '-R'], stdin=subprocess.PIPE)
+                    p.communicate(output.encode(util.encoding))
+                else:
+                    pydoc.pager(output)
+        else:
+            out(output)
+
+    def _shell(self):
+        out(os.linesep.join(x.strip() for x in ("""
+        gPodder %(__version__)s "%(__relname__)s" (%(__date__)s) - %(__url__)s
+        %(__copyright__)s
+        License: %(__license__)s (type 'license' for details)
+
+        Entering interactive shell. Type 'help' for help.
+        Press Ctrl+D (EOF) or type 'quit' to quit.
+        """ % gpodder.__dict__).splitlines()))
+
+        if readline is not None:
+            readline.parse_and_bind('tab: complete')
+            readline.set_completer(self._tab_completion)
+            readline.set_completer_delims(' ')
+
+        while True:
+            try:
+                line = input('gpo> ')
+            except EOFError:
+                out('')
+                break
+            except KeyboardInterrupt:
+                out('')
+                continue
+
+            if self._prefixes.get(line, line) in self.EXIT_COMMANDS:
+                break
+
+            try:
+                args = shlex.split(line)
+            except ValueError as value_error:
+                self._error(_('Syntax error: %(error)s') % {'error': value_error})
+                continue
+
+            try:
+                self._parse(args)
+            except KeyboardInterrupt:
+                self._error('Keyboard interrupt.')
+                if Flags.verbose:
+                    raise
+            except EOFError:
+                self._error('EOF.')
+
+        self._atexit()
+
+    def _error(self, *args):
+        out(inred(' '.join(args)))
+
+    # Warnings look like error messages for now
+    _warn = _error
+
+    def _info(self, *args):
+        out(*args)
+
+    def _checkargs(self, func, command_line):
+        args, varargs, keywords, defaults = inspect.getargspec(func)
+        args.pop(0)  # Remove "self" from args
+        defaults = defaults or ()
+        minarg, maxarg = len(args)-len(defaults), len(args)
+
+        if len(command_line) < minarg or (len(command_line) > maxarg and varargs is None):
+            self._error('Wrong argument count for %s.' % func.__name__)
+            return False
+
+        return func(*command_line)
+
+    def _tab_completion_podcast(self, text, count):
+        """Tab completion for podcast URLs"""
+        urls = [p.url for p in self._model.get_podcasts() if text in p.url]
+        if count < len(urls):
+            return urls[count]
+
+        return None
+
+    def _tab_completion(self, text, count):
+        """Tab completion function for readline"""
+        if readline is None:
+            return None
+
+        current_line = readline.get_line_buffer()
+        if text == current_line:
+            for name in self._valid_commands:
+                if name.startswith(text):
+                    if count == 0:
+                        return name
+                    else:
+                        count -= 1
+        else:
+            args = current_line.split()
+            command = args.pop(0)
+            command_function = getattr(self, command, None)
+            if not command_function:
+                return None
+            if getattr(command_function, '_first_arg_is_podcast', False):
+                if not args or (len(args) == 1 and not current_line.endswith(' ')):
+                    return self._tab_completion_podcast(text, count)
+
+        return None
+
+    def _parse_single(self, command_line):
+        try:
+            result = self._parse(command_line)
+        except KeyboardInterrupt:
+            self._error('Keyboard interrupt.')
+            result = -1
+        self._atexit()
+        return result
+
+    def _parse(self, command_line):
+        if not command_line:
+            return False
+
+        command = command_line.pop(0)
+
+        if not Flags.batch:
+            # Resolve command aliases, but only if not in batch mode
+            command = self._prefixes.get(command, command)
+
+        if command in self._commands:
+            func = self._commands[command]
+            if inspect.ismethod(func):
+                return self._checkargs(func, command_line)
+
+        if command in self._expansions:
+            out(_('Incomplete command; matching commands:'))
+            for cmd in self._expansions[command]:
+                out('   ', inblue(cmd))
+        else:
+            self._error(_('Command not found'))
+
+        return False
+
+
+def stylize(s):
+    s = re.sub(r'    .{27}', lambda m: inblue(m.group(0)), s)
+    s = re.sub(r'  - .*', lambda m: ingreen(m.group(0)), s)
+    return s
+
+def docize(s, cmd):
+    s = re.sub(r'\n%s.*' % re.escape(cmd), lambda m: inyellow(m.group(0)), s)
+    return s
+
+if __name__ == '__main__':
+    logger = logging.getLogger(os.path.basename(sys.argv[0]))
+    cli = gPodderCli(Flags.verbose)
+    args = sys.argv[1:]
+    if args and args[0] in ('--help', '-h'):
+        args[0] = 'help'
+    if args:
+        is_single_command = True
+        cli._parse_single(args)
+    elif interactive_console:
+        cli._shell()
+    else:
+        out(__doc__, end='')

@@ -1,0 +1,92 @@
+.TH GPO "1" "May 2015" "gpodder 4.6.0" "User Commands"
+.SH NAME
+gpo \- gPodder command-line interface
+.SH SYNOPSIS
+.B gpo
+[\fI--verbose|-v\fR]
+[\fICOMMAND\fR] [\fIparams...\fR]
+
+.SH DESCRIPTION
+.PP
+gpo is the text mode interface to gPodder. gPodder downloads and manages free
+audio and video content ("podcasts") for you. Run it without any arguments to
+start the interactive shell, then type "help" for an overview of commands.
+
+.SH INTERACTIVE SHELL MODE
+.PP
+If you run "gpo" without \fICOMMAND\fR it will enter its interactive shell
+mode. From there, you can type commands directly. When readline is available,
+this shell supports completion using <Tab>. Podcast feed URLs are also
+completed for commands that take the URL of a podcast as argument.
+
+.SH COMMAND PREFIXES
+.PP
+For all commands, you can use only the first few characters instead of the
+full command, as long as the command is unique. If not, gpo will show you all
+matching commands and the shortest prefix of each.
+.PP
+Please note that future additions to the command set could change the shortest
+prefix of any given command, so usage of the full command in scripts is
+recommended (e.g. use "gpo update" and not "gpo up" in scripts and cronjobs).
+The short command prefixes are mostly useful for interactive usage.
+
+.SH QUERYING USING EQL
+.PP
+Using the
+.I query
+command allows you to use the full range of Episode Query Language expressions
+that gPodder supports. Combined with the
+.I apply
+command, this can be very powerful.
+.PP
+For example, you can mark all episodes that
+are videos, not yet downloaded, smaller than 10 MB and released in the last 7
+days as new like this (in the interactive shell mode):
+.PP
+.RS 4
+.B query video and not downloaded and mb < 10 and since < 7
+.PP
+.B apply mark new
+.RE
+.PP
+Similarly, you can mark all new episodes as old with a combination of:
+.PP
+.RS 4
+.B query new
+.PP
+.B apply mark old
+.RE
+.PP
+Delete all downloaded episodes that have been downloaded more than 15 days ago:
+.PP
+.RS 4
+.B query downloaded and age > 15
+.PP
+.B apply rm
+.RE
+.PP
+And finally, download all audio files that are shorter than 30 minutes and that
+are not yet downloaded:
+.PP
+.RS 4
+.B query audio and minutes < 30 not downloaded
+.PP
+.B apply fetch
+.RE
+
+.SH EXAMPLES
+
+.PP
+.B gpo
+.RS 4
+Enter interactive shell mode
+.RE
+.PP
+.B gpo update && gpo download
+.RS 4
+Check for new episodes, then download all new episodes
+.RE
+
+.SH BUGS
+.PP
+Report bugs at \fIhttp://bugs.gpodder.org/\fR
