@@ -1,0 +1,7183 @@
+#
+# Саша Петровић <salepetronije@gmail.com>, 2012, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gmusicbrowser 1.100902\n"
+"Report-Msgid-Bugs-To: squentin@free.fr\n"
+"POT-Creation-Date: 2015-08-20 01:54+0200\n"
+"PO-Revision-Date: 2015-03-03 23:04+0100\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: српски <xfce4@xfce4.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: plugins/albuminfo.pm:112
+msgid " Context pane layout "
+msgstr " Распоред окана објашњења "
+
+#: plugins/albuminfo.pm:100
+msgid " Fields "
+msgstr " Поља "
+
+#: plugins/albuminfo.pm:88
+msgid " Review "
+msgstr " Осврт."
+
+#: gmusicbrowser_layout.pm:310 gmusicbrowser_layout.pm:311
+#: gmusicbrowser_layout.pm:312 gmusicbrowser_layout.pm:332
+#: gmusicbrowser_layout.pm:333 gmusicbrowser_layout.pm:334
+#, perl-brace-format
+msgid " of {length}"
+msgstr " од {length}"
+
+#: gmusicbrowser_layout.pm:1863
+#, perl-format
+msgid "%S by %a"
+msgstr "%S од %a"
+
+#: gmusicbrowser_songs.pm:3224 gmusicbrowser_songs.pm:3225
+#: gmusicbrowser_songs.pm:3226
+#, perl-format
+msgid "%d Album"
+msgid_plural "%d Albums"
+msgstr[0] "%d албум"
+msgstr[1] "%d албума"
+msgstr[2] "%d албума"
+
+#: gmusicbrowser_songs.pm:3224 gmusicbrowser_songs.pm:3225
+#, perl-format
+msgid "%d Artist"
+msgid_plural "%d Artists"
+msgstr[0] "%d извођач"
+msgstr[1] "%d извођача"
+msgstr[2] "%d извођача"
+
+#: plugins/artistinfo.pm:580
+#, perl-format
+msgid "%d Upcoming Event"
+msgid_plural "%d Upcoming Events"
+msgstr[0] "%d заказан догађај"
+msgstr[1] "%d заказана догађаја"
+msgstr[2] "%d заказаних догађаја"
+
+#: gmusicbrowser.pl:553 gmusicbrowser_list.pm:8088 gmusicbrowser_songs.pm:882
+#, perl-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d албум"
+msgstr[1] "%d албума"
+msgstr[2] "%d албума"
+
+#: gmusicbrowser.pl:539 gmusicbrowser.pl:546 gmusicbrowser_list.pm:8099
+#: gmusicbrowser_songs.pm:3229
+#, perl-format
+msgid "%d artist"
+msgid_plural "%d artists"
+msgstr[0] "%d извођач"
+msgstr[1] "%d извођача"
+msgstr[2] "%d извођача"
+
+#: gmusicbrowser.pl:5213 gmusicbrowser_layout.pm:4362
+#, perl-format
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] "%d датотека"
+msgstr[1] "%d датотеке"
+msgstr[2] "%d датотека"
+
+#: gmusicbrowser_tags.pm:388
+#, perl-format, perl-brace-format
+msgid "%d file in {folder}"
+msgid_plural "%d files in {folder}"
+msgstr[0] "%d датотека у {folder}"
+msgstr[1] "%d датотеке у {folder}"
+msgstr[2] "%d датотека у {folder}"
+
+#: gmusicbrowser.pl:6014
+#, perl-format
+msgid "%d folder"
+msgid_plural "%d folders"
+msgstr[0] "%d фасцикла"
+msgstr[1] "%d фасцикле"
+msgstr[2] "%d фасцикли"
+
+#: gmusicbrowser.pl:1814
+#, perl-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунде"
+msgstr[2] "%d секунди"
+
+#: gmusicbrowser.pl:533 gmusicbrowser.pl:541 gmusicbrowser.pl:3643
+#: gmusicbrowser.pl:3647 gmusicbrowser.pl:5598 gmusicbrowser.pl:6820
+#: gmusicbrowser.pl:7027 gmusicbrowser.pl:8707 gmusicbrowser_layout.pm:253
+#: gmusicbrowser_list.pm:247 gmusicbrowser_list.pm:1717
+#: gmusicbrowser_songs.pm:3223 plugins/audioscrobbler.pm:175
+#, perl-format
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d песма"
+msgstr[1] "%d песме"
+msgstr[2] "%d песама"
+
+#: gmusicbrowser.pl:6013
+#, perl-format
+msgid "%d song added"
+msgid_plural "%d songs added"
+msgstr[0] "%d песма додата"
+msgstr[1] "%d песме додате"
+msgstr[2] "%d песама додато"
+
+#: gmusicbrowser.pl:3652 gmusicbrowser_layout.pm:249
+#: gmusicbrowser_layout.pm:252
+#, perl-format
+msgid "%d song in queue"
+msgid_plural "%d songs in queue"
+msgstr[0] "%d заказана песма"
+msgstr[1] "%d заказане песме"
+msgstr[2] "%d заказаних песама"
+
+#: gmusicbrowser_list.pm:271
+#, perl-format
+msgid "%d song in the library"
+msgid_plural "%d songs in the library"
+msgstr[0] "%d песма у збирци"
+msgstr[1] "%d песме у збирци"
+msgstr[2] "%d песама у збирци"
+
+#: gmusicbrowser_list.pm:260
+#, perl-format
+msgid "%d song selected"
+msgid_plural "%d songs selected"
+msgstr[0] "изабрана је %d песма"
+msgstr[1] "изабране су %d песме"
+msgstr[2] "изабрано је %d песама"
+
+#: gmusicbrowser_songs.pm:54 gmusicbrowser_songs.pm:158
+#: gmusicbrowser_songs.pm:226
+#, perl-format
+msgid "%s fuzzy match with %s"
+msgstr "%s нејасно преклапање са %s"
+
+#: layouts/contrib.layout:615
+#, perl-format
+msgid "%t by %a (%m)"
+msgstr "%t од %a (%m)"
+
+#: gmusicbrowser.pl:5109
+#, perl-brace-format
+msgid "'{file}' exists. Overwrite ?"
+msgstr "„{file}“ постоји. Преписати ?"
+
+#: gmusicbrowser.pl:6980
+#, perl-format
+msgid "(%d song excluded)"
+msgid_plural "(%d songs excluded)"
+msgstr[0] "(одбачена је %d песма)"
+msgstr[1] "(одбачене су %d песме)"
+msgstr[2] "(одбачено је %d песама)"
+
+#: plugins/appindicator.pm:50
+msgid "(The middle-click action doesn't work correctly in some desktops)"
+msgstr "(Радња средњег клика не ради исправно на неким радним површима)"
+
+#: gmusicbrowser.pl:3473
+msgid "(case insensitive)"
+msgstr "(мала и велика слова се не разликују)"
+
+#: gmusicbrowser_tags.pm:386
+#, perl-brace-format
+msgid "(common parent folder : {common})"
+msgstr "(родитељска фасцикла : {common})"
+
+#: gmusicbrowser_tags.pm:1996
+msgid "(other)"
+msgstr "(остало)"
+
+#: plugins/audioscrobbler.pm:60
+msgid "(see http://www.last.fm)"
+msgstr "(видите http://www.last.fm)"
+
+#: gmusicbrowser.pl:6629 gmusicbrowser_gstreamer-0.10.pm:499
+#: gmusicbrowser_gstreamer-1.x.pm:499
+msgid "(unstable)"
+msgstr "(нестабилна)"
+
+#: gmusicbrowser.pl:6700
+msgid ""
+"- When selecting a song, the playlist filter will be reset if the song is "
+"not in it\n"
+"- Skip to another song when removing the current song from the playlist"
+msgstr ""
+"- При одабиру песме, услов списка за пуштање ће бити поништен ако песма није "
+"у њему\n"
+"- Скочи на другу песму при уклањању тренутне песме из списка за пуштање"
+
+#: gmusicbrowser.pl:8847
+msgid "0 chance"
+msgstr "вероватноћа 0"
+
+#: plugins/artistinfo.pm:295
+msgid "0 means 'show all'"
+msgstr "0 значи „прикажи све“"
+
+#: gmusicbrowser.pl:8845
+#, perl-brace-format
+msgid "1 chance in {probability}"
+msgstr "вероватноћа 1 у {probability}"
+
+#: layouts/browser.layout:34
+msgid "3 Filter panes"
+msgstr "3 окна услова"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "32x32 PNG file icon"
+msgstr "32x32 ПНГ иконица датотеке"
+
+#: gmusicbrowser.pl:2132
+msgid "50 Last Added"
+msgstr "50 последњих додатих"
+
+#: gmusicbrowser.pl:2131
+msgid "50 Last Played"
+msgstr "50 последње изведених"
+
+#: gmusicbrowser.pl:2130
+msgid "50 Most Played"
+msgstr "50 најчешће изведених"
+
+#: gmusicbrowser_songs.pm:245 gmusicbrowser_songs.pm:265
+#: gmusicbrowser_songs.pm:266
+msgid "<Unknown>"
+msgstr "<Непознато>"
+
+#: gmusicbrowser.pl:537
+#, perl-format
+msgid ""
+"<b>%t</b>\n"
+"<small><small>by</small> %a\n"
+"<small>from</small> %l</small>"
+msgstr ""
+"<b>%t</b>\n"
+"<small><small>од</small> %a\n"
+"<small>из</small> %l</small>"
+
+#: layouts/contrib.layout:209
+#, perl-format
+msgid "<big><big>by %a</big></big>"
+msgstr "<big><big>од %a</big></big>"
+
+#: gmusicbrowser_list.pm:729 plugins/notify.pm:24
+#, perl-format
+msgid "<i>by</i> %a\\n<i>from</i> %l"
+msgstr "<i>од</i> %a\\n<i>из</i> %l"
+
+#: gmusicbrowser_layout.pm:5224
+msgid "Abort"
+msgstr "Прекини"
+
+#: gmusicbrowser_gstreamer-0.10.pm:695 gmusicbrowser_gstreamer-1.x.pm:804
+msgid "Abort ReplayGain analysis"
+msgstr "Прекини растављање ReplayGain"
+
+#: gmusicbrowser_songs.pm:1956
+msgid "Abort mass-tagging"
+msgstr "Прекини вишеструко означавање"
+
+#: gmusicbrowser_layout.pm:57 layouts/makeitlooklike.layout:69
+#: layouts/makeitlooklike.layout:275 layouts/makeitlooklike.layout:452
+msgid "About"
+msgstr "Прекини"
+
+#: gmusicbrowser.pl:5218 gmusicbrowser_layout.pm:4367
+#, perl-brace-format
+msgid ""
+"About to delete {files}\n"
+"Are you sure ?"
+msgstr ""
+"Брисати {files}\n"
+"да ли сте сигурни ?"
+
+#: gmusicbrowser.pl:1814
+msgid "About to turn off the computer in :"
+msgstr "Искључивање рачунара у :"
+
+#: gmusicbrowser.pl:1436
+msgid "Action"
+msgstr "Радња"
+
+#: plugins/notify.pm:59
+msgid "Actions are not supported by current notification daemon"
+msgstr "Радње нису подржане тренутним домаром обавештења"
+
+#: gmusicbrowser.pl:8082 gmusicbrowser.pl:8365 gmusicbrowser.pl:8585
+#: gmusicbrowser_tags.pm:1309 plugins/desktopwidget.pm:36
+msgid "Add"
+msgstr "Додаје"
+
+#: layouts/makeitlooklike.layout:417
+msgid "Add Files ..."
+msgstr "Додаје датотеке ..."
+
+#: layouts/contrib.layout:320 layouts/contrib.layout:588
+#: layouts/contrib.layout:734 layouts/shimmer.layout:24
+#: layouts/shimmer.layout:72
+msgid "Add Music"
+msgstr "Додаје музику"
+
+#: plugins/rip.pm:11
+msgid "Add a button to rip a CD"
+msgstr "Додаје дугме за чупање ЦД-а"
+
+#: layouts/contrib.layout:667 layouts/contrib.layout:668
+#: layouts/contrib.layout:669
+msgid "Add a filter"
+msgstr "Додаје услов"
+
+#: gmusicbrowser.pl:6757
+msgid "Add a fullscreen button"
+msgstr "Додаје дугме за постављање преко целог екрана"
+
+#: gmusicbrowser.pl:6757
+msgid "Add a fullscreen button to layouts that can accept extra buttons"
+msgstr ""
+"Додаје дугме за приказ преко целог екрана на распоред који може прихватити "
+"још дугмади"
+
+#: gmusicbrowser_list.pm:7651
+msgid "Add a group"
+msgstr "Додаје нову врсту"
+
+#: gmusicbrowser.pl:1476
+msgid "Add a label to the current song"
+msgstr "Додаје ознаку тренутној песми"
+
+#: gmusicbrowser.pl:1469
+msgid "Add a list of files/folders to the playlist"
+msgstr "Додаје списак датотека/фасцикли списку за извођење"
+
+#: gmusicbrowser_list.pm:8145
+msgid "Add a radio"
+msgstr "Додаје радио"
+
+#: gmusicbrowser_layout.pm:52
+msgid "Add files or folders"
+msgstr "Додаје датотеке и фасцикле"
+
+#: gmusicbrowser.pl:1472
+msgid "Add files/folders to library"
+msgstr "Додаје датотеке/фасцикле библиотеци"
+
+#: gmusicbrowser.pl:6923
+msgid "Add folder"
+msgstr "Додаје фасциклу"
+
+#: layouts/contrib.layout:261 layouts/contrib.layout:417
+#: layouts/makeitlooklike.layout:47 layouts/makeitlooklike.layout:230
+#: layouts/makeitlooklike.layout:335
+msgid "Add folder ..."
+msgstr "Додаје фасциклу ..."
+
+#: gmusicbrowser.pl:8083
+msgid "Add multiple condition"
+msgstr "Додаје вишеструке услове"
+
+#: gmusicbrowser.pl:5540
+msgid "Add new label"
+msgstr "Додаје нову ознаку"
+
+#: gmusicbrowser_list.pm:8215
+msgid "Add new radio"
+msgstr "Додаје нови радио"
+
+#: gmusicbrowser_tags.pm:1521
+msgid "Add picture"
+msgstr ""
+
+#: gmusicbrowser.pl:8587
+msgid "Add rule : "
+msgstr "Додаје правило : "
+
+#: gmusicbrowser.pl:6309
+msgid "Add shorcut key"
+msgstr "Додаје пречицу"
+
+#: gmusicbrowser_list.pm:1967
+msgid "Add tab"
+msgstr "Додаје језичак"
+
+#: plugins/albuminfo.pm:107
+msgid "Add to existing values"
+msgstr "Додаје постојеће вредности"
+
+#: gmusicbrowser.pl:597
+msgid "Add to list"
+msgstr "Додаје списку"
+
+#: layouts/makeitlooklike.layout:236
+msgid "Add to queue"
+msgstr "Додаје у заказано"
+
+#: plugins/albuminfo.pm:454
+#, perl-brace-format
+msgid "Add {value} to {field} for all tracks on this album."
+msgstr "Додаје {value} на {field} за све звучне стазе на овом албуму."
+
+#: gmusicbrowser_songs.pm:1101
+msgid "Added"
+msgstr "Додато"
+
+#: gmusicbrowser.pl:2134
+msgid "Added Today"
+msgstr "Додато данас"
+
+#: gmusicbrowser_list.pm:8204
+msgid "Adding a radio"
+msgstr "Додаје радио"
+
+#: gmusicbrowser.pl:6685
+msgid ""
+"Additionally this format can be used :\n"
+" default number1 format1 number2 format2 ...\n"
+" dates more recent than number1 seconds will use format1, ..."
+msgstr ""
+"Додатно, овај облик може бити коришћен :\n"
+" задати број1 облик1 број2 облик2 ...\n"
+" датуми ближи од број1 секунди ће користити облик1, ..."
+
+#: plugins/fetch_cover.pm:11
+msgid ""
+"Adds a menu entry to artist/album context menu, allowing to search the "
+"picture/cover in google and save it."
+msgstr ""
+"Додаје ставку изборника приручном изборнику извођача/албума, омогућујући "
+"претрагу слике/корица гуглом, и чување."
+
+#: gmusicbrowser_layout.pm:1633
+msgid "Adds labels to the current song"
+msgstr "Додаје ознаке тренутној песми"
+
+#: plugins/export.pm:11
+msgid "Adds menu entries to song contextual menu"
+msgstr "Додаје ставке изборника приручном изборнику песме"
+
+#: gmusicbrowser.pl:5653
+msgid "Advanced"
+msgstr "Напредно"
+
+#: gmusicbrowser_list.pm:3663
+msgid "Advanced Search ..."
+msgstr "Напредна претрага ..."
+
+#: gmusicbrowser.pl:5653 gmusicbrowser.pl:5691
+msgid "Advanced Tag Editing"
+msgstr "Напреднo уређивање ознака"
+
+#: gmusicbrowser.pl:1175 gmusicbrowser_songs.pm:875 gmusicbrowser_tags.pm:1814
+#: gmusicbrowser_tags.pm:1852 gmusicbrowser_tags.pm:1867
+#: gmusicbrowser_tags.pm:1885 gmusicbrowser_tags.pm:1892
+#: gmusicbrowser_tags.pm:2138 plugins/albuminfo.pm:63
+#: plugins/fetch_cover.pm:102 layouts/desktop.layout:50 layouts/main.layout:96
+#: layouts/makeitlooklike.layout:94 layouts/makeitlooklike.layout:316
+#: layouts/pages.layout:15 layouts/search.layout:6 layouts/shimmer.layout:32
+msgid "Album"
+msgstr "Албум"
+
+#: layouts/songtree.layout:99
+msgid "Album and artist"
+msgstr "Албум и извођач"
+
+#: layouts/songtree.layout:28
+msgid "Album and artist on the left side"
+msgstr "Албум и извођач на левој страни"
+
+#: gmusicbrowser_songs.pm:915 gmusicbrowser_tags.pm:1813
+#: gmusicbrowser_tags.pm:1902
+msgid "Album artist"
+msgstr "Извођач албума"
+
+#: gmusicbrowser_songs.pm:924
+msgid "Album artist or artist"
+msgstr "Извођач албума или извођач"
+
+#: plugins/albuminfo.pm:81
+msgid "Album cover"
+msgstr "Корице албума"
+
+#: gmusicbrowser_songs.pm:1289
+msgid "Album gain"
+msgstr "Појачање албума"
+
+#: gmusicbrowser.pl:6630
+msgid "Album mode"
+msgstr "Извођење албума"
+
+#: gmusicbrowser_songs.pm:1303
+msgid "Album peak"
+msgstr "Врхунац албума"
+
+#: gmusicbrowser_list.pm:821 gmusicbrowser_songs.pm:898
+msgid "Album picture"
+msgstr "Слика албума"
+
+#: gmusicbrowser_list.pm:849
+msgid "Album picture & info"
+msgstr "Слика албума и подаци"
+
+#: gmusicbrowser_layout.pm:497
+msgid "Album pictures"
+msgstr "Слике албума"
+
+#: plugins/artistinfo.pm:470
+msgid "Album playcount:"
+msgstr "Бројач албума:"
+
+#: gmusicbrowser_songs.pm:1352
+msgid "Album shuffle"
+msgstr "Насумично пуштање албума"
+
+#: gmusicbrowser.pl:1174
+msgid "Album with picture"
+msgstr "Албум са сликом"
+
+#: gmusicbrowser_songs.pm:1324
+msgid "Album year(s)"
+msgstr "Година(е) албума"
+
+#: layouts/shimmer.layout:92
+#, perl-format
+msgid "Album: %l"
+msgstr "Албум %l"
+
+#: layouts/contrib.layout:292 layouts/shimmer.layout:16
+#: layouts/shimmer.layout:66 layouts/shimmer.layout:112
+#, perl-format
+msgid "Album: %l (%Y)"
+msgstr "Албум: %l (%Y)"
+
+#: plugins/albuminfo.pm:9 plugins/albuminfo.pm:56
+msgid "Albuminfo"
+msgstr "Подаци албума"
+
+#: plugins/albuminfo.pm:10
+msgid "Albuminfo plugin"
+msgstr "Прикључци података албума"
+
+#: layouts/contrib.layout:353 layouts/contrib.layout:594
+msgid "Albums"
+msgstr "Албуми"
+
+#: gmusicbrowser_songs.pm:2426 gmusicbrowser_songs.pm:5012
+#: layouts/makeitlooklike.layout:314
+msgid "All"
+msgstr "Све"
+
+#: gmusicbrowser_songs.pm:5001
+msgid "All Songs"
+msgstr "Све песме"
+
+#: gmusicbrowser_songs.pm:878
+msgid "All albums"
+msgstr "Сви албуми"
+
+#: gmusicbrowser_songs.pm:850 gmusicbrowser_songs.pm:870
+msgid "All artists"
+msgstr "Сви извођачи"
+
+#: gmusicbrowser.pl:4961 gmusicbrowser.pl:7002
+msgid "All files"
+msgstr "Све датотеке"
+
+#: gmusicbrowser_songs.pm:1007
+msgid "All genres"
+msgstr "Сви родови"
+
+#: gmusicbrowser_songs.pm:1022
+msgid "All labels"
+msgstr "Све ознаке"
+
+#: gmusicbrowser_songs.pm:1039
+msgid "All moods"
+msgstr "Сва расположења"
+
+#: gmusicbrowser.pl:8220 gmusicbrowser.pl:8315 gmusicbrowser_songs.pm:5017
+msgid "All of :"
+msgstr "Сви од :"
+
+#: gmusicbrowser.pl:9844 gmusicbrowser_layout.pm:1559
+#: gmusicbrowser_songs.pm:4305
+msgid "All songs"
+msgstr "Све песме"
+
+#: gmusicbrowser_songs.pm:1049
+msgid "All styles"
+msgstr "Сви начини"
+
+#: gmusicbrowser_songs.pm:1060
+msgid "All themes"
+msgstr "Све теме"
+
+#: plugins/albuminfo.pm:101
+msgid ""
+"Allmusic uses both Genres and Styles to describe albums. If you use only "
+"Genres, you may want to include Styles in allmusic's list of Genres."
+msgstr ""
+"Сва музика користи родове и начине за опис албума. Ако користите само "
+"родове, можда би желели укључити начине у списку све музике родова."
+
+#: plugins/lullaby.pm:11
+msgid "Allow for scheduling fade-out and stop"
+msgstr "Дозволити лагано ишчезавање и заустављање заказивању"
+
+#: plugins/mpris1.pm:11
+msgid "Allows controlling gmusicbrowser via DBus using the MPRIS v1.0 standard"
+msgstr ""
+"Дозвољава управљање Гмузичког брстача преко Дбуса користећи МПРИС в1.0 обичај"
+
+#: plugins/mpris2.pm:11
+msgid "Allows controlling gmusicbrowser via DBus using the MPRIS v2.0 standard"
+msgstr ""
+"Дозвољава управљање Гмузичког брстача преко Дбуса користећи МПРИС в2.0 "
+"обичаја"
+
+#. Alt key
+#: gmusicbrowser.pl:1223
+msgctxt "Keyboard"
+msgid "Alt"
+msgstr "Мења"
+
+#: gmusicbrowser.pl:6699
+msgid "Amount of volume changed by the mouse wheel"
+msgstr "Количина појачања мењаног точкићем миша"
+
+#: gmusicbrowser.pl:6566
+msgid ""
+"Analyse and add replaygain tags for all songs that don't have replaygain "
+"tags, or incoherent album replaygain tags"
+msgstr ""
+"Раставља и додаје ознаке појачању извођења свим песмама које немају ознаке "
+"појачања пуштања, или невезане ознаке појачања извођења"
+
+#: gmusicbrowser.pl:8220 gmusicbrowser.pl:8316 gmusicbrowser_songs.pm:5017
+msgid "Any of :"
+msgstr "Сви од :"
+
+#: plugins/appindicator.pm:11
+msgid "App Indicator plugin"
+msgstr "Прикључак указивач програма"
+
+#: plugins/appindicator.pm:10
+msgid "App indicator"
+msgstr "Указивач програма"
+
+#: gmusicbrowser.pl:580
+msgid "Append"
+msgstr "Прикачи"
+
+#: gmusicbrowser_tags.pm:980
+msgid "Append (only if not already present)"
+msgstr "Продужи (само ако није већ присутно)"
+
+#: gmusicbrowser.pl:591 gmusicbrowser_list.pm:1706
+msgid "Append to playlist"
+msgstr "Додај на списак песама"
+
+#: gmusicbrowser_tags.pm:2351 gmusicbrowser_tags.pm:2356
+msgid "Application"
+msgstr "Програм"
+
+#: gmusicbrowser.pl:7044
+#, perl-brace-format
+msgid "Are you sure you want to delete the '{label}' label ?"
+msgstr "Да ли сте сигурни да желите избрисати „{label}“ ознаку ?"
+
+#: gmusicbrowser.pl:6349
+msgid "Arguments"
+msgstr "Докази"
+
+#: gmusicbrowser_songs.pm:846 gmusicbrowser_tags.pm:1812
+#: gmusicbrowser_tags.pm:1851 gmusicbrowser_tags.pm:1866
+#: gmusicbrowser_tags.pm:1886 gmusicbrowser_tags.pm:1891
+#: gmusicbrowser_tags.pm:2138 plugins/albuminfo.pm:64
+#: plugins/artistinfo.pm:159 plugins/fetch_cover.pm:101
+#: layouts/desktop.layout:49 layouts/main.layout:96
+#: layouts/makeitlooklike.layout:81 layouts/makeitlooklike.layout:315
+#: layouts/pages.layout:22 layouts/search.layout:6 layouts/shimmer.layout:31
+msgid "Artist"
+msgstr "Извођач"
+
+#: gmusicbrowser.pl:1173
+msgid "Artist & album"
+msgstr "Извођач и албум"
+
+#: layouts/makeitlooklike.layout:154
+msgid "Artist (Year - Album)"
+msgstr "извођач (година - албум)"
+
+#: plugins/artistinfo.pm:543
+msgid "Artist Biography"
+msgstr "Животопис извођача"
+
+#: gmusicbrowser_tags.pm:1825
+msgid "Artist URL"
+msgstr "УРЛ адреса извођача"
+
+#: gmusicbrowser_list.pm:829 gmusicbrowser_songs.pm:907
+msgid "Artist picture"
+msgstr "Слика извођача"
+
+#: plugins/artistinfo.pm:283
+#, perl-format
+msgid "Artist picture size : %d"
+msgstr "Величина слике извођача : %d"
+
+#: plugins/artistinfo.pm:469
+msgid "Artist playcount:"
+msgstr "Број извођења извођача:"
+
+#: gmusicbrowser.pl:1191
+msgid "Artist,Album,Disc,Track"
+msgstr "Извођач, албум, диск, звучна стаза"
+
+#: gmusicbrowser.pl:1192
+msgid "Artist,Date,Album,Disc,Track"
+msgstr "Извођач,датум,албум,диск,звучна стаза"
+
+#: layouts/contrib.layout:294 layouts/shimmer.layout:16
+#: layouts/shimmer.layout:66 layouts/shimmer.layout:91
+#: layouts/shimmer.layout:114
+#, perl-format
+msgid "Artist: %a"
+msgstr "Извођач: %a"
+
+#: plugins/artistinfo.pm:9 plugins/artistinfo.pm:84
+msgid "Artistinfo"
+msgstr "Подаци извођача"
+
+#: plugins/artistinfo.pm:10
+msgid "Artistinfo plugin"
+msgstr "Прикључак података извођача"
+
+#: gmusicbrowser_songs.pm:869 layouts/contrib.layout:303
+#: layouts/contrib.layout:339 layouts/contrib.layout:537
+msgid "Artists"
+msgstr "Извођачи"
+
+#: gmusicbrowser.pl:8430
+msgid "Ascending order"
+msgstr "Силазни распоред"
+
+#: plugins/fetch_cover.pm:74
+msgid "Ask confirmation only if file already exists"
+msgstr "Питај за потврду само ако датотека већ постоји"
+
+#: gmusicbrowser.pl:6186
+msgid "Audio"
+msgstr "Звук"
+
+#: gmusicbrowser_songs.pm:30
+msgid "Audio properties"
+msgstr "Својства звука"
+
+#: gmusicbrowser_tags.pm:1884 gmusicbrowser_tags.pm:1896
+msgid "Author"
+msgstr "Аутор"
+
+#: plugins/lyrics.pm:83
+msgid "Auto"
+msgstr "Самостално"
+
+#: gmusicbrowser_tags.pm:616
+msgid "Auto fill based on filenames ..."
+msgstr "Самостална попуна на основу имена датотека ..."
+
+#: gmusicbrowser_tags.pm:513
+msgid "Auto fill only blank fields"
+msgstr "Самостално попуњава само празна поља"
+
+#: gmusicbrowser_layout.pm:34
+msgid "Auto fill up to"
+msgstr "Самостално попуњава до"
+
+#: gmusicbrowser_list.pm:3546
+msgid "Auto filter"
+msgstr "Самостални услов"
+
+#: gmusicbrowser.pl:511
+msgid "Auto-fill queue"
+msgstr "Заказана самостална попуна"
+
+#: plugins/artistinfo.pm:54
+msgid "Auto-fill queue with similar artists (from last.fm)"
+msgstr "Заказана самостална попуна сличним извођачима (из ласт.фм-а)"
+
+#: gmusicbrowser_tags.pm:554
+msgid "Auto-increment track numbers"
+msgstr "Самостално увећање бројева звучних стаза"
+
+#: plugins/albuminfo.pm:108
+msgid "Auto-save fields with data from allmusic"
+msgstr "Самостално чување са подацима из све музике"
+
+#: plugins/albuminfo.pm:97 plugins/artistinfo.pm:281 plugins/lyrics.pm:204
+msgid "Auto-save positive finds"
+msgstr "Потврдни проналасци самосталног чувања"
+
+#: plugins/lyrics.pm:170
+msgid "Auto-scroll"
+msgstr "Самостално _померај"
+
+#: gmusicbrowser_list.pm:1732
+msgid "Auto-select Pictures"
+msgstr "Самостално одређује слике"
+
+#: gmusicbrowser.pl:6961
+msgid "Automatically remove current song if not found"
+msgstr "Самостално уклања текућу песм ако није пронађена"
+
+#: plugins/autosave.pm:9
+msgid "Autosave"
+msgstr "Самоснимање"
+
+#: plugins/autosave.pm:10
+msgid "Autosave plugin"
+msgstr "Прикључак самосталног чувања"
+
+#: gmusicbrowser.pl:8386
+msgid "Available"
+msgstr "Доступан"
+
+#: plugins/albuminfo.pm:594 plugins/artistinfo.pm:467
+msgid "Average rating:"
+msgstr "Просечна процена:"
+
+#: gmusicbrowser_songs.pm:1208
+msgid "BPM"
+msgstr "БПМ"
+
+#: plugins/audioscrobbler.pm:187
+msgid "Bad session"
+msgstr "Лоша сесија"
+
+#: gmusicbrowser.pl:5379
+msgid "Base Folder :"
+msgstr "Основна фасцикла :"
+
+#: gmusicbrowser_songs.pm:31
+msgid "Basic fields"
+msgstr "Основна поља"
+
+#: gmusicbrowser_list.pm:5369
+msgid "Begin with"
+msgstr "Почиње са"
+
+#: gmusicbrowser_list.pm:1662
+msgid "Below"
+msgstr "Испод"
+
+#: plugins/artistinfo.pm:31 plugins/artistinfo.pm:303
+msgid "Biography"
+msgstr "Биографија"
+
+#: gmusicbrowser_songs.pm:1224
+msgid "Bitrate"
+msgstr "Проток бита"
+
+#: plugins/notify.pm:54
+msgid "Body :"
+msgstr "Тело :"
+
+#: plugins/notify.pm:61
+msgid "Body text is not supported by current notification daemon"
+msgstr "Тело текста није подржано текућим домаром обавештења"
+
+#: layouts/browser.layout:3
+msgid "Browser"
+msgstr "Прегледник"
+
+#: layouts/makeitlooklike.layout:257
+msgid "Browser views"
+msgstr "Прикази прегледника"
+
+#: gmusicbrowser.pl:6744
+msgid "Browser window layout :"
+msgstr "Распоред прозора прегледника :"
+
+#: layouts/browser.layout:30
+msgid "Browser with SongTree"
+msgstr "Прегледник са стаблом песама"
+
+#: layouts/desktop.layout:27
+msgid "Buttons"
+msgstr "Дугмад"
+
+#: layouts/desktop.layout:16
+msgid "Buttons, Song & Cover"
+msgstr "Дугмад, песме и корице"
+
+#: gmusicbrowser.pl:1465
+msgid "Can be relative by using + or -"
+msgstr "Може бити односно коришћењем + или -"
+
+#: gmusicbrowser_songs.pm:3049
+msgid "Can be searched with :"
+msgstr "Може да се претражује помоћу "
+
+#: gmusicbrowser_songs.pm:3048
+msgid "Can be used as a variable with :"
+msgstr "Може да се користи као променљива помоћу :"
+
+#: gmusicbrowser_server.pm:73
+msgid "Can't change the volume in non-gstreamer iceserver mode"
+msgstr "Не могу променити гласноћу у начину рада ајссервер који није Гстример"
+
+#: gmusicbrowser_123.pm:362
+msgid ""
+"Can't change the volume. Needs amixer (packaged in alsa-utils) to change "
+"volume when using this audio backend."
+msgstr ""
+"Не могу променити гласноћу. Потребан је алсамиксер (у пакету  alsa-utils) за "
+"промену гласноће при коришћењу овог звучног позадинског програма."
+
+#: gmusicbrowser.pl:4762
+#, perl-brace-format
+msgid "Can't create folder: {path}"
+msgstr "Нисам успео да направим фасциклу: {path}"
+
+#: gmusicbrowser_gstreamer-0.10.pm:263 gmusicbrowser_gstreamer-1.x.pm:203
+#, perl-brace-format
+msgid "Can't create sink '{sink}'"
+msgstr "Нисам успео да направим уливање „{sink}“"
+
+#: gmusicbrowser_123.pm:146
+msgid "Can't play this file."
+msgstr "Не могу извести ову датотеку."
+
+#: gmusicbrowser.pl:5697
+msgid "Can't read file or invalid file"
+msgstr "Или је датотека неисправна, или је не могу читати"
+
+#: gmusicbrowser.pl:5415
+#, perl-brace-format
+msgid "Can't write in base folder '{folder}'."
+msgstr "Не могу писати у основну фасциклу „{folder}“."
+
+#: gmusicbrowser_songs.pm:3065
+msgid "Cancel"
+msgstr "Откажи"
+
+#: gmusicbrowser_tags.pm:314
+msgid "Capitalize"
+msgstr "Велика слова"
+
+#: gmusicbrowser_tags.pm:315
+msgid "Capitalize each word"
+msgstr "Писање великим словима"
+
+#: gmusicbrowser.pl:8426
+msgid "Case insensitive"
+msgstr "Мала и велика слова се не разликују"
+
+#: gmusicbrowser.pl:8426 gmusicbrowser.pl:9032 gmusicbrowser_list.pm:3541
+msgid "Case sensitive"
+msgstr "Осетљиво на величину знакова"
+
+#: gmusicbrowser_list.pm:5368
+msgid "Case-sensitive"
+msgstr "Осетљиво на величину знакова"
+
+#: layouts/makeitlooklike.layout:487
+msgid "Categories pane"
+msgstr "Окно врстa"
+
+#: plugins/lyrics.pm:30
+msgid "Centered"
+msgstr "Центрирано"
+
+#: plugins/desktopwidget.pm:202
+msgid "Centered on"
+msgstr "Центрирано"
+
+#: gmusicbrowser.pl:1428
+msgid "Change Display"
+msgstr "Измени приказ"
+
+#: plugins/titlebar.pm:58
+msgid "Change default text color"
+msgstr "Измени задату боју текста"
+
+#: plugins/titlebar.pm:62
+msgid "Change default text font and size"
+msgstr "Измени задати словни лик и величину"
+
+#: layouts/makeitlooklike.layout:281
+msgid "Change the context visibility"
+msgstr "Измени видљивост садржаја"
+
+#: gmusicbrowser_songs.pm:1215
+msgid "Channels"
+msgstr "Канали"
+
+#: layouts/contrib.layout:322 layouts/contrib.layout:590
+#: layouts/contrib.layout:736
+msgid "Check Collection"
+msgstr "Провери збирку"
+
+#: gmusicbrowser.pl:6950
+msgid "Check for updated/deleted songs on startup"
+msgstr "Провери обновљене/обрисане песме по покретању"
+
+#: gmusicbrowser_list.pm:1726
+msgid "Check for updated/removed songs"
+msgstr "Провери обновљене/уклоњене песме"
+
+#: gmusicbrowser.pl:6963
+msgid "Check real length of mp3"
+msgstr "Провери стварну дужину мп3"
+
+#: gmusicbrowser_123.pm:188 gmusicbrowser_mplayer.pm:118
+#: gmusicbrowser_mpv.pm:195
+msgid "Check your audio settings"
+msgstr "Проверите ваше звучне поставке"
+
+#: gmusicbrowser.pl:1093
+msgid "Checking length/bitrate"
+msgstr "Провера дужине/протока битова"
+
+#: gmusicbrowser.pl:1091
+msgid "Checking songs"
+msgstr "Провера песама"
+
+#: gmusicbrowser_list.pm:3362
+msgid "Choose Album From this Artist"
+msgstr "Одаберите албум овог извођача"
+
+#: gmusicbrowser_layout.pm:615
+msgid "Choose Artist/Album/Song"
+msgstr "Одаберите извођача/албум/песме"
+
+#: gmusicbrowser.pl:4951
+msgid "Choose Picture"
+msgstr "Одаберите слику"
+
+#: gmusicbrowser_layout.pm:621
+msgid "Choose Random Album"
+msgstr "Одаберите насумично албум"
+
+#: gmusicbrowser.pl:9165
+msgid "Choose a folder"
+msgstr "Изаберите фасциклу"
+
+#: gmusicbrowser.pl:4773
+msgid "Choose directory to copy files to"
+msgstr "Изаберите фасциклу за умножак датотека"
+
+#: gmusicbrowser.pl:4774
+msgid "Choose directory to move files to"
+msgstr "Одаберите фасциклу за премештање датотека"
+
+#: gmusicbrowser.pl:4924
+msgid "Choose files"
+msgstr "Изаберите датотеке"
+
+#: gmusicbrowser.pl:7003
+msgid "Choose folder to add"
+msgstr "Изаберите фасциклу за додавање"
+
+#: plugins/lyrics.pm:271
+msgid "Choose font for lyrics"
+msgstr "Изаберите словни лик за стихове"
+
+#: plugins/lyrics.pm:42
+msgid "Choose font..."
+msgstr "Изаберите словни лик..."
+
+#: gmusicbrowser_songs.pm:1026
+#, perl-brace-format
+msgid "Choose icon for label {name}"
+msgstr "Изаберите икону за ознаку {name}"
+
+#: gmusicbrowser_layout.pm:2764
+msgid "Choose page to open"
+msgstr "Изаберите страницу за отварање"
+
+#: gmusicbrowser.pl:3711
+#, perl-format
+msgid "Choose picture for '%s'"
+msgstr "Изаберите слику за „%s“"
+
+#: gmusicbrowser.pl:5859
+msgid "Choose playlist files to import"
+msgstr "Изаберите списак песама за увоз"
+
+#: gmusicbrowser.pl:8367 gmusicbrowser_list.pm:288
+msgid "Clear"
+msgstr "Очисти"
+
+#: gmusicbrowser.pl:1438
+msgid "Clear playlist"
+msgstr "Чисти списак песама"
+
+#: gmusicbrowser.pl:1480
+msgid "Clear playlist filter"
+msgstr "Очисти услов списка песама"
+
+#: gmusicbrowser.pl:1437 gmusicbrowser_layout.pm:32
+msgid "Clear queue"
+msgstr "Очисти заказано"
+
+#: gmusicbrowser_tags.pm:485
+msgid "Clear selected fields"
+msgstr "Очисти изабрана поља"
+
+#: plugins/artistinfo.pm:137
+msgid "Click to show fullsize image"
+msgstr "Кликните за приказ слике у пуној величини"
+
+#: plugins/albuminfo.pm:183
+msgid "Click to show larger image"
+msgstr "Кликните за приказ увећане слике"
+
+#: plugins/audioscrobbler.pm:124
+msgid "Client banned, contact gmusicbrowser's developer"
+msgstr "Клијент је забрањен, обратите се развијачу Гном музичког брстача"
+
+#: gmusicbrowser_layout.pm:2486 gmusicbrowser_list.pm:4095
+#: gmusicbrowser_list.pm:4159
+msgid "Close"
+msgstr "Затвори"
+
+#: gmusicbrowser.pl:1418
+msgid "Close Window"
+msgstr "Затвори прозор"
+
+#: layouts/contrib.layout:664 layouts/contrib.layout:665
+#: layouts/contrib.layout:666
+msgid "Close a filter"
+msgstr "Затвори услов"
+
+#: gmusicbrowser.pl:6730
+msgid "Close to tray"
+msgstr "Затвори системску палету"
+
+#: layouts/makeitlooklike.layout:80
+msgid "Collection"
+msgstr "Збирка"
+
+#: gmusicbrowser.pl:6232 gmusicbrowser.pl:6348 gmusicbrowser_123.pm:291
+msgid "Command"
+msgstr "Наредба"
+
+#: plugins/rip.pm:49
+msgid "Command to launch when the button is pressed"
+msgstr "Наредба за покретање по притиску на дугме"
+
+#: gmusicbrowser.pl:6709
+msgid "Command to open folders :"
+msgstr ""
+
+#: gmusicbrowser.pl:6708
+msgid "Command to open urls :"
+msgstr ""
+
+#: gmusicbrowser_123.pm:194 gmusicbrowser_mplayer.pm:109
+msgid "Command used :"
+msgstr "Наредба која се користи :"
+
+#: gmusicbrowser.pl:6669
+msgid ""
+"Command used when\n"
+"'turn off computer when queue empty'\n"
+"is selected"
+msgstr ""
+"Наредба која се користи кад\n"
+"се означи „Искључи рачунар кад се\n"
+"одсвира заказано"
+
+#: gmusicbrowser_mpv.pm:188
+msgid "Command used:"
+msgstr ""
+
+#: plugins/nowplaying.pm:47
+msgid "Command when playing song changed :"
+msgstr "Наредба за извршавање приликом мењања песама :"
+
+#: plugins/nowplaying.pm:48
+msgid "Command when stopped :"
+msgstr "Наредба приликом заустављања :"
+
+#: gmusicbrowser_songs.pm:1069 gmusicbrowser_tags.pm:1874
+#: gmusicbrowser_tags.pm:1894 gmusicbrowser_tags.pm:2138
+msgid "Comment"
+msgstr "Напомена"
+
+#: gmusicbrowser_tags.pm:1818 gmusicbrowser_tags.pm:1856
+msgid "Comments"
+msgstr "Примедбе"
+
+#: gmusicbrowser_songs.pm:944 gmusicbrowser_tags.pm:1846
+#: gmusicbrowser_tags.pm:1904
+msgid "Compilation"
+msgstr "Састав"
+
+#: gmusicbrowser_songs.pm:1164 gmusicbrowser_tags.pm:1834
+#: gmusicbrowser_tags.pm:1873
+msgid "Composer"
+msgstr "Композитор"
+
+#: gmusicbrowser_songs.pm:1184 gmusicbrowser_tags.pm:1870
+msgid "Conductor"
+msgstr "Диригент"
+
+#: gmusicbrowser.pl:6659
+msgid "Connect through a proxy"
+msgstr "Повежи се преко посредника"
+
+#: gmusicbrowser_layout.pm:654
+msgid "Connections from :"
+msgstr "Веза од :"
+
+#: layouts/contrib.layout:305 layouts/contrib.layout:573
+#: layouts/main.layout:22 layouts/main.layout:190
+msgid "Context"
+msgstr "Садржај"
+
+#: layouts/makeitlooklike.layout:265 layouts/makeitlooklike.layout:349
+msgid "Control"
+msgstr "Управљање"
+
+#: layouts/contrib.layout:56
+msgid "Conz Aishi (with Filter Panes)"
+msgstr "Конз Аиши (Conz Aishi) са окном услова"
+
+#: layouts/contrib.layout:29
+msgid "Conz Glimm (different controls)"
+msgstr "Конз Глим (Conz Glimm) са другачијим управљањем"
+
+#: gmusicbrowser.pl:611
+msgid "Copy"
+msgstr "Умножи"
+
+#: gmusicbrowser.pl:4784 gmusicbrowser.pl:10024
+msgid "Copy failed"
+msgstr "Умножавање није успело"
+
+#: plugins/lyrics.pm:370
+msgid "Copy link address"
+msgstr "Умножи адресу везе"
+
+#: gmusicbrowser_tags.pm:554
+msgid "Copy missing values from previous line"
+msgstr "Умножи недостајуће вредности од претходне линије"
+
+#: plugins/export.pm:88
+msgid "Copy to mounted portable player"
+msgstr "Умножи на прикачени преносни уређај за пуштање музике"
+
+#: plugins/export.pm:24 plugins/export.pm:49
+msgid "Copy to portable player"
+msgstr "Умножи на преносни музички уређај"
+
+#: gmusicbrowser.pl:10019
+msgid "Copying"
+msgstr "Умножавам"
+
+#: gmusicbrowser.pl:4786
+#, perl-format
+msgid "Copying file"
+msgid_plural "Copying %d files"
+msgstr[0] "Умножавам %d датотеку"
+msgstr[1] "Умножавам %d датотеке"
+msgstr[2] "Умножавам %d датотека"
+
+#: gmusicbrowser_tags.pm:1832 gmusicbrowser_tags.pm:1875
+msgid "Copyright"
+msgstr "Ауторска права"
+
+#: plugins/albuminfo.pm:82
+msgid "Cover Size : "
+msgstr "Величина корица :"
+
+#: gmusicbrowser.pl:6780
+msgid "Create ID3v2 tags as ID3v2.4"
+msgstr "Направи ИД3в2 ознаке као ИД3в2.4"
+
+#. Ctrl key
+#: gmusicbrowser.pl:1222
+msgctxt "Keyboard"
+msgid "Ctrl"
+msgstr "Ктрл"
+
+#: gmusicbrowser.pl:6700
+msgid "Current song must always be in the playlist"
+msgstr "Садашња песма мора увек бити у списку за извођење"
+
+#: gmusicbrowser_songs.pm:35 gmusicbrowser_tags.pm:1899
+msgid "Custom"
+msgstr "Произвољно"
+
+#: gmusicbrowser_tags.pm:1824
+msgid "Custom Text"
+msgstr "Произвољан текст"
+
+#: gmusicbrowser_tags.pm:1826
+msgid "Custom URL"
+msgstr "Прилагођена УРЛ адреса"
+
+#: plugins/rip.pm:49
+msgid "Custom command :"
+msgstr "Произвољна наредба :"
+
+#: plugins/webcontext.pm:613
+msgid "Custom context pages :"
+msgstr "Прилагођене странице објашњења :"
+
+#: gmusicbrowser_tags.pm:759
+msgid "Custom formats"
+msgstr "Прилагођени облици"
+
+#: gmusicbrowser_gstreamer-0.10.pm:504 gmusicbrowser_gstreamer-1.x.pm:506
+msgid "Custom pipeline"
+msgstr "Прилагођени цевоводи"
+
+#: gmusicbrowser_layout.pm:1517 gmusicbrowser_layout.pm:1544
+#: gmusicbrowser_layout.pm:1573 gmusicbrowser_list.pm:90
+msgid "Custom..."
+msgstr "Прилагођено..."
+
+#: gmusicbrowser.pl:1188 gmusicbrowser_tags.pm:1817 gmusicbrowser_tags.pm:1855
+msgid "Date"
+msgstr "Датум"
+
+#: gmusicbrowser.pl:6686
+msgid "Date format :"
+msgstr "Облик датума :"
+
+#: gmusicbrowser_tags.pm:2341
+msgid "Date of purchase"
+msgstr "Датум куповине"
+
+#: gmusicbrowser_tags.pm:1878
+msgid "Debut Album"
+msgstr "Албум првенац"
+
+#: gmusicbrowser.pl:1440
+msgid "Decrease Volume"
+msgstr "Смањује гласноћу"
+
+#: layouts/makeitlooklike.layout:272 layouts/makeitlooklike.layout:356
+msgid "Decrease volume"
+msgstr "Смањује гласноћу"
+
+#: gmusicbrowser.pl:1243 gmusicbrowser_songs.pm:570
+msgid "Default"
+msgstr "Подразумевано"
+
+#: layouts/fullscreen.layout:4
+msgid "Default fullscreen"
+msgstr "Задато преко целог екрана"
+
+#: gmusicbrowser.pl:6649
+#, perl-format
+msgid "Default rating : %d %"
+msgstr "Задата оцена : %d %"
+
+#: plugins/desktopwidget.pm:200
+msgid "Default text color"
+msgstr "Задата боја текста"
+
+#: plugins/desktopwidget.pm:201
+msgid "Default text font"
+msgstr "Подразумевани словни лик текста"
+
+#: gmusicbrowser.pl:6732
+#, perl-format
+msgid "Delay before showing tray tip popup on mouse over : %d ms"
+msgstr ""
+"Задршка пре приказивања искакања облачића из системске палете на прелазак "
+"мишем : %d ms"
+
+#: layouts/makeitlooklike.layout:240
+msgid "Delete"
+msgstr "Избриши"
+
+#: gmusicbrowser.pl:1430
+msgid "Delete Selected Songs"
+msgstr "Брише означене песме"
+
+#: gmusicbrowser_layout.pm:4193
+msgid "Delete file"
+msgstr "Обриши датотеку"
+
+#: gmusicbrowser_layout.pm:2484
+msgid "Delete list"
+msgstr "Брише списак"
+
+#: gmusicbrowser_layout.pm:5310
+msgid "Delete preset"
+msgstr "Избриши претпоставку"
+
+#: gmusicbrowser.pl:5229 gmusicbrowser_layout.pm:4377
+msgid "Deletion failed"
+msgstr "Брисање није успело"
+
+#: gmusicbrowser.pl:8430
+msgid "Descending order"
+msgstr "Опадајући редослед"
+
+#: gmusicbrowser_tags.pm:2310 gmusicbrowser_tags.pm:2314
+#: gmusicbrowser_tags.pm:2327 gmusicbrowser_tags.pm:2330
+msgid "Descr."
+msgstr "Опис."
+
+#: gmusicbrowser_tags.pm:1525 gmusicbrowser_tags.pm:1857
+#: gmusicbrowser_tags.pm:2319 gmusicbrowser_tags.pm:2324
+msgid "Description"
+msgstr "Опис"
+
+#: plugins/desktopwidget.pm:9
+msgid "Desktop widgets"
+msgstr "Справице површи"
+
+#: plugins/desktopwidget.pm:10
+msgid "Desktop widgets plugin"
+msgstr "Прикључак справица површи"
+
+#: gmusicbrowser.pl:4839
+#, perl-brace-format
+msgid "Destination: {file}"
+msgstr "Одредиште: {file}"
+
+#: gmusicbrowser.pl:10036
+#, perl-brace-format
+msgid "Destination: {folder}"
+msgstr "Одредиште: {folder}"
+
+#: gmusicbrowser.pl:6666
+msgid "Disable screensaver when fullscreen and playing"
+msgstr "Онемогући чувара екрана при извођењу преко целог екрана"
+
+#: gmusicbrowser_songs.pm:2909
+msgid "Disabled"
+msgstr "Онемогућено"
+
+#: gmusicbrowser_songs.pm:982
+msgid "Disc"
+msgstr "Диск"
+
+#: gmusicbrowser_tags.pm:1815 gmusicbrowser_tags.pm:1853
+#: gmusicbrowser_tags.pm:1901
+msgid "Disc #"
+msgstr "Диск #"
+
+#: gmusicbrowser_songs.pm:993
+msgid "Disc name"
+msgstr "Назив диска"
+
+#: gmusicbrowser.pl:1428
+msgid "Display (:1 or host:0 for example)"
+msgstr "Приказ (:1 или host:0 , на пример)"
+
+#: gmusicbrowser.pl:634
+msgid "Display Songs"
+msgstr "Приказ песама"
+
+#: plugins/titlebar.pm:11
+msgid ""
+"Display a special layout in or around the titlebar of the focused window"
+msgstr "Приказ нарочитог распореда у, или око траке наслова прозора у жижи"
+
+#: plugins/notify.pm:57
+msgid "Display stop/next actions"
+msgstr "Приказује стој/следећа радњу"
+
+#: plugins/karaoke.pm:11
+msgid "Display synchronized lyrics of the current song"
+msgstr "Приказује усклађене стихове песама садашње песме"
+
+#: gmusicbrowser.pl:6728
+#, perl-format
+msgid "Display tray tip for %d ms"
+msgstr "Приказује облачић палете кроз %d ms"
+
+#: plugins/appindicator.pm:12
+msgid "Displays a panel indicator in some desktops"
+msgstr "Приказује указивач полице на неким радним површима"
+
+#: plugins/export.pm:160
+msgid "Do not add a title row"
+msgstr "Не додавати насловни ред"
+
+#: gmusicbrowser.pl:6786
+msgid "Do not create an id3v1 tag in mp3 files"
+msgstr "Не правити ид3в1 ознаке у мп3 датотекама"
+
+#: gmusicbrowser.pl:6782
+msgid "Do not unsynchronise id3v2 tags"
+msgstr "Не усаклађивати ид3в2 ознаке"
+
+#: gmusicbrowser.pl:6785
+msgid "Do not write the tags"
+msgstr "Не пиши ознаке"
+
+#: plugins/titlebar.pm:54
+msgid "Don't add the overlay to dialogs"
+msgstr "Не додавати својство заклањања прозорчићима"
+
+#: gmusicbrowser_123.pm:149
+#, perl-brace-format
+msgid "Don't know how to play files of type {type}"
+msgstr "Не знам како извести датотеке врсте {type}"
+
+#: plugins/notify.pm:62
+msgid "Don't notify if the main window is visible"
+msgstr "Не обавештавај ако је главни прозор видљив"
+
+#: plugins/audioscrobbler.pm:68
+msgid "Don't submit current song"
+msgstr "Не излажи садашњу песму"
+
+#: plugins/albuminfo.pm:119
+msgid "Download"
+msgstr "Преузимање"
+
+#: gmusicbrowser.pl:10071
+msgid "Download failed."
+msgstr "Преузимање није успело."
+
+#: gmusicbrowser.pl:10049
+msgid "Downloading"
+msgstr "Преузимам"
+
+#: gmusicbrowser.pl:6815
+msgid "Drag and drop songs here to replace the selection."
+msgstr "Превуците и спустите песме овде за замену избора."
+
+#: gmusicbrowser_layout.pm:4295
+msgid "Drop files in this folder"
+msgstr "Спусти датотеке у ову фасциклу"
+
+#: gmusicbrowser.pl:5665 gmusicbrowser_songs.pm:3063
+#: layouts/makeitlooklike.layout:50 layouts/makeitlooklike.layout:235
+#: layouts/makeitlooklike.layout:340
+msgid "Edit"
+msgstr "Уреди"
+
+#: gmusicbrowser.pl:1421
+msgid "Edit Current Song Properties"
+msgstr "Уређује особине садашње песме"
+
+#: gmusicbrowser.pl:620 gmusicbrowser.pl:5185
+msgid "Edit Lyrics"
+msgstr "Уреди стихове"
+
+#: gmusicbrowser_tags.pm:2567
+msgid "Edit Lyrics ..."
+msgstr "Уређује стихове ..."
+
+#: gmusicbrowser.pl:5624
+msgid "Edit Multiple Songs Properties"
+msgstr "Уређује особине више песама"
+
+#: gmusicbrowser_layout.pm:130
+msgid "Edit Settings"
+msgstr "Уређује поставке"
+
+#: gmusicbrowser_tags.pm:626
+msgid "Edit auto-fill formats ..."
+msgstr "Уређује облике за самосталну попуну ..."
+
+#: gmusicbrowser_list.pm:2998
+msgid "Edit filter"
+msgstr "Измени услов"
+
+#: gmusicbrowser_list.pm:33
+msgid "Edit filter..."
+msgstr "Уреди услов..."
+
+#: gmusicbrowser_list.pm:6849
+msgid "Edit grouping ..."
+msgstr "Уређује разврставање ..."
+
+#: plugins/artistinfo.pm:567 plugins/artistinfo.pm:652
+msgid "Edit in the last.fm wiki"
+msgstr "Уреди на last.fm викију"
+
+#: gmusicbrowser_songs.pm:1023
+msgid "Edit labels"
+msgstr "Уредите натписе"
+
+#: gmusicbrowser_list.pm:3006
+msgid "Edit list"
+msgstr "Уреди списак"
+
+#: plugins/lyrics.pm:162
+msgid "Edit mode"
+msgstr "Начин уређивања"
+
+#: gmusicbrowser_layout.pm:1486
+msgid "Edit ordered modes ..."
+msgstr "Среди уређене начине ..."
+
+#: gmusicbrowser_layout.pm:1470
+msgid "Edit random modes ..."
+msgstr "Среди насумичне начине ..."
+
+#: gmusicbrowser_songs.pm:1087
+msgid "Edit rating"
+msgstr "Уреди оцене"
+
+#: gmusicbrowser_list.pm:718 gmusicbrowser_list.pm:865
+#: gmusicbrowser_list.pm:6861
+msgid "Edit row tip"
+msgstr "Уреди редове облачића"
+
+#: gmusicbrowser.pl:1422
+msgid "Edit selected song properties"
+msgstr "Уреди својства означене песме"
+
+#: gmusicbrowser_songs.pm:2430
+#, perl-brace-format
+msgid "Edit {field}"
+msgstr ""
+
+#: gmusicbrowser.pl:9848 gmusicbrowser_layout.pm:38
+msgid "Edit..."
+msgstr "Уреди..."
+
+#: gmusicbrowser_songs.pm:2871
+msgid "Editable in song properties dialog"
+msgstr "Уписиво у прозорчићу особина песама"
+
+#: gmusicbrowser.pl:3621 gmusicbrowser.pl:3628
+msgid "Editing list : "
+msgstr "Уређивање списка :"
+
+#: gmusicbrowser.pl:1684
+msgid "Editing tags"
+msgstr "Уређивање ознака"
+
+#: gmusicbrowser.pl:5667
+msgid "Embedded Pictures"
+msgstr ""
+
+#: gmusicbrowser_songs.pm:939
+msgid "Embedded lyrics"
+msgstr "Угњежђени стихови"
+
+#: gmusicbrowser_songs.pm:934
+msgid "Embedded picture"
+msgstr "Угњжђене слике"
+
+#: gmusicbrowser_layout.pm:671
+msgid "Empty list"
+msgstr "Испразни списак"
+
+#: gmusicbrowser_tags.pm:1829
+msgid "Encapsulated object"
+msgstr "Затворени предмети"
+
+#: gmusicbrowser_tags.pm:1836
+msgid "Encoded by"
+msgstr "Шифровано од"
+
+#: gmusicbrowser_tags.pm:1837
+msgid "Encoded with"
+msgstr "Шифровано уз помоћ"
+
+#: gmusicbrowser_tags.pm:1898
+msgid "Encoder"
+msgstr "Шифрарник"
+
+#: gmusicbrowser.pl:6784
+msgid "Encoding used for id3v1 tags :"
+msgstr "Шифровање коришћено за ид3в1 ознаке :"
+
+#: gmusicbrowser_list.pm:1709 gmusicbrowser_list.pm:4093
+#: gmusicbrowser_list.pm:4157
+msgid "Enqueue"
+msgstr "Закажи"
+
+#: gmusicbrowser.pl:1435
+msgid "Enqueue Action"
+msgstr "Радња заказивања"
+
+#: gmusicbrowser.pl:595
+msgid "Enqueue Displayed"
+msgstr "Закажи приказано"
+
+#: gmusicbrowser.pl:593
+msgid "Enqueue Selected"
+msgstr "Закажи означено"
+
+#: gmusicbrowser.pl:1432
+msgid "Enqueue Selected Songs"
+msgstr "Закажи означене песме"
+
+#: gmusicbrowser.pl:1434
+msgid "Enqueue Songs from Current Album"
+msgstr "Закажи песме садашњег албума"
+
+#: gmusicbrowser.pl:1433
+msgid "Enqueue Songs from Current Artist"
+msgstr "Закажи песме садашњег извођача"
+
+#: gmusicbrowser.pl:1471
+msgid "Enqueue a list of files/folders"
+msgstr "Заказивање списка датотека/фасцикли"
+
+#: gmusicbrowser_layout.pm:592
+msgid "Enqueue filter"
+msgstr "Услов за заказивање"
+
+#: plugins/albuminfo.pm:256
+msgid "Enter album name"
+msgstr "Унесите назив албума"
+
+#: plugins/artistinfo.pm:285
+msgid "Enter custom event string :"
+msgstr "Унесите прилагођену ниску појава :"
+
+#: layouts/contrib.layout:315 layouts/contrib.layout:583
+#: layouts/contrib.layout:730 layouts/main.layout:177
+#: layouts/makeitlooklike.layout:66 layouts/makeitlooklike.layout:441
+#: layouts/shimmer.layout:23 layouts/shimmer.layout:71
+msgid "Equalizer"
+msgstr "Уједначивач"
+
+#: gmusicbrowser.pl:6405
+msgid "Error :"
+msgstr "Грeшкa :"
+
+#: gmusicbrowser.pl:4763
+msgid "Error creating folder"
+msgstr "Десила се грешка приликом уписа у фасциклу"
+
+#: gmusicbrowser.pl:2841
+msgid "Error details"
+msgstr "Детаљи о грешци"
+
+#: gmusicbrowser_tags.pm:299
+#, perl-brace-format
+msgid "Error opening '{file}' for writing."
+msgstr "Десила се грешка приликом отварања „{file}“ ради уписа."
+
+#: plugins/artistinfo.pm:665
+msgid "Error saving artistbio"
+msgstr "Грешка приликом чувања животописа извођача"
+
+#: plugins/artistinfo.pm:673
+#, perl-brace-format
+msgid ""
+"Error saving artistbio in '{file}' :\n"
+"{error}"
+msgstr ""
+"Грешка приликом чувања животописа извођача у „{file}“ :\n"
+"{error}"
+
+#: gmusicbrowser_songs.pm:2371
+msgid "Error saving icon"
+msgstr "Десила се грешка при чувању иконице"
+
+#: plugins/lyrics.pm:758
+msgid "Error saving lyrics"
+msgstr "Грешка чувања стихова"
+
+#: plugins/lyrics.pm:766
+#, perl-brace-format
+msgid ""
+"Error saving lyrics in '{file}' :\n"
+"{error}"
+msgstr ""
+"Грешка чувања стихова у „{file}“ :\n"
+"{error}"
+
+#: plugins/fetch_cover.pm:582
+msgid "Error saving picture"
+msgstr "Грешка при чувању слике"
+
+#: plugins/albuminfo.pm:768
+msgid "Error saving review"
+msgstr "Грешка чувања осврта"
+
+#: plugins/albuminfo.pm:774
+#, perl-brace-format
+msgid ""
+"Error saving review in '{file}' :\n"
+"{error}"
+msgstr ""
+"Грешка чувања критика у „{file}“ :\n"
+"{error}"
+
+#: gmusicbrowser_gstreamer-0.10.pm:696 gmusicbrowser_gstreamer-1.x.pm:805
+msgid "Error while writing replaygain data"
+msgstr "Грешка уписа ознака гласноће извођења"
+
+#: gmusicbrowser_songs.pm:1957
+msgid "Error while writing tag"
+msgstr "Грешка уписа ознаке"
+
+#: plugins/fetch_cover.pm:582
+#, perl-brace-format
+msgid "Error writing '{file}'"
+msgstr "Грешка уписа „{file}“"
+
+#: plugins/export.pm:167
+msgid "Error writing .csv file"
+msgstr "Грешка уписа датотеке цсв-а"
+
+#: plugins/export.pm:153
+msgid "Error writing .m3u file"
+msgstr "Грешка уписа датотеке м3у-а"
+
+#: gmusicbrowser.pl:10125
+msgid "Error writing downloaded file"
+msgstr "Грешка уписа преузете датотеке"
+
+#: gmusicbrowser_tags.pm:291
+msgid "Error writing lyrics"
+msgstr "Грешка уписа стихова"
+
+#: gmusicbrowser_tags.pm:1790
+msgid "Error writing tag"
+msgstr "Грешка уписа ознаке"
+
+#: plugins/albuminfo.pm:767 plugins/artistinfo.pm:664 plugins/lyrics.pm:757
+msgid "Error: invalid filename pattern"
+msgstr "Грешка: неисправан образац назива датотеке"
+
+#: plugins/artistinfo.pm:32 plugins/artistinfo.pm:305
+msgid "Events"
+msgstr "Догађаји"
+
+#: gmusicbrowser_tags.pm:851
+msgid "Example :"
+msgstr "Пример :"
+
+#: plugins/artistinfo.pm:298
+msgid "Exclude 'seed'-artist from queue"
+msgstr "Изузми „сејаног“ -ствараоца из заказаног"
+
+#: plugins/export.pm:95
+msgid "Execute custom command on selected files"
+msgstr "Извршите прилагођену наредбу над изабраном датотеком"
+
+#: gmusicbrowser_layout.pm:4208
+msgid "Exit full screen"
+msgstr "Искључи приказ преко целог екрана"
+
+#: plugins/export.pm:9
+msgid "Export"
+msgstr "Извези"
+
+#: plugins/export.pm:10
+msgid "Export plugin"
+msgstr "Прикључак извоза"
+
+#: plugins/export.pm:35 plugins/export.pm:98
+msgid "Export song properties to a .csv file"
+msgstr "Извези својства песме у .csv датотеку"
+
+#: plugins/export.pm:30 plugins/export.pm:55 plugins/export.pm:64
+#: plugins/export.pm:97
+msgid "Export to .m3u file"
+msgstr "Извези у .m3u датотеку"
+
+#: gmusicbrowser_songs.pm:32
+msgid "Extra fields"
+msgstr "Додатна поља"
+
+#: gmusicbrowser.pl:6634
+msgid "Extra gain"
+msgstr "Додатна гласноћа"
+
+#: gmusicbrowser.pl:6677
+msgid "Extract guest artist from title :"
+msgstr "Извади извођача госта из наслова :"
+
+#: plugins/lullaby.pm:45
+msgid "Fade-out"
+msgstr "Ишчезавање"
+
+#: plugins/lullaby.pm:44
+#, perl-format
+msgid "Fade-out in %d seconds"
+msgstr "Ишчезавање кроз %d секунди"
+
+#: plugins/lullaby.pm:32
+msgid "Fade-out then stop"
+msgstr "Ишчезавање и онда стој"
+
+#: gmusicbrowser.pl:5231 gmusicbrowser_layout.pm:4379
+#, perl-brace-format
+msgid "Failed to delete '{file}'"
+msgstr "Нисам успео да избришем „{file}“"
+
+#: plugins/albuminfo.pm:132
+msgid "Fetching albuminfo"
+msgstr "Добављање података о албуму"
+
+#: gmusicbrowser_songs.pm:3058
+msgid "Field identifier"
+msgstr "Указивач поља"
+
+#: gmusicbrowser_songs.pm:2957
+msgid "Field type"
+msgstr "Врста поља"
+
+#: gmusicbrowser.pl:6189 gmusicbrowser_list.pm:5372
+msgid "Fields"
+msgstr "Поља"
+
+#: plugins/albuminfo.pm:120
+msgid ""
+"Fields will be saved according to the settings above. Albuminfo files will "
+"be re-read if there are fields to be saved and you choose 'albums missing "
+"reviews' in the combo box."
+msgstr ""
+"Поља ће бити сачувана сагласно поставкама изнад. Датотеке са подацима о "
+"албуму ће бити опет учитани ако има поља која требају бити сачувана и ви "
+"изаберете „Недостајуће критике албума“ у кућици за унос."
+
+#: gmusicbrowser_mpv.pm:186 layouts/makeitlooklike.layout:46
+#: layouts/makeitlooklike.layout:415
+msgid "File"
+msgstr "Датотека"
+
+#: gmusicbrowser_songs.pm:29
+msgid "File properties"
+msgstr "Својства датотеке"
+
+#: gmusicbrowser_songs.pm:1239 gmusicbrowser_tags.pm:1839
+msgid "File type"
+msgstr "Врста датотеке"
+
+#: gmusicbrowser.pl:10037
+#, perl-brace-format
+msgid "File: {file}"
+msgstr "Датотека: {file}"
+
+#: gmusicbrowser_songs.pm:797 gmusicbrowser_tags.pm:2323
+msgid "Filename"
+msgstr "Назив датотеке"
+
+#: gmusicbrowser_songs.pm:1338
+msgid "Filename extension"
+msgstr "Наставак назива датотеке"
+
+#: gmusicbrowser_tags.pm:763 plugins/export.pm:87
+msgid "Filename format :"
+msgstr "Облик назива датотеке :"
+
+#: gmusicbrowser_songs.pm:1335
+msgid "Filename without extension"
+msgstr "Назив датотеке без наставка"
+
+#: layouts/makeitlooklike.layout:78
+msgid "Files"
+msgstr "Датотеке"
+
+#: gmusicbrowser.pl:6946
+msgid "Files with these extensions won't be added"
+msgstr "Датотеке са овим наставцима неће бити додаване"
+
+#: gmusicbrowser_list.pm:1590
+msgid "Filesystem"
+msgstr "Систем датотека"
+
+#: gmusicbrowser.pl:632 gmusicbrowser.pl:634 gmusicbrowser_list.pm:122
+#: gmusicbrowser_list.pm:1586 layouts/contrib.layout:335
+#: layouts/contrib.layout:534
+msgid "Filter"
+msgstr "Услов"
+
+#: gmusicbrowser_list.pm:228
+msgid "Filter : "
+msgstr "Услов"
+
+#: gmusicbrowser.pl:7899
+msgid "Filter edition"
+msgstr "Издање услова"
+
+#: gmusicbrowser_list.pm:16
+msgid "Filter on playing Album"
+msgstr "Услов извођења за албум"
+
+#: gmusicbrowser_list.pm:17
+msgid "Filter on playing Artist"
+msgstr "Услов извођења за извођача"
+
+#: gmusicbrowser_list.pm:18
+msgid "Filter on playing Song"
+msgstr "Услов за извођење песме"
+
+#: gmusicbrowser_list.pm:3349
+msgid "Filter on this album"
+msgstr "Услов за овај албум"
+
+#: gmusicbrowser_list.pm:3349
+msgid "Filter on this artist"
+msgstr "Услов за овог извођача"
+
+#: gmusicbrowser_list.pm:5398
+msgid "Find :"
+msgstr "Нађи :"
+
+#: plugins/fetch_cover.pm:75
+msgid "Find a unique filename if file already exists"
+msgstr "Нађи јединствени назив датотеке ако датотека већ постоји"
+
+#: gmusicbrowser.pl:608
+msgid "Find songs in same albums"
+msgstr "Пронађи песме са истог албума"
+
+#: gmusicbrowser.pl:607
+msgid "Find songs with same artists"
+msgstr "Пронађи песме са истим извођачима"
+
+#: gmusicbrowser.pl:606
+msgid "Find songs with the same names"
+msgstr "Пронађи песме истих назива"
+
+#: gmusicbrowser.pl:1176 gmusicbrowser_list.pm:787 gmusicbrowser_list.pm:1589
+#: gmusicbrowser_songs.pm:810 layouts/contrib.layout:337
+#: layouts/songtree.layout:91
+msgid "Folder"
+msgstr "Фасцикла"
+
+#: gmusicbrowser_list.pm:787 layouts/songtree.layout:90
+msgid "Folder (right-aligned)"
+msgstr "Фасцикла (right-aligned)"
+
+#: plugins/export.pm:86
+msgid "Folder format :"
+msgstr "Облик фасцикле :"
+
+#: gmusicbrowser.pl:5380
+msgid "Folder pattern :"
+msgstr "Образац фасцикле :"
+
+#: gmusicbrowser.pl:6908 gmusicbrowser.pl:6953
+msgid "Folders to search for new songs"
+msgstr "Фасцикла за претрагу за новим песмама"
+
+#: gmusicbrowser_layout.pm:4153 gmusicbrowser_layout.pm:4159
+#: gmusicbrowser_layout.pm:5069 gmusicbrowser_list.pm:15
+#: gmusicbrowser_list.pm:870 gmusicbrowser_list.pm:6866
+msgid "Follow playing song"
+msgstr "Следи песму која се изводи"
+
+#: gmusicbrowser_layout.pm:4153 gmusicbrowser_layout.pm:4159
+#: gmusicbrowser_layout.pm:5069
+msgid "Follow selected song"
+msgstr "Следи изабрану песму"
+
+#: plugins/lyrics.pm:168
+msgid "Font size"
+msgstr "Величина писма"
+
+#: gmusicbrowser_songs.pm:1403
+msgid "For alternate ratings"
+msgstr "За заменске оцене"
+
+#: gmusicbrowser_songs.pm:1391
+msgid "For decimal numbers"
+msgstr "За децималне бројеве"
+
+#: gmusicbrowser_songs.pm:1397
+msgid "For integer numbers"
+msgstr "За целе бројеве"
+
+#: gmusicbrowser_songs.pm:1395 gmusicbrowser_songs.pm:1396
+msgid "For when values are likely to be repeated"
+msgstr "За вредности које се вероватно неће понављати"
+
+#: gmusicbrowser.pl:1406
+msgid "Forward"
+msgstr "Напред"
+
+#: plugins/webcontext.pm:388
+msgid "Found but not working"
+msgstr "Пронађено, али не ради "
+
+#: plugins/lullaby.pm:27
+msgid "Friday"
+msgstr "Петак"
+
+#: gmusicbrowser.pl:5442
+#, perl-brace-format
+msgid ""
+"From: {oldname}\n"
+"To: {newname}"
+msgstr ""
+"Од: {oldname}\n"
+"до: {newname}"
+
+#: gmusicbrowser_layout.pm:4208
+msgid "Full screen"
+msgstr "Преко целог екрана"
+
+#: gmusicbrowser.pl:6746
+msgid "Full screen layout :"
+msgstr "Размештај преко целог екрана :"
+
+#: gmusicbrowser.pl:650 gmusicbrowser_layout.pm:687
+#: gmusicbrowser_layout.pm:4148
+msgid "Fullscreen"
+msgstr "Преко целог екрана"
+
+#: layouts/fullscreen.layout:27
+msgid "Fullscreen simple"
+msgstr "Преко целог екрана једноставно"
+
+#: gmusicbrowser.pl:6519
+msgid "GStreamer module not loaded."
+msgstr "Гстример модул није учитан."
+
+#: gmusicbrowser.pl:6635
+msgid "Gain for songs missing replaygain tags"
+msgstr "Недостаје гласноћа за недостајуће ознаке гласноће извођења песама"
+
+#: layouts/contrib.layout:612
+msgid "Garage Fullscreen"
+msgstr "Преко целог екрана гаража"
+
+#: gmusicbrowser_tags.pm:1819 gmusicbrowser_tags.pm:1858
+#: gmusicbrowser_tags.pm:1872 gmusicbrowser_tags.pm:1895
+#: gmusicbrowser_tags.pm:2148 plugins/albuminfo.pm:65
+#: layouts/contrib.layout:338 layouts/contrib.layout:536
+msgid "Genre"
+msgstr "Род"
+
+#: layouts/makeitlooklike.layout:115
+msgid "Genre - Album"
+msgstr "Род - Албум"
+
+#: layouts/makeitlooklike.layout:102
+msgid "Genre - Artist"
+msgstr "Род - Извођач"
+
+#: gmusicbrowser_songs.pm:5224
+msgid "Genre is set"
+msgstr "Род је постављен"
+
+#: gmusicbrowser_songs.pm:1001 plugins/albuminfo.pm:38
+msgid "Genres"
+msgstr "Родови"
+
+#: layouts/makeitlooklike.layout:487
+msgid "Genres pane"
+msgstr "Окно за родове"
+
+#: plugins/gnome_mmkeys.pm:9
+msgid "Gnome mmkeys"
+msgstr "Гномови мултимедијални тастери"
+
+#: plugins/gnome_mmkeys.pm:10
+msgid "Gnome multimedia keys plugin"
+msgstr "Прикључак за Гномове мултимедијалне тастере"
+
+#: layouts/makeitlooklike.layout:58
+msgid "Go to Playing Track"
+msgstr "Иди на звучну стазу која се изводи"
+
+#: gmusicbrowser_list.pm:873 gmusicbrowser_list.pm:6869
+msgid "Go to playing song"
+msgstr "Иди на песму која се изводи"
+
+#: gmusicbrowser_list.pm:7683
+msgid "Group by :"
+msgstr "Разврстај по :"
+
+#: gmusicbrowser_songs.pm:950 gmusicbrowser_tags.pm:1835
+msgid "Grouping"
+msgstr "Разврставање"
+
+#: plugins/audioscrobbler.pm:142
+msgid "Handshake OK"
+msgstr "Руковање ОК"
+
+#: plugins/audioscrobbler.pm:135
+msgid "Handshake failed : "
+msgstr "Руковање неуспело : "
+
+#: gmusicbrowser.pl:6631
+msgid "Hard limiter"
+msgstr "Строги граничник"
+
+#: layouts/makeitlooklike.layout:68 layouts/makeitlooklike.layout:274
+#: layouts/makeitlooklike.layout:451
+msgid "Help"
+msgstr "Помоћ"
+
+#: gmusicbrowser.pl:649 gmusicbrowser.pl:1425
+msgid "Hide"
+msgstr "Сакриј"
+
+#: gmusicbrowser_list.pm:5371
+msgid "Hide non-matching"
+msgstr "Сакриј без поклапања"
+
+#: plugins/lyrics.pm:39
+msgid "Hide toolbar"
+msgstr "Сакриј траку прибора"
+
+#: gmusicbrowser.pl:6306
+msgid "High priority"
+msgstr ""
+
+#: gmusicbrowser.pl:6760
+msgid "Icon theme :"
+msgstr "Тема икона :"
+
+#: gmusicbrowser_songs.pm:2951
+msgid "Identifier in file tag"
+msgstr "Указивач у ознаци датотеке"
+
+#: gmusicbrowser.pl:6307
+msgid ""
+"If checked, the shortcut has higher priority than the default shortcut of "
+"widgets. Warning: this can make some features inaccessible"
+msgstr ""
+
+#: gmusicbrowser.pl:6581
+msgid "Ignore playback errors"
+msgstr "Занемари грешке у извођењу"
+
+#: gmusicbrowser.pl:6946
+msgid "Ignored file extensions :"
+msgstr "Занемарен наставак датотеке :"
+
+#: gmusicbrowser_list.pm:3012
+msgid "Import list"
+msgstr "Увези списак"
+
+#: gmusicbrowser_gstreamer-1.x.pm:502
+msgid ""
+"Imports gstreamer presets, and synchronize modifications made with "
+"gmusicbrowser"
+msgstr ""
+
+#: plugins/export.pm:93
+msgid ""
+"In this case one command by file will be run\n"
+"\n"
+msgstr ""
+"У овом случају једна наредба по једној датотеци ће се изводити\n"
+"\n"
+
+#: plugins/albuminfo.pm:101
+msgid "Include Styles in Genres"
+msgstr "Укључи начине у родовима"
+
+#: gmusicbrowser.pl:1439
+msgid "Increase Volume"
+msgstr "Појачај гласноћу"
+
+#: layouts/makeitlooklike.layout:271 layouts/makeitlooklike.layout:355
+msgid "Increase volume"
+msgstr "Појачај звук"
+
+#: gmusicbrowser.pl:5666 gmusicbrowser_tags.pm:1883 layouts/pages.layout:40
+#: layouts/shimmer.layout:75
+msgid "Info"
+msgstr "Подаци"
+
+#: layouts/titlebar.layout:25
+msgid "Insensitive title-artist (left-aligned)"
+msgstr "Неосетљиво на назив-извођач (лево поравнање)"
+
+#: layouts/titlebar.layout:31
+msgid "Insensitive title-artist (right-aligned)"
+msgstr "Неосетљиво на назив-извођач (десно поравнање)"
+
+#: layouts/desktop.layout:5
+msgid "Insensitive, Song & Cover"
+msgstr "Неосетљиво, песма и корице"
+
+#: gmusicbrowser.pl:1431
+msgid "Insert Selected Songs at the top of the queue"
+msgstr "Убацује изабране песме на врх заказаног"
+
+#: gmusicbrowser.pl:1470
+msgid "Insert a list of files/folders at the start of the playlist"
+msgstr "Убаци списак датотека/фасцикли на почетку списка за извођење"
+
+#: gmusicbrowser_gstreamer-0.10.pm:504 gmusicbrowser_gstreamer-1.x.pm:506
+msgid "Insert this pipeline before the audio sink"
+msgstr "Унесите овај цевовод пре уливања звука"
+
+#: gmusicbrowser_tags.pm:843
+msgid "Invalid regular expression"
+msgstr "Неисправан регуларан израз"
+
+#: gmusicbrowser.pl:9002
+msgid "Invert filter"
+msgstr "Обрнути услови"
+
+#: layouts/desktop.layout:33
+msgid "Invisible hot spot"
+msgstr "Невидљива приступна тачка"
+
+#: gmusicbrowser_songs.pm:839
+#, perl-format
+msgid "Isn't smart equal to %s"
+msgstr "Није паметно једнако %s"
+
+#: plugins/lyrics.pm:32
+msgid "Justified"
+msgstr "Поравнато"
+
+#: gmusicbrowser.pl:961 gmusicbrowser_tags.pm:1617
+msgid "KB"
+msgstr "KB"
+
+#: plugins/karaoke.pm:9
+msgid "Karaoke"
+msgstr "Караоке"
+
+#: plugins/karaoke.pm:10
+msgid "Karaoke plugin"
+msgstr "Прикључак за караоке"
+
+#: gmusicbrowser_list.pm:867 gmusicbrowser_list.pm:6863
+msgid "Keep list filtered and sorted"
+msgstr "Чувај услове и редослед списка"
+
+#: gmusicbrowser.pl:6229 gmusicbrowser.pl:6347
+msgid "Key"
+msgstr "Тастер"
+
+#: gmusicbrowser.pl:6191
+msgid "Keys"
+msgstr "Тастери"
+
+#: plugins/fetch_cover.pm:100
+msgid "Keywords"
+msgstr "Кључне речи"
+
+#: gmusicbrowser.pl:1476 gmusicbrowser.pl:1477 gmusicbrowser.pl:1478
+msgid "Label"
+msgstr "Натпис"
+
+#: gmusicbrowser_songs.pm:5218
+msgid "Label is set"
+msgstr "Натпис је постављен"
+
+#: gmusicbrowser_tags.pm:1843
+msgid "Label/Publisher"
+msgstr "Натпис/издавач"
+
+#: gmusicbrowser_songs.pm:1016
+msgid "Labels"
+msgstr "Натписи"
+
+#: gmusicbrowser_list.pm:814 layouts/songtree.layout:51
+msgid "Labels' icons"
+msgstr "Иконе натписа"
+
+#: gmusicbrowser_tags.pm:2313 gmusicbrowser_tags.pm:2337
+msgid "Lang"
+msgstr "Језик"
+
+#: gmusicbrowser_tags.pm:2309
+msgid "Lang."
+msgstr "Језик."
+
+#: gmusicbrowser_tags.pm:1820
+msgid "Languages"
+msgstr "Језици"
+
+#: gmusicbrowser_mpv.pm:187
+msgid "Last messages:"
+msgstr ""
+
+#: gmusicbrowser.pl:1190 gmusicbrowser_list.pm:728 gmusicbrowser_songs.pm:1107
+msgid "Last played"
+msgstr "Последња извођена"
+
+#: gmusicbrowser_songs.pm:1125
+msgid "Last skipped"
+msgstr "Последња прескочена"
+
+#: plugins/rip.pm:33
+msgid "Launch ripping program"
+msgstr "Покрени програм за чупање"
+
+#: gmusicbrowser_layout.pm:555
+msgid "Layout"
+msgstr "Распоред"
+
+#: plugins/desktopwidget.pm:35
+msgid "Layout :"
+msgstr "Распоред :"
+
+#: gmusicbrowser.pl:6187
+msgid "Layouts"
+msgstr "Распореди"
+
+#: plugins/lyrics.pm:29
+msgid "Left aligned"
+msgstr "Лево поравнање"
+
+#: layouts/makeitlooklike.layout:487
+msgid "Left pane"
+msgstr "Лево окно"
+
+#: layouts/contrib.layout:286 layouts/contrib.layout:571
+msgid "Left-clic or scrollwheel to change, right-click to mute"
+msgstr "Леви клик или точкић миша за измену, десни клик за утишавање"
+
+#: gmusicbrowser_songs.pm:1256
+msgid "Length"
+msgstr "Трајање"
+
+#: gmusicbrowser.pl:6185 gmusicbrowser_list.pm:123 layouts/contrib.layout:302
+#: layouts/contrib.layout:319 layouts/contrib.layout:587
+#: layouts/contrib.layout:592 layouts/contrib.layout:733
+#: layouts/contrib.layout:741 layouts/main.layout:22 layouts/shimmer.layout:24
+#: layouts/shimmer.layout:72
+msgid "Library"
+msgstr "Збирка"
+
+#: gmusicbrowser_list.pm:272
+msgid "Library : "
+msgstr "Збирка : "
+
+#: gmusicbrowser_list.pm:449
+msgid ""
+"Library empty.\n"
+"\n"
+"Use the settings dialog to add music."
+msgstr ""
+"Збирка је празна.\n"
+"\n"
+"Користите прозорче поставки за додавање музике"
+
+#: gmusicbrowser.pl:6979
+#, perl-format
+msgid "Library size : %d song"
+msgid_plural "Library size : %d songs"
+msgstr[0] "Величина песме :  %d песма"
+msgstr[1] "Величина збирке : %d песме"
+msgstr[2] "Величина збирке : %d песама"
+
+#: plugins/artistinfo.pm:296
+msgid "Limit similar artists to a rate of similarity : "
+msgstr "Пореди сличне извођаче мером сличности :"
+
+#: plugins/artistinfo.pm:295
+msgid "Limit similar artists to the first : "
+msgstr "Пореди сличне извођаче са првим:"
+
+#: gmusicbrowser_list.pm:1587 layouts/contrib.layout:336
+#: layouts/contrib.layout:535
+msgid "List"
+msgstr "Списак"
+
+#: gmusicbrowser_list.pm:419
+msgid "List empty"
+msgstr "Списак је празан"
+
+#: gmusicbrowser_layout.pm:1474 gmusicbrowser_layout.pm:1540
+msgid "List order"
+msgstr "Распоред списка"
+
+#: gmusicbrowser_list.pm:247
+msgid "Listed : "
+msgstr "Наведено :"
+
+#: gmusicbrowser_list.pm:121
+msgid "Listed songs"
+msgstr "Наведене песме"
+
+#: plugins/artistinfo.pm:568
+msgid "Listeners: "
+msgstr "Ослушкивачи :"
+
+#: gmusicbrowser_songs.pm:1375
+msgid "Lists"
+msgstr "Спискови"
+
+#: layouts/main.layout:6
+msgid "Lists, Library & Context"
+msgstr "Спискови, библиотека и садржаја"
+
+#: gmusicbrowser_list.pm:3542
+msgid "Literal search"
+msgstr "Дословна претрага"
+
+#: plugins/lyrics.pm:207
+msgid "Load lyrics even if lyrics panel is hidden"
+msgstr "Учитава стихове чак и ако је окно стихова скривено"
+
+#: plugins/artistinfo.pm:279
+msgid "Load/Save Artist Info in :"
+msgstr "Учитава/чува податке о извођачу у :"
+
+#: plugins/audioscrobbler.pm:250
+#, perl-format
+msgid "Loaded %d unsent song from previous session"
+msgid_plural "Loaded %d unsent songs from previous session"
+msgstr[0] "Учитана је %d непослата песма из претходне сесије"
+msgstr[1] "Учитане су %d непослате песме из претходне сесије"
+msgstr[2] "Учитано је %d непослатих песма из претходне сесије"
+
+#: plugins/artistinfo.pm:522 plugins/artistinfo.pm:632 plugins/lyrics.pm:422
+#: plugins/lyrics.pm:735
+msgid "Loading failed."
+msgstr "Неуспело учитавање."
+
+#: plugins/albuminfo.pm:576 plugins/artistinfo.pm:509 plugins/lyrics.pm:408
+msgid "Loading..."
+msgstr "Учитавам..."
+
+#: gmusicbrowser.pl:626
+msgid "Lock"
+msgstr "Закључај"
+
+#: gmusicbrowser.pl:646
+msgid "Lock Album"
+msgstr "Закључавање албума"
+
+#: gmusicbrowser.pl:645
+msgid "Lock Artist"
+msgstr "Закључавање извођача"
+
+#: gmusicbrowser_layout.pm:170
+msgid "Lock on Album"
+msgstr "Праћење албума"
+
+#: gmusicbrowser_layout.pm:164
+msgid "Lock on Artist"
+msgstr "Праћење извођача"
+
+#: gmusicbrowser_layout.pm:159
+msgid "Lock on song"
+msgstr "Праћење песме"
+
+#: gmusicbrowser_layout.pm:152
+#, perl-brace-format
+msgid "Lock on {field}"
+msgstr "Праћење {field}"
+
+#: gmusicbrowser_list.pm:71
+msgid "Locked on :\n"
+msgstr "Праћено :\n"
+
+#: plugins/albuminfo.pm:488
+msgid "Lookup at allmusic.com"
+msgstr "Претрага на allmusic.com"
+
+#: gmusicbrowser.pl:629
+msgid "Lookup in AMG"
+msgstr "Претрага на АМГ"
+
+#: gmusicbrowser.pl:621
+msgid "Lookup in google"
+msgstr "Претрага гуглом"
+
+#: plugins/titlebar.pm:30
+msgid "Lower left"
+msgstr "Доле-лево"
+
+#: plugins/titlebar.pm:31
+msgid "Lower right"
+msgstr "Доле-десно"
+
+#: plugins/lullaby.pm:9
+msgid "Lullaby"
+msgstr "Успаванка"
+
+#: plugins/lullaby.pm:10
+msgid "Lullaby plugin"
+msgstr "Прикључак успаванка"
+
+#: gmusicbrowser_songs.pm:1174
+msgid "Lyricist"
+msgstr "Стихописац"
+
+#: gmusicbrowser_tags.pm:1821 gmusicbrowser_tags.pm:1859
+#: gmusicbrowser_tags.pm:1860 gmusicbrowser_tags.pm:1879
+#: gmusicbrowser_tags.pm:1882 gmusicbrowser_tags.pm:1897 plugins/lyrics.pm:9
+#: plugins/lyrics.pm:95 plugins/webcontext.pm:198 layouts/contrib.layout:764
+#: layouts/shimmer.layout:30 layouts/shimmer.layout:74
+msgid "Lyrics"
+msgstr "Стихови"
+
+#: layouts/desktop.layout:39
+msgid "Lyrics (requires lyrics plugin)"
+msgstr "Стихови (захтева прикључак стихова)"
+
+#: plugins/lyrics.pm:45
+msgid "Lyrics alignement"
+msgstr "Поравнање стихова"
+
+#: plugins/lyrics.pm:202
+msgid "Lyrics file :"
+msgstr "Датотека стихова :"
+
+#: plugins/lyrics.pm:202
+msgid "Lyrics file name format"
+msgstr "Облик назива датотеке стихова"
+
+#: gmusicbrowser.pl:5177
+msgid "Lyrics for "
+msgstr "Стихови за"
+
+#: plugins/lyrics.pm:10
+msgid "Lyrics plugin"
+msgstr "Прикључак за стихове"
+
+#: plugins/lyrics.pm:169 plugins/webcontext.pm:483
+msgid "Lyrics source"
+msgstr "Извор стихова"
+
+#: gmusicbrowser.pl:962 gmusicbrowser.pl:3640 gmusicbrowser_songs.pm:534
+#: gmusicbrowser_songs.pm:542
+msgid "MB"
+msgstr "MB"
+
+#: gmusicbrowser_tags.pm:2317 gmusicbrowser_tags.pm:2322
+msgid "MIME type"
+msgstr "МИМЕ врста"
+
+#: plugins/mpris1.pm:9
+msgid "MPRIS v1"
+msgstr "МПРИС 1"
+
+#: plugins/mpris1.pm:10
+msgid "MPRIS v1 support"
+msgstr "Подршка за МПРИС 1"
+
+#: plugins/mpris2.pm:9
+msgid "MPRIS v2"
+msgstr "МПРИС 2"
+
+#: plugins/mpris2.pm:10
+msgid "MPRIS v2 support"
+msgstr "Подршка за МПРИС 2"
+
+#: gmusicbrowser_layout.pm:565
+msgid "Main"
+msgstr "Главни"
+
+#: gmusicbrowser_songs.pm:862
+msgid "Main artist"
+msgstr "Глави извођач"
+
+#: layouts/makeitlooklike.layout:6 layouts/makeitlooklike.layout:30
+#: layouts/makeitlooklike.layout:215 layouts/makeitlooklike.layout:329
+#: layouts/makeitlooklike.layout:378 layouts/makeitlooklike.layout:483
+msgid "Make it look like"
+msgstr "Начини га да изгледа као"
+
+#: gmusicbrowser_gstreamer-0.10.pm:499 gmusicbrowser_gstreamer-1.x.pm:499
+msgid ""
+"Makes gmusicbrowser monitor its pulseaudio volume, so that external changes "
+"to its volume are known."
+msgstr ""
+"Чини да гномов музички брстач надгледа гласноћу пулсаудија, тако да се "
+"спољне измене гласноће осећају."
+
+#: plugins/gnome_mmkeys.pm:11
+msgid ""
+"Makes gmusicbrowser react to the Next/Previous/Play/Stop multimedia keys in "
+"gnome."
+msgstr ""
+"Чини да Гном музички брстач одговара на следеће/претходно/свирај/стани "
+"мултимеднијалне тастере у гному. "
+
+#: gmusicbrowser.pl:610
+msgid "Mass Rename"
+msgstr "Групно преименовање"
+
+#: gmusicbrowser.pl:5317
+msgid "Mass Renaming"
+msgstr "Групно преименовање"
+
+#: gmusicbrowser_tags.pm:1838
+msgid "Media type"
+msgstr "Врста медијума"
+
+#: plugins/export.pm:90
+msgid "Menu entry name"
+msgstr "Назив ставке изборника"
+
+#: layouts/contrib.layout:702
+msgid "Middle-clic for next album"
+msgstr "Средњи клик за следећи албум"
+
+#: plugins/appindicator.pm:49
+msgid "Middle-click action :"
+msgstr "Радња средњег клика :"
+
+#: plugins/artistinfo.pm:165
+msgid ""
+"Middle-click on local artists to set a filter on them, right-click non-local "
+"artists to search for them on the web."
+msgstr ""
+"Средњи клик на месне извођаче за поставку услова на њих, десни клик на "
+"удаљене извођаче за претрагу веба за њима.  "
+
+#: layouts/tray.layout:34
+msgid "Minimal tip"
+msgstr "Најмањи облачић"
+
+#: plugins/desktopwidget.pm:204
+msgid "Minimum size"
+msgstr "Најмања величина"
+
+#: gmusicbrowser.pl:6188
+msgid "Misc."
+msgstr "Разно"
+
+#: gmusicbrowser_songs.pm:821
+msgid "Modification"
+msgstr "Измене"
+
+#: plugins/lullaby.pm:27
+msgid "Monday"
+msgstr "Понедељак"
+
+#: plugins/desktopwidget.pm:203
+msgid "Monitor"
+msgstr "Праћење"
+
+#: gmusicbrowser_gstreamer-0.10.pm:499 gmusicbrowser_gstreamer-1.x.pm:499
+msgid "Monitor the pulseaudio volume"
+msgstr "Надгледа гласноћу пулсаудија"
+
+#: gmusicbrowser_songs.pm:1034 plugins/albuminfo.pm:39
+msgid "Moods"
+msgstr "Расположења"
+
+#: layouts/contrib.layout:775
+msgid "More info"
+msgstr "Још података"
+
+#: plugins/fetch_cover.pm:105
+msgid "More results"
+msgstr "Више излаза"
+
+#: layouts/contrib.layout:753 layouts/shimmer.layout:19
+msgid "Mosaic View"
+msgstr "Мозаик преглед"
+
+#: gmusicbrowser.pl:613
+msgid "Move"
+msgstr "Премести"
+
+#: gmusicbrowser.pl:5385
+msgid "Move Files to :"
+msgstr "Премести датотеке у :"
+
+#: gmusicbrowser.pl:4785 gmusicbrowser.pl:10023
+msgid "Move failed"
+msgstr "Није успело премештање"
+
+#: gmusicbrowser.pl:6874
+msgid "Move folder to"
+msgstr "Премести фасциклу у"
+
+#: gmusicbrowser.pl:10019
+msgid "Moving"
+msgstr "Премештање"
+
+#: gmusicbrowser.pl:4787
+#, perl-format
+msgid "Moving file"
+msgid_plural "Moving %d files"
+msgstr[0] "Премештање %d датотеке"
+msgstr[1] "Премештање %d датотеке"
+msgstr[2] "Премештање %d датотека"
+
+#: layouts/makeitlooklike.layout:229 layouts/makeitlooklike.layout:334
+msgid "Music"
+msgstr "Музика"
+
+#: gmusicbrowser.pl:7002
+msgid "Music files"
+msgstr "Музичке датотеке"
+
+#: gmusicbrowser.pl:1441
+msgid "Mute/Unmute"
+msgstr "Искључи/укључи звук"
+
+#: gmusicbrowser_tags.pm:2352 gmusicbrowser_tags.pm:2357
+msgid "Name"
+msgstr "Назив"
+
+#: gmusicbrowser.pl:1416 gmusicbrowser.pl:1417 gmusicbrowser.pl:1419
+msgid "Name of layout"
+msgstr "Назив распореда"
+
+#: plugins/export.pm:90
+msgid "Name under which the command will appear in the menu"
+msgstr "Назив под којим ће се наредба приказивати у изборнку"
+
+#: gmusicbrowser.pl:6962
+msgid "Never"
+msgstr "Никад"
+
+#: gmusicbrowser_tags.pm:772 plugins/webcontext.pm:619
+msgid "New"
+msgstr "Ново"
+
+#: gmusicbrowser_songs.pm:2798
+msgid "New custom field"
+msgstr "Ново посебно поље"
+
+#: gmusicbrowser_list.pm:2997
+msgid "New filter"
+msgstr "Нови услов"
+
+#: gmusicbrowser.pl:7103
+msgid "New label"
+msgstr "Нова ознака"
+
+#: gmusicbrowser_layout.pm:2471
+msgid "New list"
+msgstr "Нови списак"
+
+#: gmusicbrowser.pl:5352 gmusicbrowser.pl:7073
+msgid "New name"
+msgstr "Нови назив"
+
+#: gmusicbrowser.pl:643 gmusicbrowser.pl:3142 gmusicbrowser_layout.pm:95
+#: gmusicbrowser_list.pm:5394 plugins/appindicator.pm:30 plugins/notify.pm:94
+#: layouts/makeitlooklike.layout:269 layouts/makeitlooklike.layout:353
+#: layouts/makeitlooklike.layout:427
+msgid "Next"
+msgstr "Следеће"
+
+#: gmusicbrowser.pl:1401
+msgid "Next Album"
+msgstr "Следећи албум"
+
+#: gmusicbrowser.pl:1402
+msgid "Next Artist"
+msgstr "Следећи извођач"
+
+#: gmusicbrowser.pl:1403 gmusicbrowser_layout.pm:94 layouts/contrib.layout:220
+msgid "Next Song"
+msgstr "Следећа песма"
+
+#: gmusicbrowser.pl:1399
+msgid "Next Song In Playlist"
+msgstr "Следећа песма у списку за извођење"
+
+#: gmusicbrowser_layout.pm:654
+msgid "No connections"
+msgstr "Нема успостављених веза"
+
+#: gmusicbrowser.pl:3694
+msgid "No file browser found."
+msgstr "Нисам нашао разгледника датотека"
+
+#: gmusicbrowser_songs.pm:1006
+msgid "No genre"
+msgstr "Без рода"
+
+#: gmusicbrowser_songs.pm:1024
+msgid "No label"
+msgstr "Без натписа"
+
+#: gmusicbrowser_list.pm:71
+msgid "No locked filter"
+msgstr "Без услова закључавања"
+
+#: plugins/lyrics.pm:26 plugins/lyrics.pm:323
+msgid "No lyrics found"
+msgstr "Није нађен текст песме"
+
+#: gmusicbrowser_songs.pm:1038
+msgid "No moods"
+msgstr "Нема расположења"
+
+#: plugins/artistinfo.pm:548 plugins/artistinfo.pm:579
+msgid "No results found"
+msgstr "Нисам пронашао резултате"
+
+#: plugins/albuminfo.pm:431 plugins/albuminfo.pm:625 plugins/albuminfo.pm:749
+msgid "No review found"
+msgstr "Нема пронађених критика"
+
+#: plugins/albuminfo.pm:483
+msgid "No review written."
+msgstr "Нема записаних критика."
+
+#: gmusicbrowser_songs.pm:4311
+msgid "No songs"
+msgstr "Нема песама"
+
+#: gmusicbrowser_list.pm:421 gmusicbrowser_list.pm:422
+msgid "No songs found"
+msgstr "Нисам пронашао песме"
+
+#: gmusicbrowser_songs.pm:1050
+msgid "No styles"
+msgstr "Нема начина"
+
+#: gmusicbrowser_songs.pm:1061
+msgid "No themes"
+msgstr "Нема тема"
+
+#: gmusicbrowser.pl:3686
+msgid "No web browser found."
+msgstr "Нисам пронашао прегледач веба"
+
+#: gmusicbrowser.pl:1172 gmusicbrowser_list.pm:1640 gmusicbrowser_list.pm:1662
+#: gmusicbrowser_songs.pm:86 gmusicbrowser_songs.pm:963
+msgid "None"
+msgstr "Ништа"
+
+#: layouts/tray.layout:18
+msgid "Normal"
+msgstr "Обичне"
+
+#: gmusicbrowser.pl:510
+msgid "Normal mode"
+msgstr "Уобичајени начин"
+
+#: layouts/tray.layout:3
+msgid "Normal with buttons"
+msgstr "Уобичајени са дугмадима"
+
+#: gmusicbrowser.pl:6561
+msgid "Normalize volume (the files must have replaygain tags)"
+msgstr "Уједначава гласноћу (датотеке морају имати ознаке гласноће извођења)"
+
+#: plugins/webcontext.pm:387 plugins/webcontext.pm:388
+msgid "Not found"
+msgstr "Нисам пронашао"
+
+#: plugins/notify.pm:55
+msgid "Note that some notification daemons resize the displayed picture"
+msgstr "Знајте да неки домари обавештавања мењају величину приказане слике"
+
+#: plugins/albuminfo.pm:104
+msgid ""
+"Note: inactive fields must be enabled by the user in the 'Fields' tab in "
+"Settings"
+msgstr ""
+"Примедба : корисник мора омогућити неактивна поља  у језичку „Поља“ у "
+"поставкама"
+
+#: plugins/notify.pm:9
+msgid "Notify"
+msgstr "Обавести"
+
+#: plugins/notify.pm:10
+msgid "Notify plugin"
+msgstr "Прикључак обавештења"
+
+#: plugins/notify.pm:11
+msgid "Notify you of the playing song with the system's notification popups"
+msgstr "Обавештава вас о песми која се изводи искакањем системских обавештења"
+
+#: plugins/nowplaying.pm:16
+msgid "Now playing"
+msgstr "Сада пуштам"
+
+#: plugins/nowplaying.pm:17
+msgid "NowPlaying plugin"
+msgstr "Прикључак сада пуштам"
+
+#: gmusicbrowser_songs.pm:5242
+msgid "Number of days since added"
+msgstr "Број дана од додавања"
+
+#: gmusicbrowser_songs.pm:5230
+msgid "Number of days since last played"
+msgstr "Број дана од последњег извођења"
+
+#: gmusicbrowser_songs.pm:5236
+msgid "Number of days since last skipped"
+msgstr "Број дана од последњег прескакања"
+
+#: gmusicbrowser_songs.pm:5248
+msgid "Number of days since modified"
+msgstr "Број дана од последње измене"
+
+#: gmusicbrowser.pl:1475
+msgid "Number of milliseconds"
+msgstr "Број милисекунди"
+
+#: gmusicbrowser.pl:1406 gmusicbrowser.pl:1407 gmusicbrowser.pl:1408
+msgid "Number of seconds"
+msgstr "Број секунди"
+
+#: gmusicbrowser_songs.pm:5254
+msgid "Number of times played"
+msgstr "Број извођења"
+
+#: gmusicbrowser_songs.pm:5259
+msgid "Number of times skipped"
+msgstr "Број прескакања"
+
+#: gmusicbrowser.pl:8762 gmusicbrowser.pl:8785
+msgid ""
+"ON -> smaller means more probable\n"
+"OFF -> bigger means more probable"
+msgstr ""
+"УКЉ -> мање значи вероватније\n"
+"ИСК -> веће значи вероватније"
+
+#: gmusicbrowser.pl:8754
+msgid ""
+"ON less probable if genre is set\n"
+"OFF more probable if genre is set"
+msgstr ""
+"УКЉ мање вероватно ако је род постављен\n"
+"ИСК вероватније ако је род постављен"
+
+#: gmusicbrowser.pl:8746
+msgid ""
+"ON less probable if label is set\n"
+"OFF more probable if label is set"
+msgstr ""
+"УКЉ мање вероватно ако је ознака постављена\n"
+"ИСК мање вероватно ако је ознака постављена"
+
+#: gmusicbrowser.pl:5352
+msgid "Old name"
+msgstr "Стари назив"
+
+#: plugins/desktopwidget.pm:187
+msgid "On top of other windows instead of below"
+msgstr "Изнад осталих прозора уместо испод"
+
+#: gmusicbrowser.pl:1447 gmusicbrowser.pl:1449
+msgid ""
+"One command is used per selected songs, unless $files is used, which is "
+"replaced by the list of selected files"
+msgstr ""
+"Једна наредба се користи за избор песама, осим ако се $files користи, када "
+"се замењује списком изабраних датотека"
+
+#: gmusicbrowser_123.pm:147
+#, perl-brace-format
+msgid "One of these commands is required to play files of type {type} : {cmd}"
+msgstr ""
+"Једна од ових наредби је неопходна за иззвођење датотека врсте {type} : {cmd}"
+
+#: gmusicbrowser.pl:6786
+msgid "Only affect mp3 files that do not already have an id3v1 tag"
+msgstr "Само утиче на мп3 датотеке које немају ид3в1 ознаку"
+
+#: plugins/artistinfo.pm:297
+msgid "Only show similar artists from local library"
+msgstr "Само приказује сличне извођаче из месне збирке"
+
+#: plugins/desktopwidget.pm:205
+msgid "Opacity"
+msgstr "Непровидност"
+
+#: gmusicbrowser.pl:1412 gmusicbrowser_layout.pm:54
+msgid "Open Browser"
+msgstr "Отвори прегледник"
+
+#: gmusicbrowser_layout.pm:107
+msgid "Open Browser window"
+msgstr "Отвори прозор прегледника"
+
+#: gmusicbrowser.pl:1415 gmusicbrowser_layout.pm:55
+#: gmusicbrowser_layout.pm:116
+msgid "Open Context window"
+msgstr "Отвори приручни прозор"
+
+#: gmusicbrowser.pl:1416
+msgid "Open Custom window"
+msgstr "Отвори прилагођени прозор"
+
+#: gmusicbrowser.pl:6550
+msgid "Open Equalizer"
+msgstr "Отвори уједначивач"
+
+#: gmusicbrowser_layout.pm:2474
+msgid "Open Playlist"
+msgstr "Отвори списак за извођење"
+
+#: gmusicbrowser.pl:1420
+msgid "Open Preference window"
+msgstr "Отвори прозор поставки"
+
+#: gmusicbrowser_layout.pm:2472
+msgid "Open Queue"
+msgstr "Отвори заказано"
+
+#: gmusicbrowser.pl:1413 gmusicbrowser_layout.pm:123
+msgid "Open Queue window"
+msgstr "Отвори прозор заказаног"
+
+#: gmusicbrowser.pl:1414
+msgid "Open Search window"
+msgstr "Отвори прозор претраге"
+
+#: gmusicbrowser.pl:622
+msgid "Open containing folder"
+msgstr "Отвори родитељску фасциклу"
+
+#: layouts/contrib.layout:724
+msgid "Open context & queue panel"
+msgstr "Отвори приручна окна и окна заказаног"
+
+#: gmusicbrowser_layout.pm:2480
+msgid "Open context page"
+msgstr "Отвори приручну страну"
+
+#: gmusicbrowser_layout.pm:5420
+msgid "Open equalizer..."
+msgstr "Отвори уједначивач..."
+
+#: gmusicbrowser_layout.pm:2476
+msgid "Open existing list"
+msgstr "Отвори постојећи списак"
+
+#: gmusicbrowser_list.pm:1722
+msgid "Open folder"
+msgstr "Отвори фасциклу"
+
+#: plugins/artistinfo.pm:299
+msgid "Open last.fm website in your browser"
+msgstr "Отвори у веб прегледнику страну last.fm"
+
+#: plugins/lyrics.pm:368
+msgid "Open link in Browser"
+msgstr "Отвори везу у веб прегледнику"
+
+#: gmusicbrowser_layout.pm:2478
+msgid "Open page layout"
+msgstr "Отвори распоред стране"
+
+#: plugins/desktopwidget.pm:11
+msgid "Open special layouts as desktop widgets"
+msgstr "Отвори нарочите распореде као справице површи"
+
+#: plugins/webcontext.pm:334
+msgid "Open this page in the web browser"
+msgstr "Отвара ову страницу у веб прегледнику"
+
+#: gmusicbrowser_123.pm:291 gmusicbrowser_layout.pm:4195
+#: gmusicbrowser_list.pm:1749
+msgid "Options"
+msgstr "Могућности"
+
+#: layouts/makeitlooklike.layout:242 layouts/makeitlooklike.layout:341
+msgid "Options ..."
+msgstr "Могућности ..."
+
+#: gmusicbrowser_list.pm:1645
+msgid "Options for subgroup"
+msgstr "Могућности за подврсту"
+
+#: plugins/export.pm:94
+msgid ""
+"Or you can use the field $files which will be replaced by the list of files, "
+"and only one command will be run"
+msgstr ""
+"Или можете користити поље $files које ће бити замењено списком датотека, и "
+"само једна наредбена линија ће бити коришћена"
+
+#: gmusicbrowser_tags.pm:1823 gmusicbrowser_tags.pm:1861
+msgid "Original Artist"
+msgstr "Изворни извођач"
+
+#: gmusicbrowser_tags.pm:1841
+msgid "Original Filename"
+msgstr "Изворни назив датотеке"
+
+#: gmusicbrowser_tags.pm:1842
+msgid "Original release year"
+msgstr "Изворна година издања"
+
+#: gmusicbrowser_tags.pm:1840
+msgid "Originaly from"
+msgstr "Изворно од"
+
+#: gmusicbrowser_songs.pm:34
+msgid "Other"
+msgstr "Остало"
+
+#: gmusicbrowser_123.pm:291 layouts/makeitlooklike.layout:440
+msgid "Output"
+msgstr "Излаз"
+
+#: plugins/titlebar.pm:50
+msgid "Overlay layout :"
+msgstr "Заклањајући распоред :"
+
+#: gmusicbrowser_tags.pm:2344 gmusicbrowser_tags.pm:2347
+msgid "Owner identifier"
+msgstr "Указивач власника"
+
+#: gmusicbrowser_layout.pm:4203
+msgid "Paste link"
+msgstr ""
+
+#: gmusicbrowser.pl:1193
+msgid "Path,Album,Disc,Track,File"
+msgstr "Путања,албум,диск,звучна стаза,датотека"
+
+#: gmusicbrowser.pl:1187
+msgid "Path,File"
+msgstr "Путања, датотека"
+
+#: plugins/karaoke.pm:42
+msgid "Pattern to find .lrc files :"
+msgstr "Образац за налажење .lrc датотека :"
+
+#: gmusicbrowser.pl:641 gmusicbrowser.pl:1410 gmusicbrowser_layout.pm:86
+msgid "Pause"
+msgstr "Застој"
+
+#: gmusicbrowser_tags.pm:493
+msgid "Per-song values"
+msgstr "Вредности по песми"
+
+#: gmusicbrowser_songs.pm:2960
+msgid "Persistent values"
+msgstr "Сталне вредности"
+
+#: gmusicbrowser_tags.pm:1123
+msgid "Pick an existing one"
+msgstr "Изаберите постојеће"
+
+#: gmusicbrowser_tags.pm:1822 gmusicbrowser_tags.pm:1862
+#: gmusicbrowser_tags.pm:1903
+msgid "Picture"
+msgstr "Слика"
+
+#: layouts/main.layout:208
+msgid "Picture Browser"
+msgstr "Прегледач слика"
+
+#: gmusicbrowser_tags.pm:2318
+msgid "Picture Type"
+msgstr "Врста слике"
+
+#: gmusicbrowser.pl:6701
+#, perl-format
+msgid "Picture cache : %d MB"
+msgstr "Прихватна меморија слике : %d MB"
+
+#: plugins/fetch_cover.pm:9
+msgid "Picture finder"
+msgstr "Проналазач слика"
+
+#: plugins/fetch_cover.pm:10
+msgid "Picture finder plugin"
+msgstr "Прикључак проналазач слика"
+
+#: plugins/notify.pm:55
+#, perl-format
+msgid "Picture size : %d"
+msgstr "Величина слике : %d"
+
+#: gmusicbrowser_tags.pm:1526
+msgid "Picture type"
+msgstr ""
+
+#: gmusicbrowser.pl:4958
+msgid "Pictures and music files"
+msgstr "Сликовне и музичке датотеке"
+
+#: gmusicbrowser.pl:4959
+msgid "Pictures files"
+msgstr "Сликовне датотеке"
+
+#: gmusicbrowser.pl:641 gmusicbrowser.pl:1411 gmusicbrowser_layout.pm:86
+#: gmusicbrowser_list.pm:1703 gmusicbrowser_list.pm:4094
+#: gmusicbrowser_list.pm:4158 layouts/makeitlooklike.layout:266
+#: layouts/makeitlooklike.layout:350 layouts/makeitlooklike.layout:424
+msgid "Play"
+msgstr "Пусти"
+
+#: gmusicbrowser.pl:589
+msgid "Play Only Displayed"
+msgstr "Изведи само приказано"
+
+#: gmusicbrowser.pl:587
+msgid "Play Only Selected"
+msgstr "Изведи само изабрано"
+
+#: gmusicbrowser.pl:1468
+msgid "Play a list of files"
+msgstr "Изведи списак датотека"
+
+#: gmusicbrowser_list.pm:3350
+msgid "Play all songs from this album"
+msgstr "Изведи све песме са овог албума"
+
+#: gmusicbrowser_list.pm:3350
+msgid "Play all songs from this artist"
+msgstr "Изведи све песме овог извођача"
+
+#: layouts/titlebar.layout:5
+msgid "Play button"
+msgstr "Дугме за пуштање"
+
+#: gmusicbrowser_list.pm:728 gmusicbrowser_songs.pm:1143
+msgid "Play count"
+msgstr "Број извођења"
+
+#: gmusicbrowser_tags.pm:1827
+msgid "Play counter"
+msgstr "Бројач извођења"
+
+#: gmusicbrowser_layout.pm:584
+msgid "Play filter"
+msgstr "Услов извођења"
+
+#: gmusicbrowser_songs.pm:1116
+msgid "Play history"
+msgstr "Историја извођења"
+
+#: gmusicbrowser.pl:1479
+msgid "Play listed songs"
+msgstr "Изведи наведене песме"
+
+#: gmusicbrowser_layout.pm:179 gmusicbrowser_layout.pm:543
+msgid "Play order"
+msgstr "Редослед извођења"
+
+#: gmusicbrowser_list.pm:807
+msgid "Play, queue or track"
+msgstr "Изводи се, заказано или звучна стаза"
+
+#: gmusicbrowser.pl:1405 plugins/appindicator.pm:28 layouts/contrib.layout:218
+msgid "Play/Pause"
+msgstr "Пусти/пауза"
+
+#: layouts/makeitlooklike.layout:422
+msgid "Playback"
+msgstr "Пуштање"
+
+#: gmusicbrowser_mpv.pm:179
+msgid "Playback ended unexpectedly."
+msgstr ""
+
+#: plugins/artistinfo.pm:568
+msgid "Playcount: "
+msgstr "Број извођења:"
+
+#: gmusicbrowser.pl:2133
+msgid "Played Today"
+msgstr "Данас извођено"
+
+#: plugins/export.pm:85
+msgid "Player mounted on :"
+msgstr "Извођач накачен на :"
+
+#: gmusicbrowser.pl:6743
+msgid "Player window layout :"
+msgstr "Распоред прозора извођача :"
+
+#: gmusicbrowser_layout.pm:535 gmusicbrowser_list.pm:3018
+msgid "Playing"
+msgstr "Извођење"
+
+#: gmusicbrowser_list.pm:3103
+msgid "Playing Album"
+msgstr "Извођење албума"
+
+#: gmusicbrowser_list.pm:3102
+msgid "Playing Artist"
+msgstr "Извођач пуштеног"
+
+#: gmusicbrowser_list.pm:3101
+msgid "Playing Filter"
+msgstr "Услов за пуштање"
+
+#: gmusicbrowser_list.pm:3104
+msgid "Playing Title"
+msgstr "Наслов извођене звучне стазе"
+
+#: gmusicbrowser_list.pm:800 layouts/songtree.layout:46
+msgid "Playing and queue icons"
+msgstr "Иконе заказаног и извођења"
+
+#: gmusicbrowser.pl:2832
+#, perl-brace-format
+msgid "Playing error : {error}"
+msgstr "Грешка ори извођењу : {error}"
+
+#: layouts/shimmer.layout:163
+msgid "Playing/Queue Icon or Track"
+msgstr "Иконица извођења/заказивања или звучне стазе"
+
+#: gmusicbrowser_layout.pm:433 layouts/contrib.layout:242
+#: layouts/contrib.layout:350 layouts/contrib.layout:495
+#: layouts/contrib.layout:545 layouts/contrib.layout:631
+#: layouts/main.layout:147 layouts/makeitlooklike.layout:431
+#: layouts/shimmer.layout:76
+msgid "Playlist"
+msgstr "Списак за извођење"
+
+#: layouts/makeitlooklike.layout:173
+msgid "Playlist 1"
+msgstr "Списак за извођење 1"
+
+#: gmusicbrowser_layout.pm:264 gmusicbrowser_layout.pm:1878
+msgid "Playlist Empty"
+msgstr "Списак је празан"
+
+#: layouts/makeitlooklike.layout:61
+msgid "Playlist Utilities Bar"
+msgstr "Трака алатки за сређивање спискова песама"
+
+#: gmusicbrowser_list.pm:420
+msgid "Playlist empty"
+msgstr "Списак за извођење је празан"
+
+#: gmusicbrowser.pl:5861
+msgid "Playlist files"
+msgstr "Датотеке списка песама"
+
+#: gmusicbrowser_layout.pm:547
+msgid "Playlist filter"
+msgstr "Услов списка за извођење"
+
+#: gmusicbrowser_layout.pm:194
+msgid "Playlist filter :\n"
+msgstr "Услов списка за извођење:\n"
+
+#: layouts/makeitlooklike.layout:77 layouts/makeitlooklike.layout:438
+#: layouts/makeitlooklike.layout:478
+msgid "Playlists"
+msgstr "Спискови песама"
+
+#: gmusicbrowser.pl:6416
+msgid "Plugin not loaded"
+msgstr "Прикључак није учитан"
+
+#: gmusicbrowser.pl:6190
+msgid "Plugins"
+msgstr "Прикључци"
+
+#: gmusicbrowser_tags.pm:1828
+msgid "Popularimeter"
+msgstr "Омиљеномер"
+
+#: gmusicbrowser.pl:1417
+msgid "Popup Custom window"
+msgstr "Искакање прилагођеног прозора"
+
+#: gmusicbrowser.pl:1475
+msgid "Popup Traytip"
+msgstr "Искакање облачића системске палете"
+
+#: plugins/notify.pm:40
+msgid "Popup notify window"
+msgstr "Искакање прозора обавештења"
+
+#: gmusicbrowser.pl:1481
+msgid "Popup playlist filter menu"
+msgstr "Искачући изборник услова списака извођења"
+
+#: gmusicbrowser.pl:1482
+msgid "Popup playlist order menu"
+msgstr "Искакање изборника редоследа списка за извођење"
+
+#: gmusicbrowser.pl:1483
+msgid "Popup queue menu"
+msgstr "Искакање изборника заказаног"
+
+#: plugins/webcontext.pm:622
+msgid "Pre-set"
+msgstr "Задате поставке"
+
+#: plugins/lyrics.pm:206
+msgid "Prefered place to load and save lyrics :"
+msgstr "Омиљено место за учитавање и  чување стихова :"
+
+#: layouts/makeitlooklike.layout:54 layouts/makeitlooklike.layout:419
+msgid "Preferences"
+msgstr "Поставке"
+
+#: gmusicbrowser.pl:578
+msgid "Prepend"
+msgstr "Предложи"
+
+#: gmusicbrowser.pl:6257
+msgid "Press a key or a key combination"
+msgstr "Притисните дугме или низ тастера"
+
+#: gmusicbrowser_layout.pm:67 gmusicbrowser_list.pm:5395
+#: layouts/makeitlooklike.layout:268 layouts/makeitlooklike.layout:352
+#: layouts/makeitlooklike.layout:426
+msgid "Previous"
+msgstr "Претходно"
+
+#: gmusicbrowser.pl:1404 layouts/contrib.layout:217
+msgid "Previous Song"
+msgstr "Претходна песма"
+
+#: gmusicbrowser.pl:1400
+msgid "Previous Song In Playlist"
+msgstr "Претходна песма у списку за извођење"
+
+#: plugins/lyrics.pm:143
+msgid "Previous page"
+msgstr "Претходна страна"
+
+#: gmusicbrowser_tags.pm:2340
+msgid "Price paid"
+msgstr "Исплаћена цена"
+
+#: gmusicbrowser_tags.pm:1830
+msgid "Private Data"
+msgstr "Лични подаци"
+
+#: gmusicbrowser.pl:5135
+msgid "Proceed to next item."
+msgstr "Продужи на следећу ставку."
+
+#: gmusicbrowser_tags.pm:1833
+msgid "Produced (P)"
+msgstr "Произведен (P)"
+
+#: layouts/main.layout:181
+msgid "Progress"
+msgstr "Напредак"
+
+#: layouts/makeitlooklike.layout:337
+msgid "Properties"
+msgstr "Особине"
+
+#: plugins/webcontext.pm:12
+msgid "Provides context views using MozEmbed or WebKit"
+msgstr "Омогућава приручне прегледе користећи Мозембед или Вебкит"
+
+#: gmusicbrowser.pl:6660
+msgid "Proxy host :"
+msgstr "Домаћин прикључника :"
+
+#: gmusicbrowser_tags.pm:1876
+msgid "Publication right"
+msgstr "Права издавања"
+
+#: gmusicbrowser_tags.pm:1869
+msgid "Publisher"
+msgstr "Издавач"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "Publisher/Studio logotype"
+msgstr "Издавач/студио логотип"
+
+#: gmusicbrowser.pl:3115 gmusicbrowser_layout.pm:218
+#: gmusicbrowser_layout.pm:427 gmusicbrowser_layout.pm:551
+#: layouts/contrib.layout:235 layouts/contrib.layout:304
+#: layouts/contrib.layout:487 layouts/contrib.layout:593
+#: layouts/contrib.layout:624 layouts/contrib.layout:766
+#: layouts/makeitlooklike.layout:51 layouts/makeitlooklike.layout:367
+#: layouts/makeitlooklike.layout:487
+msgid "Queue"
+msgstr "Заказано"
+
+#: layouts/shimmer.layout:29 layouts/shimmer.layout:73
+#, perl-format
+msgid "Queue (%n)"
+msgstr "Заказано (%n)"
+
+#: layouts/main.layout:196
+msgid "Queue Edit"
+msgstr "Уређивање заказаног"
+
+#: gmusicbrowser_layout.pm:23
+msgid "Queue album"
+msgstr "Закажи албум"
+
+#: gmusicbrowser_layout.pm:24
+msgid "Queue artist"
+msgstr "Закажи извођача"
+
+#: gmusicbrowser.pl:3650 gmusicbrowser_list.pm:418
+msgid "Queue empty"
+msgstr "Заказано је празно"
+
+#: layouts/makeitlooklike.layout:252
+msgid "Queue in Sidebar"
+msgstr "Заказано у бочну траку"
+
+#: gmusicbrowser.pl:1435
+msgid "Queue mode"
+msgstr "Начин рада заказано"
+
+#: gmusicbrowser.pl:623
+msgid "Queue options"
+msgstr "Могућности заказаног"
+
+#: layouts/search.layout:12
+msgid "Quick Search"
+msgstr "Брза претрага"
+
+#: layouts/search.layout:21
+msgid "Quick Search with SongTree"
+msgstr "Брза претрага стабла песама"
+
+#: gmusicbrowser.pl:652 gmusicbrowser.pl:1426 gmusicbrowser_layout.pm:58
+#: gmusicbrowser_layout.pm:139 layouts/contrib.layout:256
+#: layouts/contrib.layout:309 layouts/contrib.layout:318
+#: layouts/contrib.layout:415 layouts/contrib.layout:574
+#: layouts/contrib.layout:586 layouts/contrib.layout:717
+#: layouts/makeitlooklike.layout:49 layouts/makeitlooklike.layout:234
+#: layouts/makeitlooklike.layout:339 layouts/makeitlooklike.layout:420
+#: layouts/shimmer.layout:23 layouts/shimmer.layout:71
+msgid "Quit"
+msgstr "Изађи"
+
+#: gmusicbrowser.pl:516
+msgid "Quit after this song"
+msgstr "Изађи после ове песме"
+
+#: gmusicbrowser.pl:515
+msgid "Quit when queue empty"
+msgstr "Изађи кад се заказано испразни"
+
+#: gmusicbrowser_list.pm:8151 gmusicbrowser_list.pm:8208
+msgid "Radio title"
+msgstr "Назив радија"
+
+#: gmusicbrowser_list.pm:8209
+msgid "Radio url"
+msgstr "Адреса радија"
+
+#: gmusicbrowser.pl:3127
+msgid "Random"
+msgstr "Насумично"
+
+#: layouts/makeitlooklike.layout:433
+msgid "Random Playback"
+msgstr "Насумично извођење"
+
+#: gmusicbrowser.pl:7903
+msgid "Random mode edition"
+msgstr "Издање насумичног начина"
+
+#: gmusicbrowser_list.pm:836 gmusicbrowser_songs.pm:1075
+#: gmusicbrowser_songs.pm:5264 gmusicbrowser_tags.pm:2334
+#: plugins/albuminfo.pm:37 layouts/songtree.layout:81
+msgid "Rating"
+msgstr "Оцена"
+
+#: gmusicbrowser_list.pm:836 layouts/songtree.layout:82
+msgid "Rating (picture)"
+msgstr "Оцена (слика)"
+
+#: gmusicbrowser.pl:1465
+msgid "Rating between 0 and 100, or empty for default"
+msgstr "Оцена између 0 и 100, или празно за задато"
+
+#: plugins/albuminfo.pm:595 plugins/artistinfo.pm:468
+msgid "Rating range:"
+msgstr "Опсег оцена:"
+
+#: gmusicbrowser_songs.pm:1326
+msgid "Raw filename with path"
+msgstr "Сирово име песме са путањом"
+
+#: gmusicbrowser.pl:1484 gmusicbrowser.pl:6754
+msgid "Re-load layouts"
+msgstr "Учитај поново распоред"
+
+#: gmusicbrowser.pl:617
+msgid "Re-read tags"
+msgstr "Поново учитај ознаке"
+
+#: gmusicbrowser.pl:1092
+msgid "Re-reading tags"
+msgstr "Поново учитавање ознака"
+
+#: gmusicbrowser_layout.pm:1526
+msgid "Re-shuffle"
+msgstr "Поново промешај"
+
+#: gmusicbrowser_songs.pm:2857
+msgid "Read/write in file tag"
+msgstr "Упис/читање у ознакама датотеке"
+
+#: gmusicbrowser_layout.pm:531
+msgid "Recent Filters"
+msgstr "Скорашњи услови"
+
+#: gmusicbrowser_list.pm:20
+msgid "Recent albums"
+msgstr "Скорашњи албуми"
+
+#: gmusicbrowser_list.pm:21
+msgid "Recent artists"
+msgstr "Скорашњи извођачи"
+
+#: gmusicbrowser_list.pm:22
+msgid "Recent songs"
+msgstr "Скорашње песме"
+
+#: gmusicbrowser.pl:6703
+msgid "Recent songs include skipped songs that haven't been played."
+msgstr "Скорашње песме укључују прескочене песме које нису извођене"
+
+#: gmusicbrowser.pl:644 gmusicbrowser.pl:3176
+msgid "Recently played"
+msgstr "Скорашње извођено"
+
+#: gmusicbrowser_layout.pm:66
+msgid "Recently played songs"
+msgstr "Скоро слушане песме"
+
+#: gmusicbrowser_tags.pm:1844
+msgid "Recording Dates"
+msgstr "Снимање датума"
+
+#: plugins/albuminfo.pm:34
+msgid "Recording date"
+msgstr "Датум снимања"
+
+#: plugins/titlebar.pm:51
+msgid "Reference point :"
+msgstr "Односна тачка :"
+
+#: plugins/albuminfo.pm:203 plugins/artistinfo.pm:208 plugins/lyrics.pm:145
+#: layouts/makeitlooklike.layout:435
+msgid "Refresh"
+msgstr "Освежи"
+
+#: gmusicbrowser_layout.pm:577
+msgid "Refresh list"
+msgstr "Освежава списак"
+
+#: gmusicbrowser_list.pm:3543
+msgid "Regular expression"
+msgstr "Регуларан израз"
+
+#: gmusicbrowser_tags.pm:764
+msgid "Regular expression :"
+msgstr "Регуларан израз :"
+
+#: gmusicbrowser_tags.pm:858
+msgid "Regular expression didn't match"
+msgstr "Регуларан израз се није поклопио"
+
+#: plugins/albuminfo.pm:35
+msgid "Release date"
+msgstr "Датум издања"
+
+#: gmusicbrowser.pl:6653
+msgid "Remember last Filter/Playlist between sessions"
+msgstr "Запамти последњи услов/списак за извођење између сесија"
+
+#: gmusicbrowser.pl:6654
+msgid "Remember playing position between sessions"
+msgstr "Запамти положај извођења између сесија"
+
+#: gmusicbrowser.pl:6655
+msgid "Remember playing song between sessions"
+msgstr "Запамти тренутно извођене песме између сесија"
+
+#: gmusicbrowser.pl:6656
+msgid "Remember queue between sessions"
+msgstr "Запамти заказано између сесија"
+
+#: gmusicbrowser_songs.pm:1194
+msgid "Remixer"
+msgstr "Промешач"
+
+#: gmusicbrowser.pl:616 gmusicbrowser.pl:6323 gmusicbrowser.pl:6924
+#: gmusicbrowser.pl:7951 gmusicbrowser.pl:8084 gmusicbrowser.pl:8366
+#: gmusicbrowser_list.pm:287 gmusicbrowser_tags.pm:770
+#: gmusicbrowser_tags.pm:1309 plugins/webcontext.pm:621
+msgid "Remove"
+msgstr "Уклони"
+
+#: gmusicbrowser.pl:1477
+msgid "Remove a label from the current song"
+msgstr "Уклони ознаку из тренутне песме"
+
+#: gmusicbrowser_tags.pm:1306
+msgid "Remove all"
+msgstr "Уклони све"
+
+#: gmusicbrowser_list.pm:295
+msgid "Remove all songs"
+msgstr "Уклони све песме"
+
+#: gmusicbrowser_list.pm:3000
+msgid "Remove filter"
+msgstr "Уклони услов"
+
+#: gmusicbrowser.pl:575
+msgid "Remove from disk"
+msgstr "Уклони са диска"
+
+#: gmusicbrowser.pl:574
+msgid "Remove from library"
+msgstr "Уклони из збирке"
+
+#: gmusicbrowser.pl:573
+msgid "Remove from list"
+msgstr "Уклони са списка"
+
+#: gmusicbrowser.pl:7048
+msgid "Remove from persistent values"
+msgstr "Уклони из сталних вредности"
+
+#: gmusicbrowser.pl:573
+msgid "Remove from playlist"
+msgstr "Уклони из списка извођења"
+
+#: gmusicbrowser.pl:573
+msgid "Remove from queue"
+msgstr "Уклони из заказаних"
+
+#: plugins/webcontext.pm:379
+msgid "Remove header, footer and left column from wikipedia pages"
+msgstr "Уклони заглавље, подножје и леву колону из страница викпедије"
+
+#: gmusicbrowser_list.pm:1740
+msgid "Remove label"
+msgstr "Уклони ознаку"
+
+#: gmusicbrowser_list.pm:3008
+msgid "Remove list"
+msgstr "Уклони списак"
+
+#: gmusicbrowser_tags.pm:1519
+msgid "Remove picture"
+msgstr ""
+
+#: gmusicbrowser_list.pm:294
+msgid "Remove selected songs"
+msgstr "Уклони изабране песме"
+
+#: gmusicbrowser_songs.pm:2913
+msgid "Remove this field"
+msgstr "Уклони ово поље"
+
+#: gmusicbrowser.pl:8732
+msgid "Remove this rule"
+msgstr "Уклони ово правило"
+
+#: gmusicbrowser_list.pm:1980
+msgid "Remove this tab"
+msgstr "Уклони овај језичак"
+
+#: gmusicbrowser_tags.pm:1978 gmusicbrowser_tags.pm:2128
+msgid "Remove this tag"
+msgstr "Уклони ову ознаку"
+
+#: plugins/desktopwidget.pm:139
+msgid "Remove this widget"
+msgstr "Уклони ову справицу"
+
+#: gmusicbrowser_layout.pm:2485 gmusicbrowser_list.pm:3010
+#: gmusicbrowser_songs.pm:3064
+msgid "Rename"
+msgstr "Преименуј"
+
+#: gmusicbrowser.pl:7072
+#, perl-brace-format
+msgid "Rename '{label}'"
+msgstr "Преименуј „{label}“"
+
+#: gmusicbrowser.pl:5461
+msgid "Rename File"
+msgstr "Преименуј датотеку"
+
+#: gmusicbrowser.pl:609 gmusicbrowser_layout.pm:4190
+msgid "Rename file"
+msgstr "Преименуј датотеку"
+
+#: gmusicbrowser.pl:5384
+msgid "Rename files using this pattern :"
+msgstr "Преименуј датотеке користећи овај образац :"
+
+#: gmusicbrowser.pl:6840 gmusicbrowser_list.pm:1721
+msgid "Rename folder"
+msgstr "Преименуј фасциклу"
+
+#: gmusicbrowser_list.pm:1744
+msgid "Rename label"
+msgstr "Преименуј ознаку"
+
+#: gmusicbrowser.pl:6849
+msgid "Rename this folder to :"
+msgstr "Преименуј ову фасциклу у :"
+
+#: gmusicbrowser.pl:5382
+msgid "Rename/move files based on these fields :"
+msgstr "Преименуј/премести датотеке на основу ових поља :"
+
+#: gmusicbrowser.pl:5441
+msgid "Renaming failed"
+msgstr "Преименовање није успело"
+
+#: gmusicbrowser.pl:6861
+#, perl-brace-format
+msgid ""
+"Renaming {oldname}\n"
+"to {newname}\n"
+"failed : {error}"
+msgstr ""
+"Преименовање {oldname}\n"
+"у {newname}\n"
+"није успело : {error}"
+
+#: gmusicbrowser.pl:6955
+msgid "Reorganize files and folders"
+msgstr "Преуреди датотеке и фасцикле"
+
+#: gmusicbrowser_layout.pm:694 gmusicbrowser_layout.pm:1531
+msgid "Repeat"
+msgstr "Понови"
+
+#: gmusicbrowser.pl:579
+msgid "Replace"
+msgstr "Замени"
+
+#: plugins/albuminfo.pm:107
+msgid "Replace existing values"
+msgstr "Замени постојеће вредности"
+
+#: gmusicbrowser_tags.pm:2464
+msgid "Replace..."
+msgstr "Замена ..."
+
+#: gmusicbrowser.pl:6569 gmusicbrowser.pl:6626
+msgid "ReplayGain options"
+msgstr "Могућности гласноће извођења"
+
+#: gmusicbrowser_songs.pm:36
+msgid "Replaygain"
+msgstr "Гласноћа извођења"
+
+#: gmusicbrowser_gstreamer-0.10.pm:521 gmusicbrowser_gstreamer-0.10.pm:593
+#: gmusicbrowser_gstreamer-1.x.pm:620 gmusicbrowser_gstreamer-1.x.pm:687
+msgid "Replaygain analysis"
+msgstr "Растављање гласноће извођења"
+
+#: layouts/makeitlooklike.layout:436
+msgid "Rescan"
+msgstr "Поново провери"
+
+#: layouts/makeitlooklike.layout:64 layouts/shimmer.layout:24
+#: layouts/shimmer.layout:72
+msgid "Rescan Collection"
+msgstr "Поново провери збирку"
+
+#: gmusicbrowser_songs.pm:2877
+msgid "Reset current value if no tag found in file"
+msgstr "Врати вредности на подразумевано ако нема пронађених ознака у датотеци"
+
+#: gmusicbrowser_layout.pm:599 gmusicbrowser_list.pm:3571
+#: gmusicbrowser_list.pm:4013
+msgid "Reset filter"
+msgstr "Поништи услов"
+
+#: gmusicbrowser_layout.pm:4165
+msgid "Reset zoom"
+msgstr "Поништи увећање"
+
+#: plugins/albuminfo.pm:13
+msgid "Retrieves album-relevant information (review etc.) from allmusic.com."
+msgstr "Добавља битне податке албума (критике итд.) са allmusic.com."
+
+#: plugins/albuminfo.pm:479
+msgid "Review"
+msgstr "Критика"
+
+#: gmusicbrowser.pl:1407
+msgid "Rewind"
+msgstr "Премотавање уназад"
+
+#: layouts/makeitlooklike.layout:263
+msgid "Rhythmbox"
+msgstr "Музичка кутија"
+
+#: layouts/makeitlooklike.layout:366
+msgid "Rhythmbox 2nd queue column"
+msgstr "Бочна површ заказаног по угледу на Музичку кутију 2"
+
+#: plugins/lyrics.pm:31
+msgid "Right aligned"
+msgstr "Десно поравнато"
+
+#: gmusicbrowser_list.pm:1662
+msgid "Right side"
+msgstr "Десна страна"
+
+#: layouts/contrib.layout:361 layouts/contrib.layout:556
+#: layouts/contrib.layout:756 layouts/shimmer.layout:33
+msgid "Right-click to remove filters"
+msgstr "Десни клик за уклањање услова"
+
+#: layouts/contrib.layout:360 layouts/contrib.layout:555
+#: layouts/contrib.layout:755 layouts/shimmer.layout:33
+msgid "Right-click to toggle shuffle/random"
+msgstr "Десни клик за измену мешај/насумично"
+
+#: plugins/rip.pm:9
+msgid "Rip"
+msgstr "Чупај"
+
+#: plugins/rip.pm:10
+msgid "Rip plugin"
+msgstr "Прикључак за чупање"
+
+#: plugins/rip.pm:53
+msgid "Ripping software :"
+msgstr "Програм за чупање :"
+
+#: gmusicbrowser_list.pm:843 layouts/shimmer.layout:157
+msgid "Row number"
+msgstr "Број редова"
+
+#: plugins/nowplaying.pm:18
+msgid "Run a command when playing a song"
+msgstr "Покрени наредбу приликом извођења песме"
+
+#: gmusicbrowser.pl:1450
+msgid "Run perl code"
+msgstr "Покрени перл шифру"
+
+#: gmusicbrowser.pl:1445
+msgid "Run shell command"
+msgstr "Изврши наредбу шкољке"
+
+#: gmusicbrowser.pl:1449
+msgid "Run shell command on selected songs"
+msgstr "Изврши наредбу шкољке над изабраном песмом"
+
+#: gmusicbrowser.pl:1443
+msgid "Run system command"
+msgstr "Покрени наредбу система"
+
+#: gmusicbrowser.pl:1447
+msgid "Run system command on selected songs"
+msgstr "Изврши системску наредбу над изабраном датотеком"
+
+#: plugins/albuminfo.pm:36
+msgid "Running time"
+msgstr "Време рада"
+
+#: gmusicbrowser.pl:619
+msgid "Same Title"
+msgstr "Исти назив"
+
+#: layouts/pages.layout:12
+msgid "Same album"
+msgstr "Исти албум"
+
+#: layouts/pages.layout:19
+msgid "Same artist"
+msgstr "Исти извођач"
+
+#: layouts/pages.layout:5
+msgid "Same title"
+msgstr "Исти наслов"
+
+#: gmusicbrowser_songs.pm:1393
+msgid "Same type as labels"
+msgstr "Иста врста као ознаке"
+
+#: layouts/pages.layout:26
+msgid "Same year"
+msgstr "Иста година"
+
+#: gmusicbrowser_songs.pm:1231
+msgid "Sampling Rate"
+msgstr "Проток узорковања"
+
+#: plugins/lullaby.pm:27
+msgid "Saturday"
+msgstr "Субота"
+
+#: gmusicbrowser_layout.pm:5300 gmusicbrowser_tags.pm:771
+#: plugins/artistinfo.pm:209 plugins/lyrics.pm:144 plugins/webcontext.pm:620
+msgid "Save"
+msgstr "Сачувај"
+
+#: gmusicbrowser.pl:1427
+msgid "Save Tags/Options"
+msgstr "Сачувај ознаке/могућности"
+
+#: plugins/albuminfo.pm:89
+msgid "Save album info in:"
+msgstr "Сачувај податке албума у :"
+
+#: plugins/artistinfo.pm:209
+msgid "Save artist biography"
+msgstr "Сачувај животопис извођача"
+
+#: gmusicbrowser_layout.pm:5311 gmusicbrowser_tags.pm:2465
+msgid "Save as..."
+msgstr "Сачувај као..."
+
+#: gmusicbrowser_list.pm:3002
+msgid "Save current filter as"
+msgstr "Сачувај тренутне услове као"
+
+#: gmusicbrowser_list.pm:3004
+msgid "Save current list as"
+msgstr "Сачувај тренутни списак као"
+
+#: plugins/lyrics.pm:144
+msgid "Save lyrics"
+msgstr "Сачувај стихове"
+
+#: plugins/autosave.pm:37
+msgid "Save now"
+msgstr "Сачувај сада"
+
+#: gmusicbrowser_tags.pm:2541 plugins/fetch_cover.pm:568
+msgid "Save picture as"
+msgstr "Сачувај слику као"
+
+#: gmusicbrowser_layout.pm:5309
+msgid "Save preset"
+msgstr "Сачувај претпоставку"
+
+#: plugins/albuminfo.pm:205
+msgid "Save review"
+msgstr "Сачувај критике"
+
+#: plugins/albuminfo.pm:109
+msgid ""
+"Save selected fields for all tracks on the same album whenever album data is "
+"loaded from allmusic or from file."
+msgstr ""
+"Сачувај изабрана поља за све звучне стазе на истом албуму увек када су "
+"подаци све музике из свих датотека учитани."
+
+#: plugins/autosave.pm:36
+#, perl-format
+msgid "Save tags/settings every %d minutes"
+msgstr "Сачувај ознаке/поставке сваких %d минута"
+
+#: gmusicbrowser_list.pm:1588
+msgid "Saved"
+msgstr "Сачувано"
+
+#: gmusicbrowser_layout.pm:1590
+msgid "Saved Lists"
+msgstr "Сачувани спискови"
+
+#: gmusicbrowser_list.pm:3016
+msgid "Saved filters"
+msgstr "Сачувај услове"
+
+#: gmusicbrowser_list.pm:3017
+msgid "Saved lists"
+msgstr "Сачувани спискови"
+
+#: layouts/contrib.layout:321 layouts/contrib.layout:589
+#: layouts/contrib.layout:735
+msgid "Scan Collection"
+msgstr "Прегледа збирку"
+
+#: gmusicbrowser_gstreamer-0.10.pm:526 gmusicbrowser_gstreamer-1.x.pm:625
+msgid "Scan as an album"
+msgstr "Прегледа као албум"
+
+#: gmusicbrowser_list.pm:1724
+msgid "Scan for new songs"
+msgstr "Прегледа за новим песмама"
+
+#: gmusicbrowser_gstreamer-0.10.pm:524 gmusicbrowser_gstreamer-1.x.pm:623
+msgid "Scan per-file track gain"
+msgstr "Прегледа гласноћу извођења за сваку датотеку засебно"
+
+#: gmusicbrowser_gstreamer-0.10.pm:523 gmusicbrowser_gstreamer-1.x.pm:622
+msgid "Scan this file"
+msgstr "Прегледа ову датотеку"
+
+#: gmusicbrowser_gstreamer-0.10.pm:525 gmusicbrowser_gstreamer-1.x.pm:624
+msgid "Scan using tag-defined album"
+msgstr "Прегледа користећи ознаке албума"
+
+#: gmusicbrowser.pl:6012
+msgid "Scanning"
+msgstr "Преглед"
+
+#: gmusicbrowser_layout.pm:4163
+msgid "Scroll to zoom"
+msgstr "Клизај за увеличање"
+
+#: plugins/lyrics.pm:36
+msgid "Scroll with song"
+msgstr "Клизај са песмом"
+
+#: plugins/lyrics.pm:170
+msgid "Scroll with the song"
+msgstr "Клиза са песмом"
+
+#: layouts/contrib.layout:722
+msgid "Scrollwheel to change, right-click to mute"
+msgstr "Точкић миша за промену, десни клик за утишавање"
+
+#: plugins/albuminfo.pm:257 plugins/fetch_cover.pm:94
+#: layouts/contrib.layout:358 layouts/contrib.layout:595
+#: layouts/makeitlooklike.layout:253 layouts/pages.layout:32
+#: layouts/search.layout:4 layouts/search.layout:5 layouts/search.layout:13
+#: layouts/search.layout:22
+msgid "Search"
+msgstr "Претрага"
+
+#: gmusicbrowser_list.pm:4087 gmusicbrowser_list.pm:4151
+msgid "Search : "
+msgstr "Претрага : "
+
+#: gmusicbrowser_list.pm:3534
+msgid "Search Album"
+msgstr "Тражи албум"
+
+#: gmusicbrowser_list.pm:3533 layouts/makeitlooklike.layout:315
+msgid "Search Artist"
+msgstr "Тражи извођача"
+
+#: gmusicbrowser_list.pm:3535
+msgid "Search Comment"
+msgstr "Тражи напомену"
+
+#: gmusicbrowser_list.pm:3537
+msgid "Search Genre"
+msgstr "Тражи род"
+
+#: gmusicbrowser_list.pm:3536
+msgid "Search Label"
+msgstr "Тражи ознаку"
+
+#: gmusicbrowser_list.pm:3532
+msgid "Search Title"
+msgstr "Тражи наслов"
+
+#: gmusicbrowser_list.pm:3529
+msgid "Search Title, Artist and Album"
+msgstr "Тражи наслов, извођача и албум"
+
+#: gmusicbrowser_list.pm:3530
+msgid "Search Title, Artist, Album, Comment, Label and Genre"
+msgstr "Тражи наслов, извођача, албум, напомену, ознаку и род"
+
+#: gmusicbrowser_list.pm:3531
+msgid "Search Title, Artist, Album, Comment, Label, Genre and Filename"
+msgstr "Тражи наслов, извођача, албум, напомену, ознаку, род и назив датотеке"
+
+#: layouts/makeitlooklike.layout:316
+msgid "Search album"
+msgstr "Тражи албум"
+
+#: layouts/makeitlooklike.layout:314
+msgid "Search all fields"
+msgstr "Претражите сва поља"
+
+#: plugins/artistinfo.pm:41
+msgid "Search allmusic for Artist"
+msgstr "Претражује „allmusic“ за извођачем"
+
+#: plugins/artistinfo.pm:39
+msgid "Search amazon.com for Artist"
+msgstr "Претражује „amazon.com“ за извођачем"
+
+#: plugins/lyrics.pm:11
+msgid "Search and display lyrics"
+msgstr "Тражи и приказује стихове"
+
+#: layouts/makeitlooklike.layout:261
+msgid "Search box type"
+msgstr "Врста кућице за претрагу"
+
+#: plugins/artistinfo.pm:43
+msgid "Search discogs for Artist"
+msgstr "Претражује „discogs“ за извођачем"
+
+#: plugins/artistinfo.pm:38
+msgid "Search for Artist on youtube"
+msgstr "Претражује „youtube“ за извођачем"
+
+#: plugins/fetch_cover.pm:51 plugins/fetch_cover.pm:56
+msgid "Search for a picture on internet"
+msgstr "Тражи слику на Интернету"
+
+#: plugins/artistinfo.pm:354
+msgid "Search for artist on:"
+msgstr "Тражи извођача на :"
+
+#: plugins/fetch_cover.pm:95
+msgid "Search for current album"
+msgstr "Тражи тренутни албум"
+
+#: plugins/fetch_cover.pm:95
+msgid "Search for current artist"
+msgstr "Тражи тренутног извођача"
+
+#: gmusicbrowser.pl:6949
+msgid "Search for new songs on startup"
+msgstr "Тражи нове песме при покретању"
+
+#: plugins/artistinfo.pm:40
+msgid "Search google for Artist"
+msgstr "Тражи Гуглом извођача"
+
+#: plugins/artistinfo.pm:47
+msgid "Search on the web"
+msgstr "Претражи веб"
+
+#: gmusicbrowser_list.pm:3570 gmusicbrowser_list.pm:4012
+msgid "Search options"
+msgstr "Могућности претраге"
+
+#: plugins/artistinfo.pm:42
+msgid "Search pitchfork for Artist"
+msgstr "Претражује „pitchfork“ за извођечем"
+
+#: layouts/makeitlooklike.layout:317
+msgid "Search title"
+msgstr "Назив претраге"
+
+#: gmusicbrowser.pl:6747
+msgid "Search window layout :"
+msgstr "Размештај прозора претраге :"
+
+#: layouts/makeitlooklike.layout:197 layouts/makeitlooklike.layout:306
+#: layouts/makeitlooklike.layout:308
+msgid "Search:"
+msgstr "Тражи:"
+
+#: plugins/fetch_cover.pm:181
+msgid "Searching for a picture of : "
+msgstr "Претрага за сликом лика :"
+
+#: gmusicbrowser.pl:1408
+msgid "Seek"
+msgstr "Тражи"
+
+#: gmusicbrowser.pl:1429
+msgid "Select current song"
+msgstr "Означи тренутну песму"
+
+#: gmusicbrowser_tags.pm:439
+msgid "Select fields"
+msgstr "Означи поља"
+
+#: gmusicbrowser_list.pm:5393
+msgid "Select matches"
+msgstr "Означи поклапања"
+
+#: gmusicbrowser_list.pm:3637
+msgid "Select search fields"
+msgstr "Означи поа претраге"
+
+#: gmusicbrowser_list.pm:260
+msgid "Selected : "
+msgstr "Означено : "
+
+#: gmusicbrowser_list.pm:124
+msgid "Selected songs"
+msgstr "Означене песме"
+
+# А? :)
+#: gmusicbrowser.pl:6813
+msgid "Selected songs to update :"
+msgstr "Означене песме за надоргадњу "
+
+#: gmusicbrowser.pl:6052
+msgid "Selecting pictures"
+msgstr "Означавање слике"
+
+#: gmusicbrowser_tags.pm:2342
+msgid "Seller"
+msgstr "Продавац"
+
+#: plugins/nowplaying.pm:50
+msgid "Send Title/Artist/Album in standard input"
+msgstr "Шаље наслов/извођача/албум у уобичајени улаз"
+
+#: gmusicbrowser.pl:1465
+msgid "Set Current Song Rating"
+msgstr "Постави оцену садашњој песми"
+
+#: gmusicbrowser.pl:636 gmusicbrowser_list.pm:1728
+msgid "Set Picture"
+msgstr "Постави слику"
+
+#: gmusicbrowser.pl:1436
+msgid "Set action when song ends"
+msgstr "Подеси радњу за извршење при завршетку песме"
+
+#: gmusicbrowser_layout.pm:4197
+#, perl-brace-format
+msgid "Set as picture for '{name}'"
+msgstr "Користи као слику за „{name}“"
+
+#: gmusicbrowser_list.pm:1712
+msgid "Set as primary filter"
+msgstr "Постави као први услов"
+
+#: gmusicbrowser.pl:1486
+msgid "Set equalizer"
+msgstr ""
+
+#: gmusicbrowser.pl:1473
+msgid "Set focus on a layout widget"
+msgstr "Постави у фокус размештај справица"
+
+#: gmusicbrowser_list.pm:6846
+msgid "Set grouping"
+msgstr "Разврставај"
+
+#: gmusicbrowser_list.pm:1736
+msgid "Set icon"
+msgstr "Постави икону"
+
+#: gmusicbrowser_tags.pm:1520
+msgid "Set picture"
+msgstr ""
+
+#: gmusicbrowser_tags.pm:1512
+msgid "Set picture using this file"
+msgstr ""
+
+#: gmusicbrowser.pl:1419
+msgid "Set player window layout"
+msgstr "Постави размештај прозора пуштача"
+
+#: gmusicbrowser_list.pm:1640
+msgid "Set subgroup"
+msgstr "Постави подврсту"
+
+#: plugins/albuminfo.pm:464
+#, perl-brace-format
+msgid "Set {year} as year for all tracks on this album."
+msgstr "Постави {year} као годину за све звучне стазе на овом албуму."
+
+#: gmusicbrowser.pl:651 gmusicbrowser.pl:6175 gmusicbrowser_layout.pm:53
+#: gmusicbrowser_layout.pm:131 layouts/contrib.layout:317
+#: layouts/contrib.layout:585 layouts/contrib.layout:732
+#: layouts/shimmer.layout:23 layouts/shimmer.layout:71
+msgid "Settings"
+msgstr "Подешавања"
+
+#: gmusicbrowser_songs.pm:2806
+msgid "Settings on this page will only take effect after a restart"
+msgstr "Поставке на овој "
+
+#: gmusicbrowser.pl:1445 gmusicbrowser.pl:1449
+msgid "Shell command"
+msgstr "Наредба шкољке"
+
+#. Shift key
+#: gmusicbrowser.pl:1225
+msgctxt "Keyboard"
+msgid "Shift"
+msgstr "Више"
+
+#: gmusicbrowser.pl:649 gmusicbrowser.pl:1424 plugins/albuminfo.pm:83
+msgid "Show"
+msgstr "Прикажи"
+
+#: plugins/artistinfo.pm:36
+msgid "Show Artist page on last.fm"
+msgstr "Прикажи страницу извођача на „last.fm“"
+
+#: plugins/artistinfo.pm:37
+msgid "Show Artist page on wikipedia"
+msgstr "Прикажи страницу извођача на Викпедији"
+
+#: layouts/makeitlooklike.layout:259
+msgid "Show album"
+msgstr "Прикажи албум"
+
+#: plugins/artistinfo.pm:284
+msgid "Show artist picture"
+msgstr "Прикажи слику извођача"
+
+#: plugins/artistinfo.pm:31
+msgid "Show artist's biography"
+msgstr "Прикажи животопис извођача"
+
+#: plugins/artistinfo.pm:32
+msgid "Show artist's upcoming events"
+msgstr "Прикажи заказане догађаје извођача"
+
+#: gmusicbrowser_list.pm:1750
+msgid "Show buttons"
+msgstr "Прикажи дугмиће"
+
+#: gmusicbrowser_songs.pm:2905
+msgid "Show edition submenu in song context menu"
+msgstr ""
+
+#: gmusicbrowser_layout.pm:4143 gmusicbrowser_layout.pm:4174
+msgid "Show file list"
+msgstr "Прикажи списак датотека"
+
+#: gmusicbrowser_songs.pm:2971
+msgid "Show file name extension"
+msgstr ""
+
+#: gmusicbrowser_layout.pm:4172
+msgid "Show folder list"
+msgstr "Прикажи списак фасцикли"
+
+#: layouts/makeitlooklike.layout:258
+msgid "Show genre"
+msgstr "Прикажи род"
+
+#: layouts/makeitlooklike.layout:448
+msgid "Show info panel"
+msgstr "Приказ окна објашњења"
+
+#: layouts/makeitlooklike.layout:446
+msgid "Show main window"
+msgstr "Прикажи главни прозор"
+
+#: gmusicbrowser.pl:5144
+msgid "Show more error details"
+msgstr "Прикажи више појединости грешака"
+
+#: gmusicbrowser_layout.pm:4178
+msgid "Show pdf pages"
+msgstr "Прикажи странице пдф-а"
+
+#: layouts/makeitlooklike.layout:447
+msgid "Show playlist"
+msgstr "Прикажи списак за извођење"
+
+#: gmusicbrowser.pl:6629
+msgid "Show replaygain submenu"
+msgstr "Прикажи подизборник гласноће извођења"
+
+#: plugins/artistinfo.pm:33
+msgid "Show similar artists"
+msgstr "Прикажи сличе извођаче"
+
+#: layouts/makeitlooklike.layout:429
+msgid "Show song details"
+msgstr "Прикажи појединости песме"
+
+#: layouts/makeitlooklike.layout:449
+msgid "Show status bar"
+msgstr "Прикажи траку стања"
+
+#: gmusicbrowser_list.pm:3547
+msgid "Show suggestions"
+msgstr "Прикажи предлоге"
+
+#: gmusicbrowser_list.pm:1751
+msgid "Show tabs"
+msgstr "Прикажи језичке"
+
+#: gmusicbrowser_layout.pm:4176
+msgid "Show toolbar"
+msgstr "Приказуј траку прибора"
+
+#: gmusicbrowser.pl:6733
+msgid "Show tray icon"
+msgstr "Прикажи иконицу у системској палети"
+
+#: gmusicbrowser.pl:6731
+msgid "Show tray tip on song change"
+msgstr "Прикажи облачић палете при промени песме"
+
+#: gmusicbrowser.pl:1423 plugins/appindicator.pm:29
+msgid "Show/Hide"
+msgstr "Прикажи/сакриј"
+
+#: layouts/makeitlooklike.layout:280
+msgid "Show/Hide Browser"
+msgstr "Прикажи/сакриј прегледник"
+
+#: layouts/contrib.layout:343 layouts/contrib.layout:541
+#: layouts/shimmer.layout:33
+msgid "Show/Hide Cover"
+msgstr "Прикажи/сакриј корице"
+
+#: gmusicbrowser.pl:1474
+msgid "Show/Hide layout widget(s)"
+msgstr "Прикажи/Сакриј справицу(е) размештаја"
+
+#: plugins/karaoke.pm:44
+msgid "Show/Hide lyrics line"
+msgstr "Прикажи/сакриј линију стихова"
+
+#: plugins/webcontext.pm:230
+msgid "Show/hide URI entry"
+msgstr "Прикажи/сакриј улаз УРИ адресе"
+
+#: plugins/webcontext.pm:234
+msgid "Show/hide status bar"
+msgstr "Прикажи/сакриј траку стања"
+
+#: gmusicbrowser_layout.pm:1471 gmusicbrowser_layout.pm:1523
+#: gmusicbrowser_list.pm:286 gmusicbrowser_songs.pm:1351
+msgid "Shuffle"
+msgstr "Насумично"
+
+#: gmusicbrowser_layout.pm:661
+msgid "Shuffle list"
+msgstr "Промешај списак"
+
+#: gmusicbrowser.pl:1455
+msgid "Shuffle or re-shuffle the playlist"
+msgstr ""
+
+#: gmusicbrowser_layout.pm:33
+msgid "Shuffle queue"
+msgstr "Мешај редослед заказаног"
+
+#: gmusicbrowser.pl:1194
+msgid "Shuffled albums"
+msgstr "Промешани албуми"
+
+#: gmusicbrowser.pl:1195
+msgid "Shuffled albums, shuffled tracks"
+msgstr "Промешани албуми, промешане звучне стазе"
+
+#: gmusicbrowser.pl:6669
+msgid "Shutdown command :"
+msgstr "Наредба гашења :"
+
+#: layouts/makeitlooklike.layout:251
+msgid "Sidebar"
+msgstr "Бочна површ"
+
+#: plugins/artistinfo.pm:33
+msgid "Similar"
+msgstr "Слично"
+
+#: plugins/artistinfo.pm:307
+msgid "Similar Artists"
+msgstr "Слични извођачи"
+
+#: layouts/contrib.layout:355 layouts/contrib.layout:553
+#: layouts/contrib.layout:751 layouts/shimmer.layout:19
+msgid "Simple List View"
+msgstr "Једноставан преглед списка"
+
+#: layouts/songtree.layout:21
+msgid "Simple title"
+msgstr "Једноставан наслов"
+
+#: gmusicbrowser_songs.pm:828
+msgid "Size"
+msgstr "Величина"
+
+#: gmusicbrowser.pl:5136
+msgid "Skip _All"
+msgstr "Прескочи _све"
+
+#: gmusicbrowser_songs.pm:1157
+msgid "Skip count"
+msgstr "Прескочи садржај"
+
+#: gmusicbrowser_songs.pm:1134
+msgid "Skip history"
+msgstr "Прескочи историју"
+
+#: gmusicbrowser.pl:5136
+msgid "Skip this and any further errors."
+msgstr "Прескочи ову и све следеће грешке."
+
+#: gmusicbrowser.pl:6581
+msgid "Skip to next song if an error occurs"
+msgstr "Прескочи следећу песму у случају грешке"
+
+#: layouts/main.layout:33 layouts/main.layout:51 layouts/main.layout:60
+#: layouts/main.layout:102 layouts/tray.layout:24
+msgid "Small"
+msgstr "Мале"
+
+#: layouts/songtree.layout:74
+msgid "Small album picture"
+msgstr "Мала слика албума"
+
+#: layouts/main.layout:34
+msgid "Small player"
+msgstr "Мали пуштач"
+
+#: layouts/browser.layout:16
+msgid "Smaller browser"
+msgstr "Мали прегледник"
+
+#: gmusicbrowser.pl:1443 gmusicbrowser.pl:1445 gmusicbrowser.pl:1447
+#: gmusicbrowser.pl:1449
+#, perl-format
+msgid "Some variables such as %f (current song filename) are available"
+msgstr "Неке променљиве попут %f (тренутни назив датотеке песме) су доступне"
+
+#: gmusicbrowser_list.pm:794 layouts/main.layout:96 layouts/search.layout:6
+#: layouts/songtree.layout:58
+msgid "Song"
+msgstr "Песма"
+
+#: gmusicbrowser.pl:585 gmusicbrowser.pl:5652
+#: layouts/makeitlooklike.layout:232
+msgid "Song Properties"
+msgstr "Особине песме"
+
+#: gmusicbrowser_layout.pm:475 layouts/pages.layout:39
+msgid "Song informations"
+msgstr "Подаци о песми"
+
+#: gmusicbrowser_layout.pm:5132
+msgid "Song rating"
+msgstr "Оцена врсте"
+
+#: gmusicbrowser.pl:7905
+msgid "SongTree groupings edition"
+msgstr "Издање разврставања са стаблом песама "
+
+#: gmusicbrowser.pl:586
+msgid "Songs Properties"
+msgstr "Својства песме"
+
+#: layouts/contrib.layout:356 layouts/contrib.layout:554
+#: layouts/contrib.layout:752 layouts/shimmer.layout:19
+msgid "Songtree View"
+msgstr "Преглед стабла песама"
+
+#: gmusicbrowser_layout.pm:539
+msgid "Sort"
+msgstr "Разврстај"
+
+#: gmusicbrowser.pl:7901
+msgid "Sort mode edition"
+msgstr "Издање уређеног начина"
+
+#: gmusicbrowser.pl:8386
+msgid "Sort order"
+msgstr "Редослед уређења"
+
+#: gmusicbrowser.pl:4839
+#, perl-brace-format
+msgid "Source: {file}"
+msgstr "Извор: {file}"
+
+#: gmusicbrowser.pl:6673
+msgid "Split artist names on :"
+msgstr "Подели називе извођача на :"
+
+#: gmusicbrowser_songs.pm:2883
+msgid "Star images"
+msgstr ""
+
+#: gmusicbrowser.pl:6565
+msgid "Start ReplayGain analysis"
+msgstr "Покрени растављање гласноће извођења"
+
+#: gmusicbrowser.pl:6729
+msgid "Start in tray"
+msgstr "Покрени у палети"
+
+#: gmusicbrowser_songs.pm:33
+msgid "Statistics"
+msgstr "Статистика"
+
+#: layouts/makeitlooklike.layout:254
+msgid "Statusbar"
+msgstr "Трака стања"
+
+#: gmusicbrowser.pl:642 gmusicbrowser.pl:1409 gmusicbrowser_layout.pm:77
+#: plugins/notify.pm:93 layouts/contrib.layout:219
+#: layouts/makeitlooklike.layout:425
+msgid "Stop"
+msgstr "Заустави"
+
+#: gmusicbrowser.pl:514
+msgid "Stop after this song"
+msgstr "Заустави се после ове песме"
+
+#: gmusicbrowser.pl:5993
+msgid "Stop checking"
+msgstr "Престани са провером"
+
+#: plugins/albuminfo.pm:132
+msgid "Stop fetching albuminfo"
+msgstr "Престани са добављањем података албума"
+
+#: gmusicbrowser.pl:6018
+msgid "Stop scanning"
+msgstr "Престани са прегледом"
+
+#: gmusicbrowser.pl:6052
+msgid "Stop selecting pictures"
+msgstr "Престани са означавањем слика"
+
+#: gmusicbrowser.pl:513
+msgid "Stop when queue empty"
+msgstr "Заустави кад се заказано испразни"
+
+#: layouts/titlebar.layout:10
+msgid "Stop, Play and Next buttons"
+msgstr "Тастери стој, пусти и сладећи"
+
+#: layouts/titlebar.layout:15
+msgid "Stop, Play and Next buttons and Time"
+msgstr "Тастери стој, пусти и следећи и време"
+
+#: layouts/titlebar.layout:20
+msgid "Stop, Play and Next buttons and Title/Artist"
+msgstr "Тастери стој, пусти и следећи и наслов/извођач"
+
+#: plugins/webcontext.pm:379
+msgid "Strip wikipedia pages"
+msgstr "Скини странице викпедије"
+
+#: gmusicbrowser_songs.pm:1047 plugins/albuminfo.pm:40
+msgid "Styles"
+msgstr "Начини"
+
+#: plugins/audioscrobbler.pm:181
+msgid "Submit Now-Playing OK"
+msgstr "Излагање тренутно извођене песме је успело"
+
+#: plugins/audioscrobbler.pm:174
+msgid "Submit OK"
+msgstr "Излагање успело"
+
+#: plugins/audioscrobbler.pm:199
+msgid "Submit failed : "
+msgstr "Нисам успео да изложим : "
+
+#: plugins/audioscrobbler.pm:11
+msgid "Submit played songs to last.fm"
+msgstr "Изложи извођене песме на „last.fm“"
+
+#: gmusicbrowser_tags.pm:1868
+msgid "Subtitle"
+msgstr "Поднаслов"
+
+#: plugins/notify.pm:53
+msgid "Summary :"
+msgstr "Збир :"
+
+#: plugins/lullaby.pm:27
+msgid "Sunday"
+msgstr "Недеља"
+
+#: gmusicbrowser_layout.pm:56
+msgid "Switch to fullscreen mode"
+msgstr "Покрени преко целог екрана"
+
+#: gmusicbrowser_gstreamer-1.x.pm:502
+msgid "Synchronize equalizer presets"
+msgstr ""
+
+#: plugins/audioscrobbler.pm:125
+msgid "System clock is not close enough to the current time"
+msgstr "Системски часовник није близу тренутном времену"
+
+#: gmusicbrowser.pl:1443 gmusicbrowser.pl:1447
+msgid "System command"
+msgstr "Наредба система"
+
+#: plugins/export.pm:91
+msgid "System command :"
+msgstr "Наредба система :"
+
+#: gmusicbrowser.pl:6192
+msgid "Tags"
+msgstr "Ознаке"
+
+#: gmusicbrowser_tags.pm:2338
+msgid "Terms of use"
+msgstr "Услови коришћења"
+
+#: gmusicbrowser_tags.pm:2328
+msgid "Text"
+msgstr "Текст"
+
+#: plugins/artistinfo.pm:298
+msgid ""
+"The artists similar to the 'seed'-artist will be used to populate the queue, "
+"but you can decide to exclude the 'seed'-artist him/herself."
+msgstr ""
+"Извођачи слични „сејаном“ -извођачу ће бити коришћни за попуну заказаног, "
+"али, можете одлучити да изузмете „сејаног“ -извођача самог."
+
+#: plugins/desktopwidget.pm:151
+msgid "The layout for this desktop widget is missing."
+msgstr "Размештај ове справице површи није доступан"
+
+#: gmusicbrowser_songs.pm:1058 plugins/albuminfo.pm:41
+msgid "Themes"
+msgstr "Теме"
+
+#: plugins/export.pm:86 plugins/export.pm:87 plugins/export.pm:92
+msgid "These fields can be used :"
+msgstr "Ова поља не могу бити коришћена :"
+
+#: gmusicbrowser_songs.pm:2961
+msgid "These values will always be in the list, even if they are not used"
+msgstr "Ове вредности ће увек бити на списку, чак и када се не користе"
+
+#: gmusicbrowser_123.pm:148
+#, perl-brace-format
+msgid "This command is required to play files of type {type} : {cmd}"
+msgstr "Ова наредба је потребна за извођење датотека врсте {type} : {cmd}"
+
+#: gmusicbrowser.pl:7043
+#, perl-format
+msgid "This label is set for %d song."
+msgid_plural "This label is set for %d songs."
+msgstr[0] "Ова ознака је постављена за %d песму"
+msgstr[1] "Ова ознака је постављена за %d песме"
+msgstr[2] "Ова ознака је постављена за %d песама"
+
+#: plugins/mpris2.pm:43
+msgid ""
+"This plugin is needed for gmusicbrowser to appear in unity's sound menu."
+msgstr ""
+"Овај прикључак је потребан да би се гномов музички брстач појављивао у "
+"изборнику звука унитија."
+
+#: gmusicbrowser.pl:2019
+msgid "This plugin requires :"
+msgstr "Овај прикључак захтева :"
+
+#: plugins/artistinfo.pm:14
+msgid ""
+"This plugin retrieves artist-relevant information (biography, upcoming "
+"events, similar artists) from last.fm."
+msgstr ""
+"Овај прикључак добавља податке о извођачу (животопис, заказане догађаје, "
+"сличне извођаче) са „last.fm“."
+
+#: gmusicbrowser.pl:6705
+#, perl-format
+msgid "Threshold to count a song as played : %d %"
+msgstr "Задршка за бројач пуштене песме : %d %"
+
+#: plugins/lullaby.pm:27
+msgid "Thursday"
+msgstr "Четвртак"
+
+#: gmusicbrowser.pl:9315
+msgid "Time :"
+msgstr "Време :"
+
+#: plugins/notify.pm:56
+#, perl-format
+msgid "Timeout : %d seconds"
+msgstr "Време одмора : %d секунди"
+
+#: plugins/lullaby.pm:32
+msgid "Timespan of the fade-out in seconds"
+msgstr "Трајање ишчезавања у секундама"
+
+#: gmusicbrowser.pl:1189 gmusicbrowser_songs.pm:834 gmusicbrowser_tags.pm:1810
+#: gmusicbrowser_tags.pm:1849 gmusicbrowser_tags.pm:1865
+#: gmusicbrowser_tags.pm:1887 gmusicbrowser_tags.pm:1890
+#: gmusicbrowser_tags.pm:2138 plugins/webcontext.pm:672
+#: layouts/desktop.layout:52 layouts/pages.layout:8
+msgid "Title"
+msgstr "Наслов"
+
+#: layouts/songtree.layout:65
+msgid "Title & icon"
+msgstr "Наслов и икона"
+
+#: layouts/songtree.layout:37
+msgid "Title & progress"
+msgstr "Наслов и напредак"
+
+#: gmusicbrowser_list.pm:794 layouts/songtree.layout:57
+msgid "Title - Artist - Album"
+msgstr "Назив - извођач - албум"
+
+#: gmusicbrowser_songs.pm:1343
+msgid "Title or filename"
+msgstr "Наслов или назив датотеке"
+
+#: layouts/shimmer.layout:90
+#, perl-format
+msgid "Title: %t"
+msgstr "Наслов: %t"
+
+#: layouts/contrib.layout:65 layouts/contrib.layout:290
+#: layouts/contrib.layout:705 layouts/shimmer.layout:16
+#: layouts/shimmer.layout:66 layouts/shimmer.layout:110
+#, perl-format
+msgid "Title: %t (Track No. %n)"
+msgstr "Наслов: %t (стаза бр. %n)"
+
+#: plugins/titlebar.pm:9
+msgid "Titlebar"
+msgstr "Трака наслова"
+
+#: plugins/titlebar.pm:10
+msgid "Titlebar overlay plugin"
+msgstr "Прикључак заклањајуће траке наслова"
+
+#: gmusicbrowser.pl:1452
+msgid "Toggle Album Lock"
+msgstr "Укључује/искључује закључавање албума"
+
+#: gmusicbrowser.pl:1451
+msgid "Toggle Artist Lock"
+msgstr "Укључује/искључује закључавање извођача"
+
+#: gmusicbrowser.pl:1453
+msgid "Toggle Song Lock"
+msgstr "Укључуј/искључује закључавање песме"
+
+#: gmusicbrowser.pl:1478
+msgid "Toggle a label of the current song"
+msgstr "Укључуј/искључује натпис садашње песме"
+
+#: gmusicbrowser.pl:1454
+msgid "Toggle between Random/Shuffle and Ordered"
+msgstr "Укључуј/искључује насумично/мешај и редно"
+
+#: gmusicbrowser_layout.pm:5289
+msgid "Toggle edit mode"
+msgstr "Прекидач уређивања"
+
+#: gmusicbrowser.pl:1466 gmusicbrowser_layout.pm:686
+msgid "Toggle fullscreen mode"
+msgstr "Искључује/укључује приказ преко целог екрана"
+
+#: gmusicbrowser.pl:1467
+msgid "Toggle the fullscreen layout"
+msgstr "Укључуј/искључује размештај преко целог екрана"
+
+#: layouts/makeitlooklike.layout:255 layouts/makeitlooklike.layout:347
+msgid "Toolbar"
+msgstr "Трака прибора"
+
+#: layouts/makeitlooklike.layout:63
+msgid "Tools"
+msgstr "Прибор"
+
+#: plugins/albuminfo.pm:596
+msgid "Total playcount:"
+msgstr "Укупан број извођења:"
+
+#: gmusicbrowser_songs.pm:973 gmusicbrowser_tags.pm:1816
+#: gmusicbrowser_tags.pm:1854 gmusicbrowser_tags.pm:1871
+#: gmusicbrowser_tags.pm:1900 gmusicbrowser_tags.pm:2138
+#: layouts/desktop.layout:51
+msgid "Track"
+msgstr "Звучна стаза"
+
+#: layouts/makeitlooklike.layout:65
+msgid "Track Properties"
+msgstr "Особине звучне стазе"
+
+#: gmusicbrowser_songs.pm:1265
+msgid "Track gain"
+msgstr "Гласноћа звучне стазе"
+
+#: gmusicbrowser_songs.pm:1278
+msgid "Track peak"
+msgstr "Врхунац звучне стазе"
+
+#: gmusicbrowser.pl:6745
+msgid "Tray tip window layout :"
+msgstr "Размештај прозора облачића палете"
+
+#: plugins/lullaby.pm:27
+msgid "Tuesday"
+msgstr "Уторак"
+
+#: gmusicbrowser.pl:521
+msgid "Turn Off"
+msgstr "Искључи"
+
+#: gmusicbrowser_layout.pm:5424
+msgid "Turn equalizer off"
+msgstr "Укључи уједначивач"
+
+#: gmusicbrowser_layout.pm:5283
+msgid "Turn equalizer on"
+msgstr "Искључи уједначивач"
+
+#: gmusicbrowser.pl:518
+msgid "Turn off computer after this song"
+msgstr "Искључи рачунар по завршетку песме"
+
+#: gmusicbrowser.pl:517
+msgid "Turn off computer when queue empty"
+msgstr "Искључи рачунар кад се заказано испразни"
+
+#: gmusicbrowser_tags.pm:2331
+msgid "URL"
+msgstr "УРЛ адреса"
+
+#: gmusicbrowser_tags.pm:1831
+msgid "Unique file identifier"
+msgstr "Јединствени указивач датотеке"
+
+#: gmusicbrowser_tags.pm:1587
+msgid "Unknown"
+msgstr ""
+
+#: plugins/albuminfo.pm:565 plugins/albuminfo.pm:574
+msgid "Unknown album"
+msgstr "Непознат албум"
+
+#: gmusicbrowser_songs.pm:2434
+#, perl-brace-format
+msgid "Unknown field ({field})"
+msgstr "Непознато поље ({field})"
+
+#: gmusicbrowser.pl:8317 gmusicbrowser_songs.pm:5024
+msgid "Unknown filter :"
+msgstr "Непознати услов"
+
+#: gmusicbrowser_layout.pm:792
+#, perl-format
+msgid "Unknown layout '%s'"
+msgstr "Непознати размештај „%s“"
+
+#: gmusicbrowser.pl:646
+msgid "Unlock Album"
+msgstr "Откључај албум"
+
+# :D
+#: gmusicbrowser.pl:645
+msgid "Unlock Artist"
+msgstr "Откључај извођача"
+
+#: plugins/export.pm:40
+msgid "Unnamed custom command"
+msgstr "Непозната прилагођена наредба"
+
+#: gmusicbrowser.pl:9866 gmusicbrowser_songs.pm:5005
+msgid "Unnamed filter"
+msgstr "Неименовани услов"
+
+#: plugins/webcontext.pm:215 plugins/webcontext.pm:222
+#: plugins/webcontext.pm:299
+msgid "Untitled"
+msgstr "Неименовано"
+
+#: gmusicbrowser.pl:6797
+msgid "Update tags"
+msgstr "Освежи ознаке"
+
+#: gmusicbrowser.pl:6787
+msgid "Update tags..."
+msgstr "Освежава ознаке ..."
+
+#: plugins/titlebar.pm:28
+msgid "Upper left"
+msgstr "Горе-лево"
+
+#: plugins/titlebar.pm:29
+msgid "Upper right"
+msgstr "Горе-десно"
+
+#: gmusicbrowser.pl:6552
+msgid "Use Equalizer"
+msgstr "Користи уједначивач"
+
+#: gmusicbrowser.pl:6780
+msgid ""
+"Use ID3v2.4 instead of ID3v2.3 when creating an ID3v2 tag, ID3v2.3 are "
+"probably better supported by other softwares"
+msgstr ""
+"Користи ИД3в2.4 уместо ИД3в2.3 при стварању ИД3в2 ознаке, ИД3в2.3 су можда "
+"боље подржани другим софтвером"
+
+#: plugins/webcontext.pm:385
+msgid "Use MozEmbed"
+msgstr "Користи МозЕмбед"
+
+#: gmusicbrowser.pl:6561
+msgid "Use ReplayGain"
+msgstr "Користи гласноћу извођења"
+
+#: plugins/webcontext.pm:384
+msgid "Use WebKit"
+msgstr "Користи Вебкит"
+
+#: gmusicbrowser.pl:6972
+msgid "Use a master filter"
+msgstr "Користи главни услов"
+
+#: gmusicbrowser.pl:6630
+msgid "Use album normalization instead of track normalization"
+msgstr "Користи уједначавање албума уместо уједначавања звучне стазе"
+
+#: gmusicbrowser_tags.pm:767
+msgid "Use default regular expression"
+msgstr "Користи задати регуларни израз"
+
+#: gmusicbrowser.pl:6525
+msgid "Use gstreamer"
+msgstr "Користи гстример"
+
+#: gmusicbrowser.pl:6781
+msgid "Use latin1 encoding if possible in id3v2 tags"
+msgstr "Користи кодирање латин1 ако је могуће у ИД3в2 ознаке"
+
+#: plugins/artistinfo.pm:285
+#, perl-format
+msgid ""
+"Use tags from last.fm's XML event pages with a leading % (e.g. %headliner), "
+"furthermore linebreaks '<br>' and any text you'd like to have in between. E."
+"g. '%title taking place at %startDate<br>in %city, %country<br><br>'"
+msgstr ""
+"Користи ознаке као код last.fm-ове ИксМЛ странице догађаја са најавом % (тј "
+"%headliner), у будуће преломима „<br>“ и било који текст који желите да буде "
+"између. Нпр. „%title почиње у %startDate<br>у %city, %country<br><br>“"
+
+#: gmusicbrowser_list.pm:19
+msgid "Use the playing filter"
+msgstr "Користи услов у употреби"
+
+#: plugins/fetch_cover.pm:547
+#, perl-brace-format
+msgid "Use this picture as cover for album '{album}'"
+msgstr "Користи ову слику као корице за албум „{album}“"
+
+#: plugins/fetch_cover.pm:550
+#, perl-brace-format
+msgid "Use this picture for artist '{artist}'"
+msgstr "Користи ову слику за извођача „{artist}“"
+
+#: gmusicbrowser_123.pm:310
+#, perl-brace-format
+msgid "Use {command} to play {ext} files"
+msgstr "Користи {command} за пуштање {ext} датотека"
+
+#: gmusicbrowser.pl:6631
+msgid "Used for clipping prevention"
+msgstr "Коришћено за спречавање изобличења"
+
+#: gmusicbrowser.pl:6673 gmusicbrowser.pl:6677
+msgid "Used for the Artists field"
+msgstr "Користи се за поље извођача"
+
+#: gmusicbrowser_songs.pm:2952
+msgid "Used to associate the saved value with a user or a function"
+msgstr "Користи се за придруживање сачуване вредности са корисником или радњом"
+
+#: plugins/audioscrobbler.pm:123
+msgid "User authentification error"
+msgstr "Грешка при препознавању корисника"
+
+#: gmusicbrowser_songs.pm:3104
+msgid "Value not written in file tag"
+msgstr "Вредност није уписана у ознаци датотеке"
+
+#: gmusicbrowser_songs.pm:3103
+msgid "Value written in file tag"
+msgstr "Вредност је уписана у ознаци датотеке"
+
+#: gmusicbrowser_songs.pm:285
+msgid "Various artists"
+msgstr "Разни извођачи"
+
+#: gmusicbrowser_songs.pm:1203 gmusicbrowser_tags.pm:1811
+#: gmusicbrowser_tags.pm:1850
+msgid "Version"
+msgstr "Издање"
+
+#: layouts/contrib.layout:102 layouts/makeitlooklike.layout:57
+#: layouts/makeitlooklike.layout:245 layouts/makeitlooklike.layout:344
+#: layouts/makeitlooklike.layout:443 layouts/makeitlooklike.layout:487
+msgid "View"
+msgstr "Преглед"
+
+#: gmusicbrowser_tags.pm:2423
+msgid "View Binary"
+msgstr "Прегледај бинарне датотеку"
+
+#: gmusicbrowser_tags.pm:2411
+msgid "View binary data ..."
+msgstr "Прегледај бинарне податке"
+
+#: gmusicbrowser_layout.pm:4189
+msgid "View in new window"
+msgstr "Прегледај у новом прозору"
+
+#: gmusicbrowser_layout.pm:4296
+msgid "View pictures from this album's folder"
+msgstr "Прегледај слике из фасцикле албума"
+
+#: gmusicbrowser_layout.pm:229
+msgid "Volume : "
+msgstr "Гласноћа : "
+
+#: gmusicbrowser.pl:6699
+msgid "Volume step :"
+msgstr "Корак појачања гласноће"
+
+#: gmusicbrowser.pl:512
+msgid "Wait for more when queue empty"
+msgstr "Сачекај за још кад је заказано празно"
+
+#: gmusicbrowser.pl:6778
+msgid ""
+"Warning : these are advanced options, don't change them unless you know what "
+"you are doing."
+msgstr ""
+"Упозорење : ово су напредне могућности, не мењајте их осим ако знате шта "
+"радите."
+
+#: gmusicbrowser.pl:7273
+msgid "Warning : using a folder with invalid encoding, you should rename it."
+msgstr ""
+"Упозорење : користите фасциклу са неисправним кодирањем, требате је "
+"преименовати."
+
+#: gmusicbrowser_songs.pm:2928
+msgid "Warning: all existing data for this field will be lost"
+msgstr "Упозорење: сви доступни подаци за ово поље ће бити изгубљени"
+
+#: gmusicbrowser_songs.pm:2940
+msgid "Warning: an identifier is needed"
+msgstr "Упозорење: указивач је потребан"
+
+#: gmusicbrowser_songs.pm:2917
+msgid "Warning: converting existing data to this format may be lossy"
+msgstr ""
+"Упозорење: претварање постојећих података у овај облик може бити са губитком"
+
+#: plugins/webcontext.pm:10
+msgid "Web context"
+msgstr "Веб објашњење"
+
+#: plugins/webcontext.pm:11
+msgid "Web context plugin"
+msgstr "Прикључак веба објашњење"
+
+#: plugins/lullaby.pm:27
+msgid "Wednesday"
+msgstr "Среда"
+
+#: gmusicbrowser_layout.pm:1512
+msgid "Weighted Random"
+msgstr "Умерена насумичност"
+
+#: gmusicbrowser.pl:6962
+msgid "When added"
+msgstr "По додавању"
+
+#: gmusicbrowser.pl:6703
+msgid ""
+"When changing songs, the previous song is added to the recent list even if "
+"not played at all."
+msgstr ""
+"При промени песме, претходна песма се додаје списку скорашњих догађаја чак и "
+"ако није уопште извођена."
+
+#: gmusicbrowser.pl:6962
+msgid "When current song"
+msgstr "При тренутној песми"
+
+#: gmusicbrowser.pl:6815
+msgid "Whole library"
+msgstr "Цела збирка"
+
+#: gmusicbrowser.pl:1473
+msgid "Widget name"
+msgstr "Име елемента"
+
+#: plugins/webcontext.pm:207
+msgid "Wikipedia"
+msgstr "Викпедија"
+
+#: plugins/webcontext.pm:528
+msgid "Wikipedia Locale"
+msgstr "Месна Викпедија"
+
+#: gmusicbrowser.pl:6785
+msgid ""
+"Will not write the tags except with the advanced tag editing dialog. The "
+"changes will be kept in the library instead.\n"
+"Warning, the changes for a song will be lost if the tag is re-read."
+msgstr ""
+"Неће се уписивати ознаке осим са прозорчетом напредног уређивача ознака. "
+"Измене ће се уместо тога држати у збирци.\n"
+"Упозорење, измене на песми ће бити изгубљене ако се ознака опет прочита."
+
+#: gmusicbrowser_mplayer.pm:214
+msgid "Will use default if not found"
+msgstr "Ако није пронађено, користиће се задато"
+
+#: gmusicbrowser.pl:6708 gmusicbrowser.pl:6709
+msgid "Will use system's default if blank"
+msgstr ""
+
+#. Windows key
+#: gmusicbrowser.pl:1224
+msgctxt "Keyboard"
+msgid "Win"
+msgstr "Супер Такс"
+
+#: gmusicbrowser.pl:647
+msgid "Windows"
+msgstr "Прозори"
+
+#: gmusicbrowser_list.pm:5370
+msgid "Words that begin with"
+msgstr "Реч која почиње са"
+
+#: plugins/export.pm:143 plugins/export.pm:161
+msgid "Write filenames to ..."
+msgstr "Уписује називе датотека ..."
+
+#: gmusicbrowser.pl:6812
+msgid ""
+"Write value of selected fields in the tags. Useful for fields that were "
+"previously not written to tags, to make sure the current value is written."
+msgstr ""
+"Уписује вредности означених поа у ознаке. Корисно за поља која претходно "
+"нису била уписана у ознаке, за проверу да ли је садашња вредност уписана."
+
+#: gmusicbrowser_songs.pm:1952
+msgid "Writing tags"
+msgstr "Уписивање ознака"
+
+#: gmusicbrowser_songs.pm:958 gmusicbrowser_tags.pm:1877
+#: gmusicbrowser_tags.pm:1893 gmusicbrowser_tags.pm:2138
+#: plugins/albuminfo.pm:66 layouts/pages.layout:28
+msgid "Year"
+msgstr "Година"
+
+#: layouts/makeitlooklike.layout:141
+msgid "Year - Album"
+msgstr "Година - албум"
+
+#: layouts/makeitlooklike.layout:128
+msgid "Year - Artist"
+msgstr "Година - извођач"
+
+#: gmusicbrowser_songs.pm:772
+msgid "Yes"
+msgstr "Да"
+
+#: gmusicbrowser.pl:6965
+msgid ""
+"You can force a check for these files by holding shift when selecting \"Re-"
+"read tags\""
+msgstr ""
+"Можете приморати проверу за овим датотекама држећи ВИШЕ при означавању "
+"„поново учитај ознаке“"
+
+#: gmusicbrowser_songs.pm:2886
+#, perl-brace-format
+msgid ""
+"You can make custom stars by putting pictures in {folder}\n"
+"They must be named 'stars', optionally followed by a '-' and a word, "
+"followed by a number from 0 to 5 or 10\n"
+"Example: stars-custom0.png"
+msgstr ""
+
+#: plugins/notify.pm:54
+msgid ""
+"You can use some markup, eg :\n"
+"<b>bold</b> <i>italic</i> <u>underline</u>\n"
+"Note that the markup may be ignored by the notification daemon"
+msgstr ""
+"Можете користити неко означавање, нпр. :\n"
+"<b>bold</b> <i>italic</i> <u>underline</u>\n"
+"Знајте да ознаке могу бити занемарене од стране домара обавештења"
+
+#: gmusicbrowser.pl:5413
+msgid "You must specify a base folder"
+msgstr "Морате одредити матичну фасциклу"
+
+#: gmusicbrowser_layout.pm:4146 gmusicbrowser_layout.pm:4185
+msgid "Zoom 1:1"
+msgstr "Увећај 1:1"
+
+#: gmusicbrowser_layout.pm:4144 gmusicbrowser_layout.pm:4183
+msgid "Zoom in"
+msgstr "Увећај"
+
+#: gmusicbrowser_layout.pm:4145 gmusicbrowser_layout.pm:4184
+msgid "Zoom out"
+msgstr "Умањи"
+
+#: gmusicbrowser_layout.pm:4147 gmusicbrowser_layout.pm:4186
+msgid "Zoom to fit"
+msgstr "Увећај до испуне"
+
+#: gmusicbrowser.pl:5134
+msgid "_Cancel"
+msgstr "_Откажи"
+
+#: gmusicbrowser_list.pm:855 gmusicbrowser_list.pm:6851
+msgid "_Insert column"
+msgstr "_Убаците колону"
+
+#: gmusicbrowser_list.pm:862 gmusicbrowser_list.pm:6858
+msgid "_Remove this column"
+msgstr "_Уклоните ову колону"
+
+#: gmusicbrowser.pl:5133
+msgid "_Retry"
+msgstr "_Понови"
+
+#: gmusicbrowser.pl:5135
+msgid "_Skip"
+msgstr "_Прескочи"
+
+#: gmusicbrowser_list.pm:854 gmusicbrowser_list.pm:6844
+msgid "_Sort by"
+msgstr "_Разврстај по"
+
+# А? :)
+#: gmusicbrowser_tags.pm:2307
+msgid "a bright coloured fish"
+msgstr "светла обојена риба"
+
+#: gmusicbrowser.pl:10071 gmusicbrowser.pl:10126
+msgid "abort"
+msgstr "напусти"
+
+#: gmusicbrowser.pl:4784 gmusicbrowser.pl:10024
+msgid "abort copy"
+msgstr "откажи умножавање"
+
+#: gmusicbrowser.pl:4785 gmusicbrowser.pl:10023
+msgid "abort move"
+msgstr "откажи премештање"
+
+#: gmusicbrowser_tags.pm:1989
+msgid "add"
+msgstr "додај"
+
+#: gmusicbrowser.pl:6604
+msgid "advanced options"
+msgstr "напредне могућности"
+
+#: gmusicbrowser_songs.pm:591 gmusicbrowser_songs.pm:716
+msgid "after"
+msgstr "након"
+
+#: gmusicbrowser_songs.pm:591 gmusicbrowser_songs.pm:598
+#: gmusicbrowser_songs.pm:716
+#, perl-format
+msgid "after %s"
+msgstr "након %s"
+
+#: plugins/albuminfo.pm:121
+msgid "album information now for"
+msgstr "подаци о албуму су сада за"
+
+#. comma-separated list of field aliases for album, these are in addition to english aliases
+#: gmusicbrowser_songs.pm:887
+msgctxt "Field_aliases"
+msgid "album,on"
+msgstr "албум,на"
+
+#: plugins/albuminfo.pm:121
+msgid "albums missing reviews"
+msgstr "недостајуће критике албума"
+
+#: gmusicbrowser_list.pm:1623
+msgid "alphabetical"
+msgstr "азбучно"
+
+#: gmusicbrowser_123.pm:391
+msgid "amixer control :"
+msgstr "амиксерово управљање :"
+
+#: plugins/artistinfo.pm:297
+msgid "applied on reload"
+msgstr "примењено при поновном учитавању"
+
+#: gmusicbrowser_list.pm:37
+msgid "apply filter"
+msgstr "примени услов"
+
+#: plugins/nowplaying.pm:63
+#, perl-brace-format
+msgid "argument {n} :"
+msgstr "аргумент {n} :"
+
+#: gmusicbrowser_list.pm:1629 gmusicbrowser_songs.pm:1394
+#: gmusicbrowser_tags.pm:2307
+msgid "artist"
+msgstr "извођач"
+
+#. comma-separated list of field aliases for artist, these are in addition to english aliases
+#: gmusicbrowser_songs.pm:858
+msgctxt "Field_aliases"
+msgid "artist,by"
+msgstr "извођач,од"
+
+#: gmusicbrowser_gstreamer-0.10.pm:37 gmusicbrowser_gstreamer-1.x.pm:30
+msgid "auto detect"
+msgstr "сам препознај"
+
+#: gmusicbrowser.pl:511
+msgid "autofill"
+msgstr "самопопуна"
+
+#: gmusicbrowser_list.pm:1602
+msgid "automatic size"
+msgstr "самостално подешава величину"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "back cover"
+msgstr "задње корице"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "band"
+msgstr "група"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "band/artist logotype"
+msgstr "група/извођач логотип"
+
+#: gmusicbrowser_songs.pm:592 gmusicbrowser_songs.pm:717
+msgid "before"
+msgstr "пре"
+
+#: gmusicbrowser_songs.pm:592 gmusicbrowser_songs.pm:597
+#: gmusicbrowser_songs.pm:717
+#, perl-format
+msgid "before %s"
+msgstr "пре %s"
+
+#: gmusicbrowser_songs.pm:433
+msgid "between"
+msgstr "између"
+
+#: gmusicbrowser_songs.pm:594 gmusicbrowser_songs.pm:719
+#, perl-format
+msgid "between %s ago and %s ago"
+msgstr "раније, између %s и %s"
+
+#: gmusicbrowser_songs.pm:433 gmusicbrowser_songs.pm:593
+#: gmusicbrowser_songs.pm:718
+#, perl-format
+msgid "between %s and %s"
+msgstr "између %s и %s"
+
+#: gmusicbrowser_songs.pm:593 gmusicbrowser_songs.pm:718
+msgid "between (absolute dates)"
+msgstr "између (апсолутни датуми)"
+
+#: gmusicbrowser_songs.pm:594 gmusicbrowser_songs.pm:719
+msgid "between (relative dates)"
+msgstr "између (односни датуми)"
+
+#: gmusicbrowser_list.pm:1605 gmusicbrowser_list.pm:1610
+msgid "big size"
+msgstr "велико"
+
+#: gmusicbrowser_songs.pm:1031
+msgid "bonus tracks"
+msgstr "додатне звучне стазе"
+
+#: gmusicbrowser_songs.pm:1392
+msgid "boolean"
+msgstr "логичка вредност"
+
+#: gmusicbrowser_songs.pm:1031
+msgid "bootleg"
+msgstr "сара"
+
+#: gmusicbrowser_songs.pm:1031
+msgid "broken"
+msgstr "неисправно"
+
+#: gmusicbrowser.pl:6381 gmusicbrowser.pl:7369 plugins/desktopwidget.pm:145
+msgid "by"
+msgstr "од"
+
+#: gmusicbrowser.pl:1182
+msgid "by added"
+msgstr "од додатог"
+
+#: gmusicbrowser.pl:1181
+msgid "by lastplay"
+msgstr "од последњег извођења"
+
+#: gmusicbrowser.pl:1184
+msgid "by lastplay & bootleg"
+msgstr "од последњег извођења и саре"
+
+#: gmusicbrowser.pl:1183
+msgid "by lastplay & play count"
+msgstr "од последњег извођења и бројача извођења"
+
+#: gmusicbrowser.pl:1180
+msgid "by play count"
+msgstr "од броја пуштања"
+
+#: gmusicbrowser.pl:1179
+msgid "by rating"
+msgstr "према оцени"
+
+#: gmusicbrowser.pl:3723
+#, perl-brace-format
+msgid "by {artist} from {album}"
+msgstr "од {artist} са {album}"
+
+#: plugins/albuminfo.pm:480
+#, perl-brace-format
+msgid "by {author}"
+msgstr "од {author}"
+
+#: gmusicbrowser.pl:960 gmusicbrowser_layout.pm:4739
+msgid "bytes"
+msgstr "бајта"
+
+#: gmusicbrowser.pl:6967
+msgid "check length now"
+msgstr "провери дужину сада"
+
+#: gmusicbrowser.pl:6952 layouts/contrib.layout:262 layouts/contrib.layout:418
+msgid "check now"
+msgstr "провери сада"
+
+#: gmusicbrowser_list.pm:1690
+msgid "cloud mode"
+msgstr "начин извођења из облака"
+
+#: plugins/nowplaying.pm:64
+msgid "command :"
+msgstr "наредба :"
+
+#: gmusicbrowser_songs.pm:1396
+msgid "common number"
+msgstr "обичан број"
+
+#: gmusicbrowser_songs.pm:1395
+msgid "common string"
+msgstr "обична ниска"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "composer"
+msgstr "састављач"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "conductor"
+msgstr "диригент"
+
+#: plugins/audioscrobbler.pm:120 plugins/audioscrobbler.pm:170
+msgid "connection failed"
+msgstr "повезивање није успело"
+
+#: plugins/fetch_cover.pm:416
+msgid "connection failed."
+msgstr "повезивање није успело."
+
+#: gmusicbrowser_songs.pm:57 gmusicbrowser_songs.pm:151
+#: gmusicbrowser_songs.pm:219
+msgid "contains"
+msgstr "садржи"
+
+#: gmusicbrowser_songs.pm:57 gmusicbrowser_songs.pm:151
+#: gmusicbrowser_songs.pm:219
+#, perl-format
+msgid "contains %s"
+msgstr "садржи %s"
+
+#: gmusicbrowser_songs.pm:60 gmusicbrowser_songs.pm:153
+#: gmusicbrowser_songs.pm:221
+#, perl-format
+msgid "contains %s (case sensitive)"
+msgstr "садржи %s (осетљиво на величину слова)"
+
+#: gmusicbrowser_tags.pm:2335
+msgid "counter"
+msgstr "бројач"
+
+#: plugins/rip.pm:27
+msgid "custom"
+msgstr "произвољна"
+
+#: gmusicbrowser_songs.pm:25
+msgid "day"
+msgstr "дан"
+
+#: gmusicbrowser.pl:953 gmusicbrowser_songs.pm:5230
+#: gmusicbrowser_songs.pm:5236 gmusicbrowser_songs.pm:5242
+#: gmusicbrowser_songs.pm:5248
+msgid "days"
+msgstr "дана"
+
+#: gmusicbrowser.pl:1386 gmusicbrowser_layout.pm:5164
+#: gmusicbrowser_layout.pm:5186
+msgid "default"
+msgstr "основно"
+
+#: plugins/fetch_cover.pm:81
+msgid "default filename"
+msgstr "задати назив датотеке"
+
+#: plugins/fetch_cover.pm:80
+msgid "default folder"
+msgstr "основна фасцикла"
+
+#: gmusicbrowser.pl:7900
+msgid "delete selected filter"
+msgstr "бриши означени услов"
+
+#: gmusicbrowser.pl:7906
+msgid "delete selected grouping"
+msgstr "избриши одабрано разврставање"
+
+#: gmusicbrowser.pl:7904
+msgid "delete selected random mode"
+msgstr "брише означени насумични начин"
+
+#: gmusicbrowser.pl:7902
+msgid "delete selected sort mode"
+msgstr "брише означени уређени начин"
+
+#: gmusicbrowser_tags.pm:385
+msgid "different folders"
+msgstr "различите фасцикле"
+
+#: gmusicbrowser.pl:3736 gmusicbrowser_list.pm:8126
+#, perl-brace-format
+msgid "disc {disc}"
+msgstr "диск {disc}"
+
+#: gmusicbrowser_songs.pm:64 gmusicbrowser_songs.pm:157
+#: gmusicbrowser_songs.pm:225
+#, perl-format
+msgid "doesn't contain %s"
+msgstr "не садржи %s"
+
+#: gmusicbrowser_songs.pm:63 gmusicbrowser_songs.pm:156
+#: gmusicbrowser_songs.pm:224
+#, perl-format
+msgid "doesn't contain %s (case sensitive)"
+msgstr "не садржи %s (осетљиво на величину слова)"
+
+#: gmusicbrowser_songs.pm:259 gmusicbrowser_songs.pm:291
+msgid "doesn't have a picture"
+msgstr "нема слику"
+
+#: gmusicbrowser_songs.pm:147
+#, perl-format
+msgid "doesn't include %s"
+msgstr "не укључује %s"
+
+#: gmusicbrowser_songs.pm:217
+#, perl-format
+msgid "doesn't include artist %s"
+msgstr "не укључује извођача %s"
+
+#: gmusicbrowser_songs.pm:62 gmusicbrowser_songs.pm:155
+#: gmusicbrowser_songs.pm:223
+#, perl-format
+msgid "doesn't match regexp %s"
+msgstr "не одговара уобичајеном изразу %s"
+
+#: gmusicbrowser_songs.pm:61 gmusicbrowser_songs.pm:154
+#: gmusicbrowser_songs.pm:222
+#, perl-format
+msgid "doesn't match regexp %s (case sensitive)"
+msgstr "не одговара уобичајеном изразу %s (осетљиво на величину слова)"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "during performance"
+msgstr "учинак диска"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "during recording"
+msgstr "за време снимања"
+
+#: gmusicbrowser_tags.pm:2333
+msgid "email"
+msgstr "е-пошта"
+
+#: gmusicbrowser_tags.pm:2492
+msgid "empty"
+msgstr "празно"
+
+#: gmusicbrowser_gstreamer-0.10.pm:495 gmusicbrowser_gstreamer-1.x.pm:496
+msgid "enable gapless (experimental)"
+msgstr "омогући извођење без губитака (gapless, експериментално)"
+
+#: plugins/albuminfo.pm:121
+msgid "entire collection"
+msgstr "цела збирка"
+
+#: gmusicbrowser_list.pm:196 gmusicbrowser_tags.pm:2496
+msgid "error"
+msgstr "грешка"
+
+#: gmusicbrowser.pl:8830
+msgid "ex :"
+msgstr "бивша :"
+
+#: gmusicbrowser.pl:8848
+#, perl-brace-format
+msgid "example (selected song) : {score}  ({chances})"
+msgstr "пример (изабрана песма) : {score}  ({chances})"
+
+#: gmusicbrowser_list.pm:738
+msgid "example :"
+msgstr "пример :"
+
+#: plugins/albuminfo.pm:94 plugins/artistinfo.pm:317 plugins/karaoke.pm:68
+#: plugins/lyrics.pm:218
+msgid "example : "
+msgstr "пример :"
+
+#: gmusicbrowser.pl:6689 plugins/webcontext.pm:659
+#, perl-format
+msgid "example : %s"
+msgstr "пример : %s"
+
+#: gmusicbrowser.pl:6682
+msgid "examples :"
+msgstr "примери :"
+
+#: gmusicbrowser.pl:6635
+#, perl-format
+msgid "fallback-gain : %d dB"
+msgstr "помоћна гласноћа : %d dB"
+
+#: gmusicbrowser_songs.pm:5511
+msgid "false"
+msgstr "нетачно"
+
+#: gmusicbrowser_songs.pm:1031
+msgid "favorite"
+msgstr "омиљени"
+
+#: gmusicbrowser.pl:9986
+msgid "file $current/$end"
+msgstr "датотека $current/$end"
+
+#: plugins/lyrics.pm:205
+msgid "file tag"
+msgstr "ознака датотеке"
+
+#: gmusicbrowser.pl:10125 plugins/export.pm:153 plugins/export.pm:167
+#, perl-brace-format
+msgid "file: {filename}"
+msgstr "датотека: {filename}"
+
+#: gmusicbrowser.pl:8076
+msgid "filters"
+msgstr "услови"
+
+#: gmusicbrowser_songs.pm:1393
+msgid "flags"
+msgstr "одреднице"
+
+#: gmusicbrowser_songs.pm:1391
+msgid "float"
+msgstr "број са покретним зарезом"
+
+#: gmusicbrowser_list.pm:1668
+msgid "font size depends on"
+msgstr "величина словног лика зависи од"
+
+#: gmusicbrowser.pl:1093
+msgid "for files without a VBR header"
+msgstr "за датотеке без ВБР заглавља"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "front cover"
+msgstr "чеоне корице"
+
+#: gmusicbrowser_songs.pm:54 gmusicbrowser_songs.pm:158
+#: gmusicbrowser_songs.pm:226
+msgid "fuzzy match"
+msgstr "нејасно поклапање"
+
+#: layouts/makeitlooklike.layout:262
+msgid "gmusicbrowser"
+msgstr "гномов музички брстач"
+
+#: layouts/contrib.layout:502
+#, perl-format
+msgid "gmusicbrowser is playing %t from %l (%Y) by %a"
+msgstr "гном музички брстач свира %t из  %l (%Y) од %a"
+
+#: plugins/fetch_cover.pm:30 plugins/fetch_cover.pm:38
+msgid "google images"
+msgstr "гугл слике"
+
+#: plugins/fetch_cover.pm:39
+msgid "google images (hi-res)"
+msgstr "гугл слике (високи квалитет)"
+
+#: gmusicbrowser_list.pm:1682
+msgid "group by"
+msgstr "разврстај по"
+
+#: gmusicbrowser.pl:8790
+msgid "half-life : "
+msgstr "полувреме : "
+
+#: gmusicbrowser_songs.pm:258 gmusicbrowser_songs.pm:290
+msgid "has a picture"
+msgstr "има слику"
+
+#: gmusicbrowser_songs.pm:149
+msgid "has at least one"
+msgstr "има најмање једно"
+
+#: gmusicbrowser_songs.pm:1111 gmusicbrowser_songs.pm:1119
+msgid "has been played"
+msgstr "свирано је"
+
+#: gmusicbrowser_songs.pm:1129 gmusicbrowser_songs.pm:1137
+msgid "has been skipped"
+msgstr "прескочено је"
+
+#: gmusicbrowser_songs.pm:148
+msgid "has none"
+msgstr "нема ништа"
+
+#: gmusicbrowser.pl:952
+msgid "hours"
+msgstr "сати"
+
+#: gmusicbrowser_list.pm:1611
+msgid "huge size"
+msgstr "огромна величина"
+
+#: gmusicbrowser.pl:6494
+msgid "icecast server"
+msgstr "ајскастов служитељ"
+
+#: gmusicbrowser_tags.pm:2122
+msgid "id3v1 tag"
+msgstr "ид3в1 ознака"
+
+#: gmusicbrowser.pl:6678
+msgid "ignore title"
+msgstr "занемари назив"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "illustration"
+msgstr "цртеж"
+
+#: gmusicbrowser.pl:5852
+msgid "imported list"
+msgstr "увезени списак"
+
+#: layouts/contrib.layout:210
+#, perl-format
+msgid "in %l"
+msgstr "у %l"
+
+#: gmusicbrowser_songs.pm:437
+msgid "in the bottom"
+msgstr "на дну"
+
+#: gmusicbrowser_songs.pm:437
+#, perl-format
+msgid "in the bottom %s"
+msgstr "на дну %s"
+
+#: gmusicbrowser_songs.pm:436
+msgid "in the top"
+msgstr "на врху"
+
+#: gmusicbrowser_songs.pm:436
+#, perl-format
+msgid "in the top %s"
+msgstr "на врху %s"
+
+#: gmusicbrowser_songs.pm:146
+msgid "includes"
+msgstr "укључује"
+
+#: gmusicbrowser_songs.pm:146
+#, perl-format
+msgid "includes %s"
+msgstr "укључује %s"
+
+#: gmusicbrowser_songs.pm:216
+msgid "includes artist"
+msgstr "укључује извођача"
+
+#: gmusicbrowser_songs.pm:216
+#, perl-format
+msgid "includes artist %s"
+msgstr "укључује извођача %s"
+
+#: gmusicbrowser_songs.pm:1397
+msgid "integer"
+msgstr "цео број"
+
+#: gmusicbrowser_songs.pm:1031
+msgid "interview"
+msgstr "разговор"
+
+#: plugins/albuminfo.pm:94 plugins/artistinfo.pm:317 plugins/karaoke.pm:68
+#: plugins/lyrics.pm:218
+msgid "invalid pattern"
+msgstr "неисправан образац"
+
+#: gmusicbrowser.pl:8738
+msgid "inverse"
+msgstr "Изврнуто"
+
+#: gmusicbrowser_songs.pm:396
+msgid "is"
+msgstr "је"
+
+#: gmusicbrowser_songs.pm:396
+#, perl-format
+msgid "is %s"
+msgstr "је %s"
+
+#: gmusicbrowser_songs.pm:1234
+msgid "is 44.1kHz"
+msgstr "је 44.1kHz"
+
+#: gmusicbrowser_songs.pm:1246
+msgid "is a flac file"
+msgstr "је флак датотека"
+
+#: gmusicbrowser_songs.pm:1250
+msgid "is a lossless file"
+msgstr "је звучна датотека без губитака loosles"
+
+#: gmusicbrowser_songs.pm:1251
+msgid "is a lossy file"
+msgstr "је звучна датотека са губицима (loosy)"
+
+#: gmusicbrowser_songs.pm:1241
+msgid "is a mp3 file"
+msgstr "је мп3 датотека"
+
+#: gmusicbrowser_songs.pm:1247
+msgid "is a musepack file"
+msgstr "је мјузпак датотека"
+
+#: gmusicbrowser_songs.pm:1245
+msgid "is a vorbis file"
+msgstr "је ворбис датотека"
+
+#: gmusicbrowser_songs.pm:1248
+msgid "is a wavepack file"
+msgstr "је вејв датотека"
+
+#: gmusicbrowser_songs.pm:1242
+msgid "is an aac file"
+msgstr "је аац датотека"
+
+#: gmusicbrowser_songs.pm:1243
+msgid "is an alac file"
+msgstr "је алац датотека"
+
+#: gmusicbrowser_songs.pm:1249
+msgid "is an ape file"
+msgstr "је ејп датотека"
+
+#: gmusicbrowser_songs.pm:1244
+msgid "is an mp4/m4a file"
+msgstr "је пм4/м4а датотека"
+
+#: gmusicbrowser_songs.pm:506
+msgid "is defined"
+msgstr "је одрђено"
+
+#: gmusicbrowser_songs.pm:58
+msgid "is equal to"
+msgstr "је једнако са"
+
+#: gmusicbrowser_songs.pm:58
+#, perl-format
+msgid "is equal to %s"
+msgstr "је једнако са %s"
+
+#: gmusicbrowser_songs.pm:774 gmusicbrowser_songs.pm:777
+msgid "is false"
+msgstr "је нетачно"
+
+#: gmusicbrowser_songs.pm:813
+msgid "is in"
+msgstr "је у"
+
+#: gmusicbrowser_songs.pm:813
+#, perl-format
+msgid "is in %s"
+msgstr "је у %s"
+
+#: gmusicbrowser_songs.pm:1217
+msgid "is mono"
+msgstr "је моно"
+
+#: gmusicbrowser_songs.pm:507
+msgid "is not defined"
+msgstr "није одређено"
+
+#: gmusicbrowser_songs.pm:838
+msgid "is smart equal"
+msgstr "је паметно једнако"
+
+#: gmusicbrowser_songs.pm:838
+#, perl-format
+msgid "is smart equal to %s"
+msgstr "је паметно једнако са %s"
+
+#: gmusicbrowser_songs.pm:1219
+msgid "is stereo"
+msgstr "је стерео"
+
+#: gmusicbrowser_songs.pm:775 gmusicbrowser_songs.pm:776
+msgid "is true"
+msgstr "је тачно"
+
+#: gmusicbrowser_songs.pm:397
+#, perl-format
+msgid "isn't %s"
+msgstr "није %s"
+
+#: gmusicbrowser_songs.pm:65
+#, perl-format
+msgid "isn't equal to %s"
+msgstr "је једнако са %s"
+
+#: gmusicbrowser_songs.pm:814
+#, perl-format
+msgid "isn't in %s"
+msgstr "није у %s"
+
+#: gmusicbrowser_songs.pm:1218
+msgid "isn't mono"
+msgstr "није моно"
+
+#: gmusicbrowser_songs.pm:1220
+msgid "isn't stereo"
+msgstr "није стерео"
+
+#: gmusicbrowser.pl:6782
+msgid ""
+"itunes doesn't support unsynchronised tags last time I checked, mostly "
+"affect tags with pictures"
+msgstr ""
+"на задњој провери ајтјунс није подржавао неусаглашене ознаке, углавном "
+"погађа ознаке са сликама"
+
+#: plugins/audioscrobbler.pm:9
+msgid "last.fm"
+msgstr "Last.fm"
+
+#: plugins/audioscrobbler.pm:10
+msgid "last.fm plugin"
+msgstr "прикључак за  last.fm"
+
+#: plugins/artistinfo.pm:296
+msgid ""
+"last.fm's similarity categories:\n"
+">90 super\n"
+">70 very high\n"
+">50 high\n"
+">30 medium\n"
+">10 lower"
+msgstr ""
+"сличне категорије по last.fm:\n"
+">90 одлично\n"
+">70 врло високо\n"
+">50високо\n"
+">30 средње\n"
+">10 ниже"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "lead artist"
+msgstr "водећи извођач"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "leaflet page"
+msgstr "страна летака"
+
+#: layouts/browser.layout:41
+msgid "left-side filter panes"
+msgstr "окно услова леве стране"
+
+#: gmusicbrowser_list.pm:1625
+msgid "length of songs"
+msgstr "дужина песама"
+
+#: gmusicbrowser_songs.pm:590 gmusicbrowser_songs.pm:715
+msgid "less than"
+msgstr "пре мање од"
+
+#: gmusicbrowser_songs.pm:590 gmusicbrowser_songs.pm:595
+#: gmusicbrowser_songs.pm:715
+#, perl-format
+msgid "less than %s ago"
+msgstr "скорије од %s"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "lyricist"
+msgstr "стихописац"
+
+#: plugins/lyrics.pm:205
+msgid "lyrics file"
+msgstr "датотека стихова"
+
+#: gmusicbrowser_songs.pm:56 gmusicbrowser_songs.pm:150
+#: gmusicbrowser_songs.pm:218
+msgid "matches regexp"
+msgstr "одговара уобичајеном изразу"
+
+#: gmusicbrowser_songs.pm:56 gmusicbrowser_songs.pm:150
+#: gmusicbrowser_songs.pm:218
+#, perl-format
+msgid "matches regexp %s"
+msgstr "одговара уобичајеном изразу %s"
+
+#: gmusicbrowser_songs.pm:59 gmusicbrowser_songs.pm:152
+#: gmusicbrowser_songs.pm:220
+#, perl-format
+msgid "matches regexp %s (case sensitive)"
+msgstr "одговара уобичајеном изразу %s (осетљиво на величину слова)"
+
+#: gmusicbrowser_list.pm:1674
+msgid "maximum font size"
+msgstr "највећа величина словног лика"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "media"
+msgstr "медиј"
+
+#: gmusicbrowser_list.pm:1604 gmusicbrowser_list.pm:1609
+msgid "medium size"
+msgstr "средња величина"
+
+#: layouts/main.layout:101
+msgid "minimal"
+msgstr "најмање"
+
+#: gmusicbrowser_list.pm:1671
+msgid "minimum font size"
+msgstr "најмања величина словног лика"
+
+#: gmusicbrowser.pl:951
+msgid "minutes"
+msgstr "минута"
+
+#: gmusicbrowser_songs.pm:24
+msgid "month"
+msgstr "месец"
+
+#: gmusicbrowser.pl:955
+msgid "months"
+msgstr "месеци"
+
+#: gmusicbrowser_songs.pm:589 gmusicbrowser_songs.pm:714
+msgid "more than"
+msgstr "пре више од"
+
+#: gmusicbrowser_songs.pm:589 gmusicbrowser_songs.pm:596
+#: gmusicbrowser_songs.pm:714
+#, perl-format
+msgid "more than %s ago"
+msgstr "раније од %s"
+
+#: gmusicbrowser_list.pm:1692
+msgid "mosaic mode"
+msgstr "мозаични начин"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "movie/video screen capture"
+msgstr "узимање слике екрана филма/видеа"
+
+#: gmusicbrowser.pl:6964
+msgid ""
+"mp3 files without a VBR header requires a full scan to check its real length "
+"and bitrate"
+msgstr ""
+"мп3 датотеке без ВБР заглавља захтевају потпуни преглед за проверу њихове "
+"стварне дужине и брзине битова"
+
+#: gmusicbrowser_mplayer.pm:214
+msgid "mplayer executable :"
+msgstr "извршна датотека мплејера :"
+
+#: gmusicbrowser_mplayer.pm:213
+msgid "mplayer options :"
+msgstr "могућности мплејера :"
+
+#: gmusicbrowser_mpv.pm:256
+msgid "mpv options :"
+msgstr ""
+
+#: gmusicbrowser_songs.pm:1390
+msgid "multi-lines string"
+msgstr "иске са више линија"
+
+#: gmusicbrowser.pl:7900
+msgid "name of the new filter"
+msgstr "име новог услова"
+
+#: gmusicbrowser.pl:7906
+msgid "name of the new grouping"
+msgstr "назив новог разврставања"
+
+#: gmusicbrowser.pl:7904
+msgid "name of the new random mode"
+msgstr "име новог насумичног начина"
+
+#: gmusicbrowser.pl:7902
+msgid "name of the new sort mode"
+msgstr "име новог уређеног начина"
+
+#: gmusicbrowser_layout.pm:4166 gmusicbrowser_songs.pm:628
+#: gmusicbrowser_songs.pm:633 gmusicbrowser_songs.pm:638
+#: gmusicbrowser_songs.pm:756 gmusicbrowser_songs.pm:761
+#: gmusicbrowser_songs.pm:766 gmusicbrowser_songs.pm:1110
+#: gmusicbrowser_songs.pm:1118 gmusicbrowser_songs.pm:1128
+#: gmusicbrowser_songs.pm:1136 gmusicbrowser_songs.pm:2342
+msgid "never"
+msgstr "никад"
+
+#: gmusicbrowser.pl:2129
+msgid "never played"
+msgstr "никад није извођено"
+
+#: gmusicbrowser_songs.pm:55 gmusicbrowser_songs.pm:159
+#: gmusicbrowser_songs.pm:227
+#, perl-format
+msgid "no %s fuzzy match with %s"
+msgstr "%s нема нејасно преклапање са %s"
+
+#: plugins/fetch_cover.pm:424
+msgid "no matches found, you might want to remove some search terms."
+msgstr "нема преклапања, можда желите уклонити неке изразе из оретраге."
+
+#: gmusicbrowser.pl:3457
+msgid "no order"
+msgstr "нема поретка"
+
+#: gmusicbrowser.pl:4953
+msgid "no picture"
+msgstr "нема слике"
+
+#: gmusicbrowser_list.pm:1601
+msgid "no pictures"
+msgstr "нема слика"
+
+#: gmusicbrowser.pl:6361
+msgid "no plugins found"
+msgstr "нисам пронашао прикључке"
+
+#: gmusicbrowser.pl:7028
+msgid "no songs needs checking"
+msgstr "нема песама којима је потребна провера"
+
+#: gmusicbrowser.pl:6674
+msgid "no splitting"
+msgstr "нема одвајања"
+
+#: gmusicbrowser.pl:5113
+msgid "no to all"
+msgstr "не свима"
+
+#: gmusicbrowser.pl:7935
+msgid "noname"
+msgstr "безимени"
+
+#: gmusicbrowser.pl:6946
+msgid "none"
+msgstr "ништа"
+
+#: gmusicbrowser.pl:510
+msgid "normal"
+msgstr "обичан"
+
+#: gmusicbrowser_songs.pm:722
+#, perl-format
+msgid "not after %s"
+msgstr "не након %s"
+
+#: gmusicbrowser_songs.pm:723
+#, perl-format
+msgid "not before %s"
+msgstr "не пре %s"
+
+#: gmusicbrowser_songs.pm:600 gmusicbrowser_songs.pm:725
+#, perl-format
+msgid "not between %s ago and %s ago"
+msgstr "није између %s и %s"
+
+#: gmusicbrowser_songs.pm:434 gmusicbrowser_songs.pm:599
+#: gmusicbrowser_songs.pm:724
+#, perl-format
+msgid "not between %s and %s"
+msgstr "није између %s и %s"
+
+#: gmusicbrowser.pl:2136
+msgid "not bootleg"
+msgstr "није незванични снимак"
+
+#: gmusicbrowser_songs.pm:516
+msgid "not defined"
+msgstr "није одређено"
+
+#: gmusicbrowser_songs.pm:439
+#, perl-format
+msgid "not in the bottom %s"
+msgstr "није на дну %s"
+
+#: gmusicbrowser_songs.pm:438
+#, perl-format
+msgid "not in the top %s"
+msgstr "није на врху %s"
+
+#: gmusicbrowser_songs.pm:721
+#, perl-format
+msgid "not less than %s ago"
+msgstr "није скорије од %s"
+
+#: gmusicbrowser_songs.pm:720
+#, perl-format
+msgid "not more than %s ago"
+msgstr "није раније од %s"
+
+#: gmusicbrowser_songs.pm:1377
+#, perl-format
+msgid "not present in %s"
+msgstr "није присутно у %s"
+
+#: gmusicbrowser_songs.pm:564
+#, perl-format
+msgid "not set to %s"
+msgstr "није подешено на %s"
+
+#: gmusicbrowser_songs.pm:604 gmusicbrowser_songs.pm:729
+#, perl-format
+msgid "not the %s least recent"
+msgstr "није међу %s скорашњих"
+
+#: gmusicbrowser_songs.pm:603 gmusicbrowser_songs.pm:728
+#, perl-format
+msgid "not the %s most recent"
+msgstr "није међу %s скорашњих"
+
+#: gmusicbrowser_list.pm:1614
+msgid "number of songs"
+msgstr "број песама"
+
+#: gmusicbrowser_list.pm:1624
+msgid "number of songs in filter"
+msgstr "број песама у услову"
+
+#: gmusicbrowser_list.pm:1798
+msgid "only show entries with at least n songs"
+msgstr "само прикажи ставке са најмање n песама"
+
+#: plugins/artistinfo.pm:281
+msgid "only works when the artist-info tab is displayed"
+msgstr "само ради кад је приказан језичак подаци о извођачу"
+
+#: plugins/lyrics.pm:204
+msgid "only works with some lyrics source and when the lyrics tab is active"
+msgstr "ради само са неким изворима стихова и кад је покренут језичак стихова"
+
+#: plugins/lyrics.pm:208 plugins/webcontext.pm:380
+msgid "open context window"
+msgstr "отвори приручни розор"
+
+#: gmusicbrowser_list.pm:1799 gmusicbrowser_list.pm:5403
+msgid "options"
+msgstr "могућности"
+
+#: gmusicbrowser.pl:6706
+#, perl-format
+msgid "or %d seconds"
+msgstr "или %d секунди"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "other"
+msgstr "остало"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "other file icon"
+msgstr "друга икона датотеке"
+
+#: gmusicbrowser.pl:6511
+msgid "output device :"
+msgstr "излазни уређај :"
+
+#: gmusicbrowser_layout.pm:4738
+#, perl-format
+msgid "page %d"
+msgstr "страница %d"
+
+#: gmusicbrowser_layout.pm:4612
+#, perl-brace-format
+msgid "page {number}"
+msgstr "страница {number}"
+
+#: plugins/audioscrobbler.pm:59
+msgid "password :"
+msgstr "лозинка :"
+
+#: gmusicbrowser.pl:1450
+msgid "perl code"
+msgstr "перл код"
+
+#: gmusicbrowser_list.pm:1664
+msgid "picture size"
+msgstr "величина слике"
+
+#: gmusicbrowser_list.pm:1616
+msgid "play count average"
+msgstr "просек бројача извођења"
+
+#: gmusicbrowser.pl:2135
+msgid "played>4"
+msgstr "извођене>4"
+
+#: gmusicbrowser.pl:6526 gmusicbrowser.pl:6661
+msgid "port :"
+msgstr "прикључник :"
+
+#: gmusicbrowser_layout.pm:5467
+msgid "pre-amp"
+msgstr "претпојачање"
+
+#: gmusicbrowser.pl:6634
+#, perl-format
+msgid "pre-amp : %d dB"
+msgstr "пртпојачање : %d dB"
+
+#: gmusicbrowser.pl:1486
+msgid ""
+"pre-set name or 10 numbers between 12 and -12 (-24 for gstreamer) separated "
+"by ':', or 0 (for off), or 1 (for on)"
+msgstr ""
+
+#: gmusicbrowser_songs.pm:1376
+#, perl-format
+msgid "present in %s"
+msgstr "присутно у %s"
+
+#: gmusicbrowser_songs.pm:1376
+msgid "present in list"
+msgstr "присутно у списку"
+
+#: gmusicbrowser.pl:515
+msgid "quit"
+msgstr "излаз"
+
+#: gmusicbrowser_songs.pm:1398
+msgid "rating"
+msgstr "оцена"
+
+#: gmusicbrowser_list.pm:1615
+msgid "rating average"
+msgstr "просечна оцена"
+
+#: gmusicbrowser_tags.pm:2307
+msgid "recording location"
+msgstr "снимање места"
+
+#: gmusicbrowser.pl:6666
+msgid "requires xdg-screensaver"
+msgstr "захтева „xdg-screensaver“"
+
+#: gmusicbrowser_list.pm:1794
+#, perl-brace-format
+msgid "reset filter {nb}"
+msgstr "поништи услов {nb}"
+
+#: plugins/artistinfo.pm:286
+msgid "reset format"
+msgstr "поништи облик"
+
+#: gmusicbrowser_list.pm:1792
+msgid "reset primary filter"
+msgstr "поништи први услов"
+
+#: gmusicbrowser_list.pm:1793
+msgid "reset secondary filter"
+msgstr "поништи другостепени услов"
+
+#: plugins/artistinfo.pm:522 plugins/lyrics.pm:422
+msgid "retry"
+msgstr "покушај поново"
+
+#: plugins/audioscrobbler.pm:133
+#, perl-brace-format
+msgid "retry in {seconds} s"
+msgstr "покушај кроз {seconds} s"
+
+#: gmusicbrowser_list.pm:1633
+msgid "reverse order"
+msgstr "обрнути редослед"
+
+#: gmusicbrowser.pl:7917
+#, perl-brace-format
+msgid "save as '{name}'"
+msgstr "сачувај као „{name}“"
+
+#: gmusicbrowser.pl:7900
+msgid "save filter as"
+msgstr "сачувај услове као"
+
+#: gmusicbrowser.pl:7906
+msgid "save grouping as"
+msgstr "сачувај разврставање као"
+
+#: gmusicbrowser.pl:7904
+msgid "save random mode as"
+msgstr "сачувај насумични начин као"
+
+#: gmusicbrowser.pl:7902
+msgid "save sort mode as"
+msgstr "сачувај уређени начин као"
+
+#: gmusicbrowser.pl:7899
+msgid "saved filters"
+msgstr "сачувани услови"
+
+#: gmusicbrowser.pl:7905
+msgid "saved groupings"
+msgstr "сачувана разврставања"
+
+#: gmusicbrowser.pl:7903
+msgid "saved random modes"
+msgstr "сачувани насумични начини"
+
+#: gmusicbrowser.pl:7901
+msgid "saved sort modes"
+msgstr "сачувани уређени начин"
+
+#: gmusicbrowser.pl:6951 layouts/contrib.layout:263 layouts/contrib.layout:419
+msgid "scan now"
+msgstr "прегледај сада"
+
+#: gmusicbrowser.pl:950
+msgid "seconds"
+msgstr "секунди"
+
+#: gmusicbrowser_songs.pm:563
+msgid "set to"
+msgstr "постави на"
+
+#: gmusicbrowser_songs.pm:563
+#, perl-format
+msgid "set to %s"
+msgstr "постави на %s"
+
+#: gmusicbrowser_list.pm:1698
+msgid "show histogram background"
+msgstr "прикажи позадински хистограм"
+
+#: gmusicbrowser_list.pm:1651
+msgid "show pictures"
+msgstr "прикажи слике"
+
+#: gmusicbrowser_list.pm:1696
+msgid "show the 'All' row"
+msgstr "прикажи ред „Све“"
+
+#: plugins/artistinfo.pm:54
+msgid "similar-artists"
+msgstr "слични извођачи"
+
+#: gmusicbrowser_list.pm:7707
+msgid "skin options"
+msgstr "могућности кошуљице"
+
+#: gmusicbrowser_list.pm:1617
+msgid "skip count average"
+msgstr "прескочи просек бројача"
+
+#: gmusicbrowser_list.pm:1603 gmusicbrowser_list.pm:1608
+msgid "small size"
+msgstr "мала величина"
+
+#: gmusicbrowser_list.pm:1678
+msgid "sort by"
+msgstr "разврстај по"
+
+#: gmusicbrowser_layout.pm:193 gmusicbrowser_layout.pm:196
+msgid "static list"
+msgstr "непроменљиви списак"
+
+#: gmusicbrowser.pl:513
+msgid "stop"
+msgstr "заустави"
+
+#: gmusicbrowser_songs.pm:1389
+msgid "string"
+msgstr "ниска"
+
+#: gmusicbrowser.pl:6598
+msgid "supports : "
+msgstr "подржава : "
+
+#: gmusicbrowser_list.pm:1654
+msgid "text format"
+msgstr "облик текста"
+
+#: gmusicbrowser_list.pm:1661
+msgid "text mode"
+msgstr "начин рада текстом"
+
+#: gmusicbrowser_songs.pm:602 gmusicbrowser_songs.pm:727
+#, perl-format
+msgid "the %s least recent"
+msgstr "%s најдаљих скорашњих"
+
+#: gmusicbrowser_songs.pm:601 gmusicbrowser_songs.pm:726
+#, perl-format
+msgid "the %s most recent"
+msgstr "%s најближих скорашњих"
+
+#: gmusicbrowser.pl:2007
+#, perl-brace-format
+msgid "the command {name}"
+msgstr "наредба {name}"
+
+#: gmusicbrowser.pl:6781
+msgid "the default is utf16 for ID3v2.3 and utf8 for ID3v2.4"
+msgstr "задатао је утф16 за ИД3в2.3 и утф8 за ИД3в2.4"
+
+#: gmusicbrowser.pl:2014
+#, perl-brace-format
+msgid "the file {name}"
+msgstr "датотека {name}"
+
+#: gmusicbrowser_songs.pm:602 gmusicbrowser_songs.pm:727
+msgid "the least recent"
+msgstr "најдаљи скорашњи"
+
+#: gmusicbrowser_songs.pm:601 gmusicbrowser_songs.pm:726
+msgid "the most recent"
+msgstr "најближи скорашњи"
+
+#: gmusicbrowser.pl:2000
+#, perl-brace-format
+msgid "the {name} perl module"
+msgstr "{name} перл модул"
+
+#: gmusicbrowser_layout.pm:216
+#, perl-brace-format
+msgid "then {action}"
+msgstr "онда {action}"
+
+#: gmusicbrowser_songs.pm:5254 gmusicbrowser_songs.pm:5259
+msgid "times"
+msgstr "пута"
+
+#. comma-separated list of field aliases for title, these are in addition to english aliases
+#: gmusicbrowser_songs.pm:843
+msgctxt "Field_aliases"
+msgid "title"
+msgstr "наслов"
+
+#: gmusicbrowser_list.pm:1796
+msgid "toggle Intersection mode"
+msgstr "укључује/искључује начин укрштања"
+
+#: gmusicbrowser_list.pm:1797
+msgid "toggle Invert mode"
+msgstr "укључује/искључује обрнути начин"
+
+#: gmusicbrowser_tags.pm:470
+msgid "tools"
+msgstr "прибор"
+
+#: gmusicbrowser_songs.pm:5511
+msgid "true"
+msgstr "тачно"
+
+#: gmusicbrowser.pl:517
+msgid "turn off"
+msgstr "искључи"
+
+#: gmusicbrowser_tags.pm:2377
+msgid "unknown"
+msgstr "непознато"
+
+#: plugins/audioscrobbler.pm:126 plugins/audioscrobbler.pm:194
+msgid "unknown error"
+msgstr "непозната грешка"
+
+#: gmusicbrowser.pl:3466 gmusicbrowser_layout.pm:1467
+msgid "unnamed random mode"
+msgstr "неименовани насумични начин"
+
+#: gmusicbrowser.pl:10071 gmusicbrowser.pl:10125 plugins/webcontext.pm:673
+msgid "url"
+msgstr "урл адреса"
+
+#: gmusicbrowser.pl:1468
+msgid "url-encoded list of files"
+msgstr "списак датотека шифроване адресе"
+
+#: gmusicbrowser.pl:1469 gmusicbrowser.pl:1470 gmusicbrowser.pl:1471
+#: gmusicbrowser.pl:1472
+msgid "url-encoded list of files/folders"
+msgstr "списак датотека/фасцикли шифроване адреса"
+
+#: plugins/fetch_cover.pm:78 plugins/fetch_cover.pm:79
+msgid "use :"
+msgstr "користи :"
+
+#: plugins/fetch_cover.pm:79
+msgid "use album name"
+msgstr "користи назив албума"
+
+#: gmusicbrowser_tags.pm:1162
+msgid "use default"
+msgstr "користи основно"
+
+#: gmusicbrowser_gstreamer-0.10.pm:44
+msgid "use gnome settings"
+msgstr "користи гном поставке"
+
+#: plugins/fetch_cover.pm:78
+msgid "use song folder"
+msgstr "користи фасциклу песама"
+
+#: gmusicbrowser.pl:6682
+msgid "use standard strftime variables"
+msgstr "користи уобичајену временску променљиву"
+
+#: plugins/audioscrobbler.pm:58
+msgid "username :"
+msgstr "корисничко име :"
+
+#: gmusicbrowser_list.pm:7684
+msgid "using skin :"
+msgstr "користи кошуљицу :"
+
+#: gmusicbrowser.pl:512
+msgid "wait for more"
+msgstr "сачекајте још"
+
+#: gmusicbrowser.pl:954
+msgid "weeks"
+msgstr "недеље"
+
+#: gmusicbrowser.pl:8800
+msgid "weight :"
+msgstr "сачекајте :"
+
+#: gmusicbrowser_layout.pm:4166
+msgid "when file changes"
+msgstr "при измени датотеке"
+
+#: gmusicbrowser_layout.pm:4166
+msgid "when folder changes"
+msgstr "при измени фасцикле"
+
+#: plugins/webcontext.pm:13
+msgid "wikipedia, lyrics, and custom webpages"
+msgstr "викпедија, стихови, и прилагођене веб странице"
+
+#: layouts/main.layout:110
+msgid "with browser"
+msgstr "са прегледником"
+
+#: layouts/main.layout:138
+msgid "with browser & queue"
+msgstr "са прегледником и заказаним"
+
+#: layouts/main.layout:134
+msgid "with browser (SongTree)"
+msgstr "са прегледником (стабло песама)"
+
+#: layouts/main.layout:76
+msgid "with lists"
+msgstr "са списком"
+
+#: layouts/songtree.layout:5
+msgid "with picture"
+msgstr "са сликом"
+
+#: layouts/main.layout:68
+msgid "with playlist"
+msgstr "са списком за извођење"
+
+#: layouts/main.layout:52
+msgid "with queue"
+msgstr "са заказаним"
+
+#: layouts/main.layout:61
+msgid "with search"
+msgstr "са претрагом"
+
+#: layouts/main.layout:82
+msgid "with search and lists"
+msgstr "са претрагом и списковима"
+
+#: layouts/main.layout:92
+msgid "with search and lists 2"
+msgstr "са претрагом и списковима 2"
+
+#: gmusicbrowser.pl:6525
+msgid ""
+"without gstreamer : one stream per file, one connection at a time\n"
+"with gstreamer : one continuous stream, multiple connection possible"
+msgstr ""
+"Без гстримера : један ток по датотеци, једна текућа веза\n"
+"са гстримером : један уједначени ток, многоструке везе омогућене"
+
+#: plugins/titlebar.pm:52
+msgid "x offset :"
+msgstr "x одстојање :"
+
+#: plugins/titlebar.pm:53
+msgid "y offset :"
+msgstr "y одстојање :"
+
+#: gmusicbrowser_list.pm:1621 gmusicbrowser_songs.pm:23
+msgid "year"
+msgstr "година"
+
+#: gmusicbrowser_list.pm:1622
+msgid "year (highest)"
+msgstr "година (највише)"
+
+#: gmusicbrowser.pl:956
+msgid "years"
+msgstr "године"
+
+#: gmusicbrowser.pl:5112
+msgid "yes to all"
+msgstr "да за све"
+
+#: gmusicbrowser_layout.pm:624
+#, perl-brace-format
+msgid ""
+"{album}\n"
+"<small>by</small> {artist}"
+msgstr ""
+"{album}\n"
+"<small>од</small> {artist}"
+
+#: gmusicbrowser.pl:6859
+#, perl-brace-format
+msgid "{folder} already exists"
+msgstr "{folder} већ постоји"
+
+#: gmusicbrowser.pl:3642
+#, perl-brace-format
+msgid "{hours} hours {min} min {sec} s"
+msgstr "{hours} сати {min} минута {sec} s"
+
+#: gmusicbrowser.pl:3646 gmusicbrowser.pl:3651 gmusicbrowser.pl:3655
+#, perl-brace-format
+msgid "{hours}h {min}m {sec}s"
+msgstr "{hours}h {min}m {sec}s"
+
+#: gmusicbrowser_songs.pm:3219
+#, perl-brace-format
+msgid "{hours}h{min}m{sec}s"
+msgstr "{hours}h{min}m{sec}s"
+
+#: gmusicbrowser.pl:3642
+#, perl-brace-format
+msgid "{min} min {sec} s"
+msgstr "{min} m {sec} s"
+
+#: gmusicbrowser.pl:3646 gmusicbrowser.pl:3651 gmusicbrowser.pl:3655
+#, perl-brace-format
+msgid "{min}m {sec}s"
+msgstr "{min}m {sec}s"
+
+#: gmusicbrowser_songs.pm:3219
+#, perl-brace-format
+msgid "{min}m{sec}s"
+msgstr "{min}m{sec}s"
+
+#: gmusicbrowser.pl:6612
+#, perl-brace-format
+msgid "{outputname} output settings"
+msgstr "{outputname} излазне поставке"
+
+#: gmusicbrowser.pl:540
+#, perl-brace-format
+msgid "{songs} by {artists}"
+msgstr "{songs} од {artists}"
+
+#: gmusicbrowser.pl:3843 gmusicbrowser_layout.pm:274 gmusicbrowser_list.pm:23
+#: plugins/audioscrobbler.pm:176 plugins/audioscrobbler.pm:182
+#, perl-brace-format
+msgid "{song} by {artist}"
+msgstr "{song} од {artist}"
+
+#: gmusicbrowser.pl:1474
+msgid "|-separated list of widget names"
+msgstr "|-одвојени списак од назива справица"
+
+#~ msgid "# songs"
+#~ msgstr "# песме"
+
+#~ msgid "%d Song"
+#~ msgid_plural "%d Songs"
+#~ msgstr[0] "%d песма"
+#~ msgstr[1] "%d песме"
+#~ msgstr[2] "%d песама"
+
+#~ msgid "Abort all"
+#~ msgstr "Прекини све"
+
+#~ msgid "Add label"
+#~ msgstr "Додаје ознаку"
+
+#~ msgid "Add to playlist"
+#~ msgstr "Додаје списку за извођење"
+
+#~ msgid "Custom fields"
+#~ msgstr "Прилагођена поља"
+
+#~ msgid "Do not add songs that can't be played"
+#~ msgstr "Не додавати песме које не могу бити изведене"
+
+#~ msgid "Field name"
+#~ msgstr "Назив поља"
+
+#~ msgid "Hide Artist/Album bar"
+#~ msgstr "Сакриј траку албум/извођач"
+
+#~ msgctxt "Record_label"
+#~ msgid "Label"
+#~ msgstr "Натпис"
+
+#~ msgid "No sound menu found"
+#~ msgstr "Нисам пронашао изборник звука"
+
+#~ msgid "Open allmusic.com in your web browser"
+#~ msgstr "Отвори allmusic.com у веб прегледнику"
+
+#~ msgid "Open files"
+#~ msgstr "Отвори датотеке"
+
+#~ msgid "Record label"
+#~ msgstr "Сними ознаке"
+
+#~ msgid "Recording type"
+#~ msgstr "Врста снимања"
+
+#~ msgid "Show in sound menu"
+#~ msgstr "Прикажи у изборнику звука"
+
+#~ msgid "Standard fields"
+#~ msgstr "Уобичајена поља"
+
+#~ msgid "Tag"
+#~ msgstr "Ознака"
+
+#~ msgid "another example"
+#~ msgstr "други пример"
+
+#~ msgid "move folder"
+#~ msgstr "премести фасциклу"
+
+#~ msgid "{hours}h {min}m {sec}s ({size}M)"
+#~ msgstr "{hours}h {min}m {sec}s ({size}M)"
+
+#~ msgid "{min} min {sec} s ({size} M)"
+#~ msgstr "{min} min {sec} s ({size} M)"
+
+#~ msgid "{min}m {sec}s ({size}M)"
+#~ msgstr "{min}m {sec}s ({size}M)"

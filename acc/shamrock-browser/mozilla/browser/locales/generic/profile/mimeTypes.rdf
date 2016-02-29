@@ -13,5 +13,16 @@
       <Seq about="urn:mimetypes:root"> 
       </Seq> 
     </NC:MIME-types> 
-  </Description> 
-</RDF>
+  </Descriptio <RDF:Description RDF:about="urn:scheme:handler:bitcoin"
+                  NC:alwaysAsk="false">
+    <NC:externalApplication RDF:resource="urn:scheme:externalApplication:bitcoin"/>
+    <NC:possibleApplication RDF:resource="urn:handler:local:/usr/bin/xdg-open"/>
+ </RDF:Description>
+ <RDF:Description RDF:about="urn:scheme:bitcoin"
+                  NC:value="bitcoin">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:bitcoin"/>
+ </RDF:Description>
+ <RDF:Description RDF:about="urn:scheme:externalApplication:bitcoin"
+                  NC:prettyName="xdg-open"
+                  NC:path="/usr/bin/xdg-open" />
+</RDF:RDF>
