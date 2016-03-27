@@ -1,3 +1,0 @@
-locale  songbird  en-US  jar:locales.jar!/locale/en-US/songbird/
-override chrome://browser/locale/preferences/preferences.dtd chrome://songbird/locale/preferences.dtd
-locale  branding  en-US  jar:locales.jar!/locale/branding/

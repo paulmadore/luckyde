@@ -1,0 +1,122 @@
+<ui version="4.0" >
+ <class>server</class>
+ <widget class="QWidget" name="server" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>107</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Connection Path:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>511</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>&lt;b>Server Setting:&lt;/b>&lt;br />&lt;br />Here you should enter the server connection path. This is usually an IP and Port&lt;br /> or a unix file descriptor. When xmms2d runs on this host, it is ok to let it empty&lt;br />and just press 'Test it'.</string>
+   </property>
+   <property name="textFormat" >
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="serverConPath" >
+   <property name="geometry" >
+    <rect>
+     <x>130</x>
+     <y>150</y>
+     <width>181</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbTry" >
+   <property name="geometry" >
+    <rect>
+     <x>330</x>
+     <y>150</y>
+     <width>83</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Test It</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="conStatus_label" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Connection Status:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="conStatus" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+   <property name="textFormat" >
+    <enum>Qt::RichText</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+gnome-cupertino (2.1.5~precise~NoobsLab.com) precise; urgency=high
+ 
+  * unico-engine dependencies removed, unico-engine is no longer necessary for the theme
+  * Added theme gnome-cupertino-mint
+  * Modified toolbar buttons (pressed and over effects)
+  * Small variation Gtkswich 
+  * fixed minor bugs
+
+ -- Umair Riaz <noobslab@hotmail.com>  Wed, 04 Jun 2014 12:54:31 +0200
+

@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "
+ +-+-+-+-+-+-+-+-+-+-+-+-+
+ |N o o b s L a B . c o m|
+ +-+-+-+-+-+-+-+-+-+-+-+-+
+"
+echo ""
+echo "keep visit on www.NoobsLab.com"
+sleep 2
+echo ""
+

@@ -1,0 +1,4244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="0.9.7">
+  <category>
+    
+    <title>!units!Length</title>
+    <title xml:lang="nl">Lengte</title>
+    <title xml:lang="sv">Längd</title>
+    <title xml:lang="zh_CN">长度</title>
+    <unit type="base">
+      <system>SI</system>
+      <title>Meter</title>
+      <title xml:lang="nl">Meter</title>
+      <title xml:lang="zh_CN">米</title>
+      <names>ar:m,meter,p:meters,metre,p:metres</names>
+      <names xml:lang="nl">m,meter,meters</names>
+      <names xml:lang="sv">a:m,meter</names>
+      <names xml:lang="zh_CN">ar:m,meter,p:meters,metre,p:metres</names>
+    </unit>
+    <unit type="composite">
+      <title>Kilometer</title>
+      <title xml:lang="nl">Kilometer</title>
+      <title xml:lang="zh_CN">千米</title>
+      <names>r:km_c</names>
+      <part>
+        <unit>m</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Decimeter</title>
+      <title xml:lang="nl">Decimeter</title>
+      <title xml:lang="zh_CN">分米</title>
+      <names>r:dm_c</names>
+      <part>
+        <unit>m</unit>
+        <prefix>-1</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Centimeter</title>
+      <title xml:lang="nl">Centimeter</title>
+      <title xml:lang="sv">Centimeter</title>
+      <title xml:lang="zh_CN">厘米</title>
+      <names>r:cm_c</names>
+      <part>
+        <unit>m</unit>
+        <prefix>-2</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Millimeter</title>
+      <title xml:lang="nl">Milimeter</title>
+      <title xml:lang="zh_CN">毫米</title>
+      <names>r:mm_c</names>
+      <part>
+        <unit>m</unit>
+        <prefix>-3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Nautical Mile</title>
+      <title xml:lang="nl">Nautische mijl</title>
+      <title xml:lang="sv">Sjömil</title>
+      <title xml:lang="zh_CN">海里</title>
+      <names>r:nautical_mile,p:nautical_miles</names>
+      <names xml:lang="nl">nautische_mijl,nautische_mijlen</names>
+      <names xml:lang="sv">sjömil</names>
+      <names xml:lang="zh_CN">r:nautical_mile,p:nautical_miles</names>
+      <base>
+        <unit>m</unit>
+        <relation>1852</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>&#xC5;ngstr&#xF6;m</title>
+      <title xml:lang="nl">&#xC5;ngstr&#xF6;m</title>
+      <title xml:lang="sv">Ångström</title>
+      <names>aru:&#xC5;,u:&#xE5;ngstr&#xF6;m,angstrom</names>
+      <names xml:lang="zh_CN">aru:&#xC5;,u:&#xE5;ngstr&#xF6;m,angstrom</names>
+      <base>
+        <unit>m</unit>
+        <relation>1E-10</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>U.S. Survey Inch</title>
+      <title xml:lang="nl">U.S. Survey Inch</title>
+      <names>ar:US_in,US_inch,p:US_inches</names>
+      <names xml:lang="zh_CN">ar:US_in,US_inch,p:US_inches</names>
+      <base>
+        <unit>m</unit>
+        <relation>100/3937</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Inch</title>
+      <title xml:lang="nl">Inch</title>
+      <title xml:lang="sv">Tum</title>
+      <title xml:lang="zh_CN">英寸</title>
+      <names>ar:in,inch,p:inches</names>
+      <names xml:lang="sv">tum,a:in,inch</names>
+      <names xml:lang="zh_CN">ar:in,inch,p:inches</names>
+      <base>
+        <unit>m</unit>
+        <relation>0.0254</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Hand</title>
+      <title xml:lang="nl">Hand</title>
+      <names>r:hand,p:hands</names>
+      <names xml:lang="zh_CN">r:hand,p:hands</names>
+      <base>
+        <unit>in</unit>
+        <relation>4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Foot</title>
+      <title xml:lang="nl">Voet</title>
+      <title xml:lang="sv">Engelsk Fot</title>
+      <title xml:lang="zh_CN">英尺</title>
+      <names>ar:ft,foot,p:feet</names>
+      <names xml:lang="zh_CN">ar:ft,foot,p:feet</names>
+      <base>
+        <unit>hand</unit>
+        <relation>3</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>U.S. Survey Foot</title>
+      <title xml:lang="nl">U.S. Survey Foot</title>
+      <names>ar:US_ft,US_foot,p:US_feet</names>
+      <names xml:lang="zh_CN">ar:US_ft,US_foot,p:US_feet</names>
+      <base>
+        <unit>US_in</unit>
+        <relation>12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Link</title>
+      <title xml:lang="nl">Link</title>
+      <title xml:lang="sv">Länk</title>
+      <names>ar:li,link,p:links</names>
+      <names xml:lang="zh_CN">ar:li,link,p:links</names>
+      <base>
+        <unit>ft</unit>
+        <relation>66/100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Yard</title>
+      <title xml:lang="nl">Yard</title>
+      <title xml:lang="zh_CN">码</title>
+      <names>ar:yd,yard,p:yards</names>
+      <names xml:lang="zh_CN">ar:yd,yard,p:yards</names>
+      <base>
+        <unit>ft</unit>
+        <relation>3</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Rod (pole/perch)</title>
+      <title xml:lang="nl">Rod (pole/perch)</title>
+      <names>ar:rd,rod,p:rods</names>
+      <names xml:lang="zh_CN">ar:rd,rod,p:rods</names>
+      <base>
+        <unit>US_ft</unit>
+        <relation>16.5</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Fathom</title>
+      <title xml:lang="nl">Vadem</title>
+      <title xml:lang="sv">Famn</title>
+      <title xml:lang="zh_CN">英寻</title>
+      <names>r:fathom,p:fathoms</names>
+      <names xml:lang="nl">vadem,vadems</names>
+      <names xml:lang="zh_CN">r:fathom,p:fathoms</names>
+      <base>
+        <unit>yd</unit>
+        <relation>2</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Chain</title>
+      <title xml:lang="nl">Chain</title>
+      <title xml:lang="zh_CN">链</title>
+      <names>ar:ch,chain,p:chains</names>
+      <names xml:lang="zh_CN">ar:ch,chain,p:chains</names>
+      <base>
+        <unit>li</unit>
+        <relation>100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Furlong</title>
+      <title xml:lang="nl">Furlong</title>
+      <title xml:lang="zh_CN">弗隆</title>
+      <names>ar:fur,furlong,p:furlongs</names>
+      <names xml:lang="zh_CN">ar:fur,furlong,p:furlongs</names>
+      <base>
+        <unit>yd</unit>
+        <relation>220</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Mile</title>
+      <title xml:lang="nl">Mijl</title>
+      <title xml:lang="zh_CN">英里</title>
+      <names>ar:mi,mile,p:miles</names>
+      <names xml:lang="nl">mi,mijl,mijlen</names>
+      <names xml:lang="zh_CN">ar:mi,mile,p:miles</names>
+      <base>
+        <unit>ch</unit>
+        <relation>80</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>U.S. Survey Mile</title>
+      <title xml:lang="nl">U.S. Survey Mile</title>
+      <names>ar:US_mi,US_mile,p:US_miles</names>
+      <names xml:lang="zh_CN">ar:US_mi,US_mile,p:US_miles</names>
+      <base>
+        <unit>US_ft</unit>
+        <relation>5280</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Mil (1/1000 in)</title>
+      <title xml:lang="nl">Mil (1/1000 in)</title>
+      <title xml:lang="zh_CN">毫英寸(1/1000英寸)</title>
+      <names>r:mil,p:mils</names>
+      <names xml:lang="zh_CN">r:mil,p:mils</names>
+      <base>
+        <unit>in</unit>
+        <relation>0.001</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Astronomical Unit</title>
+      <title xml:lang="nl">Astronomische eenheid</title>
+      <title xml:lang="sv">Astronomisk enhet</title>
+      <title xml:lang="zh_CN">天文单位</title>
+      <names>ar:AU,astronomical_unit,p:astronomical_units</names>
+      <names xml:lang="nl">AU,astronomische_eenheid,astronomische_eenheden</names>
+      <names xml:lang="sv">a:AU,astronomisk_enhet,p:astronomiska_enheter</names>
+      <names xml:lang="zh_CN">ar:AU,astronomical_unit,p:astronomical_units</names>
+      <base>
+        <unit>m</unit>
+        <relation>149578706600</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Light Year</title>
+      <title xml:lang="nl">Lichtjaar</title>
+      <title xml:lang="sv">Ljusår</title>
+      <title xml:lang="zh_CN">光年</title>
+      <names>ar:ly,lightyear,p:lightyears</names>
+      <names xml:lang="nl">lj,lichtjaar,lichtjaren</names>
+      <names xml:lang="sv">a:ly,ljusår</names>
+      <names xml:lang="zh_CN">ar:ly,lightyear,p:lightyears</names>
+      <base>
+        <unit>m</unit>
+        <relation>9460730472580800</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Parsec</title>
+      <title xml:lang="nl">Parsec</title>
+      <title xml:lang="zh_CN">秒差距</title>
+      <names>ar:pc,parsec,p:parsecs</names>
+      <names xml:lang="sv">a:pc,parsek,p:parseks</names>
+      <names xml:lang="zh_CN">ar:pc,parsec,p:parsecs</names>
+      <base>
+        <unit>AU</unit>
+        <relation>648000/pi</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pied du roi (French Royal Foot)</title>
+      <title xml:lang="nl">Pied du roi (Franse koninklijke voet)</title>
+      <names>r:pied_du_roi</names>
+      <names xml:lang="zh_CN">r:pied_du_roi</names>
+      <base>
+        <unit>m</unit>
+        <relation>9000/27706</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pouce (French Royal Inch)</title>
+      <title xml:lang="nl">Pouce (Franse koninklijke duim)</title>
+      <names>r:pouce</names>
+      <names xml:lang="zh_CN">r:pouce</names>
+      <base>
+        <unit>pied_du_roi</unit>
+        <relation>1/12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Ligne</title>
+      <title xml:lang="nl">Ligne (1/40 inch)</title>
+      <names>r:ligne</names>
+      <names xml:lang="zh_CN">r:ligne</names>
+      <base>
+        <unit>pouce</unit>
+        <relation>1/12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Toise</title>
+      <title xml:lang="nl">Toise</title>
+      <names>r:toise</names>
+      <names xml:lang="zh_CN">r:toise</names>
+      <base>
+        <unit>pied_du_roi</unit>
+        <relation>6</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    
+    <title>!units!Angle</title>
+    <title xml:lang="nl">Hoek</title>
+    <title xml:lang="sv">Vinkel</title>
+    <title xml:lang="zh_CN">角度</title>
+    <category>
+      <title>Plane Angle</title>
+      <title xml:lang="nl">Vlakke hoek</title>
+      <title xml:lang="sv">Planvinkel</title>
+      <title xml:lang="zh_CN">平面角</title>
+      <unit type="composite">
+        <hidden>true</hidden>
+        <title>Meter per Meter</title>
+        <title xml:lang="nl">Meter per meter</title>
+        <title xml:lang="sv">Meter per meter</title>
+        <title xml:lang="zh_CN">米每米</title>
+        <names>r:m_p_m</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Radian</title>
+        <title xml:lang="nl">Radiaal</title>
+        <title xml:lang="sv">Radian</title>
+        <title xml:lang="zh_CN">弧度</title>
+        <names>ar:rad,radian,p:radians</names>
+        <names xml:lang="nl">rad,radiaal,radialen</names>
+        <names xml:lang="zh_CN">ar:rad,radian,p:radians</names>
+        <base>
+          <unit>m_p_m</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Degree</title>
+        <title xml:lang="nl">Graad</title>
+        <title xml:lang="sv">Grad</title>
+        <title xml:lang="zh_CN">度</title>
+        <names>ar:deg,au:&#xB0;,degree,p:degrees</names>
+        <names xml:lang="nl">grd,&#xB0;,graad,graden</names>
+        <names xml:lang="sv">a:deg,au:&#xB0;,grad,p:grader</names>
+        <names xml:lang="zh_CN">ar:deg,au:&#xB0;,degree,p:degrees</names>
+        <base>
+          <unit>rad</unit>
+          <relation>pi/180</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Gradian (Gon)</title>
+        <title xml:lang="nl">Grad (Gon)</title>
+        <title xml:lang="sv">Gradient (Gon)</title>
+        <names>ar:gra,gradian,p:gradians,gon,p:gons</names>
+        <names xml:lang="nl">gra,grad,grads,gon,gons</names>
+        <names xml:lang="zh_CN">ar:gra,gradian,p:gradians,gon,p:gons</names>
+        <base>
+          <unit>rad</unit>
+          <relation>pi/200</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Arcminute</title>
+        <title xml:lang="nl">Boogminuut</title>
+        <title xml:lang="zh_CN">弧分</title>
+        <names>r:arcminute,p:arcminutes</names>
+        <names xml:lang="nl">boogminuut,boogminuten</names>
+        <names xml:lang="zh_CN">r:arcminute,p:arcminutes</names>
+        <base>
+          <unit>deg</unit>
+          <relation>1/60</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Arcsecond</title>
+        <title xml:lang="nl">Boogseconde</title>
+        <title xml:lang="zh_CN">弧秒</title>
+        <names>r:arcsecond,p:arcseconds</names>
+        <names xml:lang="nl">boogseconde,boogseconden</names>
+        <names xml:lang="zh_CN">r:arcsecond,p:arcseconds</names>
+        <base>
+          <unit>arcminute</unit>
+          <relation>1/60</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Turn</title>
+        <title xml:lang="nl">Slag</title>
+        <names>r:turn,p:turns</names>
+        <names xml:lang="nl">slag,slagen</names>
+        <names xml:lang="zh_CN">r:turn,p:turns</names>
+        <base>
+          <unit>deg</unit>
+          <relation>360</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Solid Angle</title>
+      <title xml:lang="nl">Ruimtehoek</title>
+      <title xml:lang="sv">Rymdvinkel</title>
+      <title xml:lang="zh_CN">立体角</title>
+      <unit type="composite">
+        <hidden>true</hidden>
+        <title>Square Meter per Square Meter</title>
+        <title xml:lang="nl">Vierkante meter per vierkante meter</title>
+        <title xml:lang="sv">Kvadratmeter per kvadratmeter</title>
+        <title xml:lang="zh_CN">平方米每平方米</title>
+        <names>r:sqm_p_sqm</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>2</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Steradian</title>
+        <title xml:lang="nl">Steradiaal</title>
+        <title xml:lang="sv">Steradian</title>
+        <title xml:lang="zh_CN">球面度</title>
+        <names>ar:sr,steradian,p:steradians</names>
+        <names xml:lang="nl">sr,steradiaal,steradialen</names>
+        <names xml:lang="zh_CN">ar:sr,steradian,p:steradians</names>
+        <base>
+          <unit>m_p_m</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Angular Acceleration</title>
+      <title xml:lang="nl">Hoekversnelling</title>
+      <title xml:lang="sv">Vinkelacceleration</title>
+      <title xml:lang="zh_CN">角加速度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Radians per Second Squared</title>
+        <title xml:lang="nl">Radialen per seconde kwadraat</title>
+        <title xml:lang="sv">Radianter per kvadratsekund</title>
+        <title xml:lang="zh_CN">弧度每平方秒</title>
+        <names>r:rad_p_sqs</names>
+        <part>
+          <unit>rad</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Angular Velocity</title>
+      <title xml:lang="nl">Hoeksnelheid</title>
+      <title xml:lang="sv">Vinkelhastighet</title>
+      <title xml:lang="zh_CN">角速度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Radians per Second</title>
+        <title xml:lang="nl">Radialen per seconde</title>
+        <title xml:lang="sv">Radianter per sekund</title>
+        <title xml:lang="zh_CN">弧度每秒</title>
+        <names>r:rad_p_s</names>
+        <part>
+          <unit>rad</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    
+    <title>!units!Mass</title>
+    <title xml:lang="nl">Massa</title>
+    <title xml:lang="sv">Massa</title>
+    <title xml:lang="zh_CN">质量</title>
+    <unit type="base">
+      <system>SI</system>
+      <title>Gram</title>
+      <title xml:lang="nl">Gram</title>
+      <title xml:lang="zh_CN">克</title>
+      <names>ar:g,gram,p:grams</names>
+      <names xml:lang="nl">g,gram,grammen</names>
+      <names xml:lang="sv">a:g,gram</names>
+      <names xml:lang="zh_CN">ar:g,gram,p:grams</names>
+    </unit>
+    <unit type="composite">
+      <title>Kilogram</title>
+      <title xml:lang="nl">Kilogram</title>
+      <title xml:lang="zh_CN">千克</title>
+      <names>r:kg_c</names>
+      <part>
+        <unit>g</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Hektogram</title>
+      <title xml:lang="nl">Hectogram</title>
+      <names>r:hg_c</names>
+      <part>
+        <unit>g</unit>
+        <prefix>2</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Metric Ton (Tonne)</title>
+      <title xml:lang="nl">Metrische ton (Ton)</title>
+      <title xml:lang="sv">Ton</title>
+      <title xml:lang="zh_CN">公吨</title>
+      <names>ar:t,tonne,p:tonnes,ton,p:tons</names>
+      <names xml:lang="nl">t,ton,tonnen</names>
+      <names xml:lang="sv">a:t,ton</names>
+      <names xml:lang="zh_CN">ar:t,tonne,p:tonnes,ton,p:tons</names>
+      <base>
+        <unit>g</unit>
+        <relation>1000000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Grain</title>
+      <title xml:lang="nl">Grain</title>
+      <title xml:lang="zh_CN">格令</title>
+      <names>ar:gr,grain,p:grains</names>
+      <names xml:lang="zh_CN">ar:gr,grain,p:grains</names>
+      <base>
+        <unit>g</unit>
+        <relation>0.06479891</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pennyweight</title>
+      <title xml:lang="nl">Pennyweight</title>
+      <title xml:lang="zh_CN">本尼威特</title>
+      <names>ar:pwt,pennyweight,p:pennyweights</names>
+      <names xml:lang="zh_CN">ar:pwt,pennyweight,p:pennyweights</names>
+      <base>
+        <unit>gr</unit>
+        <relation>24</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Ounce (troy)</title>
+      <title xml:lang="nl">Ounce (troy)</title>
+      <title xml:lang="zh_CN">金衡制盎司</title>
+      <names>ar:oz_t,troy_ounce,p:troy_ounces</names>
+      <names xml:lang="zh_CN">ar:oz_t,troy_ounce,p:troy_ounces</names>
+      <base>
+        <unit>pwt</unit>
+        <relation>20</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pound (troy)</title>
+      <title xml:lang="nl">Pound (troy)</title>
+      <title xml:lang="sv">Pund (troy)</title>
+      <title xml:lang="zh_CN">金衡制磅</title>
+      <names>ar:lb_t,troy_pound,p:troy_pounds</names>
+      <names xml:lang="zh_CN">ar:lb_t,troy_pound,p:troy_pounds</names>
+      <base>
+        <unit>oz_t</unit>
+        <relation>12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Dram</title>
+      <title xml:lang="nl">Dram</title>
+      <title xml:lang="zh_CN">英钱</title>
+      <names>ar:dr,dram,p:drams</names>
+      <names xml:lang="zh_CN">ar:dr,dram,p:drams</names>
+      <base>
+        <unit>g</unit>
+        <relation>1.7718451953125</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Ounce</title>
+      <title xml:lang="nl">Ounce</title>
+      <title xml:lang="zh_CN">盎司</title>
+      <names>ar:oz,ounce,p:ounces</names>
+      <names xml:lang="zh_CN">ar:oz,ounce,p:ounces</names>
+      <base>
+        <unit>dr</unit>
+        <relation>16</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pound</title>
+      <title xml:lang="nl">Pound</title>
+      <title xml:lang="sv">Pund</title>
+      <title xml:lang="zh_CN">磅</title>
+      <names>ar:lb,pound,p:pounds</names>
+      <names xml:lang="zh_CN">ar:lb,pound,p:pounds</names>
+      <base>
+        <unit>oz</unit>
+        <relation>16</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Short Hundredweight</title>
+      <title xml:lang="nl">Short hundredweight</title>
+      <title xml:lang="zh_CN">短英担</title>
+      <names>ar:cwt,hundredweight,p:hundredweights</names>
+      <names xml:lang="zh_CN">ar:cwt,hundredweight,p:hundredweights</names>
+      <base>
+        <unit>lb</unit>
+        <relation>100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Long Hundredweight</title>
+      <title xml:lang="nl">Long hundredweight</title>
+      <title xml:lang="zh_CN">长担</title>
+      <names>ar:l_cwt,long_hundredweight,p:long_hundredweights</names>
+      <names xml:lang="zh_CN">ar:l_cwt,long_hundredweight,p:long_hundredweights</names>
+      <base>
+        <unit>lb</unit>
+        <relation>112</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Short Ton</title>
+      <title xml:lang="nl">Short ton</title>
+      <title xml:lang="zh_CN">短吨</title>
+      <names>ar:s_ton,short_ton,p:short_tons</names>
+      <names xml:lang="zh_CN">ar:s_ton,short_ton,p:short_tons</names>
+      <base>
+        <unit>lb</unit>
+        <relation>2000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Long Ton</title>
+      <title xml:lang="nl">Long ton</title>
+      <title xml:lang="zh_CN">长吨</title>
+      <names>ar:l_ton,long_ton,p:long_tons</names>
+      <names xml:lang="zh_CN">ar:l_ton,long_ton,p:long_tons</names>
+      <base>
+        <unit>lb</unit>
+        <relation>2240</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Stone</title>
+      <title xml:lang="nl">Stone</title>
+      <names>r:stone,p:stones</names>
+      <names xml:lang="zh_CN">r:stone,p:stones</names>
+      <base>
+        <unit>lb</unit>
+        <relation>14</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Cental</title>
+      <title xml:lang="nl">Cental</title>
+      <title xml:lang="zh_CN">百磅</title>
+      <names>r:cental,p:centals</names>
+      <names xml:lang="zh_CN">r:cental,p:centals</names>
+      <base>
+        <unit>lb</unit>
+        <relation>100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Carat</title>
+      <title xml:lang="nl">Karaat</title>
+      <title xml:lang="sv">Karat</title>
+      <title xml:lang="zh_CN">克拉</title>
+      <names>r:carat,p:carats</names>
+      <names xml:lang="nl">karaat</names>
+      <names xml:lang="sv">karat</names>
+      <names xml:lang="zh_CN">r:carat,p:carats</names>
+      <base>
+        <unit>g</unit>
+        <relation>0.2</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pfund</title>
+      <title xml:lang="nl">Pond</title>
+      <names>r:pfund</names>
+      <names xml:lang="zh_CN">r:pfund</names>
+      <base>
+        <unit>g</unit>
+        <relation>500</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Zentner</title>
+      <title xml:lang="nl">Zentner</title>
+      <names>r:zentner</names>
+      <names xml:lang="zh_CN">r:zentner</names>
+      <base>
+        <unit>pfund</unit>
+        <relation>100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <category>
+      <title>Density</title>
+      <title xml:lang="nl">Dichtheid</title>
+      <title xml:lang="sv">Densitet</title>
+      <title xml:lang="zh_CN">密度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Kilogram per Cubic Meter</title>
+        <title xml:lang="nl">Kilogram per kubieke meter</title>
+        <title xml:lang="sv">Kilogram per kubikmeter</title>
+        <title xml:lang="zh_CN">千克每立方米</title>
+        <names>r:kg_p_cum</names>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Gram per Cubic Decimeter</title>
+        <title xml:lang="nl">Gram per kubieke decimeter</title>
+        <title xml:lang="sv">Gram per kubikdecimeter</title>
+        <title xml:lang="zh_CN">克每立方分米</title>
+        <names>r:g_p_cudm</names>
+        <part>
+          <unit>g</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>-1</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Gram per Cubic Centimeter</title>
+        <title xml:lang="nl">Gram per kubieke centimeter</title>
+        <title xml:lang="sv">Gram per kubikcentimeter</title>
+        <title xml:lang="zh_CN">克每立方厘米</title>
+        <names>r:g_p_cucm</names>
+        <part>
+          <unit>g</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>-2</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Gram per Mole</title>
+        <title xml:lang="nl">Gram per mol</title>
+        <title xml:lang="sv">Gram per mol</title>
+        <title xml:lang="zh_CN">克每摩尔</title>
+        <names>r:g_p_mol</names>
+        <part>
+          <unit>g</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>mol</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <unit type="alias">
+        <title>Atomic Mass Unit</title>
+        <title xml:lang="nl">Atomaire massa-eenheid</title>
+        <title xml:lang="sv">Atomisk massenhet</title>
+        <title xml:lang="zh_CN">原子质量单位</title>
+        <names>ar:u,a:AMU,atomic_mass_unit,p:atomic_mass_units</names>
+        <names xml:lang="nl">AMU,atomaire_massa_eenheid,atomaire_massa_eenheden</names>
+        <names xml:lang="sv">a:u,a:AMU,atomisk_mass_enhet,p:atomiska_mass_enheter</names>
+        <names xml:lang="zh_CN">ar:u,a:AMU,atomic_mass_unit,p:atomic_mass_units</names>
+        <base>
+          <unit>g_p_mol</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+    </unit>
+    <category>
+      <title>Mass Fraction</title>
+      <title xml:lang="nl">Massafractie</title>
+      <title xml:lang="zh_CN">质量分数</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Kilogram per Kilogram</title>
+        <title xml:lang="nl">Kilogram per kilogram</title>
+        <title xml:lang="sv">Kilogram per kilogram</title>
+        <title xml:lang="zh_CN">千克每千克</title>
+        <names>r:kg_p_kg</names>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Time</title>
+    <title xml:lang="nl">Tijd</title>
+    <title xml:lang="sv">Tid</title>
+    <title xml:lang="zh_CN">时间</title>
+    <unit type="base">
+      <system>SI</system>
+      <title>Second</title>
+      <title xml:lang="nl">Seconde</title>
+      <title xml:lang="sv">Sekund</title>
+      <title xml:lang="zh_CN">秒</title>
+      <names>ar:s,second,p:seconds</names>
+      <names xml:lang="nl">s,seconde,seconden</names>
+      <names xml:lang="sv">a:s,sekund,p:sekunder</names>
+      <names xml:lang="zh_CN">ar:s,second,p:seconds</names>
+    </unit>
+    <unit type="alias">
+      <title>Minute</title>
+      <title xml:lang="nl">Minuut</title>
+      <title xml:lang="sv">Minut</title>
+      <title xml:lang="zh_CN">分</title>
+      <names>ar:min,minute,p:minutes</names>
+      <names xml:lang="nl">min,minuut,minuten</names>
+      <names xml:lang="sv">a:min,minut,p:minuter</names>
+      <names xml:lang="zh_CN">ar:min,minute,p:minutes</names>
+      <base>
+        <unit>s</unit>
+        <relation>60</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Hour</title>
+      <title xml:lang="nl">Uur</title>
+      <title xml:lang="sv">Timme</title>
+      <title xml:lang="zh_CN">小时</title>
+      <names>ar:h,hour,p:hours</names>
+      <names xml:lang="nl">u,uur,uren</names>
+      <names xml:lang="sv">a:h,timme,p:timmar</names>
+      <names xml:lang="zh_CN">ar:h,hour,p:hours</names>
+      <base>
+        <unit>min</unit>
+        <relation>60</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Day</title>
+      <title xml:lang="nl">Dag</title>
+      <title xml:lang="sv">Dag</title>
+      <title xml:lang="zh_CN">日</title>
+      <names>ar:d,day,p:days</names>
+      <names xml:lang="nl">d,dag,dagen</names>
+      <names xml:lang="sv">a:d,dag,p:dagar</names>
+      <names xml:lang="zh_CN">ar:d,day,p:days</names>
+      <base>
+        <unit>h</unit>
+        <relation>24</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Week</title>
+      <title xml:lang="nl">Week</title>
+      <title xml:lang="sv">Vecka</title>
+      <title xml:lang="zh_CN">周</title>
+      <names>r:week,p:weeks</names>
+      <names xml:lang="nl">week,weken</names>
+      <names xml:lang="sv">vecka,p:veckor</names>
+      <names xml:lang="zh_CN">r:week,p:weeks</names>
+      <base>
+        <unit>day</unit>
+        <relation>7</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Fortnight</title>
+      <title xml:lang="nl">Fortnight</title>
+      <title xml:lang="zh_CN">两星期</title>
+      <names>r:fortnight,p:fortnights</names>
+      <names xml:lang="zh_CN">r:fortnight,p:fortnights</names>
+      <base>
+        <unit>week</unit>
+        <relation>2</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Julian Year</title>
+      <title xml:lang="nl">Juliaans jaar</title>
+      <title xml:lang="sv">Julianskt år</title>
+      <title xml:lang="zh_CN">儒略年</title>
+      <names>r:year,p:years</names>
+      <names xml:lang="nl">jaar,jaren</names>
+      <names xml:lang="sv">år</names>
+      <names xml:lang="zh_CN">r:year,p:years</names>
+      <base>
+        <unit>d</unit>
+        <relation>365.25</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <category>
+      
+      <title>!units!Frequency</title>
+      <title xml:lang="nl">Frequentie</title>
+      <title xml:lang="sv">Frekvens</title>
+      <title xml:lang="zh_CN">频率</title>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Hertz</title>
+        <title xml:lang="nl">Hertz</title>
+        <title xml:lang="zh_CN">赫兹</title>
+        <names>ar:Hz,hertz</names>
+        <names xml:lang="zh_CN">ar:Hz,hertz</names>
+        <base>
+          <unit>s</unit>
+          <relation>1</relation>
+          <exponent>-1</exponent>
+        </base>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Electricity</title>
+    <title xml:lang="nl">Elektriciteit</title>
+    <title xml:lang="sv">Elektricitet</title>
+    <title xml:lang="zh_CN">电学</title>
+    <category>
+      <title>Electric Current</title>
+      <title xml:lang="nl">Elektrische stroom</title>
+      <title xml:lang="sv">Elektrisk ström</title>
+      <title xml:lang="zh_CN">电流</title>
+      <unit type="base">
+        <system>SI</system>
+        <title>Ampere</title>
+        <title xml:lang="nl">Ampere</title>
+        <title xml:lang="sv">Ampere</title>
+        <title xml:lang="zh_CN">安培</title>
+        <names>ar:A,ampere,p:amperes</names>
+        <names xml:lang="sv">a:A,ampere</names>
+        <names xml:lang="zh_CN">ar:A,ampere,p:amperes</names>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Abampere</title>
+        <title xml:lang="nl">Abampere</title>
+        <title xml:lang="sv">Abampere</title>
+        <title xml:lang="zh_CN">绝对安培</title>
+        <names>r:abampere,a:abA,a:aA,p:abamperes</names>
+        <names xml:lang="zh_CN">r:abampere,a:abA,a:aA,p:abamperes</names>
+        <base>
+          <unit>A</unit>
+          <relation>10</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Current Density</title>
+      <title xml:lang="nl">Stroomdichtheid</title>
+      <title xml:lang="sv">Strömtäthet</title>
+      <title xml:lang="zh_CN">电流密度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Ampere per Meter Squared</title>
+        <title xml:lang="nl">Ampere per meter kwadraat</title>
+        <title xml:lang="sv">Ampere per kvadratmeter</title>
+        <title xml:lang="zh_CN">安培每平方米</title>
+        <names>r:A_p_sqm</names>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Charge</title>
+      <title xml:lang="nl">Elektrische lading</title>
+      <title xml:lang="sv">Elektrisk laddning</title>
+      <title xml:lang="zh_CN">电荷</title>
+      <unit type="composite">
+        <title>Second Ampere</title>
+        <title xml:lang="nl">Seconde ampere</title>
+        <title xml:lang="sv">Sekundampere</title>
+        <title xml:lang="zh_CN">秒安培</title>
+        <names>r:s_A</names>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Coulomb</title>
+        <title xml:lang="nl">Coulomb</title>
+        <title xml:lang="sv">Coulomb</title>
+        <title xml:lang="zh_CN">库仑</title>
+        <names>ar:C,coulomb,p:coulombs</names>
+        <names xml:lang="sv">a:C,coulomb</names>
+        <names xml:lang="zh_CN">ar:C,coulomb,p:coulombs</names>
+        <base>
+          <unit>s_A</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Abcoulomb</title>
+        <title xml:lang="nl">Abcoulomb</title>
+        <title xml:lang="sv">Abcoulomb</title>
+        <title xml:lang="zh_CN">绝对库伦</title>
+        <names>r:abcoulomb,p:abcoulombs,a:abC,a:aC</names>
+        <names xml:lang="zh_CN">r:abcoulomb,p:abcoulombs,a:abC,a:aC</names>
+        <base>
+          <unit>C</unit>
+          <relation>10</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Statcoloumb (Franklin)</title>
+        <title xml:lang="nl">Statcoloumb (Franklin)</title>
+        <names>r:statcoulomb,p:statcoulombs,a:statC,franklin,a:Fr,p:franklins</names>
+        <names xml:lang="zh_CN">r:statcoulomb,p:statcoulombs,a:statC,franklin,a:Fr,p:franklins</names>
+        <base>
+          <unit>C</unit>
+          <relation approximate="true">3.3356410E-10</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Charge Density</title>
+      <title xml:lang="nl">Elektrische ladingsdichtheid</title>
+      <title xml:lang="sv">Laddningstäthet</title>
+      <title xml:lang="zh_CN">电荷密度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Coulomb per Cubic Meter</title>
+        <title xml:lang="nl">Coulomb per kubieke meter</title>
+        <title xml:lang="sv">Coulomb per kubikmeter</title>
+        <title xml:lang="zh_CN">库仑每立方米</title>
+        <names>r:C_p_cum</names>
+        <part>
+          <unit>C</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Flux Density</title>
+      <title xml:lang="nl">Elektrische fluxdichtheid</title>
+      <title xml:lang="sv">Elektrisk flödestäthet</title>
+      <title xml:lang="zh_CN">电通密度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Coulomb per Meter Squared</title>
+        <title xml:lang="nl">Coulomb per vierkante meter</title>
+        <title xml:lang="sv">Coulomb per kvadratmeter</title>
+        <title xml:lang="zh_CN">库仑每平米</title>
+        <names>r:C_p_sqm</names>
+        <part>
+          <unit>C</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Potential</title>
+      <title xml:lang="nl">Elektrische potentiaal</title>
+      <title xml:lang="sv">Elektrisk potential</title>
+      <title xml:lang="zh_CN">电势</title>
+      <unit type="composite">
+        <title>Watt per Ampere</title>
+        <title xml:lang="nl">Watt per ampere</title>
+        <title xml:lang="sv">Watt per ampere</title>
+        <title xml:lang="zh_CN">瓦每安培</title>
+        <names>r:W_p_A</names>
+        <part>
+          <unit>W</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Volt</title>
+        <title xml:lang="nl">Volt</title>
+        <title xml:lang="zh_CN">伏特</title>
+        <names>ar:V,volt,p:volts</names>
+        <names xml:lang="sv">a:V,volt</names>
+        <names xml:lang="zh_CN">ar:V,volt,p:volts</names>
+        <base>
+          <unit>W_p_A</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Statvolt</title>
+        <title xml:lang="nl">Statvolt</title>
+        <title xml:lang="zh_CN">静伏特</title>
+        <names>r:statvolt,p:statvolts,a:statV</names>
+        <names xml:lang="zh_CN">r:statvolt,p:statvolts,a:statV</names>
+        <base>
+          <unit>V</unit>
+          <relation>299.792458</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Abvolt</title>
+        <title xml:lang="nl">Abvolt</title>
+        <title xml:lang="sv">Abvolt</title>
+        <title xml:lang="zh_CN">绝对伏特</title>
+        <names>r:abvolt,p:abvolts,a:abV</names>
+        <names xml:lang="zh_CN">r:abvolt,p:abvolts,a:abV</names>
+        <base>
+          <unit>V</unit>
+          <relation>1E-8</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Capacitance</title>
+      <title xml:lang="nl">Capaciteit</title>
+      <title xml:lang="sv">Kapasitans</title>
+      <title xml:lang="zh_CN">电容</title>
+      <unit type="composite">
+        <title>Coulomb per Volt</title>
+        <title xml:lang="nl">Coulomb per volt</title>
+        <title xml:lang="sv">Coloumb per volt</title>
+        <title xml:lang="zh_CN">库仑每伏特</title>
+        <names>r:C_p_V</names>
+        <part>
+          <unit>C</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>V</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Farad</title>
+        <title xml:lang="nl">Farad</title>
+        <title xml:lang="zh_CN">法拉</title>	
+        <names>ar:F,farad,p:farads</names>
+        <names xml:lang="sv">a:F,farad</names>
+        <names xml:lang="zh_CN">ar:F,farad,p:farads</names>
+        <base>
+          <unit>C_p_V</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Resistance</title>
+      <title xml:lang="nl">Elektrische weerstand</title>
+      <title xml:lang="sv">Resistans</title>
+      <title xml:lang="zh_CN">电阻</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Volt per Ampere</title>
+        <title xml:lang="nl">Volt per ampere</title>
+        <title xml:lang="sv">Volt per ampere</title>
+        <title xml:lang="zh_CN">伏特每安培</title>
+        <names>r:V_p_A</names>
+        <part>
+          <unit>V</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Ohm</title>
+        <title xml:lang="nl">Ohm</title>
+        <title xml:lang="zh_CN">欧姆</title>	
+        <names>au:&#x3A9;,r:ohm,p:ohms</names>
+        <names xml:lang="nl">&#x3A9;,ohm</names>
+        <names xml:lang="sv">au:&#x3A9;,ohm</names>
+        <names xml:lang="zh_CN">au:&#x3A9;,r:ohm,p:ohms</names>
+        <base>
+          <unit>V_p_A</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Abohm</title>
+        <title xml:lang="nl">Abohm</title>
+        <title xml:lang="sv">Abohm</title>
+        <title xml:lang="zh_CN">绝对单位欧姆</title>
+        <names>r:abohm,p:abohms,au:ab&#x3A9;</names>
+        <names xml:lang="nl">abohm, abohms,ab&#x3A9;</names>
+        <names xml:lang="zh_CN">r:abohm,p:abohms,au:ab&#x3A9;</names>
+        <base>
+          <unit>ohm</unit>
+          <relation>1E-9</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Statohm</title>
+        <title xml:lang="nl">Statohm</title>
+        <title xml:lang="zh_CN">静欧姆</title>
+        <names>r:statohm,p:statohms,au:stat&#x3A9;</names>
+        <names xml:lang="zh_CN">r:statohm,p:statohms,au:stat&#x3A9;</names>
+        <base>
+          <unit>ohm</unit>
+          <relation approximate="true">8.9875517874E11</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Conductance</title>
+      <title xml:lang="nl">Elektrisch geleidingsvermogen</title>
+      <title xml:lang="sv">Induktion</title>
+      <title xml:lang="zh_CN">电导</title>
+      <unit type="composite">
+        <title>Ampere per Volt</title>
+        <title xml:lang="nl">Ampere per volt</title>
+        <title xml:lang="sv">Ampere per volt</title>
+        <title xml:lang="zh_CN">安培每伏特</title>
+        <names>r:A_p_V</names>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>V</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Siemens</title>
+        <title xml:lang="nl">Siemens</title>
+        <names>ar:S,siemens</names>
+        <names xml:lang="zh_CN">ar:S,siemens</names>
+        <base>
+          <unit>A_p_V</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Electric Field Strength</title>
+      <title xml:lang="nl">Elektrische veldsterkte</title>
+      <title xml:lang="sv">Elektrisk fältstyrka</title>
+      <title xml:lang="zh_CN">电场强度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Volt per Meter</title>
+        <title xml:lang="nl">Volt per meter</title>
+        <title xml:lang="sv">Volt per meter</title>
+        <title xml:lang="zh_CN">伏特每米</title>
+        <names>r:V_p_m</names>
+        <part>
+          <unit>V</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Permittivity</title>
+      <title xml:lang="nl">Permittiviteit</title>
+      <title xml:lang="sv">Permitivitet</title>
+      <title xml:lang="zh_CN">电容率</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Farad per Meter</title>
+        <title xml:lang="nl">Farad per meter</title>
+        <title xml:lang="sv">Farad per meter</title>
+        <title xml:lang="zh_CN">法拉每米</title>
+        <names>r:F_p_m</names>
+        <part>
+          <unit>F</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Inductance</title>
+      <title xml:lang="nl">Zelfinductie</title>
+      <title xml:lang="sv">Induktans</title>
+      <title xml:lang="zh_CN">电感</title>
+      <unit type="composite">
+        <title>Weber per Ampere</title>
+        <title xml:lang="nl">Weber per ampere</title>
+        <title xml:lang="sv">Weber per ampere</title>
+        <title xml:lang="zh_CN">韦伯每安培</title>
+        <names>r:Wb_p_A</names>
+        <part>
+          <unit>Wb</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Henry</title>
+        <title xml:lang="nl">Henry</title>
+        <title xml:lang="zh_CN">亨利</title>
+        <names>ar:H,henry,p:henrys</names>
+        <names xml:lang="sv">a:H,henry</names>
+        <names xml:lang="zh_CN">ar:H,henry,p:henrys</names>
+        <base>
+          <unit>Wb_p_A</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Permeability</title>
+      <title xml:lang="nl">Permeabiliteit</title>
+      <title xml:lang="sv">Permeabilitet</title>
+      <title xml:lang="zh_CN">磁导率</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Henry per Meter</title>
+        <title xml:lang="nl">Henry per meter</title>
+        <title xml:lang="sv">Henry per meter</title>
+        <title xml:lang="zh_CN">亨利每米</title>
+        <names>r:H_p_m</names>
+        <part>
+          <unit>H</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Temperature</title>
+    <title xml:lang="nl">Temperatuur</title>
+    <title xml:lang="sv">Temperatur</title>
+    <title xml:lang="zh_CN">温度</title>
+    <unit type="base">
+      <system>SI</system>
+      <title>Kelvin</title>
+      <title xml:lang="nl">Kelvin</title>
+      <title xml:lang="zh_CN">开尔文</title>
+      <names>ar:K,kelvin,p:kelvins</names>
+      <names xml:lang="sv">a:K,kelvin</names>
+      <names xml:lang="zh_CN">ar:K,kelvin,p:kelvins</names>
+    </unit>
+    <unit type="alias">
+      <system>SI</system>
+      <title>Degree Celcius</title>
+      <title xml:lang="nl">Graden Celsius</title>
+      <title xml:lang="sv">Grader Celcius</title>
+      <title xml:lang="zh_CN">摄氏度</title>
+      <names>ar:oC,au:&#xB0;C,r:celcius</names>
+      <names xml:lang="zh_CN">ar:oC,au:&#xB0;C,r:celcius</names>
+      <base>
+        <unit>K</unit>
+        <relation>\x + 273.15</relation>
+        <inverse_relation>\x - 273.15</inverse_relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Degrees Rankine</title>
+      <title xml:lang="nl">Graden Rankine</title>
+      <title xml:lang="sv">Grader Rankine</title>
+      <names>ar:oR,au:&#xB0;R,r:rankine</names>
+      <names xml:lang="zh_CN">ar:oR,au:&#xB0;R,r:rankine</names>
+      <base>
+        <unit>K</unit>
+        <relation>5\x/9</relation>
+        <inverse_relation>9\x/5</inverse_relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Degrees Fahrenheit</title>
+      <title xml:lang="nl">Graden Fahrenheit</title>
+      <title xml:lang="sv">Grader Fahrenheit</title>
+      <title xml:lang="zh_CN">华氏度</title>
+      <names>ar:oF,au:&#xB0;F,r:fahrenheit</names>
+      <names xml:lang="zh_CN">ar:oF,au:&#xB0;F,r:fahrenheit</names>
+      <base>
+        <unit>K</unit>
+        <relation>(2298.35+5\x)/9</relation>
+        <inverse_relation>(9\x-2298.35)/5</inverse_relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Substance</title>
+    <title xml:lang="nl">Stofhoeveelheid</title>
+    <title xml:lang="sv">Substans</title>
+    <title xml:lang="zh_CN">物质</title>
+    <unit type="base">
+      <system>SI</system>
+      <title>Mole</title>
+      <title xml:lang="nl">Mol</title>
+      <title xml:lang="sv">Mol</title>
+      <title xml:lang="zh_CN">摩尔</title>
+      <names>ar:mol,mole,p:moles</names>
+      <names xml:lang="nl">mol,mol,molen</names>
+      <names xml:lang="sv">mol</names>
+      <names xml:lang="zh_CN">ar:mol,mole,p:moles</names>
+    </unit>
+    <unit type="base">
+      <title>Einstein</title>
+      <title xml:lang="nl">Einstein</title>
+      <title xml:lang="zh_CN">爱因斯坦</title>
+      <names>r:einstein,p:einsteins</names>
+      <names xml:lang="sv">einstein</names>
+      <names xml:lang="zh_CN">r:einstein,p:einsteins</names>
+    </unit>
+    <category>
+      <title>Substance Concentration</title>
+      <title xml:lang="nl">Concentratie van stof</title>
+      <title xml:lang="sv">Substanskoncentration</title>
+      <title xml:lang="zh_CN">物质浓度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Mole per Cubic Meter</title>
+        <title xml:lang="nl">Mol per kubieke meter</title>
+        <title xml:lang="sv">Mol per kubikmeter</title>
+        <title xml:lang="zh_CN">摩尔每平米</title>
+        <names>r:mol_p_cum</names>
+        <part>
+          <unit>mol</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Catalytic Activity</title>
+      <title xml:lang="nl">Katalitische activiteit</title>
+      <title xml:lang="sv">Katalytisk aktivitet</title>
+      <title xml:lang="zh_CN">催化活性</title>
+      <unit type="composite">
+        <title>Reciprocal Seconds Mole</title>
+        <title xml:lang="nl">Omgekeerde seconden mol</title>
+        <title xml:lang="sv">Reciproka sekundmol</title>
+        <names>r:recs_mol</names>
+        <part>
+          <unit>mol</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Katal</title>
+        <title xml:lang="nl">Katal</title>
+        <title xml:lang="zh_CN">卡塔尔</title>
+        <names>ar:kat,katal,p:katals</names>
+        <names xml:lang="sv">a:kat,katal</names>
+        <names xml:lang="zh_CN">ar:kat,katal,p:katals</names>
+        <base>
+          <unit>recs_mol</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Catalytic Concentration</title>
+      <title xml:lang="nl">Catalitische concentratie</title>
+      <title xml:lang="sv">Katalytisk koncentration</title>
+      <title xml:lang="zh_CN">催化浓度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Katal per Cubic Meter</title>
+        <title xml:lang="nl">Katal per kubieke meter</title>
+        <title xml:lang="sv">Katal per kubikmeter</title>
+        <title xml:lang="zh_CN">卡塔尔每立方米</title>
+        <names>r:kat_p_cum</names>
+        <part>
+          <unit>kat</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Light</title>
+    <title xml:lang="nl">Licht</title>
+    <title xml:lang="sv">Ljus</title>
+    <title xml:lang="zh_CN">光学</title>
+    <category>
+      <title>Luminous Intensity</title>
+      <title xml:lang="nl">Lichtsterkte</title>
+      <title xml:lang="sv">Luminansintensitet</title>
+      <title xml:lang="zh_CN">发光强度</title>
+      <unit type="base">
+        <system>SI</system>
+        <title>Candela</title>
+        <title xml:lang="nl">Candela</title>
+        <title xml:lang="sv">Candela</title>
+        <names>ar:cd,candela,p:candelas</names>
+        <names xml:lang="sv">a:cd,candela</names>
+        <names xml:lang="zh_CN">ar:cd,candela,p:candelas</names>
+      </unit>
+    </category>
+    <category>
+      <title>Luminance</title>
+      <title xml:lang="nl">Luminantie</title>
+      <title xml:lang="sv">Luminans</title>
+      <title xml:lang="zh_CN">亮度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Candela per Meter Squared</title>
+        <title xml:lang="nl">Candela per vierkante meter</title>
+        <title xml:lang="sv">Candela per kvadratmeter</title>
+        <names>r:cd_p_sqm</names>
+        <part>
+          <unit>cd</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Stilb</title>
+        <title xml:lang="nl">Stilb</title>
+        <title xml:lang="zh_CN">熙提</title>
+        <names>ar:sb,stilb,p:stilbs</names>
+        <names xml:lang="zh_CN">ar:sb,stilb,p:stilbs</names>
+        <base>
+          <unit>cd_p_sqm</unit>
+          <relation>10000</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Luminous Flux</title>
+      <title xml:lang="nl">Lichtstroom</title>
+      <title xml:lang="sv">Luminansflöde</title>
+      <title xml:lang="zh_CN">光通量</title>
+      <unit type="composite">
+        <title>Candela Steradian</title>
+        <title xml:lang="nl">Candela-steradiaal</title>
+        <title xml:lang="sv">Candelasteradian</title>
+        <names>r:cd_sr</names>
+        <part>
+          <unit>cd</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>sr</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Lumen</title>
+        <title xml:lang="nl">Lumen</title>
+        <title xml:lang="zh_CN">流明</title>
+        <names>ar:lm,lumen,p:lumens</names>
+        <names xml:lang="nl">lm,lumen</names>
+        <names xml:lang="sv">a:lm,lumen</names>
+        <names xml:lang="zh_CN">ar:lm,lumen,p:lumens</names>
+        <base>
+          <unit>cd_sr</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Illuminance</title>
+      <title xml:lang="nl">Verlichtingssterkte</title>
+      <title xml:lang="sv">Illuminans</title>
+      <title xml:lang="zh_CN">照度</title>
+      <unit type="composite">
+        <title>Lumen per Meter Squared</title>
+        <title xml:lang="nl">Lumen per vierkante meter</title>
+        <title xml:lang="sv">Lumen per kvadratmeter</title>
+        <title xml:lang="zh_CN">流明每平米</title>
+        <names>r:lm_p_sqm</names>
+        <part>
+          <unit>lm</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <hidden>true</hidden>
+        <title>Lumen per Foot Squared</title>
+        <title xml:lang="nl">Lumen per vierkante voet</title>
+        <title xml:lang="sv">Lumen per kvadratfor</title>
+        <title xml:lang="zh_CN">流明每平方英尺</title>
+        <names>r:lm_p_sqft</names>
+        <part>
+          <unit>lm</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>ft</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Lux</title>
+        <title xml:lang="nl">Lux</title>
+        <title xml:lang="zh_CN">勒克斯</title>
+        <names>ar:lx,lux</names>
+        <names xml:lang="zh_CN">ar:lx,lux</names>
+        <base>
+          <unit>lm_p_sqm</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Foot-Candle</title>
+        <title xml:lang="nl">Foot-Candle</title>
+        <names>ar:fc,footcandle,p:footcandles</names>
+        <names xml:lang="zh_CN">ar:fc,footcandle,p:footcandles</names>
+        <base>
+          <unit>lm_p_sqft</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Phot</title>
+        <title xml:lang="nl">Phot</title>
+        <title xml:lang="zh_CN">幅透</title>
+        <names>ar:ph,phot,p:phots</names>
+        <names xml:lang="zh_CN">ar:ph,phot,p:phots</names>
+        <base>
+          <unit>lx</unit>
+          <relation>10000</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Radiant Intensity</title>
+      <title xml:lang="nl">Stralingsintensiteit</title>
+      <title xml:lang="sv">Strålningsstyrka</title>
+      <title xml:lang="zh_CN">辐射强度</title>
+      <unit type="composite">
+        <title>Watt per Steradian</title>
+        <title xml:lang="nl">Watt per steradiaal</title>
+        <title xml:lang="sv">Watt per steradian</title>
+        <title xml:lang="zh_CN">瓦每球面度</title>
+        <names>r:W_p_sr</names>
+        <part>
+          <unit>W</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>sr</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Irradiance</title>
+      <title xml:lang="nl">Irradiantie</title>
+      <title xml:lang="sv">Irradians</title>
+      <title xml:lang="zh_CN">辐照度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Watt per Meter Squared</title>
+        <title xml:lang="nl">Watt per meter kwadraat</title>
+        <title xml:lang="sv">Watt per kvadratmeter</title>
+        <title xml:lang="zh_CN">瓦每平米</title>
+        <names>r:W_p_sqm</names>
+        <part>
+          <unit>W</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Einstein per Meter Squared per Second</title>
+        <title xml:lang="nl">Einstein per vierkante meter per seconde</title>
+        <title xml:lang="sv">Einsteins per kvadratmeter per sekund</title>
+        <title xml:lang="zh_CN">爱因斯坦每平方米每秒</title>
+        <names>r:einstein_p_sqm_p_s</names>
+        <part>
+          <unit>einstein</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+	<part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Microeinstein per Meter Squared per Second</title>
+        <title xml:lang="nl">Micro-einstein per vierkante meter per seconde</title>
+        <title xml:lang="sv">Kikroeinstein per kvadratmeter per sekund</title>
+        <names>r:microeinstein_p_sqm_p_s</names>
+        <part>
+          <unit>einstein</unit>
+          <prefix>-6</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+	<part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Radiance</title>
+      <title xml:lang="nl">Radiantie</title>
+      <title xml:lang="sv">Radians</title>
+      <title xml:lang="zh_CN">辐射率</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Watt per Square Meter Steradian</title>
+        <title xml:lang="nl">Watt per vierkante meter per steradiaal</title>
+        <title xml:lang="sv">Watt per steradiankvadratmeter</title>
+        <title xml:lang="zh_CN">瓦每平米球面度</title>
+        <names>r:W_p_sqm_sr</names>
+        <part>
+          <unit>W</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>sr</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Area</title>
+    <title xml:lang="nl">Oppervlak</title>
+    <title xml:lang="zh_CN">面积</title>
+    <unit type="composite">
+      <system>SI</system>
+      <title>Square Meter</title>
+      <title xml:lang="nl">Vierkante meter</title>
+      <title xml:lang="sv">Kvadratmeter</title>
+      <title xml:lang="zh_CN">平方米</title>
+      <names>r:sqm</names>
+      <part>
+        <unit>m</unit>
+        <prefix>0</prefix>
+        <exponent>2</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Square Kilometer</title>
+      <title xml:lang="nl">Vierkante kilometer</title>
+      <title xml:lang="sv">Kvadratkilometer</title>
+      <title xml:lang="zh_CN">平方千米</title>
+      <names>r:sqkm</names>
+      <part>
+        <unit>m</unit>
+        <prefix>3</prefix>
+        <exponent>2</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Are</title>
+      <title xml:lang="nl">Are</title>
+      <names>ar:a,are,p:ares</names>
+      <names xml:lang="zh_CN">ar:a,are,p:ares</names>
+      <base>
+        <unit>m</unit>
+        <relation>100</relation>
+        <exponent>2</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Hectare</title>
+      <title xml:lang="nl">Hectare</title>
+      <title xml:lang="sv">Hektar</title>
+      <title xml:lang="zh_CN">公顷</title>
+      <names>r:ha</names>
+      <part>
+        <unit>a</unit>
+        <prefix>2</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Barn</title>
+      <title xml:lang="nl">Barn</title>
+      <title xml:lang="zh_CN">靶</title>
+      <names>ar:b,barn,p:barns</names>
+      <names xml:lang="zh_CN">ar:b,barn,p:barns</names>
+      <base>
+        <unit>m</unit>
+        <relation>1E-28</relation>
+        <exponent>2</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Rood</title>
+      <title xml:lang="nl">Rood</title>
+      <names>r:rood,p:roods</names>
+      <names xml:lang="zh_CN">r:rood,p:roods</names>
+      <base>
+        <unit>yd</unit>
+        <relation>1210</relation>
+        <exponent>2</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Acre</title>
+      <title xml:lang="nl">Acre</title>
+      <title xml:lang="zh_CN">英亩</title>
+      <names>r:acre,p:acres</names>
+      <names xml:lang="zh_CN">r:acre,p:acres</names>
+      <base>
+        <unit>ch</unit>
+        <relation>10</relation>
+        <exponent>2</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Section</title>
+      <title xml:lang="nl">Sectie</title>
+      <names>r:section,p:sections</names>
+      <names xml:lang="nl">sectie,secties</names>
+      <names xml:lang="zh_CN">r:section,p:sections</names>
+      <base>
+        <unit>mi</unit>
+        <relation>1</relation>
+        <exponent>2</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Township</title>
+      <title xml:lang="nl">Township</title>
+      <names>r:township,p:townships</names>
+      <names xml:lang="zh_CN">r:township,p:townships</names>
+      <base>
+        <unit>section</unit>
+        <relation>36</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Square Foot</title>
+      <title xml:lang="nl">Vierkante voet</title>
+      <title xml:lang="sv">Kvadratfot</title>
+      <title xml:lang="zh_CN">平方英尺</title>
+      <names>r:sqft</names>
+      <part>
+        <unit>ft</unit>
+        <prefix>0</prefix>
+        <exponent>2</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Square Inch</title>
+      <title xml:lang="nl">Vierkante inch</title>
+      <title xml:lang="sv">Kvadrattum</title>
+      <title xml:lang="zh_CN">平方英寸</title>
+      <names>r:sqin</names>
+      <part>
+        <unit>in</unit>
+        <prefix>0</prefix>
+        <exponent>2</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Square Mile</title>
+      <title xml:lang="nl">Vierkante mijl</title>
+      <title xml:lang="sv">Kvadratmile</title>
+      <title xml:lang="zh_CN">平方英里</title>
+      <names>r:sqmi</names>
+      <part>
+        <unit>mi</unit>
+        <prefix>0</prefix>
+        <exponent>2</exponent>
+      </part>
+    </unit>
+  </category>
+  <category>
+    <title>Volume</title>
+    <title xml:lang="nl">Volume</title>
+    <title xml:lang="sv">Volym</title>
+    <title xml:lang="zh_CN">体积</title>
+    <unit type="composite">
+      <system>SI</system>
+      <title>Cubic Meter</title>
+      <title xml:lang="nl">Kubieke meter</title>
+      <title xml:lang="sv">Kubikmeter</title>
+      <title xml:lang="zh_CN">立方米</title>
+      <names>r:cum</names>
+      <part>
+        <unit>m</unit>
+        <prefix>0</prefix>
+        <exponent>3</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Liter</title>
+      <title xml:lang="nl">Liter</title>
+      <title xml:lang="zh_CN">升</title>
+      <names>ar:L,a:l,liter,p:liters,litre,p:litres</names>
+      <names xml:lang="nl">L,l,liter,liters,liter,liters</names>
+      <names xml:lang="sv">a:L,a:l,liter</names>
+      <names xml:lang="zh_CN">ar:L,a:l,liter,p:liters,litre,p:litres</names>
+      <base>
+        <unit>m</unit>
+        <relation>0.001</relation>
+        <exponent>3</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Milliliter</title>
+      <title xml:lang="nl">Mililiter</title>
+      <title xml:lang="zh_CN">毫升</title>
+      <names>r:ml_c</names>
+      <part>
+        <unit>l</unit>
+        <prefix>-3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Centiliter</title>
+      <title xml:lang="nl">Centiliter</title>
+      <title xml:lang="sv">Centiliter</title>
+      <title xml:lang="zh_CN">厘升</title>
+      <names>r:cl_c</names>
+      <part>
+        <unit>l</unit>
+        <prefix>-2</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Deciliter</title>
+      <title xml:lang="nl">Deciliter</title>
+      <title xml:lang="zh_CN">分升</title>
+      <names>r:dl_c</names>
+      <part>
+        <unit>l</unit>
+        <prefix>-1</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Cubic Inch</title>
+      <title xml:lang="nl">Kubieke inch</title>
+      <title xml:lang="sv">Kubiktum</title>
+      <title xml:lang="zh_CN">立方英寸</title>
+      <names>r:cuin</names>
+      <part>
+        <unit>in</unit>
+        <prefix>0</prefix>
+        <exponent>3</exponent>
+      </part>
+    </unit>
+    <category>
+      <title>Fuel Economy</title>
+      <title xml:lang="nl">Brandstofgebruik</title>
+      <title xml:lang="sv">Bränsleförbrukning</title>
+      <title xml:lang="zh_CN">燃料经济</title>
+      <unit type="composite">
+        <title>Liter per Kilometer</title>
+        <title xml:lang="nl">Liter per kilometer</title>
+        <title xml:lang="sv">Liter per kilometer</title>
+        <title xml:lang="zh_CN">升每千米</title>
+        <names>r:l_p_km</names>
+        <part>
+          <unit>l</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Kilometer per Liter</title>
+        <title xml:lang="nl">Kilometer per liter</title>
+        <title xml:lang="sv">Kilometer per liter</title>
+        <title xml:lang="zh_CN">千米每升</title>
+        <names>r:km_p_l</names>
+        <part>
+          <unit>m</unit>
+          <prefix>3</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>l</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <hidden>true</hidden>
+        <title>Miles per Gallon</title>
+        <title xml:lang="nl">Miles per Gallon</title>
+        <title xml:lang="zh_CN">英里每加仑</title>
+        <names>r:mile_p_gal</names>
+        <part>
+          <unit>mi</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>gal</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <title>Miles per Gallon</title>
+        <title xml:lang="nl">Miles per Gallon</title>
+        <title xml:lang="zh_CN">英里每加仑</title>
+        <names>a-cr:mpg</names>
+        <names xml:lang="zh_CN">a-cr:mpg</names>
+        <base>
+          <unit>mile_p_gal</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Cooking</title>
+      <title xml:lang="nl">Koken</title>
+      <title xml:lang="sv">Matlagning</title>
+      <title xml:lang="zh_CN">烹饪</title>
+      <unit type="alias">
+        <title>Teaspoon</title>
+        <title xml:lang="nl">Theelepel</title>
+        <title xml:lang="zh_CN">茶匙</title>
+        <names>r:teaspoon,p:teaspoons</names>
+        <names xml:lang="nl">theelepel,theelepels</names>
+        <names xml:lang="sv">tesked,p:teskedar</names>
+        <names xml:lang="zh_CN">r:teaspoon,p:teaspoons</names>
+        <base>
+          <unit>L</unit>
+          <relation>0.005</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Dessertspoon</title>
+        <title xml:lang="nl">Dessertlepel</title>
+        <title xml:lang="sv">Dessertsked</title>
+        <title xml:lang="zh_CN">点心匙</title>
+        <names>r:dessertspoon,p:dessertspoons</names>
+        <names xml:lang="nl">dessertlepel,dessertlepels</names>
+        <names xml:lang="sv">dessertsked,p:dessertskedar</names>
+        <names xml:lang="zh_CN">r:dessertspoon,p:dessertspoons</names>
+        <base>
+          <unit>teaspoon</unit>
+          <relation>2</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Tablespoon</title>
+        <title xml:lang="nl">Eetlepel</title>
+        <title xml:lang="zh_CN">汤匙</title>
+        <names>r:tablespoon,p:tablespoons</names>
+        <names xml:lang="nl">eetlepel,eetlepels</names>
+        <names xml:lang="sv">matsked,p:matskedar</names>
+        <names xml:lang="zh_CN">r:tablespoon,p:tablespoons</names>
+        <base>
+          <unit>teaspoon</unit>
+          <relation>3</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Cup</title>
+        <title xml:lang="nl">Kop</title>
+        <title xml:lang="zh_CN">杯</title>
+        <names>r:cup,p:cups</names>
+        <names xml:lang="nl">kop,p:koppen</names>
+        <names xml:lang="sv">kopp,p:koppar</names>
+        <names xml:lang="zh_CN">r:cup,p:cups</names>
+        <base>
+          <unit>L</unit>
+          <relation>0.250</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Imperial Capacity</title>
+      <title xml:lang="nl">Imperial Capacity</title>
+      <unit type="alias">
+        <title>Imperial Fluid Ounce</title>
+        <title xml:lang="nl">Imperial Fluid Ounce</title>
+        <names>ar:UK_fl_oz,imperial_fluid_ounce,p:imperial_fluid_ounces</names>
+        <names xml:lang="zh_CN">ar:UK_fl_oz,imperial_fluid_ounce,p:imperial_fluid_ounces</names>
+        <base>
+          <unit>L</unit>
+          <relation>0.0284130625</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Gill</title>
+        <title xml:lang="nl">Imperial Gill</title>
+        <names>ar:UK_gi,imperial_gill,p:imperial_gills</names>
+        <names xml:lang="zh_CN">ar:UK_gi,imperial_gill,p:imperial_gills</names>
+        <base>
+          <unit>UK_fl_oz</unit>
+          <relation>5</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Pint</title>
+        <title xml:lang="nl">Imperial Pint</title>
+        <names>ar:UK_pt,imperial_pint,p:imperial_pints</names>
+        <names xml:lang="zh_CN">ar:UK_pt,imperial_pint,p:imperial_pints</names>
+        <base>
+          <unit>UK_gi</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Quart</title>
+        <title xml:lang="nl">Imperial Quart</title>
+        <names>ar:UK_qt,imperial_quart,p:imperial_quarts</names>
+        <names xml:lang="zh_CN">ar:UK_qt,imperial_quart,p:imperial_quarts</names>
+        <base>
+          <unit>UK_pt</unit>
+          <relation>2</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Gallon</title>
+        <title xml:lang="nl">Imperial Gallon</title>
+        <names>ar:UK_gal,imperial_gallon,p:imperial_gallons</names>
+        <names xml:lang="zh_CN">ar:UK_gal,imperial_gallon,p:imperial_gallons</names>
+        <base>
+          <unit>UK_qt</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Minim</title>
+        <title xml:lang="nl">Imperial Minim</title>
+        <names>r:imperial_minim,p:imperial_minims</names>
+        <names xml:lang="zh_CN">r:imperial_minim,p:imperial_minims</names>
+        <base>
+          <unit>UK_fl_oz</unit>
+          <relation>1/480</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Fluid Scuple</title>
+        <title xml:lang="nl">Imperial Fluid Scuple</title>
+        <names>r:imperial_fluid_scuple,p:imperial_fluid_scuples</names>
+        <names xml:lang="zh_CN">r:imperial_fluid_scuple,p:imperial_fluid_scuples</names>
+        <base>
+          <unit>imperial_minim</unit>
+          <relation>20</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Fluid Drachm</title>
+        <title xml:lang="nl">Imperial Fluid Drachm</title>
+        <names>ar:UK_fl_dr,imperial_fluid_drachm,p:imperial_fluid_drachms</names>
+        <names xml:lang="zh_CN">ar:UK_fl_dr,imperial_fluid_drachm,p:imperial_fluid_drachms</names>
+        <base>
+          <unit>imperial_fluid_scuple</unit>
+          <relation>3</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Imperial Bushel</title>
+        <title xml:lang="nl">Imperial Bushel</title>
+        <names>ar:UK_bu,imperial_bushel,p:imperial_bushels</names>
+        <names xml:lang="zh_CN">ar:UK_bu,imperial_bushel,p:imperial_bushels</names>
+        <base>
+          <unit>UK_gal</unit>
+          <relation>8</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>U.S. Capacity</title>
+      <title xml:lang="nl">U.S. Capacity</title>
+      <unit type="alias">
+        <title>U.S. Fluid Ounce</title>
+        <title xml:lang="nl">U.S. Fluid Ounce</title>
+        <names>ar:fl_oz,fluid_ounce,p:fluid_ounces</names>
+        <names xml:lang="zh_CN">ar:fl_oz,fluid_ounce,p:fluid_ounces</names>
+        <base>
+          <unit>in</unit>
+          <relation>231/128</relation>
+          <exponent>3</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Gill</title>
+        <title xml:lang="nl">U.S. Gill</title>
+        <names>ar:gi,gill,p:gills</names>
+        <names xml:lang="zh_CN">ar:gi,gill,p:gills</names>
+        <base>
+          <unit>fl_oz</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Liquid Pints</title>
+        <title xml:lang="nl">U.S. Liquid Pints</title>
+        <names>ar:liq_pt,liquid_pint,p:liquid_pints</names>
+        <names xml:lang="zh_CN">ar:liq_pt,liquid_pint,p:liquid_pints</names>
+        <base>
+          <unit>gi</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Liquid Quarts</title>
+        <title xml:lang="nl">U.S. Liquid Quarts</title>
+        <names>ar:liq_qt,liquid_quart,p:liquid_quarts</names>
+        <names xml:lang="zh_CN">ar:liq_qt,liquid_quart,p:liquid_quarts</names>
+        <base>
+          <unit>liq_pt</unit>
+          <relation>2</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Minim</title>
+        <title xml:lang="nl">U.S. Minim</title>
+        <names>r:minim,p:minims</names>
+        <names xml:lang="zh_CN">r:minim,p:minims</names>
+        <base>
+          <unit>fl_oz</unit>
+          <relation>1/480</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Fluid Drachm</title>
+        <title xml:lang="nl">U.S. Fluid Drachm</title>
+        <names>ar:fl_dr,fluid_drachm,p:fluid_drachms</names>
+        <names xml:lang="zh_CN">ar:fl_dr,fluid_drachm,p:fluid_drachms</names>
+        <base>
+          <unit>minim</unit>
+          <relation>60</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Dry Pint</title>
+        <title xml:lang="nl">U.S. Dry Pint</title>
+        <names>ar:dry_pt,dry_pint,p:dry_pints</names>
+        <names xml:lang="zh_CN">ar:dry_pt,dry_pint,p:dry_pints</names>
+        <base>
+          <unit>in</unit>
+          <relation>33.6003125</relation>
+          <exponent>3</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Dry Quart</title>
+        <title xml:lang="nl">U.S. Dry Quart</title>
+        <names>ar:dry_qt,dry_quart,p:dry_quarts</names>
+        <names xml:lang="zh_CN">ar:dry_qt,dry_quart,p:dry_quarts</names>
+        <base>
+          <unit>dry_pt</unit>
+          <relation>2</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Peck</title>
+        <title xml:lang="nl">U.S. Peck</title>
+        <names>ar:pk,peck,p:pecks</names>
+        <names xml:lang="zh_CN">ar:pk,peck,p:pecks</names>
+        <base>
+          <unit>dry_qt</unit>
+          <relation>8</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Bushel</title>
+        <title xml:lang="nl">U.S. Bushel</title>
+        <names>ar:bu,bushel,p:bushels</names>
+        <names xml:lang="zh_CN">ar:bu,bushel,p:bushels</names>
+        <base>
+          <unit>pk</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Gallon</title>
+        <title xml:lang="nl">U.S. Gallon</title>
+        <names>ar:gal,gallon,p:gallons</names>
+        <names xml:lang="zh_CN">ar:gal,gallon,p:gallons</names>
+        <base>
+          <unit>liq_qt</unit>
+          <relation>4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>U.S. Barrell (oil)</title>
+        <title xml:lang="nl">U.S. Barrell (olie)</title>
+        <names>ar:bbl,barrell,p:barrells</names>
+        <names xml:lang="zh_CN">ar:bbl,barrell,p:barrells</names>
+        <base>
+          <unit>gal</unit>
+          <relation>42</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Specific Volume</title>
+      <title xml:lang="nl">Soortelijk volume</title>
+      <title xml:lang="sv">Specifik volym</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Cubic Meter per Kilogram</title>
+        <title xml:lang="nl">Kubieke meter per kilogram</title>
+        <title xml:lang="sv">Kubikmeter per kilogram</title>
+        <title xml:lang="zh_CN">立方米每公斤</title>
+        <names>r:cum_p_kg</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>3</exponent>
+        </part>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Speed</title>
+    <title xml:lang="nl">Snelheid</title>
+    <title xml:lang="sv">Hastighet</title>
+    <title xml:lang="zh_CN">速度</title>
+    <unit type="composite">
+      <system>SI</system>
+      <title>Meter per Second</title>
+      <title xml:lang="nl">Meter per seconde</title>
+      <title xml:lang="sv">Meter per sekund</title>
+      <title xml:lang="zh_CN">米每秒</title>
+      <names>r:m_p_s</names>
+      <part>
+        <unit>m</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>s</unit>
+        <prefix>0</prefix>
+        <exponent>-1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Kilometer per Hour</title>
+      <title xml:lang="nl">Kilometer per uur</title>
+      <title xml:lang="sv">Kilometer per timme</title>
+      <title xml:lang="zh_CN">千米每小时</title>
+      <names>r:km_p_h</names>
+      <part>
+        <unit>m</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>h</unit>
+        <prefix>0</prefix>
+        <exponent>-1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Nautical Mile per Hour</title>
+      <title xml:lang="nl">Nautische mijl per uur</title>
+      <title xml:lang="sv">Sjömil per timme</title>
+      <title xml:lang="zh_CN">海里每小时</title>
+      <names>r:nautical_mile_p_h</names>
+      <part>
+        <unit>nautical_mile</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>h</unit>
+        <prefix>0</prefix>
+        <exponent>-1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Knot</title>
+      <title xml:lang="nl">Knoop</title>
+      <title xml:lang="sv">Knop</title>
+      <title xml:lang="zh_CN">节</title>
+      <names>r:knot,p:knots</names>
+      <names xml:lang="nl">knoop,knopen</names>
+      <names xml:lang="sv">knop</names>
+      <names xml:lang="zh_CN">r:knot,p:knots</names>
+      <base>
+        <unit>nautical_mile_p_h</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <hidden>true</hidden>
+      <title>Miles per Hour</title>
+      <title xml:lang="nl">Miles per Hour</title>
+      <title xml:lang="sv">Miles per timme</title>
+      <title xml:lang="zh_CN">英里每小时</title>
+      <names>r:mile_p_h</names>
+      <part>
+        <unit>mi</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>h</unit>
+        <prefix>0</prefix>
+        <exponent>-1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Miles per Hour</title>
+      <title xml:lang="nl">Miles per Hour</title>
+      <title xml:lang="sv">Miles per timme</title>
+      <title xml:lang="zh_CN">英里每小时</title>
+      <names>a-cr:mph</names>
+      <names xml:lang="zh_CN">a-cr:mph</names>
+      <base>
+        <unit>mile_p_h</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <category>
+      <title>Acceleration</title>
+      <title xml:lang="nl">Versnelling</title>
+      <title xml:lang="sv">Acceleration</title>
+      <title xml:lang="zh_CN">加速度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Meter per Second Squared</title>
+        <title xml:lang="nl">Meter per seconde kwadraat</title>
+        <title xml:lang="sv">Meter per kvadratsekund</title>
+        <title xml:lang="zh_CN">米每平方秒</title>
+        <names>r:m_p_sqs</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <title>Galileo</title>
+        <title xml:lang="nl">Galileo</title>
+        <title xml:lang="zh_CN">伽利略</title>
+        <names>ar:Gal,galileo,p:galileos</names>
+        <names xml:lang="sv">a:Gal,galileo</names>
+        <names xml:lang="zh_CN">ar:Gal,galileo,p:galileos</names>
+        <base>
+          <unit>m_p_sqs</unit>
+          <relation>1/100</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Gee</title>
+        <title xml:lang="nl">Gee</title>
+        <names>r:gee,p:gees</names>
+        <names xml:lang="zh_CN">r:gee,p:gees</names>
+        <base>
+          <unit>m_p_sqs</unit>
+          <relation>9.80665</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Magnetism</title>
+    <title xml:lang="nl">Magnetisme</title>
+    <title xml:lang="sv">Magnetism</title>
+    <title xml:lang="zh_CN">磁学</title>
+    <category>
+      <title>Wave Number</title>
+      <title xml:lang="nl">Golfgetal</title>
+      <title xml:lang="sv">Vågtal</title>
+      <title xml:lang="zh_CN">波数</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Reciprocal Meter</title>
+        <title xml:lang="nl">Omgekeerde meter</title>
+        <title xml:lang="sv">Reciproka meter</title>
+        <names>r:recm</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Magnetic Field Strength</title>
+      <title xml:lang="nl">Magnetische veldsterkte</title>
+      <title xml:lang="sv">Magnetisk fältstyrka</title>
+      <title xml:lang="zh_CN">磁场强度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Ampere per Meter</title>
+        <title xml:lang="nl">Ampere per meter</title>
+        <title xml:lang="sv">Ampere per meter</title>
+        <title xml:lang="zh_CN">安培每米</title>
+        <names>r:A_p_m</names>
+        <part>
+          <unit>A</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Oersted</title>
+        <title xml:lang="nl">Oersted</title>
+        <title xml:lang="zh_CN">奥斯特</title>
+        <names>ar:Oe,oersted,p:oersteds</names>
+        <names xml:lang="nl">Oe,oersted,oersteds</names>
+        <names xml:lang="sv">a:Oe,oersted</names>
+        <names xml:lang="zh_CN">ar:Oe,oersted,p:oersteds</names>
+        <base>
+          <unit>A_p_m</unit>
+          <relation>1000/(4*pi)</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Magnetic Flux</title>
+      <title xml:lang="nl">Magnetische flux</title>
+      <title xml:lang="sv">Magnetiskt flöde</title>
+      <title xml:lang="zh_CN">磁通量</title>
+      <unit type="composite">
+        <title>Volt Seconds</title>
+        <title xml:lang="nl">Volt seconden</title>
+        <title xml:lang="sv">Voltsekund</title>
+        <title xml:lang="zh_CN">伏特秒</title>
+        <names>r:V_s</names>
+        <part>
+          <unit>V</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Weber</title>
+        <title xml:lang="nl">Weber</title>
+        <title xml:lang="zh_CN">韦伯</title>
+        <names>ar:Wb,weber,p:webers</names>
+        <names xml:lang="sv">a:Wb,weber</names>
+        <names xml:lang="zh_CN">ar:Wb,weber,p:webers</names>
+        <base>
+          <unit>V_s</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Maxwell</title>
+        <title xml:lang="nl">Maxwell</title>
+        <title xml:lang="zh_CN">麦克斯韦</title>
+        <names>ar:Mx,maxwell,p:maxwells</names>
+        <names xml:lang="sv">a:Mx,maxwell</names>
+        <names xml:lang="zh_CN">ar:Mx,maxwell,p:maxwells</names>
+        <base>
+          <unit>Wb</unit>
+          <relation>1E-8</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Magnetic Flux Density</title>
+      <title xml:lang="nl">Magnetische fluxdichtheid</title>
+      <title xml:lang="sv">Magnetisk flödestäthet</title>
+      <title xml:lang="zh_CN">磁通密度</title>
+      <unit type="composite">
+        <title>Weber per Meter Squared</title>
+        <title xml:lang="nl">Weber per meter kwadraat</title>
+        <title xml:lang="sv">Weber per kvadratmeter</title>
+        <title xml:lang="zh_CN">韦伯每平米</title>
+        <names>r:Wb_p_sqm</names>
+        <part>
+          <unit>Wb</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Tesla</title>
+        <title xml:lang="nl">Tesla</title>
+        <title xml:lang="zh_CN">特斯拉</title>
+        <names>ar:T,tesla,p:teslas</names>
+        <names xml:lang="sv">a:T,tesla</names>
+        <names xml:lang="zh_CN">ar:T,tesla,p:teslas</names>
+        <base>
+          <unit>Wb_p_sqm</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Gauss</title>
+        <title xml:lang="nl">Gauss</title>
+        <title xml:lang="zh_CN">高斯</title>
+        <names>r:gauss</names>
+        <names xml:lang="zh_CN">r:gauss</names>
+        <base>
+          <unit>T</unit>
+          <relation>0.0001</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Force</title>
+    <title xml:lang="nl">Kracht</title>
+    <title xml:lang="sv">Kraft</title>
+    <title xml:lang="zh_CN">力学</title>
+    <unit type="composite">
+      <title>Meter Kilogram per Second Squared</title>
+      <title xml:lang="nl">Meter kilogram per seconde kwadraat</title>
+      <title xml:lang="sv">Meterkilogram per kvadratsekund</title>
+      <title xml:lang="zh_CN">米千克每平方秒</title>
+      <names>r:m_kg_p_sqs</names>
+      <part>
+        <unit>m</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>g</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>s</unit>
+        <prefix>0</prefix>
+        <exponent>-2</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <system>SI</system>
+      <title>Newton</title>
+      <title xml:lang="nl">Newton</title>
+      <title xml:lang="zh_CN">牛顿</title>
+      <names>ar:N,newton,p:newtons</names>
+      <names xml:lang="sv">a:N,newton</names>
+      <names xml:lang="zh_CN">ar:N,newton,p:newtons</names>
+      <base>
+        <unit>m_kg_p_sqs</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>CGS</system>
+      <title>Dyne</title>
+      <title xml:lang="nl">Dyne</title>
+      <title xml:lang="zh_CN">达因</title>
+      <names>ar:dyn,dyne,p:dynes</names>
+      <names xml:lang="zh_CN">ar:dyn,dyne,p:dynes</names>
+      <base>
+        <unit>N</unit>
+        <relation>1E-5</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Pound-force</title>
+      <title xml:lang="nl">Pound-force</title>
+      <title xml:lang="zh_CN">磅力</title>
+      <names>ar:lbf,pound_force</names>
+      <names xml:lang="zh_CN">ar:lbf,pound_force</names>
+      <base>
+        <unit>N</unit>
+        <relation>4.4482216152605</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <hidden>true</hidden>
+      <title>Pound Foot per Second Squared</title>
+      <title xml:lang="nl">Pound Foot per seconde kwadraat</title>
+      <title xml:lang="sv">Pundfot per kvadratsekund</title>
+      <title xml:lang="zh_CN">磅英尺每平方秒</title>
+      <names>r:lb_ft_p_sqs</names>
+      <part>
+        <unit>lb</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>ft</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>s</unit>
+        <prefix>0</prefix>
+        <exponent>-2</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Poundal</title>
+      <title xml:lang="nl">Poundal</title>
+      <title xml:lang="zh_CN">磅达</title>
+      <names>r:poundal,p:poundals,a:pdl</names>
+      <names xml:lang="zh_CN">r:poundal,p:poundals,a:pdl</names>
+      <base>
+        <unit>lb_ft_p_sqs</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Pond (Gram-Force)</title>
+      <title xml:lang="nl">Pond (gram-kracht)</title>
+      <title xml:lang="zh_CN">克力</title>
+      <names>r:pond,p:ponds,a:gf</names>
+      <names xml:lang="nl">pond,ponden,gf</names>
+      <names xml:lang="zh_CN">r:pond,p:ponds,a:gf</names>
+      <base>
+        <unit>N</unit>
+        <relation>0.00980665</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Kilopond (Kilogram-Force)</title>
+      <title xml:lang="nl">Kilopond (Kilogram-kracht)</title>
+      <title xml:lang="zh_CN">千克力</title>
+      <names>r:kpond_c</names>
+      <part>
+        <unit>pond</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <category>
+      <title>Moment of Force</title>
+      <title xml:lang="nl">Krachtmoment</title>
+      <title xml:lang="sv">Kraftmoment</title>
+      <title xml:lang="zh_CN">力矩</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Newton Meter</title>
+        <title xml:lang="nl">Newtonmeter</title>
+        <title xml:lang="sv">Newtonmeter</title>
+        <title xml:lang="zh_CN">牛顿米</title>
+        <names>r:N_m</names>
+        <part>
+          <unit>N</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Pressure</title>
+      <title xml:lang="nl">Druk</title>
+      <title xml:lang="sv">Tryck</title>
+      <title xml:lang="zh_CN">压强</title>
+      <unit type="composite">
+        <title>Newton per Meter Squared</title>
+        <title xml:lang="nl">Newton per vierkante meter</title>
+        <title xml:lang="sv">Newton per kvadratmeter</title>
+        <title xml:lang="zh_CN">牛顿每平米</title>
+        <names>r:N_p_sqm</names>
+        <part>
+          <unit>N</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="composite">
+        <title>Pound-force per Square Inch</title>
+        <title xml:lang="nl">Pound-force per inch kwadraat</title>
+        <title xml:lang="sv">Pound-force per kvadrattum</title>
+        <title xml:lang="zh_CN">磅力每平方英寸</title>
+        <hidden>true</hidden>
+        <names>r:lbf_p_sqin</names>
+        <part>
+          <unit>lbf</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>in</unit>
+          <prefix>0</prefix>
+          <exponent>-2</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Pascal</title>
+        <title xml:lang="nl">Pascal</title>
+        <title xml:lang="zh_CN">帕斯卡</title>
+        <names>ar:Pa,pascal,p:pascals</names>
+        <names xml:lang="sv">a:Pa,pascal</names>
+        <names xml:lang="zh_CN">ar:Pa,pascal,p:pascals</names>
+        <base>
+          <unit>N_p_sqm</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Pound-force per Square Inch (psi)</title>
+        <title xml:lang="nl">Pound-force per inch kwadraat (psi)</title>
+        <title xml:lang="sv">Pound-force per kvadrattum (psi)</title>
+        <title xml:lang="zh_CN">磅力每平方英寸(psi)</title>
+        <names>a-cr:psi</names>
+        <names xml:lang="zh_CN">a-cr:psi</names>
+        <base>
+          <unit>lbf_p_sqin</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Bar</title>
+        <title xml:lang="nl">Bar</title>
+        <title xml:lang="sv">Bar</title>
+        <title xml:lang="zh_CN">巴</title>
+        <names>r:bar,p:bars</names>
+        <names xml:lang="nl">bar</names>
+        <names xml:lang="zh_CN">r:bar,p:bars</names>
+        <base>
+          <unit>Pa</unit>
+          <relation>100000</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Atmosphere</title>
+        <title xml:lang="nl">Atmosfeer</title>
+        <title xml:lang="sv">Atmosfär</title>
+        <title xml:lang="zh_CN">大气压</title>
+        <names>ar:atm,atmosphere,p:atmospheres</names>
+        <names xml:lang="nl">atm,atmosfeer,atmosfeer</names>
+        <names xml:lang="sv">a:atm,atmosfär,p:atmosfärer</names>
+        <names xml:lang="zh_CN">ar:atm,atmosphere,p:atmospheres</names>
+        <base>
+          <unit>Pa</unit>
+          <relation>101325</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Torr</title>
+        <title xml:lang="nl">Torr</title>
+        <title xml:lang="zh_CN">托</title>
+        <names>r:torr,p:torrs</names>
+        <names xml:lang="zh_CN">r:torr,p:torrs</names>
+        <base>
+          <unit>atm</unit>
+          <relation>1/760</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Millimeter of Mercury</title>
+        <title xml:lang="nl">Milimeter kwik</title>
+        <title xml:lang="sv">Millimeter kvicksilver</title>
+        <title xml:lang="zh_CN">毫米汞柱</title>
+	<names>ar:mmHg</names>
+	<names xml:lang="zh_CN">ar:mmHg</names>
+        <base>
+          <unit>atm</unit>
+          <relation>1/760</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Inch of Mercury</title>
+        <title xml:lang="nl">Inches kwik</title>
+        <title xml:lang="sv">Fot kvicksilver</title>
+        <title xml:lang="zh_CN">英寸汞柱</title>
+	<names>ar:inHg</names>
+	<names xml:lang="zh_CN">ar:inHg</names>
+        <base>
+          <unit>mmHg</unit>
+          <relation>25.4</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Dynamic Viscosity</title>
+      <title xml:lang="nl">Dynamische viscositeit</title>
+      <title xml:lang="sv">Dynamisk viskositet</title>
+      <title xml:lang="zh_CN">动态粘度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Pascal Second</title>
+        <title xml:lang="nl">Pascal seconde</title>
+        <title xml:lang="sv">Pascalsekund</title>
+        <title xml:lang="zh_CN">帕斯卡秒</title>
+        <names>r:Pa_s</names>
+        <part>
+          <unit>Pa</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Poise</title>
+        <title xml:lang="nl">Poise</title>
+        <title xml:lang="zh_CN">泊</title>
+        <names>ar:P,poise,p:poises</names>
+        <names xml:lang="sv">a:P,poise</names>
+        <names xml:lang="zh_CN">ar:P,poise,p:poises</names>
+        <base>
+          <unit>Pa_s</unit>
+          <relation>0.1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Kinematic Viscosity</title>
+      <title xml:lang="nl">Kinematische viscositeit</title>
+      <title xml:lang="sv">Kinematisk viskositet</title>
+      <title xml:lang="zh_CN">运动粘度</title>
+      <unit type="composite">
+        <title>Square Meter per Second</title>
+        <title xml:lang="nl">Vierkante meter per seconde</title>
+        <title xml:lang="sv">Kvadratmeter per sekund</title>
+        <title xml:lang="zh_CN">平方米每秒</title>
+        <names>r:sqm_p_s</names>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>2</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>CGS</system>
+        <title>Stokes</title>
+        <title xml:lang="nl">Stokes</title>
+        <names>ar:St,stokes</names>
+        <names xml:lang="zh_CN">ar:St,stokes</names>
+        <base>
+          <unit>sqm_p_s</unit>
+          <relation>0.0001</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Surface Tension</title>
+      <title xml:lang="nl">Oppervlaktespanning</title>
+      <title xml:lang="sv">Ytspänning</title>
+      <title xml:lang="zh_CN">表面张力</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Newton per Meter</title>
+        <title xml:lang="nl">Newton per meter</title>
+        <title xml:lang="sv">Newton per meter</title>
+        <title xml:lang="zh_CN">牛顿每米</title>
+        <names>r:N_p_m</names>
+        <part>
+          <unit>N</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Energy</title>
+    <title xml:lang="nl">Energie</title>
+    <title xml:lang="sv">Energi</title>
+    <title xml:lang="zh_CN">能量</title>
+    <unit type="alias">
+      <system>SI</system>
+      <title>Joule</title>
+      <title xml:lang="nl">Joule</title>
+      <title xml:lang="zh_CN">焦耳</title>
+      <names>ar:J,joule,p:joules</names>
+      <names xml:lang="sv">a:J,joule</names>
+      <names xml:lang="zh_CN">ar:J,joule,p:joules</names>
+      <base>
+        <unit>N_m</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Watt Hour</title>
+      <title xml:lang="nl">Wattuur</title>
+      <title xml:lang="sv">Watttimme</title>
+      <title xml:lang="zh_CN">瓦小时</title>
+      <names>r:W_h</names>
+      <part>
+        <unit>W</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>h</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Kilowatt Hour</title>
+      <title xml:lang="nl">Kilowattuur</title>
+      <title xml:lang="sv">Kilowatttimme</title>
+      <title xml:lang="zh_CN">度(千瓦时)</title>
+      <names>r:W_h</names>
+      <part>
+        <unit>W</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>h</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="alias">
+      <title>Calorie (international table)</title>
+      <title xml:lang="nl">Calorie (internationale tabel)</title>
+      <title xml:lang="sv">Kalorier (international table)</title>
+      <names>ais:cal_IT,ar:cal,c:calorie,cp:calories</names>
+      <names xml:lang="nl">cal_IT,cal,calorie,calorieën</names>
+      <names xml:lang="sv">ais:cal_IT,a:cal,c:kalori,cp:kalorier</names>
+      <names xml:lang="zh_CN">ais:cal_IT,ar:cal,c:calorie,cp:calories</names>
+      <base>
+        <unit>J</unit>
+        <relation>4.1868</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Calorie (capital C)</title>
+      <title xml:lang="nl">Calorie (hoofdletter C)</title>
+      <title xml:lang="sv">Kalorier (med stort K)</title>
+      <names>cr:Calorie,cp:Calories</names>
+      <names xml:lang="nl">Calorie,Calorieën</names>
+      <names xml:lang="zh_CN">cr:Calorie,cp:Calories</names>
+      <base>
+        <unit>cal</unit>
+        <relation>1000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Calorie (thermochemical)</title>
+      <title xml:lang="nl">Calorie (thermochemisch)</title>
+      <title xml:lang="sv">Kalorier (termokemiska)</title>
+      <names>ars:cal_th</names>
+      <names xml:lang="nl">cal_th</names>
+      <names xml:lang="zh_CN">ars:cal_th</names>
+      <base>
+        <unit>J</unit>
+        <relation>4.184</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Gram of TNT</title>
+      <title xml:lang="nl">Gram TNT</title>
+      <title xml:lang="sv">Gram TNT</title>
+      <title xml:lang="zh_CN">克TNT当量</title>
+      <names>a-cr:gTNT,gramTNT</names>
+      <names xml:lang="zh_CN">a-cr:gTNT,gramTNT</names>
+      <base>
+        <unit>cal_th</unit>
+        <relation>1000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Ton of TNT</title>
+      <title xml:lang="nl">Ton TNT</title>
+      <title xml:lang="sv">Ton TNT</title>
+      <title xml:lang="zh_CN">吨TNT当量</title>
+      <names>a-cr:tTNT,tonTNT</names>
+      <names xml:lang="zh_CN">a-cr:tTNT,tonTNT</names>
+      <base>
+        <unit>gTNT</unit>
+        <relation>1000000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Calorie (15 degrees Celcius)</title>
+      <title xml:lang="nl">Calorie (15 graden Celcius)</title>
+      <title xml:lang="sv">Kalorier (15 grader Celcius)</title>
+      <title xml:lang="zh_CN">Calorie（15摄氏度)</title>
+      <names>ars:cal_fifteen</names>
+      <names xml:lang="nl">cal_fifteen</names>
+      <names xml:lang="sv">as:cal_femton</names>
+      <names xml:lang="zh_CN">ars:cal_fifteen</names>
+      <base>
+        <unit>J</unit>
+        <relation approximate="true">4.185880</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Calorie (mean)</title>
+      <title xml:lang="nl">Calorie (gemiddeld)</title>
+      <title xml:lang="sv">Kalorier (medel)</title>
+      <names>ars:cal_mean</names>
+      <names xml:lang="nl">cal_gemiddeld</names>
+      <names xml:lang="sv">as:cal_medel</names>
+      <names xml:lang="zh_CN">ars:cal_mean</names>
+      <base>
+        <unit>J</unit>
+        <relation approximate="true">4.19002</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>British Thermal Unit (IT)</title>
+      <title xml:lang="nl">British Thermal Unit (IT)</title>
+      <title xml:lang="zh_CN">英制热量单位(IT)</title>
+      <names>ar:Btu</names>
+      <names xml:lang="zh_CN">ar:Btu</names>
+      <base>
+        <unit>J</unit>
+        <relation>1055.056</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Electron Volt</title>
+      <title xml:lang="nl">Elektronvolt</title>
+      <title xml:lang="sv">Elektronvolt</title>
+      <title xml:lang="zh_CN">电子伏特</title>
+      <names>ar:eV,electron_volt,p:electron_volts</names>
+      <names xml:lang="sv">a:eV,elektronvolt</names>
+      <names xml:lang="zh_CN">ar:eV,electron_volt,p:electron_volts</names>
+      <base>
+        <unit>J</unit>
+        <relation approximate="true">1.602177E-19</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>CGS</system>
+      <title>Erg</title>
+      <title xml:lang="nl">Erg</title>
+      <names>r:erg,p:ergs</names>
+      <names xml:lang="zh_CN">r:erg,p:ergs</names>
+      <base>
+        <unit>J</unit>
+        <relation>1E-7</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Foe</title>
+      <title xml:lang="nl">Foe</title>
+      <names>r:foe,p:foes</names>
+      <names xml:lang="zh_CN">r:foe,p:foes</names>
+      <base>
+        <unit>erg</unit>
+        <relation>1E51</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <system>Imperial</system>
+      <title>Foot-Pound Force</title>
+      <title xml:lang="nl">Foot-Pound Force</title>
+      <names>r:ft_lbf</names>
+      <part>
+        <unit>ft</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+      <part>
+        <unit>lbf</unit>
+        <prefix>0</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <category>
+      <title>Specific Energy</title>
+      <title xml:lang="nl">Soortelijke energie</title>
+      <title xml:lang="sv">Specifik energi</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Kilogram</title>
+        <title xml:lang="nl">Joule per kilogram</title>
+        <title xml:lang="sv">Joule per kilogram</title>
+        <title xml:lang="zh_CN">焦耳每千克</title>
+        <names>r:J_p_kg</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Power</title>
+      <title xml:lang="nl">Vermogen</title>
+      <title xml:lang="sv">Effekt</title>
+      <title xml:lang="zh_CN">功率</title>
+      <unit type="composite">
+        <title>Joule per Second</title>
+        <title xml:lang="nl">Joule per seconde</title>
+        <title xml:lang="sv">Joule per sekund</title>
+        <title xml:lang="zh_CN">焦耳每秒</title>
+        <names>r:J_p_s</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Watt</title>
+        <title xml:lang="nl">Watt</title>
+        <title xml:lang="zh_CN">瓦</title>
+        <names>ar:W,watt,p:watts</names>
+        <names xml:lang="sv">a:W,watt</names>
+        <names xml:lang="zh_CN">ar:W,watt,p:watts</names>
+        <base>
+          <unit>J_p_s</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Horse Power</title>
+        <title xml:lang="nl">Paardekracht (Engels)</title>
+        <title xml:lang="sv">Hästkraft</title>
+        <title xml:lang="zh_CN">匹</title>
+        <names>ar:hp,horsepower,p:horsepowers</names>
+        <names xml:lang="sv">a:hp,hästkraft,p:hästkrafter</names>
+        <names xml:lang="zh_CN">ar:hp,horsepower,p:horsepowers</names>
+        <base>
+          <unit>W</unit>
+          <relation>745.699987158227022</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Pferdest&#xE4;rke</title>
+        <title xml:lang="nl">Paardekracht (metrisch)</title>
+        <names>ar:PS,u:pferdest&#xE4;rke</names>
+        <names xml:lang="nl">pk,paardekracht,paardekrachten</names>
+        <names xml:lang="zh_CN">ar:PS,u:pferdest&#xE4;rke</names>
+        <base>
+          <unit>W</unit>
+          <relation>735.49875</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Entropy</title>
+      <title xml:lang="nl">Entropie</title>
+      <title xml:lang="sv">Entropi</title>
+      <title xml:lang="zh_CN">熵</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Kelvin</title>
+        <title xml:lang="nl">Joule per Kelvin</title>
+        <title xml:lang="sv">Joule per Kelvin</title>
+        <title xml:lang="zh_CN">焦耳每开尔文</title>
+        <names>r:J_p_K</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>K</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Specific Entropy</title>
+      <title xml:lang="nl">Soortelijke entropie</title>
+      <title xml:lang="sv">Specifik entropi</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Kilogram Kelvin</title>
+        <title xml:lang="nl">Joule per kilogram Kelvin</title>
+        <title xml:lang="sv">Joule per kilogram kelvin</title>
+        <title xml:lang="zh_CN">焦耳每千克开尔文</title>
+        <names>r:J_p_kg_K</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+        <part>
+          <unit>K</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Thermal Conductivity</title>
+      <title xml:lang="nl">Thermisch geleidingsvermogen</title>
+      <title xml:lang="sv">Termisk konduktivitet</title>
+      <title xml:lang="zh_CN">导热系数</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Watt per Meter Kelvin</title>
+        <title xml:lang="nl">Watt per meter Kelvin</title>
+        <title xml:lang="sv">Watt per meter kelvin</title>
+        <title xml:lang="zh_CN">瓦每米开尔文</title>
+        <names>r:W_p_m_K</names>
+        <part>
+          <unit>W</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+        <part>
+          <unit>K</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Energy Density</title>
+      <title xml:lang="nl">Energiedichtheid</title>
+      <title xml:lang="sv">Energitäthet</title>
+      <title xml:lang="zh_CN">能量密度</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Cubic Meter</title>
+        <title xml:lang="nl">Joule per kubieke meter</title>
+        <title xml:lang="sv">Joule per kubikmeter</title>
+        <title xml:lang="zh_CN">焦耳每立方米</title>
+        <names>r:J_p_cum</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>m</unit>
+          <prefix>0</prefix>
+          <exponent>-3</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Molar Energy</title>
+      <title xml:lang="nl">Molaire energie</title>
+      <title xml:lang="sv">Molarenergi</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Mole</title>
+        <title xml:lang="nl">Joule per mol</title>
+        <title xml:lang="sv">Joule per mol</title>
+        <title xml:lang="zh_CN">焦耳每摩尔</title>
+        <names>r:J_p_mol</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>mol</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+    <category>
+      <title>Molar Entropy</title>
+      <title xml:lang="nl">Molaire entropy</title>
+      <title xml:lang="sv">Molarentropi</title>
+      <title xml:lang="zh_CN">摩尔熵</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Joule per Mole Kelvin</title>
+        <title xml:lang="nl">Joule per mol Kelvin</title>
+        <title xml:lang="sv">Joule per mol kelvin</title>
+        <title xml:lang="zh_CN">焦耳每摩尔开尔文</title>
+        <names>r:J_p_mol_K</names>
+        <part>
+          <unit>J</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>mol</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+        <part>
+          <unit>K</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Radioactivity</title>
+    <title xml:lang="nl">Radioactiviteit</title>
+    <title xml:lang="sv">Radioaktivitet</title>
+    <title xml:lang="zh_CN">放射性</title>
+    <unit type="alias">
+      <system>SI</system>
+      <title>Becquerel</title>
+      <title xml:lang="nl">Becquerel</title>
+      <title xml:lang="sv">Becquerel</title>
+      <title xml:lang="zh_CN">贝可</title>
+      <names>ar:Bq,becquerel,p:becquerels</names>
+      <names xml:lang="sv">a:Bq,becquerel</names>
+      <names xml:lang="zh_CN">ar:Bq,becquerel,p:becquerels</names>
+      <base>
+        <unit>s</unit>
+        <relation>1</relation>
+        <exponent>-1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Curie</title>
+      <title xml:lang="nl">Curie</title>
+      <title xml:lang="zh_CN">居里</title>
+      <names>ar:Ci,curie,p:curies</names>
+      <names xml:lang="sv">a:Ci,curie</names>
+      <names xml:lang="zh_CN">ar:Ci,curie,p:curies</names>
+      <base>
+        <unit>Bq</unit>
+        <relation>3.7E10</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <category>
+      <title>Absorbed Dose</title>
+      <title xml:lang="nl">Absorptiedosis</title>
+      <title xml:lang="sv">Absorberad dos</title>
+      <title xml:lang="zh_CN">吸收剂量</title>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Gray</title>
+        <title xml:lang="nl">Gray</title>
+        <title xml:lang="zh_CN">戈瑞</title>
+        <names>ar:Gy,gray,p:grays</names>
+        <names xml:lang="sv">a:Gy,gray</names>
+        <names xml:lang="zh_CN">ar:Gy,gray,p:grays</names>
+        <base>
+          <unit>J_p_kg</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Rad</title>
+        <title xml:lang="nl">Rad</title>
+        <title xml:lang="sv">Rad</title>
+        <names>r:rad_radioactivity</names>
+        <names xml:lang="sv">rad_radioaktivitet</names>
+        <names xml:lang="zh_CN">r:rad_radioactivity</names>
+        <base>
+          <unit>Gy</unit>
+          <relation>1/100</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Dose Equivalent</title>
+      <title xml:lang="nl">Dosisequivalent</title>
+      <title xml:lang="sv">Dosekvivalent</title>
+      <title xml:lang="zh_CN">剂量当量</title>
+      <unit type="alias">
+        <system>SI</system>
+        <title>Sievert</title>
+        <title xml:lang="nl">Sievert</title>
+        <names>ar:Sv,sievert,p:sieverts</names>
+        <names xml:lang="sv">a:Sv,sievert</names>
+        <names xml:lang="zh_CN">ar:Sv,sievert,p:sieverts</names>
+        <base>
+          <unit>J_p_kg</unit>
+          <relation>1</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <title>Rem</title>
+        <title xml:lang="nl">Rem</title>
+        <title xml:lang="zh_CN">人体伦琴当量</title>
+        <names>r:rem_radioactivity</names>
+        <names xml:lang="sv">rem_radioaktivitet</names>
+        <names xml:lang="zh_CN">r:rem_radioactivity</names>
+        <base>
+          <unit>Sv</unit>
+          <relation>1/100</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Exposure</title>
+      <title xml:lang="nl">Belichting</title>
+      <title xml:lang="sv">Exponering</title>
+      <title xml:lang="zh_CN">照射量</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Coulomb per Kilogram</title>
+        <title xml:lang="nl">Coulomb per kilogram</title>
+        <title xml:lang="sv">Coloumb per kilogram</title>
+        <title xml:lang="zh_CN">库仑每千克</title>
+        <names>r:C_p_kg</names>
+        <part>
+          <unit>C</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>g</unit>
+          <prefix>3</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+      <unit type="alias">
+        <title>Roentgen</title>
+        <title xml:lang="nl">Roentgen</title>
+        <title xml:lang="sv">Röntgen</title>
+        <title xml:lang="zh_CN">伦琴</title>
+        <names>ar:R,roentgen,p:roentgens</names>
+        <names xml:lang="sv">a:R,roentgen</names>
+        <names xml:lang="zh_CN">ar:R,roentgen,p:roentgens</names>
+        <base>
+          <unit>C_p_kg</unit>
+          <relation>0.000258</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+    <category>
+      <title>Absorbed Dose Rate</title>
+      <title xml:lang="nl">Absorptiesnelheid</title>
+      <title xml:lang="sv">Absorberad dosrat</title>
+      <title xml:lang="zh_CN">剂量吸收率</title>
+      <unit type="composite">
+        <system>SI</system>
+        <title>Gray per Second</title>
+        <title xml:lang="nl">Gray per seconde</title>
+        <title xml:lang="sv">Gray per sekund</title>
+        <title xml:lang="zh_CN">戈瑞每秒</title>
+        <names>r:Gy_p_s</names>
+        <part>
+          <unit>Gy</unit>
+          <prefix>0</prefix>
+          <exponent>1</exponent>
+        </part>
+        <part>
+          <unit>s</unit>
+          <prefix>0</prefix>
+          <exponent>-1</exponent>
+        </part>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Ratio</title>
+    <title xml:lang="nl">Verhouding</title>
+    <title xml:lang="zh_CN">比值</title>
+    <unit type="base">
+      <title>Neper</title>
+      <title xml:lang="nl">Neper</title>
+      <title xml:lang="zh_CN">奈培</title>
+      <names>ar:Np,neper,p:nepers</names>
+      <names xml:lang="sv">a:Np,neper</names>
+      <names xml:lang="zh_CN">ar:Np,neper,p:nepers</names>
+    </unit>
+    <unit type="alias">
+      <title>Bel</title>
+      <title xml:lang="nl">Bel</title>
+      <title xml:lang="zh_CN">贝</title>
+      <names>ar:B,bel,p:bels</names>
+      <names xml:lang="sv">a:B,bel</names>
+      <names xml:lang="zh_CN">ar:B,bel,p:bels</names>
+      <base>
+        <unit>Np</unit>
+        <relation>0.5*ln(10)</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Decibel</title>
+      <title xml:lang="nl">Decibel</title>
+      <title xml:lang="zh_CN">分贝</title>
+      <names>r:dB_c</names>
+      <part>
+        <unit>B</unit>
+        <prefix>-1</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+  </category>
+  <category>
+    <title>Information</title>
+    <title xml:lang="nl">Informatie</title>
+    <title xml:lang="zh_CN">信息</title>
+    <unit type="base">
+      <title>Bit</title>
+      <title xml:lang="nl">Bit</title>
+      <title xml:lang="sv">Bit</title>
+      <title xml:lang="zh_CN">比特</title>
+      <names>r:bit,p:bits</names>
+      <names xml:lang="sv">bit,p:bitar</names>
+      <names xml:lang="zh_CN">r:bit,p:bits</names>
+    </unit>
+    <unit type="alias">
+      <title>Byte (8-bit)</title>
+      <title xml:lang="nl">Byte (8-bit)</title>
+      <title xml:lang="sv">Byte (8-bit)</title>
+      <title xml:lang="zh_CN">字节(8比特)</title>
+      <names>r:byte,p:bytes,octet,p:octets</names>
+      <names xml:lang="sv">byte,oktet</names>
+      <names xml:lang="zh_CN">r:byte,p:bytes,octet,p:octets</names>
+      <base>
+        <unit>bit</unit>
+        <relation>8</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Nibble</title>
+      <title xml:lang="nl">Nibble</title>
+      <title xml:lang="zh_CN">半字节</title>
+      <names>r:nibble,p:nibbles,nybble,p:nybbles,semioctet,p:semioctets</names>
+      <names xml:lang="zh_CN">r:nibble,p:nibbles,nybble,p:nybbles,semioctet,p:semioctets</names>
+      <base>
+        <unit>bit</unit>
+        <relation>4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Tribble</title>
+      <title xml:lang="nl">Tribble</title>
+      <names>r:tribble,p:tribbles</names>
+      <names xml:lang="zh_CN">r:tribble,p:tribbles</names>
+      <base>
+        <unit>nibble</unit>
+        <relation>3</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Word (16-bit)</title>
+      <title xml:lang="nl">Word (16-bit)</title>
+      <title xml:lang="zh_CN">字(16比特)</title>
+      <names>r:word,p:words</names>
+      <names xml:lang="nl">woord,woorden</names>
+      <names xml:lang="zh_CN">r:word,p:words</names>
+      <base>
+        <unit>bit</unit>
+        <relation>16</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="composite">
+      <title>Kilobyte</title>
+      <title xml:lang="nl">Kilobyte</title>
+      <title xml:lang="zh_CN">千字节</title>
+      <names>r:kbyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Kibibyte</title>
+      <title xml:lang="nl">Kibibyte</title>
+      <names>r:Kibyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix type="binary">10</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Mebibyte</title>
+      <title xml:lang="nl">Mebibyte</title>
+      <names>r:Mibyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix type="binary">20</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Gibibyte</title>
+      <title xml:lang="nl">Gibibyte</title>
+      <names>r:Gibyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix type="binary">30</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Megabyte</title>
+      <title xml:lang="nl">Megabyte</title>
+      <title xml:lang="zh_CN">兆字节</title>
+      <names>r:Mbyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix>6</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Gigabyte</title>
+      <title xml:lang="nl">Gigabyte</title>
+      <title xml:lang="zh_CN">千兆比特</title>
+      <names>r:Gbyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix>9</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Terabyte</title>
+      <title xml:lang="nl">Terabyte</title>
+      <title xml:lang="zh_CN">万亿字节</title>
+      <names>r:Tbyte_c</names>
+      <part>
+        <unit>byte</unit>
+        <prefix>12</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Kilobit</title>
+      <title xml:lang="nl">Kilobit</title>
+      <title xml:lang="zh_CN">千比特</title>
+      <names>r:kbit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix>3</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Kibibit</title>
+      <title xml:lang="nl">Kibibit</title>
+      <names>r:Kibit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix type="binary">10</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Mebibit</title>
+      <title xml:lang="nl">Mebibit</title>
+      <names>r:Mibit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix type="binary">20</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Gibibit</title>
+      <title xml:lang="nl">Gibibit</title>
+      <names>r:Gibit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix type="binary">30</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Megabit</title>
+      <title xml:lang="nl">Megabit</title>
+      <title xml:lang="zh_CN">兆比特</title>
+      <names>r:Mbit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix>6</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Gigabit</title>
+      <title xml:lang="nl">Gigabit</title>
+      <title xml:lang="zh_CN">千兆比特</title>
+      <names>r:Gbit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix>9</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+    <unit type="composite">
+      <title>Terabit</title>
+      <title xml:lang="nl">Terabit</title>
+      <title xml:lang="zh_CN">万亿比特</title>
+      <names>r:Tbit_c</names>
+      <part>
+        <unit>bit</unit>
+        <prefix>12</prefix>
+        <exponent>1</exponent>
+      </part>
+    </unit>
+  </category>
+  <category>
+    <title>Typography</title>
+    <title xml:lang="nl">Typografie</title>
+    <title xml:lang="sv">Typografi</title>
+    <title xml:lang="zh_CN">印刷</title>
+    <unit type="alias">
+      <title>PostScript Point</title>
+      <title xml:lang="nl">PostScript Point</title>
+      <names>ar:pt,a:pts,point,p:points</names>
+      <names xml:lang="sv">punkt,point,p:punkter,p:points</names>
+      <names xml:lang="zh_CN">ar:pt,a:pts,point,p:points</names>
+      <base>
+        <unit>in</unit>
+        <relation>1/72</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>PostScript Pica</title>
+      <title xml:lang="nl">PostScript Pica</title>
+      <names>r:pica,p:picas</names>
+      <names xml:lang="zh_CN">r:pica,p:picas</names>
+      <base>
+        <unit>pt</unit>
+        <relation>12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>ATA Pica</title>
+      <title xml:lang="nl">ATA Pica</title>
+      <names>r:ata_pica,p:ata_picas</names>
+      <names xml:lang="zh_CN">r:ata_pica,p:ata_picas</names>
+      <base>
+        <unit>in</unit>
+        <relation>0.166</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>ATA Point</title>
+      <title xml:lang="nl">ATA Point</title>
+      <names>r:ata_point,a:ata_pt,p:ata_points</names>
+      <names xml:lang="zh_CN">r:ata_point,a:ata_pt,p:ata_points</names>
+      <base>
+        <unit>ata_pica</unit>
+        <relation>1/12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>New Didot Point</title>
+      <title xml:lang="nl">Nieuwe Didot Point</title>
+      <names>r:new_didot</names>
+      <names xml:lang="nl">nieuwe_didot</names>
+      <names xml:lang="zh_CN">r:new_didot</names>
+      <base>
+        <unit>m</unit>
+        <relation>0.000375</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Didot Point</title>
+      <title xml:lang="nl">Didot Point</title>
+      <names>r:didot,a:dd</names>
+      <names xml:lang="zh_CN">r:didot,a:dd</names>
+      <base>
+        <unit>pouce</unit>
+        <relation>1/72</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Cicero</title>
+      <title xml:lang="nl">Cicero</title>
+      <names>r:cicero</names>
+      <names xml:lang="zh_CN">r:cicero</names>
+      <base>
+        <unit>didot</unit>
+        <relation>12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+</QALCULATE>

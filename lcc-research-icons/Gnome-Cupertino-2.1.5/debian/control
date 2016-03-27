@@ -1,0 +1,12 @@
+Source: gnome-cupertino
+Section: gnome
+Priority: extra
+Maintainer: Umair Riaz <noobslab@hotmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.3
+Homepage: http://NoobsLab.com
+
+Package: gnome-cupertino
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, gtk2-engines-murrine, gtk2-engines-pixbuf
+Description: Theme uploaded on NoobsLab.com PPA | Creator Url: http://gnome-look.org/content/show.php/Gnome+Cupertino?content=147061

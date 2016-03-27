@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Qalculate!
+Name[nl]=Qalculate!
+Name[sv]=Qalculate!
+Comment=Powerful and easy to use calculator
+Comment[nl]=Gemakkelijk te gebruiken rekenmachine met veel mogelijkheden
+Comment[sv]=Kraftfull och användarvänlig miniräknare
+Exec=qalculate-gtk
+Icon=lcalc.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;Application;Utility;
+

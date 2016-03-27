@@ -1,0 +1,70 @@
+Version 0.4.0 (2007-08-13)
+	* Updated russian translation
+	* Fixed a mutex warning in the server prefs
+	* Fixed a text cut-off in the first time wizard
+	* Fixed a segfault in windows builds
+	* Fixed problems with the PATH parser
+
+Version 0.4.0rc1 (2007-08-01)
+	* Rewrite of The PlayerWidget class
+	* Reorganization of sources
+	* First-time wizard
+	* PerferenceDialog beautified
+	* Added russian translation
+	* New Aboutdialog(!!)
+	* Server preferences dialog
+	* Configurable short-cuts
+
+Version 0.3.0 (2007-04-20):
+	* Fix so that rehashing entries are not greyed out.
+	* Make sure the stop button resets the playback frame
+	* Added german translation
+	* Fix hide/show/max/min logic
+
+Version 0.3.0rc1 (2007-04-10)
+	* Rewrite of the playlist models
+	* Optimizations for cover art
+	* Add a 'Add URL' button in the main view
+	* Make the file dialog remember the last open directory
+	* Updated to collections API
+	* Browser support in medialib window
+	* Fix bug with non-ascii chars in filenames
+	* Translation updates (sv)
+	* bugfixes
+
+Version 0.2.2 (2006-12-01)
+	* Make the playlist reordable with drag and drop
+	* Media library searches gets completed
+	* Added Last.fm context browser
+	* Added jump to file dialog
+	* Make use of DrHouse's available flag
+	* Fix page-up/page-down in playlist view
+	* Translations (nl, se, fr)
+
+Version 0.2.1 (2006-11-10)
+	* Fixed the system-tray icons. (Auke Schrijnen)
+	* Add a volume bar in the mini-mode. (Anders Gustafsson)
+	* Fix annoying bug on PPC processors.
+	* Don't hide text in the playlist
+	* Fixed some problems with the play-buttons (Auke Schrijnen)
+	* Added a shuffle command.
+	* When deleting a song don't jump to the current entry.
+
+Version 0.2.0 (2006-11-07)
+	* Added a system-tray icon with help of Gianluca Romanin
+	* Added a icon
+	* Added mini-mode
+	* Added context customization.
+	* Tweak colors and looks
+	* Make use of Qt4.2 specific features
+	* Bug-fixes to the volume-bar
+	* Bug-fixes to the context line
+	* Reworked album-art caching
+	* Try to match colors to the current palette
+	* Speed scrolling in large playlists
+
+Version 0.1.1 (2006-11-01)
+	* Forgot "version.h" files in 0.1
+
+Version 0.1 (2006-11-01)
+	* Initial release
